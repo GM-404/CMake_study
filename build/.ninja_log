@@ -1,7 +1,7 @@
 # ninja log v6
 22	582	7640677305125042	lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj	35fccf03ef5a545d
 561	1081	7640541940424571	hello/libHello.dll.a	70eb1e91d4590b07
-1	263	7640677393870983	build.ninja	77c9cd7ac059449c
+1	263	7640746543949416	build.ninja	77c9cd7ac059449c
 4	560	7640541929770481	hello/CMakeFiles/Hello.dir/hello.cpp.obj	d77b4e227da3f2e6
 8	595	7640579625004378	lesson1_1/CMakeFiles/study_dynamic_library.dir/main.cpp.obj	7e5b672ad0f13210
 472	679	7640565519757088	study_dynamic_library.exe	29f9ec577961bb0f
@@ -15,3 +15,7 @@
 565	794	7640677185141494	lesson1_1/lesson1_1.exe	e7959a2079906439
 16	579	7640677305065478	lesson1_2/CMakeFiles/lesson1_2.dir/main.cpp.obj	a60d82768b38d9e2
 582	797	7640677310717090	lesson1_2/lesson1_2.exe	7d3cd73bd72d787f
+4	581	7640723742507671	lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj	7564a8e8be7b98ec
+582	898	7640723748283539	lesson2_1/del/libdel.a	7c9c8ccd8e8d46df
+17	442	7640735153415850	lesson2_1/CMakeFiles/lesson2_1.dir/main.cpp.obj	9d0759abdb4e2719
+17	208	7640740490729924	lesson2_1/lesson2_1.exe	a70f8b997bc63915

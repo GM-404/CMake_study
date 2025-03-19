@@ -22,5 +22,17 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson1_2/../lesson1_1 -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
   "file": "C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
   "output": "lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/text/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson2_1/./lib -g -std=gnu++17 -o lesson2_1\\CMakeFiles\\lesson2_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_1\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\main.cpp",
+  "output": "lesson2_1\\CMakeFiles\\lesson2_1.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/text/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
+  "output": "lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj"
 }
 ]

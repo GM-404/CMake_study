@@ -10,5 +10,6 @@ project(lesson1_2)
 # CMake中用户可以自定义变量
 set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(lesson1_1)
-add_subdirectory(lesson1_2)
+add_subdirectory(lesson1_1) # 会执行lesson1_1/CMakeLists.txt，配置单个文件夹下的
+add_subdirectory(lesson1_2) # 会执行lesson1_2/CMakeLists.txt，配置多个文件夹下的
+add_subdirectory(lesson2_1) # 会执行lesson1_3/CMakeLists.txt，配置静态库

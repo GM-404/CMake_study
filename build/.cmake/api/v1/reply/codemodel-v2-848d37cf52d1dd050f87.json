@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -31,7 +32,7 @@
 					"source" : "lesson1_1",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -46,7 +47,41 @@
 					"source" : "lesson1_2",
 					"targetIndexes" : 
 					[
-						1
+						2
+					]
+				},
+				{
+					"build" : "lesson2_1",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-lesson2_1-Debug-97f689a5a622083c4f8c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lesson2_1",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "lesson2_1/del",
+					"jsonFile" : "directory-lesson2_1.del-Debug-611ee3ac9a5b362fcdbb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "lesson2_1/del",
+					"targetIndexes" : 
+					[
+						0
 					]
 				}
 			],
@@ -58,18 +93,29 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					],
 					"name" : "lesson1_2",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 4,
+					"id" : "del::@07dfd13ce7dfb5bf8ee0",
+					"jsonFile" : "target-del-Debug-de53d8809bd97a5b6959.json",
+					"name" : "del",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 1,
 					"id" : "lesson1_1::@d9a670277def31694f5c",
@@ -82,6 +128,13 @@
 					"id" : "lesson1_2::@3cdf9dc8b89aa1ce9072",
 					"jsonFile" : "target-lesson1_2-Debug-bb6912b898a6122144f9.json",
 					"name" : "lesson1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "lesson2_1::@4842430d7a85e3de5f7d",
+					"jsonFile" : "target-lesson2_1-Debug-2e9d25a7d4231684b5c7.json",
+					"name" : "lesson2_1",
 					"projectIndex" : 0
 				}
 			]

@@ -210,6 +210,12 @@
 		},
 		{
 			"path" : "lesson1_2/CMakeLists.txt"
+		},
+		{
+			"path" : "lesson2_1/CMakeLists.txt"
+		},
+		{
+			"path" : "lesson2_1/del/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
