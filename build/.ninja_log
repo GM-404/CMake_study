@@ -1,0 +1,17 @@
+# ninja log v6
+22	582	7640677305125042	lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj	35fccf03ef5a545d
+561	1081	7640541940424571	hello/libHello.dll.a	70eb1e91d4590b07
+1	263	7640677393870983	build.ninja	77c9cd7ac059449c
+4	560	7640541929770481	hello/CMakeFiles/Hello.dir/hello.cpp.obj	d77b4e227da3f2e6
+8	595	7640579625004378	lesson1_1/CMakeFiles/study_dynamic_library.dir/main.cpp.obj	7e5b672ad0f13210
+472	679	7640565519757088	study_dynamic_library.exe	29f9ec577961bb0f
+561	1081	7640541940424571	hello/libHello.dll	70eb1e91d4590b07
+423	617	7640535484346880	study_c++.exe	b11bbac662da005c
+14	597	7640579625058249	lesson1_1/CMakeFiles/study_dynamic_library.dir/add.cpp.obj	f27c2589b96d7293
+16	471	7640565515189908	CMakeFiles/study_dynamic_library.dir/main.cpp.obj	155ef9eade5cdd2d
+597	810	7640579630891443	lesson1_1/study_dynamic_library.exe	b5b7ea022ef4a49d
+9	565	7640677179578984	lesson1_1/CMakeFiles/lesson1_1.dir/main.cpp.obj	1d1dfd41be7e2dab
+15	563	7640677179628855	lesson1_1/CMakeFiles/lesson1_1.dir/add.cpp.obj	799316b1308765b3
+565	794	7640677185141494	lesson1_1/lesson1_1.exe	e7959a2079906439
+16	579	7640677305065478	lesson1_2/CMakeFiles/lesson1_2.dir/main.cpp.obj	a60d82768b38d9e2
+582	797	7640677310717090	lesson1_2/lesson1_2.exe	7d3cd73bd72d787f

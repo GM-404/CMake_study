@@ -1,0 +1,8 @@
+C:/Users/19513/Desktop/text/build/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/text/build/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/text/build/lesson1_1/CMakeFiles/lesson1_1.dir
+C:/Users/19513/Desktop/text/build/lesson1_1/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/text/build/lesson1_1/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/text/build/lesson1_2/CMakeFiles/lesson1_2.dir
+C:/Users/19513/Desktop/text/build/lesson1_2/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/text/build/lesson1_2/CMakeFiles/rebuild_cache.dir

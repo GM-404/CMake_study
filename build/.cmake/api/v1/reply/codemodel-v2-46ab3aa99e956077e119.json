@@ -1,0 +1,101 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lesson1_1",
+					"jsonFile" : "directory-lesson1_1-Debug-c9b0481b75b7daa83531.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lesson1_1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "lesson1_2",
+					"jsonFile" : "directory-lesson1_2-Debug-dab1e406569bba7fa64c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lesson1_2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "lesson1_2",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "lesson1_1::@d9a670277def31694f5c",
+					"jsonFile" : "target-lesson1_1-Debug-89c421d401542bb11709.json",
+					"name" : "lesson1_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "lesson1_2::@3cdf9dc8b89aa1ce9072",
+					"jsonFile" : "target-lesson1_2-Debug-bb6912b898a6122144f9.json",
+					"name" : "lesson1_2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/19513/Desktop/text/build",
+		"source" : "C:/Users/19513/Desktop/text"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
