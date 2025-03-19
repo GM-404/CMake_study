@@ -6,5 +6,5 @@ using namespace std;
 int main()
 {
     cout << "lesson2_2" << endl;
-    // mul(1, 1);
+    mul(1, 1);
 }
