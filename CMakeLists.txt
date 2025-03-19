@@ -13,3 +13,4 @@ set(CMAKE_CXX_STANDARD 17)
 add_subdirectory(lesson1_1) # 会执行lesson1_1/CMakeLists.txt，配置单个文件夹下的
 add_subdirectory(lesson1_2) # 会执行lesson1_2/CMakeLists.txt，配置多个文件夹下的
 add_subdirectory(lesson2_1) # 会执行lesson1_3/CMakeLists.txt，配置静态库
+add_subdirectory(lesson2_2) # 会执行lesson1_4/CMakeLists.txt，配置动态库

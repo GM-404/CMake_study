@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						5
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -83,6 +84,40 @@
 					[
 						0
 					]
+				},
+				{
+					"build" : "lesson2_2",
+					"childIndexes" : 
+					[
+						6
+					],
+					"jsonFile" : "directory-lesson2_2-Debug-ef7ae387b92a061b846b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lesson2_2",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "lesson2_2/mul",
+					"jsonFile" : "directory-lesson2_2.mul-Debug-95018d41d7f2b079ef56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "lesson2_2/mul",
+					"targetIndexes" : 
+					[
+						5
+					]
 				}
 			],
 			"name" : "Debug",
@@ -95,7 +130,9 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
 					],
 					"name" : "lesson1_2",
 					"targetIndexes" : 
@@ -103,7 +140,9 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -135,6 +174,20 @@
 					"id" : "lesson2_1::@4842430d7a85e3de5f7d",
 					"jsonFile" : "target-lesson2_1-Debug-2e9d25a7d4231684b5c7.json",
 					"name" : "lesson2_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "lesson2_2::@a90a658404e5221f6624",
+					"jsonFile" : "target-lesson2_2-Debug-419a23c986f4a7db3882.json",
+					"name" : "lesson2_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "mul::@fae9e1e45f1d5aac8311",
+					"jsonFile" : "target-mul-Debug-743da4375deac26f4062.json",
+					"name" : "mul",
 					"projectIndex" : 0
 				}
 			]

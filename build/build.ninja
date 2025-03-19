@@ -326,6 +326,133 @@ build lesson2_1/del/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build lesson2_1/del/rebuild_cache: phony lesson2_1/del/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/19513/Desktop/text/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lesson2_2
+
+
+#############################################
+# Order-only phony target for lesson2_2
+
+build cmake_object_order_depends_target_lesson2_2: phony || .
+
+build lesson2_2/CMakeFiles/lesson2_2.dir/main.cpp.obj: CXX_COMPILER__lesson2_2_unscanned_Debug C$:/Users/19513/Desktop/text/lesson2_2/main.cpp || cmake_object_order_depends_target_lesson2_2
+  DEP_FILE = lesson2_2\CMakeFiles\lesson2_2.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/text/lesson2_2/./bin
+  OBJECT_DIR = lesson2_2\CMakeFiles\lesson2_2.dir
+  OBJECT_FILE_DIR = lesson2_2\CMakeFiles\lesson2_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lesson2_2
+
+
+#############################################
+# Link the executable lesson2_2\lesson2_2.exe
+
+build lesson2_2/lesson2_2.exe: CXX_EXECUTABLE_LINKER__lesson2_2_Debug lesson2_2/CMakeFiles/lesson2_2.dir/main.cpp.obj | C$:/Users/19513/Desktop/text/lesson2_2/bin/libmul.dll
+  FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/Desktop/text/lesson2_2/bin/libmul.dll  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson2_2\CMakeFiles\lesson2_2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson2_2\lesson2_2.exe
+  TARGET_IMPLIB = lesson2_2\liblesson2_2.dll.a
+  TARGET_PDB = lesson2_2.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lesson2_2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\text\build\lesson2_2 && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\19513\Desktop\text -BC:\Users\19513\Desktop\text\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lesson2_2/edit_cache: phony lesson2_2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lesson2_2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\text\build\lesson2_2 && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\19513\Desktop\text -BC:\Users\19513\Desktop\text\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lesson2_2/rebuild_cache: phony lesson2_2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/19513/Desktop/text/lesson2_2/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target mul
+
+
+#############################################
+# Order-only phony target for mul
+
+build cmake_object_order_depends_target_mul: phony || .
+
+build lesson2_2/mul/CMakeFiles/mul.dir/mul.cpp.obj: CXX_COMPILER__mul_unscanned_Debug C$:/Users/19513/Desktop/text/lesson2_2/mul/mul.cpp || cmake_object_order_depends_target_mul
+  DEFINES = -Dmul_EXPORTS
+  DEP_FILE = lesson2_2\mul\CMakeFiles\mul.dir\mul.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = lesson2_2\mul\CMakeFiles\mul.dir
+  OBJECT_FILE_DIR = lesson2_2\mul\CMakeFiles\mul.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target mul
+
+
+#############################################
+# Link the shared library lesson2_2\mul\libmul.dll
+
+build lesson2_2/mul/libmul.dll lesson2_2/mul/libmul.dll.a: CXX_SHARED_LIBRARY_LINKER__mul_Debug lesson2_2/mul/CMakeFiles/mul.dir/mul.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson2_2\mul\CMakeFiles\mul.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = lesson2_2\mul\libmul.dll
+  TARGET_IMPLIB = lesson2_2\mul\libmul.dll.a
+  TARGET_PDB = mul.dll.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lesson2_2/mul/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\text\build\lesson2_2\mul && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\19513\Desktop\text -BC:\Users\19513\Desktop\text\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lesson2_2/mul/edit_cache: phony lesson2_2/mul/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lesson2_2/mul/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\text\build\lesson2_2\mul && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\19513\Desktop\text -BC:\Users\19513\Desktop\text\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lesson2_2/mul/rebuild_cache: phony lesson2_2/mul/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build del: phony lesson2_1/del/libdel.a
@@ -342,7 +469,15 @@ build lesson2_1: phony lesson2_1/lesson2_1.exe
 
 build lesson2_1.exe: phony lesson2_1/lesson2_1.exe
 
+build lesson2_2: phony lesson2_2/lesson2_2.exe
+
+build lesson2_2.exe: phony lesson2_2/lesson2_2.exe
+
 build libdel.a: phony lesson2_1/del/libdel.a
+
+build libmul.dll: phony lesson2_2/mul/libmul.dll
+
+build mul: phony lesson2_2/mul/libmul.dll
 
 # =============================================================================
 # Folder targets.
@@ -352,7 +487,7 @@ build libdel.a: phony lesson2_1/del/libdel.a
 #############################################
 # Folder: C:/Users/19513/Desktop/text/build
 
-build all: phony lesson1_1/all lesson1_2/all lesson2_1/all
+build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all
 
 # =============================================================================
 
@@ -383,20 +518,34 @@ build lesson2_1/all: phony lesson2_1/lesson2_1.exe lesson2_1/del/all
 build lesson2_1/del/all: phony lesson2_1/del/libdel.a
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/19513/Desktop/text/build/lesson2_2
+
+build lesson2_2/all: phony lesson2_2/lesson2_2.exe lesson2_2/mul/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/19513/Desktop/text/build/lesson2_2/mul
+
+build lesson2_2/mul/all: phony lesson2_2/mul/libmul.dll
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/19513/Desktop/text/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/del/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/19513/Desktop/text/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_2/mul/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/19513/Desktop/text/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/del/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/19513/Desktop/text/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/text/lesson2_2/mul/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
 
 
 #############################################

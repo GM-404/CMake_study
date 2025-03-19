@@ -34,5 +34,17 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
   "output": "lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/text/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson2_2/./bin -g -std=gnu++17 -o lesson2_2\\CMakeFiles\\lesson2_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_2\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_2\\main.cpp",
+  "output": "lesson2_2\\CMakeFiles\\lesson2_2.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/text/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dmul_EXPORTS -g -std=gnu++17 -o lesson2_2\\mul\\CMakeFiles\\mul.dir\\mul.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_2\\mul\\mul.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_2\\mul\\mul.cpp",
+  "output": "lesson2_2\\mul\\CMakeFiles\\mul.dir\\mul.cpp.obj"
 }
 ]
