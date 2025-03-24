@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/19513/Desktop/text/lesson2_1/./lib"
+					"path" : "C:/Users/19513/Desktop/cmake/lesson2_1/./lib"
 				}
 			],
 			"language" : "CXX",
@@ -92,7 +92,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\lib\\libdel.a",
+				"fragment" : "C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\lib\\libdel.a",
 				"role" : "libraries"
 			},
 			{

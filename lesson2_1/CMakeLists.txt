@@ -6,4 +6,6 @@ include_directories(./lib)
 # link_directories(C:\\Users\\19513\\Desktop\\text\\lesson2_1\\lib)  #得加一行target_link_libraries(lesson2_1 libdel.a) 指定库文件
 add_executable(lesson2_1 main.cpp)
 
-target_link_libraries(lesson2_1 C:\\Users\\19513\\Desktop\\text\\lesson2_1\\lib\\libdel.a)
+target_link_libraries(lesson2_1 ${CMAKE_SOURCE_DIR}/lesson2_1/lib/libdel.a) # 指定库文件
+
+# target_link_libraries(lesson2_1 C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\lib\\libdel.a)

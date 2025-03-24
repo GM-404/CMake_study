@@ -165,21 +165,21 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "lesson1_2::@3cdf9dc8b89aa1ce9072",
-					"jsonFile" : "target-lesson1_2-Debug-bb6912b898a6122144f9.json",
+					"jsonFile" : "target-lesson1_2-Debug-2361756959e38a6e0330.json",
 					"name" : "lesson1_2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "lesson2_1::@4842430d7a85e3de5f7d",
-					"jsonFile" : "target-lesson2_1-Debug-2e9d25a7d4231684b5c7.json",
+					"jsonFile" : "target-lesson2_1-Debug-ec6ff2589700c65b03a7.json",
 					"name" : "lesson2_1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "lesson2_2::@a90a658404e5221f6624",
-					"jsonFile" : "target-lesson2_2-Debug-419a23c986f4a7db3882.json",
+					"jsonFile" : "target-lesson2_2-Debug-9b5a53c11db5aff828c1.json",
 					"name" : "lesson2_2",
 					"projectIndex" : 0
 				},
@@ -196,8 +196,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/19513/Desktop/text/build",
-		"source" : "C:/Users/19513/Desktop/text"
+		"build" : "C:/Users/19513/Desktop/cmake/build",
+		"source" : "C:/Users/19513/Desktop/cmake"
 	},
 	"version" : 
 	{

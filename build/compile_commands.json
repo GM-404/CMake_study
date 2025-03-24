@@ -1,50 +1,50 @@
 [
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson1_1\\main.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson1_1\\main.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson1_2/../lesson1_1 -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson1_2\\main.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson1_2\\main.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_2/../lesson1_1 -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_2\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_2\\main.cpp",
   "output": "lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson1_2/../lesson1_1 -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson1_1\\add.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_2/../lesson1_1 -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "output": "lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson2_1/./lib -g -std=gnu++17 -o lesson2_1\\CMakeFiles\\lesson2_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_1\\main.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\main.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/./lib -g -std=gnu++17 -o lesson2_1\\CMakeFiles\\lesson2_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\main.cpp",
   "output": "lesson2_1\\CMakeFiles\\lesson2_1.dir\\main.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_1\\del\\del.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\del\\del.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson2_1\\del\\del.cpp",
   "output": "lesson2_1\\del\\CMakeFiles\\del.dir\\del.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/text/lesson2_2/./bin -g -std=gnu++17 -o lesson2_2\\CMakeFiles\\lesson2_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_2\\main.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_2\\main.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_2/./bin -g -std=gnu++17 -o lesson2_2\\CMakeFiles\\lesson2_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson2_2\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson2_2\\main.cpp",
   "output": "lesson2_2\\CMakeFiles\\lesson2_2.dir\\main.cpp.obj"
 },
 {
-  "directory": "C:/Users/19513/Desktop/text/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dmul_EXPORTS -g -std=gnu++17 -o lesson2_2\\mul\\CMakeFiles\\mul.dir\\mul.cpp.obj -c C:\\Users\\19513\\Desktop\\text\\lesson2_2\\mul\\mul.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\text\\lesson2_2\\mul\\mul.cpp",
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dmul_EXPORTS -g -std=gnu++17 -o lesson2_2\\mul\\CMakeFiles\\mul.dir\\mul.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson2_2\\mul\\mul.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson2_2\\mul\\mul.cpp",
   "output": "lesson2_2\\mul\\CMakeFiles\\mul.dir\\mul.cpp.obj"
 }
 ]

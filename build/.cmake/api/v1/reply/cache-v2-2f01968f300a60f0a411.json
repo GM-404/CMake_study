@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/19513/Desktop/text/build"
+			"value" : "c:/Users/19513/Desktop/cmake/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/19513/Desktop/text/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/19513/Desktop/cmake/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -638,6 +638,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_GNUtoMS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -647,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/19513/Desktop/text"
+			"value" : "C:/Users/19513/Desktop/cmake"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/study_dynamic_library"
+			"value" : "C:/Program Files (x86)/lesson1_2"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1274,6 +1286,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
 			"properties" : 
 			[
@@ -1295,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/19513/Desktop/text/build/lesson1_2"
+			"value" : "C:/Users/19513/Desktop/cmake/build/lesson1_2"
 		},
 		{
 			"name" : "lesson1_2_IS_TOP_LEVEL",
@@ -1319,43 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/19513/Desktop/text/lesson1_2"
-		},
-		{
-			"name" : "study_dynamic_library_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/19513/Desktop/text/build"
-		},
-		{
-			"name" : "study_dynamic_library_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "study_dynamic_library_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/19513/Desktop/text"
+			"value" : "C:/Users/19513/Desktop/cmake/lesson1_2"
 		}
 	],
 	"kind" : "cache",

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/19513/Desktop/text/lesson2_1/del
+# Install script for directory: C:/Users/19513/Desktop/cmake/lesson2_1/del
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/study_dynamic_library")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/lesson1_2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/19513/Desktop/text/build/lesson2_1/del/install_local_manifest.txt"
+  file(WRITE "C:/Users/19513/Desktop/cmake/build/lesson2_1/del/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -113,6 +113,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
@@ -128,7 +133,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake"
+			"path" : "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -227,8 +237,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/19513/Desktop/text/build",
-		"source" : "C:/Users/19513/Desktop/text"
+		"build" : "C:/Users/19513/Desktop/cmake/build",
+		"source" : "C:/Users/19513/Desktop/cmake"
 	},
 	"version" : 
 	{
