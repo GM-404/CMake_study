@@ -389,7 +389,7 @@ Test_IS_TOP_LEVEL:STATIC=OFF
 Test_SOURCE_DIR:STATIC=C:/Users/19513/Desktop/cmake/Test
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest-1.16.0/googlemock
+gmock_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
@@ -401,7 +401,7 @@ gmock_SOURCE_DIR:STATIC=C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0
 gmock_build_tests:BOOL=OFF
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest-1.16.0
+googletest-distribution_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
@@ -410,7 +410,7 @@ googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 googletest-distribution_SOURCE_DIR:STATIC=C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest-1.16.0/googletest
+gtest_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
@@ -593,7 +593,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -694,7 +694,7 @@ _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/lesson1_2
 cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest-1.16.0/googletest/generated
+generated_dir:INTERNAL=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

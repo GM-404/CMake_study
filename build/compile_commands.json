@@ -1,18 +1,6 @@
 [
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o CMakeFiles\\test_add.dir\\Test\\test_add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\test_add.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\test_add.cpp",
-  "output": "CMakeFiles\\test_add.dir\\Test\\test_add.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o CMakeFiles\\test_add.dir\\adds.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\adds.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\adds.cpp",
-  "output": "CMakeFiles\\test_add.dir\\adds.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
@@ -61,26 +49,38 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest-1.16.0\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/Test/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\CMakeFiles\\test_add.dir\\test_add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\test_add.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\test_add.cpp",
+  "output": "Test\\CMakeFiles\\test_add.dir\\test_add.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/Test/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\CMakeFiles\\test_add.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "output": "Test\\CMakeFiles\\test_add.dir\\__\\lesson1_1\\add.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
-  "output": "thirdpart\\googletest-1.16.0\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
+  "output": "thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest-1.16.0\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock_main.cc",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock_main.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock_main.cc",
-  "output": "thirdpart\\googletest-1.16.0\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj"
+  "output": "thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest-1.16.0\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest-all.cc",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest-all.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest-all.cc",
-  "output": "thirdpart\\googletest-1.16.0\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj"
+  "output": "thirdpart\\googletest\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest-1.16.0\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest_main.cc",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest_main.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googletest\\src\\gtest_main.cc",
-  "output": "thirdpart\\googletest-1.16.0\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj"
+  "output": "thirdpart\\googletest\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj"
 }
 ]

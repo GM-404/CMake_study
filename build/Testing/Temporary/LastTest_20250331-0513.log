@@ -1,10 +1,10 @@
-Start testing: Mar 31 13:16 中国标准时间
+Start testing: Mar 31 13:22 中国标准时间
 ----------------------------------------------------------
 1/1 Testing: test_add
 1/1 Test: test_add
 Command: "C:/Users/19513/Desktop/cmake/build/test_add.exe"
 Directory: C:/Users/19513/Desktop/cmake/build
-"test_add" start time: Mar 31 13:16 中国标准时间
+"test_add" start time: Mar 31 13:22 中国标准时间
 Output:
 ----------------------------------------------------------
 Running main() from C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/src/gtest_main.cc
@@ -21,11 +21,11 @@ Running main() from C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/goo
 [==========] 2 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 2 tests.
 <end of output>
-Test time =   0.29 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"test_add" end time: Mar 31 13:16 中国标准时间
+"test_add" end time: Mar 31 13:22 中国标准时间
 "test_add" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 31 13:16 中国标准时间
+End testing: Mar 31 13:22 中国标准时间

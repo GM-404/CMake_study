@@ -22,11 +22,11 @@
 	TotalVirtualMemory="29913"
 	TotalPhysicalMemory="16089"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="2904"
+	ProcessorClockFrequency="2903"
 	>
 	<Testing>
-		<StartDateTime>Mar 31 13:16 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1743398193</StartTestTime>
+		<StartDateTime>Mar 31 13:22 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1743398522</StartTestTime>
 		<TestList>
 			<Test>./test_add</Test>
 		</TestList>
@@ -37,7 +37,7 @@
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\test_add.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.289302</Value>
+					<Value>0.0186701</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -56,8 +56,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Mar 31 13:16 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1743398194</EndTestTime>
+		<EndDateTime>Mar 31 13:22 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1743398522</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
