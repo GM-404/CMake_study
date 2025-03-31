@@ -43,6 +43,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/19513/Desktop/cmake/build/lesson1_2/cmake_install.cmake")
   include("C:/Users/19513/Desktop/cmake/build/lesson2_1/cmake_install.cmake")
   include("C:/Users/19513/Desktop/cmake/build/lesson2_2/cmake_install.cmake")
+  include("C:/Users/19513/Desktop/cmake/build/thirdpart/googletest-1.16.0/cmake_install.cmake")
 
 endif()
 

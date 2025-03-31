@@ -4,6 +4,6 @@ using namespace std;
 int main()
 {
     std::cout << "lesson1_1" << std::endl;
-    add(1, 0);
+    std::cout << add(1, 0) << std::endl;
     return 0;
 }

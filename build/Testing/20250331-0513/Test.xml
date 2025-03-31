@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-ninja"
+	BuildStamp="20250331-0513-Experimental"
+	Name="DESKTOP-LIDAQ75"
+	Generator="ctest-3.31.0-rc2"
+	CompilerName="D:/SDK/w64devkit/bin/g++.exe"
+	CompilerVersion="14.2.0"
+	OSName="Windows"
+	Hostname="DESKTOP-LIDAQ75"
+	OSRelease=" Personal"
+	OSVersion=" (Build 19045)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="5"
+	ModelName=""
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="29913"
+	TotalPhysicalMemory="16089"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2904"
+	>
+	<Testing>
+		<StartDateTime>Mar 31 13:16 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1743398193</StartTestTime>
+		<TestList>
+			<Test>./test_add</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_add</Name>
+			<Path>.</Path>
+			<FullName>./test_add</FullName>
+			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\test_add.exe</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.289302</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\19513\Desktop\cmake\build\test_add.exe</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUE1LxDAQvfdXzHF7aLJRFBQ8iLt4EFS67KkUie3YDdtMSjJ1/779WIpdKPpOybz35s1M2hIZqsBqQ6sYvryz8HQv9wF9kOruRl3LDYYju0YWVh9R8sH4stGeZeVcVSNj4EQJdSvWvyoy+EJW/euj7yyKIsoeJuSQnmOvoNeEMVcNHwitYRRRlkzI4bl2n7oeeaRv4x1ZpE6LnLTNhXjWdJhBl2WUQbp/hQH5VBWOsGNGvL1cMLBagw3xgpVPbsHaMZP1z8FGJbBjXcfR/9Zm1D4p3YnmV128JnhNYh7UTf7+uNttN/1OZ6OIfgBeZ6LY====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Mar 31 13:16 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1743398194</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
