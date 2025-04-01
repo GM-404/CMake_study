@@ -6,4 +6,4 @@ include_directories(${CMAKE_PROJECT_ROOT}/lesson1_1/include)
 add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/pybind11-2.13.6 ${CMAKE_BINARY_DIR}/thirdpart/pybind11)
 
 # 添加你的目标
-pybind11_add_module(lesson bind_add.cpp ../lesson1_1/add.cpp)
+pybind11_add_module(lesson bind_add.cpp ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
