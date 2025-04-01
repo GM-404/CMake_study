@@ -5,7 +5,7 @@
 
 #include "add.hh"
 
-PYBIND11_MODULE(lesson, m)
+PYBIND11_MODULE(add, m)
 {
     m.def("add", &add);
 }
