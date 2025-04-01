@@ -18,3 +18,4 @@ add_subdirectory(lesson2_1) # 会执行lesson1_3/CMakeLists.txt，配置静态�
 add_subdirectory(lesson2_2) # 会执行lesson1_4/CMakeLists.txt，配置动态库
 
 add_subdirectory(Test) # 会执行Test/CMakeLists.txt，配置测试
+add_subdirectory(PythonWrapper) # 会执行PythonWrapper/CMakeLists.txt，配置Python包

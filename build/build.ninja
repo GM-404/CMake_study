@@ -1592,6 +1592,191 @@ build thirdpart/googletest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMM
 build thirdpart/googletest/googletest/install/strip: phony thirdpart/googletest/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/19513/Desktop/cmake/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target lesson
+
+
+#############################################
+# Order-only phony target for lesson
+
+build cmake_object_order_depends_target_lesson: phony || .
+
+build PythonWrapper/CMakeFiles/lesson.dir/bind_add.cpp.obj: CXX_COMPILER__lesson_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_add.cpp || cmake_object_order_depends_target_lesson
+  DEFINES = -Dlesson_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\bind_add.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/PythonWrapper/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir
+
+build PythonWrapper/CMakeFiles/lesson.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__lesson_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson
+  DEFINES = -Dlesson_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1\add.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/PythonWrapper/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target lesson
+
+
+#############################################
+# Link the shared module PythonWrapper\lesson.cp313-win_amd64.pyd
+
+build PythonWrapper/lesson.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__lesson_Debug PythonWrapper/CMakeFiles/lesson.dir/bind_add.cpp.obj PythonWrapper/CMakeFiles/lesson.dir/__/lesson1_1/add.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\lesson.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\liblesson.dll.a
+  TARGET_PDB = lesson.cp313-win_amd64.pyd.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build PythonWrapper/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\PythonWrapper && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build PythonWrapper/edit_cache: phony PythonWrapper/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build PythonWrapper/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\PythonWrapper && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build PythonWrapper/rebuild_cache: phony PythonWrapper/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build PythonWrapper/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build PythonWrapper/CMakeFiles/install.util: CUSTOM_COMMAND PythonWrapper/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\PythonWrapper && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build PythonWrapper/install: phony PythonWrapper/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build PythonWrapper/CMakeFiles/install/local.util: CUSTOM_COMMAND PythonWrapper/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\PythonWrapper && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build PythonWrapper/install/local: phony PythonWrapper/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build PythonWrapper/CMakeFiles/install/strip.util: CUSTOM_COMMAND PythonWrapper/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\PythonWrapper && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build PythonWrapper/install/strip: phony PythonWrapper/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdpart/pybind11/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\thirdpart\pybind11 && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build thirdpart/pybind11/edit_cache: phony thirdpart/pybind11/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdpart/pybind11/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\thirdpart\pybind11 && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdpart/pybind11/rebuild_cache: phony thirdpart/pybind11/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdpart/pybind11/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdpart/pybind11/CMakeFiles/install.util: CUSTOM_COMMAND thirdpart/pybind11/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\thirdpart\pybind11 && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdpart/pybind11/install: phony thirdpart/pybind11/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdpart/pybind11/CMakeFiles/install/local.util: CUSTOM_COMMAND thirdpart/pybind11/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\thirdpart\pybind11 && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdpart/pybind11/install/local: phony thirdpart/pybind11/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build thirdpart/pybind11/CMakeFiles/install/strip.util: CUSTOM_COMMAND thirdpart/pybind11/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\thirdpart\pybind11 && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build thirdpart/pybind11/install/strip: phony thirdpart/pybind11/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build Continuous: phony Test/Continuous
@@ -1660,6 +1845,10 @@ build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
 
+build lesson: phony PythonWrapper/lesson.cp313-win_amd64.pyd
+
+build lesson.cp313-win_amd64.pyd: phony PythonWrapper/lesson.cp313-win_amd64.pyd
+
 build lesson1_1: phony lesson1_1/lesson1_1.exe
 
 build lesson1_1.exe: phony lesson1_1/lesson1_1.exe
@@ -1702,7 +1891,14 @@ build test_add.exe: phony Test/test_add.exe
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build
 
-build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/all
+build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/all PythonWrapper/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
+
+build PythonWrapper/all: phony PythonWrapper/lesson.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
@@ -1775,20 +1971,27 @@ build thirdpart/googletest/googlemock/all: phony lib/libgmock.a lib/libgmock_mai
 build thirdpart/googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11
+
+build thirdpart/pybind11/all: phony
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
 
 
 #############################################

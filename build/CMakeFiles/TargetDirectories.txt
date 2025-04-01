@@ -103,3 +103,16 @@ C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/li
 C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/install/strip.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/lesson.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/list_install_components.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/install.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/install/local.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/install/strip.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/list_install_components.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/local.dir
+C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/strip.dir
