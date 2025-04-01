@@ -1,5 +1,5 @@
 #include "del.hh"
-void del(int a, int b)
+int del(int a, int b)
 {
-    std::cout << a - b << std::endl;
+    return a - b;
 }

@@ -2,6 +2,6 @@
 #define DEL_HH
 #include <iostream>
 
-void del(int a, int b);
+int del(int a, int b);
 
 #endif

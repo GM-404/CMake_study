@@ -10,5 +10,8 @@ project(lesson1_2)
 # CMake中用户可以自定义变量
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(../lesson1_1)
-add_executable(lesson1_2 main.cpp ../lesson1_1/add.cpp)
+include_directories(${CMAKE_PROJECT_ROOT}/lesson1_1/include)
+
+add_executable(lesson1_2
+    main.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
