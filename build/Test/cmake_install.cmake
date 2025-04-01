@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/cmake_install.cmake")
+  include("C:/Users/19513/Desktop/cmake/build/Test/C++/cmake_install.cmake")
 
 endif()
 

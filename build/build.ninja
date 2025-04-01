@@ -466,7 +466,7 @@ build lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj: CXX_COMPILER__del_unscanned_
 build lesson2_1/del/libdel.a: CXX_STATIC_LIBRARY_LINKER__del_Debug lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = lesson2_1\del\CMakeFiles\del.dir
-  POST_BUILD = cd .
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\lesson2_1\del && "C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/19513/Desktop/cmake/build/lesson2_1/del/libdel.a C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a"
   PRE_LINK = cd .
   TARGET_FILE = lesson2_1\del\libdel.a
   TARGET_PDB = del.a.dbg
@@ -554,7 +554,7 @@ build cmake_object_order_depends_target_lesson2_2: phony || .
 build lesson2_2/CMakeFiles/lesson2_2.dir/main.cpp.obj: CXX_COMPILER__lesson2_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson2_2/main.cpp || cmake_object_order_depends_target_lesson2_2
   DEP_FILE = lesson2_2\CMakeFiles\lesson2_2.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_2/./bin
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_2/bin
   OBJECT_DIR = lesson2_2\CMakeFiles\lesson2_2.dir
   OBJECT_FILE_DIR = lesson2_2\CMakeFiles\lesson2_2.dir
 
@@ -755,250 +755,6 @@ build lesson2_2/mul/install/strip: phony lesson2_2/mul/CMakeFiles/install/strip.
 
 
 #############################################
-# Utility command for Experimental
-
-build Test/Experimental: phony Test/CMakeFiles/Experimental
-
-
-#############################################
-# Utility command for Nightly
-
-build Test/Nightly: phony Test/CMakeFiles/Nightly
-
-
-#############################################
-# Utility command for Continuous
-
-build Test/Continuous: phony Test/CMakeFiles/Continuous
-
-
-#############################################
-# Utility command for NightlyMemoryCheck
-
-build Test/NightlyMemoryCheck: phony Test/CMakeFiles/NightlyMemoryCheck
-
-
-#############################################
-# Utility command for NightlyStart
-
-build Test/NightlyStart: phony Test/CMakeFiles/NightlyStart
-
-
-#############################################
-# Utility command for NightlyUpdate
-
-build Test/NightlyUpdate: phony Test/CMakeFiles/NightlyUpdate
-
-
-#############################################
-# Utility command for NightlyConfigure
-
-build Test/NightlyConfigure: phony Test/CMakeFiles/NightlyConfigure
-
-
-#############################################
-# Utility command for NightlyBuild
-
-build Test/NightlyBuild: phony Test/CMakeFiles/NightlyBuild
-
-
-#############################################
-# Utility command for NightlyTest
-
-build Test/NightlyTest: phony Test/CMakeFiles/NightlyTest
-
-
-#############################################
-# Utility command for NightlyCoverage
-
-build Test/NightlyCoverage: phony Test/CMakeFiles/NightlyCoverage
-
-
-#############################################
-# Utility command for NightlyMemCheck
-
-build Test/NightlyMemCheck: phony Test/CMakeFiles/NightlyMemCheck
-
-
-#############################################
-# Utility command for NightlySubmit
-
-build Test/NightlySubmit: phony Test/CMakeFiles/NightlySubmit
-
-
-#############################################
-# Utility command for ExperimentalStart
-
-build Test/ExperimentalStart: phony Test/CMakeFiles/ExperimentalStart
-
-
-#############################################
-# Utility command for ExperimentalUpdate
-
-build Test/ExperimentalUpdate: phony Test/CMakeFiles/ExperimentalUpdate
-
-
-#############################################
-# Utility command for ExperimentalConfigure
-
-build Test/ExperimentalConfigure: phony Test/CMakeFiles/ExperimentalConfigure
-
-
-#############################################
-# Utility command for ExperimentalBuild
-
-build Test/ExperimentalBuild: phony Test/CMakeFiles/ExperimentalBuild
-
-
-#############################################
-# Utility command for ExperimentalTest
-
-build Test/ExperimentalTest: phony Test/CMakeFiles/ExperimentalTest
-
-
-#############################################
-# Utility command for ExperimentalCoverage
-
-build Test/ExperimentalCoverage: phony Test/CMakeFiles/ExperimentalCoverage
-
-
-#############################################
-# Utility command for ExperimentalMemCheck
-
-build Test/ExperimentalMemCheck: phony Test/CMakeFiles/ExperimentalMemCheck
-
-
-#############################################
-# Utility command for ExperimentalSubmit
-
-build Test/ExperimentalSubmit: phony Test/CMakeFiles/ExperimentalSubmit
-
-
-#############################################
-# Utility command for ContinuousStart
-
-build Test/ContinuousStart: phony Test/CMakeFiles/ContinuousStart
-
-
-#############################################
-# Utility command for ContinuousUpdate
-
-build Test/ContinuousUpdate: phony Test/CMakeFiles/ContinuousUpdate
-
-
-#############################################
-# Utility command for ContinuousConfigure
-
-build Test/ContinuousConfigure: phony Test/CMakeFiles/ContinuousConfigure
-
-
-#############################################
-# Utility command for ContinuousBuild
-
-build Test/ContinuousBuild: phony Test/CMakeFiles/ContinuousBuild
-
-
-#############################################
-# Utility command for ContinuousTest
-
-build Test/ContinuousTest: phony Test/CMakeFiles/ContinuousTest
-
-
-#############################################
-# Utility command for ContinuousCoverage
-
-build Test/ContinuousCoverage: phony Test/CMakeFiles/ContinuousCoverage
-
-
-#############################################
-# Utility command for ContinuousMemCheck
-
-build Test/ContinuousMemCheck: phony Test/CMakeFiles/ContinuousMemCheck
-
-
-#############################################
-# Utility command for ContinuousSubmit
-
-build Test/ContinuousSubmit: phony Test/CMakeFiles/ContinuousSubmit
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_add
-
-
-#############################################
-# Order-only phony target for test_add
-
-build cmake_object_order_depends_target_test_add: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/CMakeFiles/test_add.dir/test_add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/test_add.cpp || cmake_object_order_depends_target_test_add
-  DEP_FILE = Test\CMakeFiles\test_add.dir\test_add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\CMakeFiles\test_add.dir
-  OBJECT_FILE_DIR = Test\CMakeFiles\test_add.dir
-
-build Test/CMakeFiles/test_add.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_test_add
-  DEP_FILE = Test\CMakeFiles\test_add.dir\__\lesson1_1\add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\CMakeFiles\test_add.dir
-  OBJECT_FILE_DIR = Test\CMakeFiles\test_add.dir\__\lesson1_1
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_add
-
-
-#############################################
-# Link the executable Test\test_add.exe
-
-build Test/test_add.exe: CXX_EXECUTABLE_LINKER__test_add_Debug Test/CMakeFiles/test_add.dir/test_add.cpp.obj Test/CMakeFiles/test_add.dir/__/lesson1_1/add.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\CMakeFiles\test_add.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\test_add.exe
-  TARGET_IMPLIB = Test\libtest_add.dll.a
-  TARGET_PDB = test_add.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_del
-
-
-#############################################
-# Order-only phony target for test_del
-
-build cmake_object_order_depends_target_test_del: phony || cmake_object_order_depends_target_del cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/CMakeFiles/test_del.dir/test_del.cpp.obj: CXX_COMPILER__test_del_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/test_del.cpp || cmake_object_order_depends_target_test_del
-  DEP_FILE = Test\CMakeFiles\test_del.dir\test_del.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\CMakeFiles\test_del.dir
-  OBJECT_FILE_DIR = Test\CMakeFiles\test_del.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_del
-
-
-#############################################
-# Link the executable Test\test_del.exe
-
-build Test/test_del.exe: CXX_EXECUTABLE_LINKER__test_del_Debug Test/CMakeFiles/test_del.dir/test_del.cpp.obj | lib/libgtest_main.a lib/libgtest.a lesson2_1/del/libdel.a || lesson2_1/del/libdel.a lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  lesson2_1/del/libdel.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/Users/19513/Desktop/cmake/lesson2_1/lib
-  OBJECT_DIR = Test\CMakeFiles\test_del.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\test_del.exe
-  TARGET_IMPLIB = Test\libtest_del.dll.a
-  TARGET_PDB = test_del.exe.dbg
-
-
-#############################################
 # Utility command for edit_cache
 
 build Test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -1063,233 +819,548 @@ build Test/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/all
 
 build Test/install/strip: phony Test/CMakeFiles/install/strip.util
 
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/19513/Desktop/cmake/Test/CMakeLists.txt
+# =============================================================================
+
 
 #############################################
-# Custom command for Test\CMakeFiles\Experimental
+# Utility command for Experimental
 
-build Test/CMakeFiles/Experimental | ${cmake_ninja_workdir}Test/CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D Experimental"
+build Test/C++/Experimental: phony Test/C++/CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for Nightly
+
+build Test/C++/Nightly: phony Test/C++/CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for Continuous
+
+build Test/C++/Continuous: phony Test/C++/CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build Test/C++/NightlyMemoryCheck: phony Test/C++/CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build Test/C++/NightlyStart: phony Test/C++/CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build Test/C++/NightlyUpdate: phony Test/C++/CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build Test/C++/NightlyConfigure: phony Test/C++/CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build Test/C++/NightlyBuild: phony Test/C++/CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build Test/C++/NightlyTest: phony Test/C++/CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build Test/C++/NightlyCoverage: phony Test/C++/CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build Test/C++/NightlyMemCheck: phony Test/C++/CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build Test/C++/NightlySubmit: phony Test/C++/CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build Test/C++/ExperimentalStart: phony Test/C++/CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build Test/C++/ExperimentalUpdate: phony Test/C++/CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build Test/C++/ExperimentalConfigure: phony Test/C++/CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build Test/C++/ExperimentalBuild: phony Test/C++/CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build Test/C++/ExperimentalTest: phony Test/C++/CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build Test/C++/ExperimentalCoverage: phony Test/C++/CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build Test/C++/ExperimentalMemCheck: phony Test/C++/CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build Test/C++/ExperimentalSubmit: phony Test/C++/CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build Test/C++/ContinuousStart: phony Test/C++/CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build Test/C++/ContinuousUpdate: phony Test/C++/CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build Test/C++/ContinuousConfigure: phony Test/C++/CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build Test/C++/ContinuousBuild: phony Test/C++/CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build Test/C++/ContinuousTest: phony Test/C++/CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build Test/C++/ContinuousCoverage: phony Test/C++/CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build Test/C++/ContinuousMemCheck: phony Test/C++/CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build Test/C++/ContinuousSubmit: phony Test/C++/CMakeFiles/ContinuousSubmit
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_add
+
+
+#############################################
+# Order-only phony target for test_add
+
+build cmake_object_order_depends_target_test_add: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_add.dir/test_add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_add.cpp || cmake_object_order_depends_target_test_add
+  DEP_FILE = Test\C++\CMakeFiles\test_add.dir\test_add.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_add.dir
+
+build Test/C++/CMakeFiles/test_add.dir/__/__/lesson1_1/add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_test_add
+  DEP_FILE = Test\C++\CMakeFiles\test_add.dir\__\__\lesson1_1\add.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_add.dir\__\__\lesson1_1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_add
+
+
+#############################################
+# Link the executable Test\C++\test_add.exe
+
+build Test/C++/test_add.exe: CXX_EXECUTABLE_LINKER__test_add_Debug Test/C++/CMakeFiles/test_add.dir/test_add.cpp.obj Test/C++/CMakeFiles/test_add.dir/__/__/lesson1_1/add.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_add.exe
+  TARGET_IMPLIB = Test\C++\libtest_add.dll.a
+  TARGET_PDB = test_add.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_del
+
+
+#############################################
+# Order-only phony target for test_del
+
+build cmake_object_order_depends_target_test_del: phony || cmake_object_order_depends_target_del cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_del.dir/test_del.cpp.obj: CXX_COMPILER__test_del_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_del.cpp || cmake_object_order_depends_target_test_del
+  DEP_FILE = Test\C++\CMakeFiles\test_del.dir\test_del.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_del.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_del.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_del
+
+
+#############################################
+# Link the executable Test\C++\test_del.exe
+
+build Test/C++/test_del.exe: CXX_EXECUTABLE_LINKER__test_del_Debug Test/C++/CMakeFiles/test_del.dir/test_del.cpp.obj | lib/libgtest_main.a lib/libgtest.a lesson2_1/del/libdel.a || lesson2_1/del/libdel.a lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  lesson2_1/del/libdel.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/19513/Desktop/cmake/lesson2_1/lib
+  OBJECT_DIR = Test\C++\CMakeFiles\test_del.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_del.exe
+  TARGET_IMPLIB = Test\C++\libtest_del.dll.a
+  TARGET_PDB = test_del.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Test/C++/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build Test/C++/edit_cache: phony Test/C++/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Test/C++/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\19513\Desktop\cmake -BC:\Users\19513\Desktop\cmake\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Test/C++/rebuild_cache: phony Test/C++/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Test/C++/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Test/C++/CMakeFiles/install.util: CUSTOM_COMMAND Test/C++/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Test/C++/install: phony Test/C++/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Test/C++/CMakeFiles/install/local.util: CUSTOM_COMMAND Test/C++/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Test/C++/install/local: phony Test/C++/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Test/C++/CMakeFiles/install/strip.util: CUSTOM_COMMAND Test/C++/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Test/C++/install/strip: phony Test/C++/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for Test\C++\CMakeFiles\Experimental
+
+build Test/C++/CMakeFiles/Experimental | ${cmake_ninja_workdir}Test/C++/CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D Experimental"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\Nightly
+# Custom command for Test\C++\CMakeFiles\Nightly
 
-build Test/CMakeFiles/Nightly | ${cmake_ninja_workdir}Test/CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D Nightly"
+build Test/C++/CMakeFiles/Nightly | ${cmake_ninja_workdir}Test/C++/CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D Nightly"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\Continuous
+# Custom command for Test\C++\CMakeFiles\Continuous
 
-build Test/CMakeFiles/Continuous | ${cmake_ninja_workdir}Test/CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D Continuous"
+build Test/C++/CMakeFiles/Continuous | ${cmake_ninja_workdir}Test/C++/CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D Continuous"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyMemoryCheck
+# Custom command for Test\C++\CMakeFiles\NightlyMemoryCheck
 
-build Test/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyMemoryCheck"
+build Test/C++/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyMemoryCheck"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyStart
+# Custom command for Test\C++\CMakeFiles\NightlyStart
 
-build Test/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyStart"
+build Test/C++/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyStart"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyUpdate
+# Custom command for Test\C++\CMakeFiles\NightlyUpdate
 
-build Test/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyUpdate"
+build Test/C++/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyUpdate"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyConfigure
+# Custom command for Test\C++\CMakeFiles\NightlyConfigure
 
-build Test/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyConfigure"
+build Test/C++/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyConfigure"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyBuild
+# Custom command for Test\C++\CMakeFiles\NightlyBuild
 
-build Test/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyBuild"
+build Test/C++/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyBuild"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyTest
+# Custom command for Test\C++\CMakeFiles\NightlyTest
 
-build Test/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyTest"
+build Test/C++/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyTest"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyCoverage
+# Custom command for Test\C++\CMakeFiles\NightlyCoverage
 
-build Test/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyCoverage"
+build Test/C++/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyCoverage"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlyMemCheck
+# Custom command for Test\C++\CMakeFiles\NightlyMemCheck
 
-build Test/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}Test/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyMemCheck"
+build Test/C++/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlyMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\NightlySubmit
+# Custom command for Test\C++\CMakeFiles\NightlySubmit
 
-build Test/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}Test/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D NightlySubmit"
+build Test/C++/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}Test/C++/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D NightlySubmit"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalStart
+# Custom command for Test\C++\CMakeFiles\ExperimentalStart
 
-build Test/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalStart"
+build Test/C++/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalStart"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalUpdate
+# Custom command for Test\C++\CMakeFiles\ExperimentalUpdate
 
-build Test/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalUpdate"
+build Test/C++/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalUpdate"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalConfigure
+# Custom command for Test\C++\CMakeFiles\ExperimentalConfigure
 
-build Test/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalConfigure"
+build Test/C++/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalConfigure"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalBuild
+# Custom command for Test\C++\CMakeFiles\ExperimentalBuild
 
-build Test/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalBuild"
+build Test/C++/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalBuild"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalTest
+# Custom command for Test\C++\CMakeFiles\ExperimentalTest
 
-build Test/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalTest"
+build Test/C++/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalTest"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalCoverage
+# Custom command for Test\C++\CMakeFiles\ExperimentalCoverage
 
-build Test/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalCoverage"
+build Test/C++/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalCoverage"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalMemCheck
+# Custom command for Test\C++\CMakeFiles\ExperimentalMemCheck
 
-build Test/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalMemCheck"
+build Test/C++/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ExperimentalSubmit
+# Custom command for Test\C++\CMakeFiles\ExperimentalSubmit
 
-build Test/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}Test/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalSubmit"
+build Test/C++/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ExperimentalSubmit"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousStart
+# Custom command for Test\C++\CMakeFiles\ContinuousStart
 
-build Test/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousStart"
+build Test/C++/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousStart"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousUpdate
+# Custom command for Test\C++\CMakeFiles\ContinuousUpdate
 
-build Test/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousUpdate"
+build Test/C++/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousUpdate"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousConfigure
+# Custom command for Test\C++\CMakeFiles\ContinuousConfigure
 
-build Test/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousConfigure"
+build Test/C++/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousConfigure"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousBuild
+# Custom command for Test\C++\CMakeFiles\ContinuousBuild
 
-build Test/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousBuild"
+build Test/C++/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousBuild"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousTest
+# Custom command for Test\C++\CMakeFiles\ContinuousTest
 
-build Test/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousTest"
+build Test/C++/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousTest"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousCoverage
+# Custom command for Test\C++\CMakeFiles\ContinuousCoverage
 
-build Test/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousCoverage"
+build Test/C++/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousCoverage"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousMemCheck
+# Custom command for Test\C++\CMakeFiles\ContinuousMemCheck
 
-build Test/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousMemCheck"
+build Test/C++/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousMemCheck"
   pool = console
 
 
 #############################################
-# Custom command for Test\CMakeFiles\ContinuousSubmit
+# Custom command for Test\C++\CMakeFiles\ContinuousSubmit
 
-build Test/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}Test/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousSubmit"
+build Test/C++/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}Test/C++/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\Test\C++ && "C:\Program Files\CMake\bin\ctest.exe" -D ContinuousSubmit"
   pool = console
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/19513/Desktop/cmake/Test/CMakeLists.txt
+# C:/Users/19513/Desktop/cmake/Test/C++/CMakeLists.txt
 # =============================================================================
 
 
@@ -1634,47 +1705,82 @@ build thirdpart/googletest/googletest/install/strip: phony thirdpart/googletest/
 # =============================================================================
 
 # =============================================================================
-# Object build statements for MODULE_LIBRARY target lesson
+# Object build statements for MODULE_LIBRARY target add
 
 
 #############################################
-# Order-only phony target for lesson
+# Order-only phony target for add
 
-build cmake_object_order_depends_target_lesson: phony || .
+build cmake_object_order_depends_target_add: phony || .
 
-build PythonWrapper/CMakeFiles/lesson.dir/bind_add.cpp.obj: CXX_COMPILER__lesson_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_add.cpp || cmake_object_order_depends_target_lesson
-  DEFINES = -Dlesson_EXPORTS
-  DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\bind_add.cpp.obj.d
+build PythonWrapper/CMakeFiles/add.dir/bind_add.cpp.obj: CXX_COMPILER__add_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_add.cpp || cmake_object_order_depends_target_add
+  DEFINES = -Dadd_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\add.dir\bind_add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
-  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
-  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\add.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\add.dir
 
-build PythonWrapper/CMakeFiles/lesson.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__lesson_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson
-  DEFINES = -Dlesson_EXPORTS
-  DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1\add.cpp.obj.d
+build PythonWrapper/CMakeFiles/add.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__add_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_add
+  DEFINES = -Dadd_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\add.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
-  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
-  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\add.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\add.dir\__\lesson1_1
 
 
 # =============================================================================
-# Link build statements for MODULE_LIBRARY target lesson
+# Link build statements for MODULE_LIBRARY target add
 
 
 #############################################
-# Link the shared module PythonWrapper\lesson.cp313-win_amd64.pyd
+# Link the shared module PythonWrapper\add.cp313-win_amd64.pyd
 
-build PythonWrapper/lesson.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__lesson_Debug PythonWrapper/CMakeFiles/lesson.dir/bind_add.cpp.obj PythonWrapper/CMakeFiles/lesson.dir/__/lesson1_1/add.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+build PythonWrapper/add.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__add_Debug PythonWrapper/CMakeFiles/add.dir/bind_add.cpp.obj PythonWrapper/CMakeFiles/add.dir/__/lesson1_1/add.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
+  OBJECT_DIR = PythonWrapper\CMakeFiles\add.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = PythonWrapper\lesson.cp313-win_amd64.pyd
-  TARGET_IMPLIB = PythonWrapper\liblesson.dll.a
-  TARGET_PDB = lesson.cp313-win_amd64.pyd.dbg
+  TARGET_FILE = PythonWrapper\add.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libadd.dll.a
+  TARGET_PDB = add.cp313-win_amd64.pyd.dbg
+
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target del_ctest
+
+
+#############################################
+# Order-only phony target for del_ctest
+
+build cmake_object_order_depends_target_del_ctest: phony || .
+
+build PythonWrapper/CMakeFiles/del_ctest.dir/bind_del.cpp.obj: CXX_COMPILER__del_ctest_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_del.cpp || cmake_object_order_depends_target_del_ctest
+  DEFINES = -Ddel_ctest_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\del_ctest.dir\bind_del.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\del_ctest.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\del_ctest.dir
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target del_ctest
+
+
+#############################################
+# Link the shared module PythonWrapper\del_ctest.cp313-win_amd64.pyd
+
+build PythonWrapper/del_ctest.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__del_ctest_Debug PythonWrapper/CMakeFiles/del_ctest.dir/bind_del.cpp.obj | C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a  C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\del_ctest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\del_ctest.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libdel_ctest.dll.a
+  TARGET_PDB = del_ctest.cp313-win_amd64.pyd.dbg
 
 
 #############################################
@@ -1816,63 +1922,71 @@ build thirdpart/pybind11/install/strip: phony thirdpart/pybind11/CMakeFiles/inst
 # =============================================================================
 # Target aliases.
 
-build Continuous: phony Test/Continuous
+build Continuous: phony Test/C++/Continuous
 
-build ContinuousBuild: phony Test/ContinuousBuild
+build ContinuousBuild: phony Test/C++/ContinuousBuild
 
-build ContinuousConfigure: phony Test/ContinuousConfigure
+build ContinuousConfigure: phony Test/C++/ContinuousConfigure
 
-build ContinuousCoverage: phony Test/ContinuousCoverage
+build ContinuousCoverage: phony Test/C++/ContinuousCoverage
 
-build ContinuousMemCheck: phony Test/ContinuousMemCheck
+build ContinuousMemCheck: phony Test/C++/ContinuousMemCheck
 
-build ContinuousStart: phony Test/ContinuousStart
+build ContinuousStart: phony Test/C++/ContinuousStart
 
-build ContinuousSubmit: phony Test/ContinuousSubmit
+build ContinuousSubmit: phony Test/C++/ContinuousSubmit
 
-build ContinuousTest: phony Test/ContinuousTest
+build ContinuousTest: phony Test/C++/ContinuousTest
 
-build ContinuousUpdate: phony Test/ContinuousUpdate
+build ContinuousUpdate: phony Test/C++/ContinuousUpdate
 
-build Experimental: phony Test/Experimental
+build Experimental: phony Test/C++/Experimental
 
-build ExperimentalBuild: phony Test/ExperimentalBuild
+build ExperimentalBuild: phony Test/C++/ExperimentalBuild
 
-build ExperimentalConfigure: phony Test/ExperimentalConfigure
+build ExperimentalConfigure: phony Test/C++/ExperimentalConfigure
 
-build ExperimentalCoverage: phony Test/ExperimentalCoverage
+build ExperimentalCoverage: phony Test/C++/ExperimentalCoverage
 
-build ExperimentalMemCheck: phony Test/ExperimentalMemCheck
+build ExperimentalMemCheck: phony Test/C++/ExperimentalMemCheck
 
-build ExperimentalStart: phony Test/ExperimentalStart
+build ExperimentalStart: phony Test/C++/ExperimentalStart
 
-build ExperimentalSubmit: phony Test/ExperimentalSubmit
+build ExperimentalSubmit: phony Test/C++/ExperimentalSubmit
 
-build ExperimentalTest: phony Test/ExperimentalTest
+build ExperimentalTest: phony Test/C++/ExperimentalTest
 
-build ExperimentalUpdate: phony Test/ExperimentalUpdate
+build ExperimentalUpdate: phony Test/C++/ExperimentalUpdate
 
-build Nightly: phony Test/Nightly
+build Nightly: phony Test/C++/Nightly
 
-build NightlyBuild: phony Test/NightlyBuild
+build NightlyBuild: phony Test/C++/NightlyBuild
 
-build NightlyConfigure: phony Test/NightlyConfigure
+build NightlyConfigure: phony Test/C++/NightlyConfigure
 
-build NightlyCoverage: phony Test/NightlyCoverage
+build NightlyCoverage: phony Test/C++/NightlyCoverage
 
-build NightlyMemCheck: phony Test/NightlyMemCheck
+build NightlyMemCheck: phony Test/C++/NightlyMemCheck
 
-build NightlyMemoryCheck: phony Test/NightlyMemoryCheck
+build NightlyMemoryCheck: phony Test/C++/NightlyMemoryCheck
 
-build NightlyStart: phony Test/NightlyStart
+build NightlyStart: phony Test/C++/NightlyStart
 
-build NightlySubmit: phony Test/NightlySubmit
+build NightlySubmit: phony Test/C++/NightlySubmit
 
-build NightlyTest: phony Test/NightlyTest
+build NightlyTest: phony Test/C++/NightlyTest
 
-build NightlyUpdate: phony Test/NightlyUpdate
+build NightlyUpdate: phony Test/C++/NightlyUpdate
+
+build add: phony PythonWrapper/add.cp313-win_amd64.pyd
+
+build add.cp313-win_amd64.pyd: phony PythonWrapper/add.cp313-win_amd64.pyd
 
 build del: phony lesson2_1/del/libdel.a
+
+build del_ctest: phony PythonWrapper/del_ctest.cp313-win_amd64.pyd
+
+build del_ctest.cp313-win_amd64.pyd: phony PythonWrapper/del_ctest.cp313-win_amd64.pyd
 
 build gmock: phony lib/libgmock.a
 
@@ -1881,10 +1995,6 @@ build gmock_main: phony lib/libgmock_main.a
 build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
-
-build lesson: phony PythonWrapper/lesson.cp313-win_amd64.pyd
-
-build lesson.cp313-win_amd64.pyd: phony PythonWrapper/lesson.cp313-win_amd64.pyd
 
 build lesson1_1: phony lesson1_1/lesson1_1.exe
 
@@ -1916,13 +2026,13 @@ build libmul.dll: phony C$:/Users/19513/Desktop/cmake/lesson2_2/bin/libmul.dll
 
 build mul: phony C$:/Users/19513/Desktop/cmake/lesson2_2/bin/libmul.dll
 
-build test_add: phony Test/test_add.exe
+build test_add: phony Test/C++/test_add.exe
 
-build test_add.exe: phony Test/test_add.exe
+build test_add.exe: phony Test/C++/test_add.exe
 
-build test_del: phony Test/test_del.exe
+build test_del: phony Test/C++/test_del.exe
 
-build test_del.exe: phony Test/test_del.exe
+build test_del.exe: phony Test/C++/test_del.exe
 
 # =============================================================================
 # Folder targets.
@@ -1939,14 +2049,21 @@ build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/al
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/lesson.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test
 
-build Test/all: phony Test/test_add.exe Test/test_del.exe thirdpart/googletest/all
+build Test/all: phony Test/C++/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
+
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 
@@ -2025,14 +2142,14 @@ build thirdpart/pybind11/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/C++/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTest.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestTargets.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/DartConfiguration.tcl.in C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/FindPythonInterp.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/19513/Desktop/cmake/CMakeLists.txt C$:/Users/19513/Desktop/cmake/PythonWrapper/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/C++/CMakeLists.txt C$:/Users/19513/Desktop/cmake/Test/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson1_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_1/del/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/CMakeLists.txt C$:/Users/19513/Desktop/cmake/lesson2_2/mul/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/cmake/gmock_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/Config.cmake.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/gtest_main.pc.in C$:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/cmake/internal_utils.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/CMakeLists.txt C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/FindPythonLibsNew.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/JoinPaths.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Common.cmake C$:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/tools/pybind11Tools.cmake CMakeCache.txt CMakeFiles/3.31.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeRCCompiler.cmake CMakeFiles/3.31.0-rc2/CMakeSystem.cmake: phony
 
 
 #############################################

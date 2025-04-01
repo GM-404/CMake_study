@@ -250,7 +250,7 @@ rule CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__lesson_unscanned_Debug
+rule CXX_COMPILER__add_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}D:\SDK\w64devkit\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -260,7 +260,26 @@ rule CXX_COMPILER__lesson_unscanned_Debug
 #############################################
 # Rule for linking CXX shared module.
 
-rule CXX_MODULE_LIBRARY_LINKER__lesson_Debug
+rule CXX_MODULE_LIBRARY_LINKER__add_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\SDK\w64devkit\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--major-image-version,0,--minor-image-version,0 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared module $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__del_ctest_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}D:\SDK\w64devkit\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX shared module.
+
+rule CXX_MODULE_LIBRARY_LINKER__del_ctest_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && D:\SDK\w64devkit\bin\g++.exe $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--major-image-version,0,--minor-image-version,0 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX shared module $TARGET_FILE
   restat = $RESTAT

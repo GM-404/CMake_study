@@ -31,7 +31,8 @@
 供给test文件夹下面使用
 ## Test文件夹
 包含Python测试和c++测试两种，
-他的cmake文件包含如下
+他的cmake文件只向下索引到C++的cmake文件
+C++的cmake文件包含
 include(CTest)
 include(CTest) 用于引入 CMake 自带的 CTest 模块。CTest 是 CMake 提供的一个测试驱动程序，它可以帮助你管理和运行项目中的各种测试。通过引入这个模块，你就可以使用 CTest 提供的一系列命令和功能，例如定义测试、运行测试、生成测试报告等。
 enable_testing()

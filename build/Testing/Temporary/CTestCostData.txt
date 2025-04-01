@@ -1,7 +1,15 @@
-test_add 2 0.257449
-test_add 2 0.257449
-test_add 2 0.257449
-test_add 2 0.257449
-test_del 2 0.227696
-test_add 1 0.0207648
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_del 8 0.0802679
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 2 0.0531063
+test_add 1 0.0186563
 ---

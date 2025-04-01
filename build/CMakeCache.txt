@@ -386,15 +386,6 @@ PYTHON_EXECUTABLE:FILEPATH=C:/Users/19513/AppData/Local/Programs/Python/Python31
 SITE:STRING=DESKTOP-LIDAQ75
 
 //Value Computed by CMake
-YourProjectName_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/PythonWrapper
-
-//Value Computed by CMake
-YourProjectName_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-YourProjectName_SOURCE_DIR:STATIC=C:/Users/19513/Desktop/cmake/PythonWrapper
-
-//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googlemock
 
 //Value Computed by CMake
@@ -599,7 +590,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -667,8 +658,6 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding PYTHON
 FIND_PACKAGE_MESSAGE_DETAILS_PYTHON:INTERNAL=C:/Users/19513/AppData/Local/Programs/Python/Python313/python.exe3.13.2
-//Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib][C:/Users/19513/AppData/Local/Programs/Python/Python313/include][cfound components: Development Development.Module Development.Embed ][v3.13.2()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/19513/AppData/Local/Programs/Python/Python313/python.exe][v3.13.2(3.7)]
 //ADVANCED property for variable: MAKECOMMAND
@@ -702,26 +691,6 @@ _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/lesson1_2
 _PYBIND11_CROSSCOMPILING:INTERNAL=OFF
 _Python:INTERNAL=PYTHON
-//Path to a program.
-_Python3_CONFIG:INTERNAL=_Python3_CONFIG-NOTFOUND
-//Compiler reason failure
-_Python3_Compiler_REASON_FAILURE:INTERNAL=
-_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=9dfab5d4454325092aead439beac40fa
-_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=9dfab5d4454325092aead439beac40fa
-//Development reason failure
-_Python3_Development_REASON_FAILURE:INTERNAL=
-//Path to a file.
-_Python3_INCLUDE_DIR:INTERNAL=C:/Users/19513/AppData/Local/Programs/Python/Python313/include
-//Interpreter reason failure
-_Python3_Interpreter_REASON_FAILURE:INTERNAL=
-//Path to a library.
-_Python3_LIBRARY_DEBUG:INTERNAL=_Python3_LIBRARY_DEBUG-NOTFOUND
-//Path to a library.
-_Python3_LIBRARY_RELEASE:INTERNAL=C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Path to a library.
-_Python3_RUNTIME_LIBRARY_RELEASE:INTERNAL=C:/Users/19513/AppData/Local/Programs/Python/Python313/python313.dll
 cmake_package_name:INTERNAL=GTest
 generated_dir:INTERNAL=C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests

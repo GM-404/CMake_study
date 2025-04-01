@@ -19,19 +19,45 @@
 	ProcessorCacheSize="-1"
 	NumberOfLogicalCPU="16"
 	NumberOfPhysicalCPU="8"
-	TotalVirtualMemory="30944"
+	TotalVirtualMemory="29913"
 	TotalPhysicalMemory="16089"
 	LogicalProcessorsPerPhysical="2"
 	ProcessorClockFrequency="2904"
 	>
 	<Testing>
-		<StartDateTime>Apr 01 16:54 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1743497658</StartTestTime>
+		<StartDateTime>Apr 01 22:37 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1743518244</StartTestTime>
 		<TestList>
-			<Test>./Test/test_add</Test>
 			<Test>./Test/test_del</Test>
+			<Test>./Test/test_add</Test>
 			<Test>./test_add</Test>
 		</TestList>
+		<Test Status="passed">
+			<Name>test_del</Name>
+			<Path>./Test</Path>
+			<FullName>./Test/test_del</FullName>
+			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\Test\test_del.exe</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0486216</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\19513\Desktop\cmake\build\Test\test_del.exe</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUMtOwzAQvPsr9tgcYtcgkEDigAjigAQopacoQiZdglU/IntDfx+nKRFBRTCn3Z2ZfZW9c9q1YJV2iwzegrdwcynWEUMU8uJMnooC45Z8JxqrtijoXYdNpwKJ1vvWIGGkXHJ5zpffKiKGRrRD9DJ05k3DqqsJNZSHsScwaOI4V+4TiL0m5KzKJ9RwZ/yrMiOP7kMH7yy6pEXK++6HeNb0OYUFGlZBuX6APeqvIvcOEzHi8X5OwGIJNmbHjbTzx42JmIx/7TQKgTwpk7H/HUyoQr7xOzf/569/hKAcnw9Kez9dr1a3xXDQwcjZJxbDn2Y=</Value>
+				</Measurement>
+			</Results>
+		</Test>
 		<Test Status="passed">
 			<Name>test_add</Name>
 			<Path>./Test</Path>
@@ -39,7 +65,7 @@
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\Test\test_add.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.250823</Value>
+					<Value>0.0337917</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -59,39 +85,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>test_del</Name>
-			<Path>./Test</Path>
-			<FullName>./Test/test_del</FullName>
-			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\Test\test_del.exe</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.235313</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>C:\Users\19513\Desktop\cmake\build\Test\test_del.exe</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Environment">
-					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyNUMFKxDAQvfcr5rg9NNkgCgoexC57EFS67qkUid2xhk0mJZnq79uaddkKou/0mPd4b2aqgchQB04bWuTwGryD2yu5jRiiVJfn6kyWGPfse9k6vUfJbybseh1Ydt53FhkjF0qoC7E8mcgYWtlN7HlKFm2b1ddHNFAdahVMnlR74HEwjCKriyMaWFv/om3Skd5N8OSQRi9yMfQ/zKeZTyMr0WY1VNt7+ELzPRSecBQSHu7mAiyW4GL+Z3LyAXvWNs/+tzWjDsXOf9D8J7/9AoImMe8Zt3682WxW5XRO8orsE1BJjdQ=</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
 			<Name>test_add</Name>
 			<Path>.</Path>
 			<FullName>./test_add</FullName>
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\test_add.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0207648</Value>
+					<Value>0.0186563</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -110,8 +110,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Apr 01 16:54 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1743497659</EndTestTime>
+		<EndDateTime>Apr 01 22:37 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1743518244</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
