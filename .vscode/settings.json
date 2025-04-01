@@ -1,4 +1,7 @@
 {
+  "python.analysis.extraPaths": [ //静态分析路径中加入自己用C++封装的Python模块
+    "C:\\Users\\19513\\Desktop\\cmake\\build\\PythonWrapper"
+  ],
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
