@@ -1,2 +1,7 @@
-test_add 6 0.0977608
+test_add 2 0.257449
+test_add 2 0.257449
+test_add 2 0.257449
+test_add 2 0.257449
+test_del 2 0.227696
+test_add 1 0.0207648
 ---

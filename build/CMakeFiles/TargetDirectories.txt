@@ -75,6 +75,7 @@ C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/ContinuousCoverage.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/ContinuousSubmit.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/test_add.dir
+C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/CMakeFiles/list_install_components.dir

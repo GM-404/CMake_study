@@ -123,12 +123,14 @@ build cmake_object_order_depends_target_lesson1_1: phony || .
 build lesson1_1/CMakeFiles/lesson1_1.dir/main.cpp.obj: CXX_COMPILER__lesson1_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/main.cpp || cmake_object_order_depends_target_lesson1_1
   DEP_FILE = lesson1_1\CMakeFiles\lesson1_1.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
   OBJECT_FILE_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
 
 build lesson1_1/CMakeFiles/lesson1_1.dir/add.cpp.obj: CXX_COMPILER__lesson1_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson1_1
   DEP_FILE = lesson1_1\CMakeFiles\lesson1_1.dir\add.cpp.obj.d
   FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
   OBJECT_FILE_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
 
@@ -233,14 +235,14 @@ build cmake_object_order_depends_target_lesson1_2: phony || .
 build lesson1_2/CMakeFiles/lesson1_2.dir/main.cpp.obj: CXX_COMPILER__lesson1_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_2/main.cpp || cmake_object_order_depends_target_lesson1_2
   DEP_FILE = lesson1_2\CMakeFiles\lesson1_2.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_2/../lesson1_1
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
   OBJECT_FILE_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
 
 build lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__lesson1_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson1_2
   DEP_FILE = lesson1_2\CMakeFiles\lesson1_2.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_2/../lesson1_1
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
   OBJECT_FILE_DIR = lesson1_2\CMakeFiles\lesson1_2.dir\__\lesson1_1
 
@@ -345,7 +347,7 @@ build cmake_object_order_depends_target_lesson2_1: phony || .
 build lesson2_1/CMakeFiles/lesson2_1.dir/main.cpp.obj: CXX_COMPILER__lesson2_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson2_1/main.cpp || cmake_object_order_depends_target_lesson2_1
   DEP_FILE = lesson2_1\CMakeFiles\lesson2_1.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_1/./lib
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_1/lib
   OBJECT_DIR = lesson2_1\CMakeFiles\lesson2_1.dir
   OBJECT_FILE_DIR = lesson2_1\CMakeFiles\lesson2_1.dir
 
@@ -931,14 +933,14 @@ build cmake_object_order_depends_target_test_add: phony || cmake_object_order_de
 build Test/CMakeFiles/test_add.dir/test_add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/test_add.cpp || cmake_object_order_depends_target_test_add
   DEP_FILE = Test\CMakeFiles\test_add.dir\test_add.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/Test/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
   OBJECT_DIR = Test\CMakeFiles\test_add.dir
   OBJECT_FILE_DIR = Test\CMakeFiles\test_add.dir
 
 build Test/CMakeFiles/test_add.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_test_add
   DEP_FILE = Test\CMakeFiles\test_add.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/Test/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
   OBJECT_DIR = Test\CMakeFiles\test_add.dir
   OBJECT_FILE_DIR = Test\CMakeFiles\test_add.dir\__\lesson1_1
 
@@ -959,6 +961,41 @@ build Test/test_add.exe: CXX_EXECUTABLE_LINKER__test_add_Debug Test/CMakeFiles/t
   TARGET_FILE = Test\test_add.exe
   TARGET_IMPLIB = Test\libtest_add.dll.a
   TARGET_PDB = test_add.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_del
+
+
+#############################################
+# Order-only phony target for test_del
+
+build cmake_object_order_depends_target_test_del: phony || cmake_object_order_depends_target_del cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/CMakeFiles/test_del.dir/test_del.cpp.obj: CXX_COMPILER__test_del_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/test_del.cpp || cmake_object_order_depends_target_test_del
+  DEP_FILE = Test\CMakeFiles\test_del.dir\test_del.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\CMakeFiles\test_del.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\test_del.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_del
+
+
+#############################################
+# Link the executable Test\test_del.exe
+
+build Test/test_del.exe: CXX_EXECUTABLE_LINKER__test_del_Debug Test/CMakeFiles/test_del.dir/test_del.cpp.obj | lib/libgtest_main.a lib/libgtest.a lesson2_1/del/libdel.a || lesson2_1/del/libdel.a lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  lesson2_1/del/libdel.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/19513/Desktop/cmake/lesson2_1/lib
+  OBJECT_DIR = Test\CMakeFiles\test_del.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\test_del.exe
+  TARGET_IMPLIB = Test\libtest_del.dll.a
+  TARGET_PDB = test_del.exe.dbg
 
 
 #############################################
@@ -1609,7 +1646,7 @@ build PythonWrapper/CMakeFiles/lesson.dir/bind_add.cpp.obj: CXX_COMPILER__lesson
   DEFINES = -Dlesson_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\bind_add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/PythonWrapper/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir
 
@@ -1617,7 +1654,7 @@ build PythonWrapper/CMakeFiles/lesson.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER
   DEFINES = -Dlesson_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/PythonWrapper/../lesson1_1 -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\lesson.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\lesson.dir\__\lesson1_1
 
@@ -1883,6 +1920,10 @@ build test_add: phony Test/test_add.exe
 
 build test_add.exe: phony Test/test_add.exe
 
+build test_del: phony Test/test_del.exe
+
+build test_del.exe: phony Test/test_del.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -1905,7 +1946,7 @@ build PythonWrapper/all: phony PythonWrapper/lesson.cp313-win_amd64.pyd thirdpar
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test
 
-build Test/all: phony Test/test_add.exe thirdpart/googletest/all
+build Test/all: phony Test/test_add.exe Test/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 
