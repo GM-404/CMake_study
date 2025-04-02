@@ -1764,6 +1764,14 @@ build PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\band_class.dir
 
+build PythonWrapper/CMakeFiles/band_class.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__band_class_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_band_class
+  DEFINES = -Dband_class_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\band_class.dir\__\lesson1_1\add.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\band_class.dir\__\lesson1_1
+
 
 # =============================================================================
 # Link build statements for MODULE_LIBRARY target band_class
@@ -1772,7 +1780,7 @@ build PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the shared module PythonWrapper\band_class.cp313-win_amd64.pyd
 
-build PythonWrapper/band_class.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__band_class_Debug PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+build PythonWrapper/band_class.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__band_class_Debug PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj PythonWrapper/CMakeFiles/band_class.dir/__/lesson1_1/add.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir

@@ -1,5 +1,5 @@
 # ninja log v6
-4	857	7652863657921502	build.ninja	d1fcb0469f3a7c38
+4	857	7652883684834603	build.ninja	d1fcb0469f3a7c38
 4	560	7640541929770481	hello/CMakeFiles/Hello.dir/hello.cpp.obj	d77b4e227da3f2e6
 46	857	7652845610662216	lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj	6bed47600a8ec14b
 561	1081	7640541940424571	hello/libHello.dll.a	70eb1e91d4590b07
@@ -64,8 +64,18 @@
 12622	13035	7652823929687568	Test/C++/test_del.exe	bfe4b4869d2863fa
 2319	2749	7652845633385216	Test/C++/test_add.exe	87ca46688bf5e8ef
 19	5074	7652844795782030	PythonWrapper/CMakeFiles/band_class.dir/bind_example.cpp.obj	91327ed208f25ee1
-26	517	7652861133651725	PythonWrapper/CMakeFiles/band_class.dir/__/lesson1_1/add.cpp.obj	c24dbb6304927714
-4667	5097	7652856488892555	PythonWrapper/band_class.cp313-win_amd64.pyd	870c19f004ad69a5
-19	4324	7652862400731747	PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj	769f4a2ac47a448b
-12	4254	7652863720483475	PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj	769f4a2ac47a448b
-4255	4474	7652863762917402	PythonWrapper/band_class.cp313-win_amd64.pyd	870c19f004ad69a5
+14	6801	7652876220706390	PythonWrapper/CMakeFiles/band_class.dir/__/lesson1_1/add.cpp.obj	c24dbb6304927714
+10604	11117	7652876326601832	PythonWrapper/band_class.cp313-win_amd64.pyd	f09c83c693fad823
+8	10604	7652876220646549	PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj	769f4a2ac47a448b
+34	803	7652883796386979	lesson1_2/CMakeFiles/lesson1_2.dir/main.cpp.obj	e36ed6150c2dc3a5
+29	813	7652883796337111	lesson1_1/CMakeFiles/lesson1_1.dir/add.cpp.obj	f4d396876ecb7d64
+38	823	7652883796436845	lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj	6bed47600a8ec14b
+48	836	7652883796536581	Test/C++/CMakeFiles/test_add.dir/__/__/lesson1_1/add.cpp.obj	3864110d1b9e1a1d
+23	844	7652883796277273	lesson1_1/CMakeFiles/lesson1_1.dir/main.cpp.obj	23b3a1dd29a0d647
+58	853	7652883796635601	PythonWrapper/CMakeFiles/add.dir/__/lesson1_1/add.cpp.obj	1a830663d9038628
+844	1171	7652883804495084	lesson1_1/lesson1_1.exe	e7959a2079906439
+823	1175	7652883804285651	lesson1_2/lesson1_2.exe	7d3cd73bd72d787f
+43	1897	7652883796486720	Test/C++/CMakeFiles/test_add.dir/test_add.cpp.obj	4a61d23434014e3c
+1897	2257	7652883815025005	Test/C++/test_add.exe	87ca46688bf5e8ef
+53	4139	7652883796586454	PythonWrapper/CMakeFiles/add.dir/bind_add.cpp.obj	ab0be256a8463268
+4139	4326	7652883837439999	PythonWrapper/add.cp313-win_amd64.pyd	da5933ff900ac9e1

@@ -141,7 +141,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -179,7 +180,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -189,6 +191,12 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "PythonWrapper/bind_class.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "lesson1_1/add.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

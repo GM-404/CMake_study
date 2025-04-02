@@ -1,7 +1,7 @@
 # 本文档集合了该仓库实现的一些功能如下：
 ## lesson1_1
 文件夹下面包含的cmake文件里面只有包含include文件夹下面的头文件目录，然后使用add_exe（）调用main和add生成可执行文件，include文件夹下包含了add.hh,
-在add.hh中加入一个类的举例，用于学习绑定。
+在add.hh中加入一个类的举例，用于学习绑定，声明在add.hh函数实现在add.cpp。
 ## lesson1_2
 文件夹下面包含的cmake文件里面只包含调用1_1的include头文件，
 在根目录下面设置了根目录的字符串${CMAKE_PROJECT_ROOT},表示整个项目的根目录，也可以用../代指上一集目录
@@ -29,6 +29,7 @@
 该文件加下面主要功能是将c++代码封装为python库，供python调用调式函数实现可视化
 首先包含将要封装的c++函数的头文件，然后添加 pybind11 子目录，由于不在同一文件夹下面，所以需要指定输出的二进制文件位置，${CMAKE_BINARY_DIR}指的是在bulid文件夹下面
 然后使用pybind11_add_moodule()使用bind_add.cpp和原C++函数一起绑定为lesson
+注意添加c++静态库的时候，可以指定目录（已注释），也可也使用find_package()查找，看一下类的绑定只需要.cpp文件，
 供给test文件夹下面使用
 ## Test文件夹
 包含Python测试和c++测试两种，

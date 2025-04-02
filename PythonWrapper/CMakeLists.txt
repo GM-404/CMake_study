@@ -17,6 +17,7 @@ pybind11_add_module(add
 
 pybind11_add_module(band_class
     bind_class.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp
 )
 
 pybind11_add_module(del_ctest
