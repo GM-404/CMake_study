@@ -111,6 +111,7 @@ C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/in
 C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/googletest/googletest/CMakeFiles/install/strip.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/add.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/band_class.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/del_ctest.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/rebuild_cache.dir

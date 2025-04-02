@@ -1748,6 +1748,41 @@ build PythonWrapper/add.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__add_Debu
   TARGET_PDB = add.cp313-win_amd64.pyd.dbg
 
 # =============================================================================
+# Object build statements for MODULE_LIBRARY target band_class
+
+
+#############################################
+# Order-only phony target for band_class
+
+build cmake_object_order_depends_target_band_class: phony || .
+
+build PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj: CXX_COMPILER__band_class_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_class.cpp || cmake_object_order_depends_target_band_class
+  DEFINES = -Dband_class_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\band_class.dir\bind_class.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\band_class.dir
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target band_class
+
+
+#############################################
+# Link the shared module PythonWrapper\band_class.cp313-win_amd64.pyd
+
+build PythonWrapper/band_class.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__band_class_Debug PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\band_class.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libband_class.dll.a
+  TARGET_PDB = band_class.cp313-win_amd64.pyd.dbg
+
+# =============================================================================
 # Object build statements for MODULE_LIBRARY target del_ctest
 
 
@@ -1982,6 +2017,10 @@ build add: phony PythonWrapper/add.cp313-win_amd64.pyd
 
 build add.cp313-win_amd64.pyd: phony PythonWrapper/add.cp313-win_amd64.pyd
 
+build band_class: phony PythonWrapper/band_class.cp313-win_amd64.pyd
+
+build band_class.cp313-win_amd64.pyd: phony PythonWrapper/band_class.cp313-win_amd64.pyd
+
 build del: phony lesson2_1/del/libdel.a
 
 build del_ctest: phony PythonWrapper/del_ctest.cp313-win_amd64.pyd
@@ -2049,7 +2088,7 @@ build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/al
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
