@@ -1,6 +1,7 @@
 # 本文档集合了该仓库实现的一些功能如下：
 ## lesson1_1
 文件夹下面包含的cmake文件里面只有包含include文件夹下面的头文件目录，然后使用add_exe（）调用main和add生成可执行文件，include文件夹下包含了add.hh,
+在add.hh中加入一个类的举例，用于学习绑定。
 ## lesson1_2
 文件夹下面包含的cmake文件里面只包含调用1_1的include头文件，
 在根目录下面设置了根目录的字符串${CMAKE_PROJECT_ROOT},表示整个项目的根目录，也可以用../代指上一集目录

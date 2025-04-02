@@ -8,7 +8,7 @@ add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/pybind11-2.13.6 ${CMAKE_BINARY_
 
 # 添加你的目标
 pybind11_add_module(add bind_add.cpp ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
-
+pybind11_add_module(band_class bind_example.cpp ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
 pybind11_add_module(del_ctest bind_del.cpp)
 
 # 链接静态库到 pybind11 模块
