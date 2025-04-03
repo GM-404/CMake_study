@@ -118,5 +118,11 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Ddel_ctest_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\del_ctest.dir\\bind_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_del.cpp",
   "output": "PythonWrapper\\CMakeFiles\\del_ctest.dir\\bind_del.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\three_sum.cpp.obj"
 }
 ]

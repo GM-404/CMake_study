@@ -25,6 +25,8 @@
 先使用set给动态库起名字，变成字符串方便后期更改
 然后设置动态库输出的路径
 之后add_library()使用mul.cpp生成名为${dll_name_mul}的SHARED动态库
+## lesson3_1
+存储力扣刷的题目
 ## PythonWrapper
 该文件加下面主要功能是将c++代码封装为python库，供python调用调式函数实现可视化
 首先包含将要封装的c++函数的头文件，然后添加 pybind11 子目录，由于不在同一文件夹下面，所以需要指定输出的二进制文件位置，${CMAKE_BINARY_DIR}指的是在bulid文件夹下面
