@@ -185,7 +185,8 @@
 						26,
 						27,
 						42,
-						43
+						43,
+						44
 					]
 				},
 				{
@@ -355,7 +356,8 @@
 						40,
 						41,
 						42,
-						43
+						43,
+						44
 					]
 				},
 				{
@@ -694,7 +696,7 @@
 				{
 					"directoryIndex" : 14,
 					"id" : "lesson3_1::@f7dbcf3a521522d18336",
-					"jsonFile" : "target-lesson3_1-Debug-b39c3f7bcaef6cf44e6c.json",
+					"jsonFile" : "target-lesson3_1-Debug-ed68f1b43cacff74a6ff.json",
 					"name" : "lesson3_1",
 					"projectIndex" : 0
 				},
@@ -708,15 +710,22 @@
 				{
 					"directoryIndex" : 8,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-01d43dac358fa713bb86.json",
+					"jsonFile" : "target-test_add-Debug-9a11c4579fce0d973c7c.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 8,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-a1af002ee772f658c159.json",
+					"jsonFile" : "target-test_del-Debug-a08cadd1829c2a1f851f.json",
 					"name" : "test_del",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "test_sum::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_sum-Debug-58f3dd9f4674292b767b.json",
+					"name" : "test_sum",
 					"projectIndex" : 0
 				}
 			]

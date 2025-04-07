@@ -82,6 +82,7 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousSubmit.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_add.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_sum.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/list_install_components.dir
