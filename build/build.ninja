@@ -1758,7 +1758,7 @@ build PythonWrapper/CMakeFiles/add.dir/bind_add.cpp.obj: CXX_COMPILER__add_unsca
   DEFINES = -Dadd_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\add.dir\bind_add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\add.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\add.dir
 
@@ -1766,7 +1766,7 @@ build PythonWrapper/CMakeFiles/add.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__a
   DEFINES = -Dadd_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\add.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\add.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\add.dir\__\lesson1_1
 
@@ -1801,7 +1801,7 @@ build PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj: CXX_COMPILER__
   DEFINES = -Dband_class_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\band_class.dir\bind_class.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\band_class.dir
 
@@ -1809,7 +1809,7 @@ build PythonWrapper/CMakeFiles/band_class.dir/__/lesson1_1/add.cpp.obj: CXX_COMP
   DEFINES = -Dband_class_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\band_class.dir\__\lesson1_1\add.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\band_class.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\band_class.dir\__\lesson1_1
 
@@ -1844,7 +1844,7 @@ build PythonWrapper/CMakeFiles/del_ctest.dir/bind_del.cpp.obj: CXX_COMPILER__del
   DEFINES = -Ddel_ctest_EXPORTS
   DEP_FILE = PythonWrapper\CMakeFiles\del_ctest.dir\bind_del.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fvisibility=hidden
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
   OBJECT_DIR = PythonWrapper\CMakeFiles\del_ctest.dir
   OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\del_ctest.dir
 
@@ -1865,6 +1865,49 @@ build PythonWrapper/del_ctest.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__de
   TARGET_FILE = PythonWrapper\del_ctest.cp313-win_amd64.pyd
   TARGET_IMPLIB = PythonWrapper\libdel_ctest.dll.a
   TARGET_PDB = del_ctest.cp313-win_amd64.pyd.dbg
+
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target bind_sum
+
+
+#############################################
+# Order-only phony target for bind_sum
+
+build cmake_object_order_depends_target_bind_sum: phony || .
+
+build PythonWrapper/CMakeFiles/bind_sum.dir/bind_sum.cpp.obj: CXX_COMPILER__bind_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_sum.cpp || cmake_object_order_depends_target_bind_sum
+  DEFINES = -Dbind_sum_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_sum.dir\bind_sum.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_sum.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_sum.dir
+
+build PythonWrapper/CMakeFiles/bind_sum.dir/__/lesson3_1/source/sum.cpp.obj: CXX_COMPILER__bind_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/sum.cpp || cmake_object_order_depends_target_bind_sum
+  DEFINES = -Dbind_sum_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_sum.dir\__\lesson3_1\source\sum.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_sum.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_sum.dir\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target bind_sum
+
+
+#############################################
+# Link the shared module PythonWrapper\bind_sum.cp313-win_amd64.pyd
+
+build PythonWrapper/bind_sum.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__bind_sum_Debug PythonWrapper/CMakeFiles/bind_sum.dir/bind_sum.cpp.obj PythonWrapper/CMakeFiles/bind_sum.dir/__/lesson3_1/source/sum.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_sum.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\bind_sum.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libbind_sum.dll.a
+  TARGET_PDB = bind_sum.cp313-win_amd64.pyd.dbg
 
 
 #############################################
@@ -2141,6 +2184,10 @@ build band_class: phony PythonWrapper/band_class.cp313-win_amd64.pyd
 
 build band_class.cp313-win_amd64.pyd: phony PythonWrapper/band_class.cp313-win_amd64.pyd
 
+build bind_sum: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
+
+build bind_sum.cp313-win_amd64.pyd: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
+
 build del: phony lesson2_1/del/libdel.a
 
 build del_ctest: phony PythonWrapper/del_ctest.cp313-win_amd64.pyd
@@ -2212,7 +2259,7 @@ build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/al
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 

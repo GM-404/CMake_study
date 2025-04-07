@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 13,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -85,6 +85,12 @@
 				"parent" : 0
 			},
 			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 183,
@@ -119,11 +125,15 @@
 				},
 				{
 					"backtrace" : 11,
+					"path" : "C:/Users/19513/Desktop/cmake/lesson3_1/include"
+				},
+				{
+					"backtrace" : 12,
 					"isSystem" : true,
 					"path" : "C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"isSystem" : true,
 					"path" : "C:/Users/19513/AppData/Local/Programs/Python/Python313/Include"
 				}
@@ -133,9 +143,9 @@
 			{
 				"backtraces" : 
 				[
-					11,
-					11,
-					11
+					12,
+					12,
+					12
 				],
 				"standard" : "17"
 			},
