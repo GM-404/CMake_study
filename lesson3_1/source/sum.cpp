@@ -26,48 +26,48 @@ std::vector<int> Solution::twoSum(std::vector<int> &nums, int target)
 // 它基于哈希表实现，这意味着它通过哈希函数将键映射到存储桶，从而实现快速的查找、插入和删除操作。
 // 其平均时间复杂度为 \(O(1)\)，但在最坏情况下可能达到 \(O(n)\)。
 
-// 上面实现的 Solution 类
-int main()
-{
-    Solution sol;
-    std::vector<int> nums = {2, 7, 11, 15};
-    int target = 26;
-    std::vector<int> result = sol.twoSum(nums, target);
-    if (!result.empty())
-    {
-        std::cout << "Indices: " << result[0] << ", " << result[1] << std::endl;
-    }
-    else
-    {
-        std::cout << "No two sum solution found." << std::endl;
-    }
-    // 定义一个 std::unordered_map<int, int> 对象
-    std::unordered_map<int, int> num_map;
+// // 上面实现的 Solution 类
+// int main()
+// {
+//     Solution sol;
+//     std::vector<int> nums = {2, 7, 11, 15};
+//     int target = 26;
+//     std::vector<int> result = sol.twoSum(nums, target);
+//     if (!result.empty())
+//     {
+//         std::cout << "Indices: " << result[0] << ", " << result[1] << std::endl;
+//     }
+//     else
+//     {
+//         std::cout << "No two sum solution found." << std::endl;
+//     }
+//     // 定义一个 std::unordered_map<int, int> 对象
+//     std::unordered_map<int, int> num_map;
 
-    // 插入元素
-    num_map[1] = 100;
-    num_map[2] = 200;
-    num_map[3] = 300;
+//     // 插入元素
+//     num_map[1] = 100;
+//     num_map[2] = 200;
+//     num_map[3] = 300;
 
-    // 查找元素
-    auto it = num_map.find(2);
-    if (it != num_map.end())
-    {
-        std::cout << "Key 2 found, value is: " << it->second << std::endl;
-    }
-    else
-    {
-        std::cout << "Key 2 not found." << std::endl;
-    }
+//     // 查找元素
+//     auto it = num_map.find(2);
+//     if (it != num_map.end())
+//     {
+//         std::cout << "Key 2 found, value is: " << it->second << std::endl;
+//     }
+//     else
+//     {
+//         std::cout << "Key 2 not found." << std::endl;
+//     }
 
-    // 删除元素
-    num_map.erase(3);
+//     // 删除元素
+//     num_map.erase(3);
 
-    // 遍历元素
-    for (const auto &pair : num_map)
-    {
-        std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
-    }
-    return 0;
-}
-// find找的是键值
+//     // 遍历元素
+//     for (const auto &pair : num_map)
+//     {
+//         std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
+//     }
+//     return 0;
+// }
+// // find找的是键值

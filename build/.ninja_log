@@ -1,7 +1,7 @@
 # ninja log v6
 62	1560	7653699060402128	lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj	6bed47600a8ec14b
 561	1081	7640541940424571	hello/libHello.dll.a	70eb1e91d4590b07
-25	2619	7657392446841960	build.ninja	d1fcb0469f3a7c38
+25	2619	7657397238554469	build.ninja	d1fcb0469f3a7c38
 4	560	7640541929770481	hello/CMakeFiles/Hello.dir/hello.cpp.obj	d77b4e227da3f2e6
 8	595	7640579625004378	lesson1_1/CMakeFiles/study_dynamic_library.dir/main.cpp.obj	7e5b672ad0f13210
 472	679	7640565519757088	study_dynamic_library.exe	29f9ec577961bb0f
@@ -69,11 +69,14 @@
 118	8019	7653699060970610	PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj	769f4a2ac47a448b
 1585	3027	7653699075642113	lesson3_1/CMakeFiles/my_study.dir/source/sum.cpp.obj	582d9b39fcdcaf5a
 3027	3404	7653699090058033	lesson3_1/my_study.exe	a04fe1985fa2a582
-23	5932	7657390845838560	lesson3_1/CMakeFiles/lesson3_1.dir/source/sum.cpp.obj	825879f7beef99ef
-16	2361	7656293108522370	lesson3_1/CMakeFiles/lesson3_1.dir/source/three_sum.cpp.obj	1e8692aca70a7f26
-10	815	7657391771661817	Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum.cpp.obj	d993bd2e7262e3
-11	6840	7657390845728088	Test/C++/CMakeFiles/test_sum.dir/test_sum.cpp.obj	aff4d83f8c1397b
-815	1283	7657391779721990	Test/C++/test_sum.exe	55c980efc45e8b5d
-7	590	7657387476563933	Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum1.cpp.obj	5c0f455cb1f68861
 5	857	7657392509262223	lesson3_1/CMakeFiles/lesson3_1.dir/source/sum.cpp.obj	825879f7beef99ef
+16	2361	7656293108522370	lesson3_1/CMakeFiles/lesson3_1.dir/source/three_sum.cpp.obj	1e8692aca70a7f26
+14	1274	7657396691786894	Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum.cpp.obj	d993bd2e7262e3
+7	1894	7657396691717071	Test/C++/CMakeFiles/test_sum.dir/test_sum.cpp.obj	aff4d83f8c1397b
+1895	2284	7657396710588474	Test/C++/test_sum.exe	55c980efc45e8b5d
+7	590	7657387476563933	Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum1.cpp.obj	5c0f455cb1f68861
 858	1074	7657392517795660	lesson3_1/lesson3_1.exe	d9d4ffd2856b0a89
+10	813	7657397364817175	Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum.cpp.obj	d993bd2e7262e3
+814	1228	7657397372854754	Test/C++/test_sum.exe	55c980efc45e8b5d
+10	1508	7657398487764450	Test/C++/CMakeFiles/test_sum.dir/test_sum.cpp.obj	aff4d83f8c1397b
+1509	1879	7657398502757299	Test/C++/test_sum.exe	55c980efc45e8b5d

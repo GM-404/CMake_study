@@ -19,14 +19,14 @@
 	ProcessorCacheSize="-1"
 	NumberOfLogicalCPU="16"
 	NumberOfPhysicalCPU="8"
-	TotalVirtualMemory="34335"
+	TotalVirtualMemory="35271"
 	TotalPhysicalMemory="16089"
 	LogicalProcessorsPerPhysical="2"
 	ProcessorClockFrequency="2903"
 	>
 	<Testing>
-		<StartDateTime>Apr 07 15:35 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1744011329</StartTestTime>
+		<StartDateTime>Apr 07 22:37 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1744036661</StartTestTime>
 		<TestList>
 			<Test>./Test/test_add</Test>
 			<Test>./Test/test_del</Test>
@@ -39,7 +39,7 @@
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\Test\test_add.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0516745</Value>
+					<Value>0.0537903</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -65,7 +65,7 @@
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\Test\test_del.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0351026</Value>
+					<Value>0.0361217</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -91,7 +91,7 @@
 			<FullCommandLine>C:\Users\19513\Desktop\cmake\build\test_add.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0209762</Value>
+					<Value>0.0203323</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -110,8 +110,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Apr 07 15:35 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1744011329</EndTestTime>
+		<EndDateTime>Apr 07 22:37 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1744036661</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

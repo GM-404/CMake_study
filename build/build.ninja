@@ -2008,40 +2008,6 @@ build thirdpart/pybind11/install/strip: phony thirdpart/pybind11/CMakeFiles/inst
 # C:/Users/19513/Desktop/cmake/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for EXECUTABLE target lesson3_1
-
-
-#############################################
-# Order-only phony target for lesson3_1
-
-build cmake_object_order_depends_target_lesson3_1: phony || .
-
-build lesson3_1/CMakeFiles/lesson3_1.dir/source/sum.cpp.obj: CXX_COMPILER__lesson3_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/sum.cpp || cmake_object_order_depends_target_lesson3_1
-  DEP_FILE = lesson3_1\CMakeFiles\lesson3_1.dir\source\sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
-  OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
-  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\lesson3_1.dir\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target lesson3_1
-
-
-#############################################
-# Link the executable lesson3_1\lesson3_1.exe
-
-build lesson3_1/lesson3_1.exe: CXX_EXECUTABLE_LINKER__lesson3_1_Debug lesson3_1/CMakeFiles/lesson3_1.dir/source/sum.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lesson3_1\lesson3_1.exe
-  TARGET_IMPLIB = lesson3_1\liblesson3_1.dll.a
-  TARGET_PDB = lesson3_1.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -2205,10 +2171,6 @@ build lesson2_2: phony lesson2_2/lesson2_2.exe
 
 build lesson2_2.exe: phony lesson2_2/lesson2_2.exe
 
-build lesson3_1: phony lesson3_1/lesson3_1.exe
-
-build lesson3_1.exe: phony lesson3_1/lesson3_1.exe
-
 build libdel.a: phony lesson2_1/del/libdel.a
 
 build libgmock.a: phony lib/libgmock.a
@@ -2313,7 +2275,7 @@ build lesson2_2/mul/all: phony C$:/Users/19513/Desktop/cmake/lesson2_2/bin/libmu
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson3_1
 
-build lesson3_1/all: phony lesson3_1/lesson3_1.exe
+build lesson3_1/all: phony
 
 # =============================================================================
 
