@@ -1109,6 +1109,47 @@ build Test/C++/test_sum.exe: CXX_EXECUTABLE_LINKER__test_sum_Debug Test/C++/CMak
   TARGET_IMPLIB = Test\C++\libtest_sum.dll.a
   TARGET_PDB = test_sum.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_four_sum
+
+
+#############################################
+# Order-only phony target for test_four_sum
+
+build cmake_object_order_depends_target_test_four_sum: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_four_sum.dir/test_four_sum.cpp.obj: CXX_COMPILER__test_four_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_four_sum.cpp || cmake_object_order_depends_target_test_four_sum
+  DEP_FILE = Test\C++\CMakeFiles\test_four_sum.dir\test_four_sum.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_four_sum.dir
+
+build Test/C++/CMakeFiles/test_four_sum.dir/__/__/lesson3_1/source/four_sum.cpp.obj: CXX_COMPILER__test_four_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/four_sum.cpp || cmake_object_order_depends_target_test_four_sum
+  DEP_FILE = Test\C++\CMakeFiles\test_four_sum.dir\__\__\lesson3_1\source\four_sum.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_four_sum.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_four_sum
+
+
+#############################################
+# Link the executable Test\C++\test_four_sum.exe
+
+build Test/C++/test_four_sum.exe: CXX_EXECUTABLE_LINKER__test_four_sum_Debug Test/C++/CMakeFiles/test_four_sum.dir/test_four_sum.cpp.obj Test/C++/CMakeFiles/test_four_sum.dir/__/__/lesson3_1/source/four_sum.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_four_sum.exe
+  TARGET_IMPLIB = Test\C++\libtest_four_sum.dll.a
+  TARGET_PDB = test_four_sum.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2240,6 +2281,10 @@ build test_del: phony Test/C++/test_del.exe
 
 build test_del.exe: phony Test/C++/test_del.exe
 
+build test_four_sum: phony Test/C++/test_four_sum.exe
+
+build test_four_sum.exe: phony Test/C++/test_four_sum.exe
+
 build test_sum: phony Test/C++/test_sum.exe
 
 build test_sum.exe: phony Test/C++/test_sum.exe
@@ -2273,7 +2318,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_del.exe Test/C++/test_sum.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_del.exe Test/C++/test_sum.exe Test/C++/test_four_sum.exe thirdpart/googletest/all
 
 # =============================================================================
 

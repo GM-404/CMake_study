@@ -8,7 +8,6 @@ std::vector<int> Solution::twoSum(std::vector<int> &nums, int target)
     std::unordered_map<int, int> num_map;
     for (int i = 0; i < nums.size(); ++i)
     {
-        printf("nums[i]:%d\n", nums[i]);
         int complement = target - nums[i];
         // 如果补数存在于哈希表中，说明找到了满足条件的两个数
         // 返回这两个数的索引，第一个是补数在哈希表中对应的索引，第二个是当前数字的索引

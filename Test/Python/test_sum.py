@@ -10,7 +10,7 @@ import bind_sum as solution_module
 sol = solution_module.Solution()
 
 # 测试 twoSum 方法
-nums = [2, 7, 11, 15]
-target = 26
+nums = [1, 2, 4, 10, 15, 7]
+target = 11
 result = sol.twoSum(nums, target)
 print(result)

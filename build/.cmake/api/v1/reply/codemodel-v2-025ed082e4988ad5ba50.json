@@ -186,7 +186,8 @@
 						27,
 						42,
 						43,
-						44
+						44,
+						45
 					]
 				},
 				{
@@ -354,7 +355,8 @@
 						41,
 						42,
 						43,
-						44
+						44,
+						45
 					]
 				},
 				{
@@ -651,7 +653,7 @@
 				{
 					"directoryIndex" : 10,
 					"id" : "gmock_main::@4b9ead47e321c1b28e4a",
-					"jsonFile" : "target-gmock_main-Debug-9fef457f07ac6f94b863.json",
+					"jsonFile" : "target-gmock_main-Debug-ee836de417d4ba3cc416.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
@@ -707,21 +709,28 @@
 				{
 					"directoryIndex" : 8,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-10261899dc715de9e3dc.json",
+					"jsonFile" : "target-test_add-Debug-4a4fd9fe7ec805855e21.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 8,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-3af151708359be82823d.json",
+					"jsonFile" : "target-test_del-Debug-8d38a099bf124fe9c786.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 8,
+					"id" : "test_four_sum::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_four_sum-Debug-1a4cdbc415360c38cdba.json",
+					"name" : "test_four_sum",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-ea6f4abbddcbbd74278c.json",
+					"jsonFile" : "target-test_sum-Debug-8731c057f1e33068b63a.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				}

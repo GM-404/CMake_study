@@ -5,7 +5,7 @@
 TEST(TwoSumTest, one)
 {
     Solution sol;
-    std::vector<int> nums = {2, 7, 11, 15};
+    std::vector<int> nums = {2, 7};
     int target = 9;
     std::vector<int> result = sol.twoSum(nums, target);
 
@@ -34,8 +34,8 @@ TEST(TwoSumTest, two)
 TEST(TwoSumTest, three)
 {
     Solution sol;
-    std::vector<int> nums = {2, 7, 11, 15};
-    int target = 18;
+    std::vector<int> nums = {1, 2, 4, 10, 15, 7};
+    int target = 11;
     std::vector<int> result = sol.twoSum(nums, target);
 
     // 验证结果是否正确

@@ -79,6 +79,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_four_sum.dir\\test_four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_four_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_four_sum.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_four_sum.dir\\test_four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_four_sum.dir\\__\\__\\lesson3_1\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_four_sum.dir\\__\\__\\lesson3_1\\source\\four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
   "output": "thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
