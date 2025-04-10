@@ -68,7 +68,16 @@ std::vector<std::vector<int>> Solution_four_sum_quick::fourSum(std::vector<int> 
     for (int first = 0; first < length - 3; ++first)
     {
         // 去重第一个数字
-        if (first > 0 && nums[first] == nums[first] - 1)
+        if (first > 0 && nums[first] == nums[first - 1])
+        {
+            continue;
+        }
+        // 剪枝操作
+        if ((long long)nums[first] + nums[first + 1] + nums[first + 2] + nums[first + 3] > target)
+        {
+            break;
+        }
+        if ((long long)nums[first] + nums[length - 3] + nums[length - 2] + nums[length - 1] < target)
         {
             continue;
         }
@@ -76,6 +85,15 @@ std::vector<std::vector<int>> Solution_four_sum_quick::fourSum(std::vector<int> 
         {
             // 去重第二个数字
             if (second > first + 1 && nums[second] == nums[second - 1])
+            {
+                continue;
+            }
+            // 剪枝操作
+            if ((long long)nums[first] + nums[second] + nums[second + 1] + nums[second + 2] > target)
+            {
+                break;
+            }
+            if ((long long)nums[first] + nums[second] + nums[length - 2] + nums[length - 1] < target)
             {
                 continue;
             }

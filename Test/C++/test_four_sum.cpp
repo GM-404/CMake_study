@@ -28,7 +28,7 @@ TEST(Test_four_sum, one)
         std::cout << "no result" << std::endl;
     }
     // 验证结果是否正确
-    EXPECT_EQ(result.size(), 7); // 验证结果数量
+    EXPECT_EQ(result.size(), 5); // 验证结果数量
     for (int i = 0; i < result.size(); i++)
     {
         // 验证每个结果的大小
@@ -62,7 +62,41 @@ TEST(Test_four_sum, two)
         std::cout << "no result" << std::endl;
     }
     // 验证结果是否正确
-    EXPECT_EQ(result.size(), 7); // 验证结果数量
+    EXPECT_EQ(result.size(), 5); // 验证结果数量
+    for (int i = 0; i < result.size(); i++)
+    {
+        // 验证每个结果的大小
+        EXPECT_EQ(result[i].size(), 4);
+        // 验证每个结果是否等于目标值
+        EXPECT_EQ(result[i][0] + result[i][1] + result[i][2] + result[i][3], target);
+    }
+}
+TEST(Test_four_sum, third)
+{
+    std::vector<std::vector<int>> result;
+    Solution_four_sum_quick sol;
+    std::vector<int> nums = {2, 2, 2, 2, 2};
+    int target = 8;
+    result = sol.fourSum(nums, target);
+    std::cout << "The four numbers that sum to " << target << " have:" << result.size() << std::endl;
+    // 打印结果
+    if (!result.empty())
+    {
+        for (const auto &triplet : result)
+        {
+            for (int num : triplet)
+            {
+                std::cout << num << " ";
+            }
+            std::cout << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "no result" << std::endl;
+    }
+    // 验证结果是否正确
+    EXPECT_EQ(result.size(), 1); // 验证结果数量
     for (int i = 0; i < result.size(); i++)
     {
         // 验证每个结果的大小
