@@ -122,14 +122,14 @@ build cmake_object_order_depends_target_lesson1_1: phony || .
 
 build lesson1_1/CMakeFiles/lesson1_1.dir/main.cpp.obj: CXX_COMPILER__lesson1_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/main.cpp || cmake_object_order_depends_target_lesson1_1
   DEP_FILE = lesson1_1\CMakeFiles\lesson1_1.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++17 -Wall -Wextra -g -O0
   INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
   OBJECT_FILE_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
 
 build lesson1_1/CMakeFiles/lesson1_1.dir/add.cpp.obj: CXX_COMPILER__lesson1_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson1_1
   DEP_FILE = lesson1_1\CMakeFiles\lesson1_1.dir\add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++17 -Wall -Wextra -g -O0
   INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
   OBJECT_FILE_DIR = lesson1_1\CMakeFiles\lesson1_1.dir
@@ -234,14 +234,14 @@ build cmake_object_order_depends_target_lesson1_2: phony || .
 
 build lesson1_2/CMakeFiles/lesson1_2.dir/main.cpp.obj: CXX_COMPILER__lesson1_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_2/main.cpp || cmake_object_order_depends_target_lesson1_2
   DEP_FILE = lesson1_2\CMakeFiles\lesson1_2.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++17 -g -O0
   INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
   OBJECT_FILE_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
 
 build lesson1_2/CMakeFiles/lesson1_2.dir/__/lesson1_1/add.cpp.obj: CXX_COMPILER__lesson1_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_lesson1_2
   DEP_FILE = lesson1_2\CMakeFiles\lesson1_2.dir\__\lesson1_1\add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
+  FLAGS = -g -std=gnu++17 -g -O0
   INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include
   OBJECT_DIR = lesson1_2\CMakeFiles\lesson1_2.dir
   OBJECT_FILE_DIR = lesson1_2\CMakeFiles\lesson1_2.dir\__\lesson1_1
@@ -461,14 +461,14 @@ build lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj: CXX_COMPILER__del_unscanned_
 
 
 #############################################
-# Link the static library lesson2_1\del\libdel.a
+# Link the static library C:\Users\19513\Desktop\cmake\lesson2_1\lib\libdel.a
 
-build lesson2_1/del/libdel.a: CXX_STATIC_LIBRARY_LINKER__del_Debug lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj
+build C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a: CXX_STATIC_LIBRARY_LINKER__del_Debug lesson2_1/del/CMakeFiles/del.dir/del.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = lesson2_1\del\CMakeFiles\del.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\lesson2_1\del && "C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/19513/Desktop/cmake/build/lesson2_1/del/libdel.a C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a"
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\19513\Desktop\cmake\build\lesson2_1\del && "C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a"
   PRE_LINK = cd .
-  TARGET_FILE = lesson2_1\del\libdel.a
+  TARGET_FILE = C:\Users\19513\Desktop\cmake\lesson2_1\lib\libdel.a
   TARGET_PDB = del.a.dbg
 
 
@@ -1057,9 +1057,9 @@ build Test/C++/CMakeFiles/test_del.dir/test_del.cpp.obj: CXX_COMPILER__test_del_
 #############################################
 # Link the executable Test\C++\test_del.exe
 
-build Test/C++/test_del.exe: CXX_EXECUTABLE_LINKER__test_del_Debug Test/C++/CMakeFiles/test_del.dir/test_del.cpp.obj | lib/libgtest_main.a lib/libgtest.a lesson2_1/del/libdel.a || lesson2_1/del/libdel.a lib/libgtest.a lib/libgtest_main.a
+build Test/C++/test_del.exe: CXX_EXECUTABLE_LINKER__test_del_Debug Test/C++/CMakeFiles/test_del.dir/test_del.cpp.obj | lib/libgtest_main.a lib/libgtest.a C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a || C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  lesson2_1/del/libdel.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/19513/Desktop/cmake/lesson2_1/lib
   OBJECT_DIR = Test\C++\CMakeFiles\test_del.dir
   POST_BUILD = cd .
@@ -2092,6 +2092,47 @@ build thirdpart/pybind11/install/strip: phony thirdpart/pybind11/CMakeFiles/inst
 # C:/Users/19513/Desktop/cmake/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lesson3_1
+
+
+#############################################
+# Order-only phony target for lesson3_1
+
+build cmake_object_order_depends_target_lesson3_1: phony || .
+
+build lesson3_1/CMakeFiles/lesson3_1.dir/temporary_test.cpp.obj: CXX_COMPILER__lesson3_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/temporary_test.cpp || cmake_object_order_depends_target_lesson3_1
+  DEP_FILE = lesson3_1\CMakeFiles\lesson3_1.dir\temporary_test.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
+
+build lesson3_1/CMakeFiles/lesson3_1.dir/source/subarray.cpp.obj: CXX_COMPILER__lesson3_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/subarray.cpp || cmake_object_order_depends_target_lesson3_1
+  DEP_FILE = lesson3_1\CMakeFiles\lesson3_1.dir\source\subarray.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\lesson3_1.dir\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lesson3_1
+
+
+#############################################
+# Link the executable lesson3_1\lesson3_1.exe
+
+build lesson3_1/lesson3_1.exe: CXX_EXECUTABLE_LINKER__lesson3_1_Debug lesson3_1/CMakeFiles/lesson3_1.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/lesson3_1.dir/source/subarray.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson3_1\lesson3_1.exe
+  TARGET_IMPLIB = lesson3_1\liblesson3_1.dll.a
+  TARGET_PDB = lesson3_1.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2229,7 +2270,7 @@ build bind_sum: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
 
 build bind_sum.cp313-win_amd64.pyd: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
 
-build del: phony lesson2_1/del/libdel.a
+build del: phony C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a
 
 build del_ctest: phony PythonWrapper/del_ctest.cp313-win_amd64.pyd
 
@@ -2259,7 +2300,11 @@ build lesson2_2: phony lesson2_2/lesson2_2.exe
 
 build lesson2_2.exe: phony lesson2_2/lesson2_2.exe
 
-build libdel.a: phony lesson2_1/del/libdel.a
+build lesson3_1: phony lesson3_1/lesson3_1.exe
+
+build lesson3_1.exe: phony lesson3_1/lesson3_1.exe
+
+build libdel.a: phony C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a
 
 build libgmock.a: phony lib/libgmock.a
 
@@ -2346,7 +2391,7 @@ build lesson2_1/all: phony lesson2_1/lesson2_1.exe lesson2_1/del/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson2_1/del
 
-build lesson2_1/del/all: phony lesson2_1/del/libdel.a
+build lesson2_1/del/all: phony C$:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a
 
 # =============================================================================
 
@@ -2367,7 +2412,7 @@ build lesson2_2/mul/all: phony C$:/Users/19513/Desktop/cmake/lesson2_2/bin/libmu
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson3_1
 
-build lesson3_1/all: phony
+build lesson3_1/all: phony lesson3_1/lesson3_1.exe
 
 # =============================================================================
 

@@ -1,25 +1,25 @@
 [
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -Wall -Wextra -g -O0 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -Wall -Wextra -g -O0 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\add.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_2\\main.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -g -O0 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_2\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_2\\main.cpp",
   "output": "lesson1_2\\CMakeFiles\\lesson1_2.dir\\main.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -g -O0 -o lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
   "output": "lesson1_2\\CMakeFiles\\lesson1_2.dir\\__\\lesson1_1\\add.cpp.obj"
 },
@@ -154,5 +154,17 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_sum.dir\\__\\lesson3_1\\source\\sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "output": "PythonWrapper\\CMakeFiles\\bind_sum.dir\\__\\lesson3_1\\source\\sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
+  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\subarray.cpp.obj"
 }
 ]
