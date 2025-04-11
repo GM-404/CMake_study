@@ -51,3 +51,4 @@ add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/googletest-1.16.0
 添加导入好的模块使用交互窗口联合编译即可，有时候会报找不到静态库文件，这是因为静态检测不会看添加链接，在doc里面有解决方案
 ## thridpary
 包含的封装c++的pybind11和测试用的c++
+“”“interestingmain.cpp”””
