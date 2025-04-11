@@ -1,1 +1,5 @@
-add_subdirectory(C++)
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/C++")
+    add_subdirectory(C++)
+else()
+    message(FATAL_ERROR "The 'C++' directory does not exist. Skipping add_subdirectory文件夹下面缺少CMakeLists.txt文件.")
+endif()

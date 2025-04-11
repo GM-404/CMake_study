@@ -2,9 +2,8 @@
   "python.analysis.extraPaths": [ //静态分析路径中加入自己用C++封装的Python模块
     "C:\\Users\\19513\\Desktop\\cmake\\build\\PythonWrapper"
   ],
-  "cmake.configureSettings": { //CMake配置时的设置,message(STATUS ...) 输出的信息默认情况下可能不会在终端中显示，这是因为 CMake 的输出级别设置问题。要使这些信息显示出来，
-    "CMAKE_VERBOSE_MAKEFILE": "ON"
-  },
+  // "cmake.configureSettings": { //CMake配置时的设置,message(STATUS ...) 输出的信息默认情况下可能不会在终端中显示，这是因为 CMake 的输出级别设置问题。要使这些信息显示出来，
+  //   "CMAKE_VERBOSE_MAKEFILE": "ON"
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",

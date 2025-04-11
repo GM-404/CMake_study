@@ -1,7 +1,23 @@
+# 设置 CMake 最低版本要求
+cmake_minimum_required(VERSION 3.10)
+
+# 包含 CTest 模块并启用测试功能
 include(CTest)
 enable_testing()
-add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/googletest-1.16.0
-    ${CMAKE_BINARY_DIR}/thirdpart/googletest) # 非子目录包含的时候需要指定二进制目录
+
+# add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/googletest-1.16.0
+# ${CMAKE_BINARY_DIR}/thirdpart/googletest) # 非子目录包含的时候需要指定二进制目录
+
+# 定义 Google Test 目录
+set(GTEST_DIR ${CMAKE_PROJECT_ROOT}/thirdpart/googletest-1.16.0)
+
+# 检查 Google Test 目录是否存在
+if(EXISTS ${GTEST_DIR})
+    # 添加 Google Test 子目录
+    add_subdirectory(${GTEST_DIR} ${CMAKE_BINARY_DIR}/thirdpart/googletest)
+else()
+    message(FATAL_ERROR "Google Test directory not found: ${GTEST_DIR}")
+endif()
 
 # 添加源文件和测试文件
 add_executable(test_add

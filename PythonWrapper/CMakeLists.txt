@@ -1,16 +1,46 @@
 cmake_minimum_required(VERSION 3.10)
 
+if(NOT DEFINED CMAKE_PROJECT_ROOT)
+    message(FATAL_ERROR "CMAKE_PROJECT_ROOT is not defined.")
+endif()
+
+# 定义包含目录列表,好像没啥用
+set(INCLUDE_DIRS
+    ${CMAKE_PROJECT_ROOT}/lesson1_1/include
+    ${CMAKE_PROJECT_ROOT}/lesson2_1/lib
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include
+)
+
+# 检查包含目录是否存在并添加
+foreach(INCLUDE_DIR ${INCLUDE_DIRS})
+    if(EXISTS ${INCLUDE_DIR})
+        message(STATUS "Adding include directory: ${INCLUDE_DIR}")
+    else()
+        message(FATAL_ERROR "Include directory not found: ${INCLUDE_DIR}")
+    endif()
+endforeach()
+
+# 添加 pybind11 子目录
+# add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/pybind11-2.13.6 ${CMAKE_BINARY_DIR}/thirdpart/pybind11)
+# 添加 pybind11 子目录
+set(PYBIND11_DIR ${CMAKE_PROJECT_ROOT}/thirdpart/pybind11-2.13.6)
+
+if(EXISTS ${PYBIND11_DIR})
+    add_subdirectory(${PYBIND11_DIR} ${CMAKE_BINARY_DIR}/thirdpart/pybind11)
+else()
+    message(FATAL_ERROR "pybind11 directory not found: ${PYBIND11_DIR}")
+endif()
+
 include_directories(${CMAKE_PROJECT_ROOT}/lesson1_1/include)
 include_directories(${CMAKE_PROJECT_ROOT}/lesson2_1/lib)
 include_directories(${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
-# 添加 pybind11 子目录
-add_subdirectory(${CMAKE_PROJECT_ROOT}/thirdpart/pybind11-2.13.6 ${CMAKE_BINARY_DIR}/thirdpart/pybind11)
-
 # # # 设置输出路径
 # set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/Test/Python/)
-
-# 添加你的目标
+# 设置输出路径
+# set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/Test/Python/)
+# set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${LIBRARY_OUTPUT_PATH})
+# message(STATUS "Output path for libraries: ${LIBRARY_OUTPUT_PATH}")
 pybind11_add_module(add
     bind_add.cpp
     ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp
