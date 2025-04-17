@@ -1,4 +1,12 @@
 # 本文档集合了该仓库实现的一些功能如下：
+## DOC 
+里面包含力扣知识点
+配置matlab
+数学公式
+虚拟环境
+cmake
+MArkDowm
+PYbind11和ASICII码表
 ## lesson1_1
 文件夹下面包含的cmake文件里面只有包含include文件夹下面的头文件目录，然后使用add_exe（）调用main和add生成可执行文件，include文件夹下包含了add.hh,
 在add.hh中加入一个类的举例，用于学习绑定，声明在add.hh函数实现在add.cpp。
@@ -33,6 +41,8 @@
 然后使用pybind11_add_moodule()使用bind_add.cpp和原C++函数一起绑定为lesson
 注意添加c++静态库的时候，可以指定目录（已注释），也可也使用find_package()查找，看一下类的绑定只需要.cpp文件，
 供给test文件夹下面使用
+# MATLAB
+里面包含60G雷达解析
 ## Test文件夹
 包含Python测试和c++测试两种，
 他的cmake文件只向下索引到C++的cmake文件

@@ -37,6 +37,10 @@ add_executable(test_four_sum
     test_four_sum.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/four_sum.cpp)
 
+add_executable(test_letter_combination
+    test_letter_combination.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/letter_combination.cpp)
+
 # 添加所需目录头文件
 target_include_directories(test_add PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson1_1/include)
@@ -45,6 +49,8 @@ target_include_directories(test_del PRIVATE
 target_include_directories(test_sum PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_four_sum PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_letter_combination PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
 # 添加链接库
@@ -61,9 +67,13 @@ target_link_libraries(test_sum
 target_link_libraries(test_four_sum
     gtest_main
     gtest)
+target_link_libraries(test_letter_combination
+    gtest_main
+    gtest)
 
 # 添加测试
 add_test(NAME test_add COMMAND test_add)
 add_test(NAME test_del COMMAND test_del)
 add_test(NAME test_sum COMMAND test_sum)
 add_test(NAME test_four_sum COMMAND test_four_sum)
+add_test(NAME test_letter_combination COMMAND test_letter_combination)

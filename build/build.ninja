@@ -1150,6 +1150,47 @@ build Test/C++/test_four_sum.exe: CXX_EXECUTABLE_LINKER__test_four_sum_Debug Tes
   TARGET_IMPLIB = Test\C++\libtest_four_sum.dll.a
   TARGET_PDB = test_four_sum.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_letter_combination
+
+
+#############################################
+# Order-only phony target for test_letter_combination
+
+build cmake_object_order_depends_target_test_letter_combination: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_letter_combination.dir/test_letter_combination.cpp.obj: CXX_COMPILER__test_letter_combination_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_letter_combination.cpp || cmake_object_order_depends_target_test_letter_combination
+  DEP_FILE = Test\C++\CMakeFiles\test_letter_combination.dir\test_letter_combination.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
+
+build Test/C++/CMakeFiles/test_letter_combination.dir/__/__/lesson3_1/source/letter_combination.cpp.obj: CXX_COMPILER__test_letter_combination_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/letter_combination.cpp || cmake_object_order_depends_target_test_letter_combination
+  DEP_FILE = Test\C++\CMakeFiles\test_letter_combination.dir\__\__\lesson3_1\source\letter_combination.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_letter_combination.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_letter_combination
+
+
+#############################################
+# Link the executable Test\C++\test_letter_combination.exe
+
+build Test/C++/test_letter_combination.exe: CXX_EXECUTABLE_LINKER__test_letter_combination_Debug Test/C++/CMakeFiles/test_letter_combination.dir/test_letter_combination.cpp.obj Test/C++/CMakeFiles/test_letter_combination.dir/__/__/lesson3_1/source/letter_combination.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_letter_combination.exe
+  TARGET_IMPLIB = Test\C++\libtest_letter_combination.dll.a
+  TARGET_PDB = test_letter_combination.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1950,6 +1991,49 @@ build PythonWrapper/bind_sum.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__bin
   TARGET_IMPLIB = PythonWrapper\libbind_sum.dll.a
   TARGET_PDB = bind_sum.cp313-win_amd64.pyd.dbg
 
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target bind_letter
+
+
+#############################################
+# Order-only phony target for bind_letter
+
+build cmake_object_order_depends_target_bind_letter: phony || .
+
+build PythonWrapper/CMakeFiles/bind_letter.dir/bind_letter.cpp.obj: CXX_COMPILER__bind_letter_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_letter.cpp || cmake_object_order_depends_target_bind_letter
+  DEFINES = -Dbind_letter_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_letter.dir\bind_letter.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_letter.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_letter.dir
+
+build PythonWrapper/CMakeFiles/bind_letter.dir/__/lesson3_1/source/letter_combination.cpp.obj: CXX_COMPILER__bind_letter_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/letter_combination.cpp || cmake_object_order_depends_target_bind_letter
+  DEFINES = -Dbind_letter_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_letter.dir\__\lesson3_1\source\letter_combination.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_letter.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_letter.dir\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target bind_letter
+
+
+#############################################
+# Link the shared module PythonWrapper\bind_letter.cp313-win_amd64.pyd
+
+build PythonWrapper/bind_letter.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__bind_letter_Debug PythonWrapper/CMakeFiles/bind_letter.dir/bind_letter.cpp.obj PythonWrapper/CMakeFiles/bind_letter.dir/__/lesson3_1/source/letter_combination.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_letter.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\bind_letter.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libbind_letter.dll.a
+  TARGET_PDB = bind_letter.cp313-win_amd64.pyd.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2108,8 +2192,8 @@ build lesson3_1/CMakeFiles/lesson3_1.dir/temporary_test.cpp.obj: CXX_COMPILER__l
   OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
 
-build lesson3_1/CMakeFiles/lesson3_1.dir/source/subarray.cpp.obj: CXX_COMPILER__lesson3_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/subarray.cpp || cmake_object_order_depends_target_lesson3_1
-  DEP_FILE = lesson3_1\CMakeFiles\lesson3_1.dir\source\subarray.cpp.obj.d
+build lesson3_1/CMakeFiles/lesson3_1.dir/source/letter_combination.cpp.obj: CXX_COMPILER__lesson3_1_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/letter_combination.cpp || cmake_object_order_depends_target_lesson3_1
+  DEP_FILE = lesson3_1\CMakeFiles\lesson3_1.dir\source\letter_combination.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
   OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
@@ -2123,7 +2207,7 @@ build lesson3_1/CMakeFiles/lesson3_1.dir/source/subarray.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable lesson3_1\lesson3_1.exe
 
-build lesson3_1/lesson3_1.exe: CXX_EXECUTABLE_LINKER__lesson3_1_Debug lesson3_1/CMakeFiles/lesson3_1.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/lesson3_1.dir/source/subarray.cpp.obj
+build lesson3_1/lesson3_1.exe: CXX_EXECUTABLE_LINKER__lesson3_1_Debug lesson3_1/CMakeFiles/lesson3_1.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/lesson3_1.dir/source/letter_combination.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\lesson3_1.dir
@@ -2266,6 +2350,10 @@ build band_class: phony PythonWrapper/band_class.cp313-win_amd64.pyd
 
 build band_class.cp313-win_amd64.pyd: phony PythonWrapper/band_class.cp313-win_amd64.pyd
 
+build bind_letter: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
+
+build bind_letter.cp313-win_amd64.pyd: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
+
 build bind_sum: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
 
 build bind_sum.cp313-win_amd64.pyd: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
@@ -2330,6 +2418,10 @@ build test_four_sum: phony Test/C++/test_four_sum.exe
 
 build test_four_sum.exe: phony Test/C++/test_four_sum.exe
 
+build test_letter_combination: phony Test/C++/test_letter_combination.exe
+
+build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
+
 build test_sum: phony Test/C++/test_sum.exe
 
 build test_sum.exe: phony Test/C++/test_sum.exe
@@ -2349,7 +2441,7 @@ build all: phony lesson1_1/all lesson1_2/all lesson2_1/all lesson2_2/all Test/al
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd PythonWrapper/bind_letter.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
@@ -2363,7 +2455,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_del.exe Test/C++/test_sum.exe Test/C++/test_four_sum.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_del.exe Test/C++/test_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe thirdpart/googletest/all
 
 # =============================================================================
 

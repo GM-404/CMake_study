@@ -58,6 +58,10 @@ pybind11_add_module(bind_sum
     bind_sum.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sum.cpp
 )
+pybind11_add_module(bind_letter
+    bind_letter.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/letter_combination.cpp
+)
 
 # # 链接静态库到 pybind11 模块
 # target_link_libraries(del_ctest PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/lib/libdel.a)

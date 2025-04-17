@@ -71,19 +71,19 @@
 			[
 				{
 					"id" : "gtest::@89990bd92d21556e44bd",
-					"index" : 35
-				},
-				{
-					"id" : "gtest_main::@89990bd92d21556e44bd",
 					"index" : 36
 				},
 				{
+					"id" : "gtest_main::@89990bd92d21556e44bd",
+					"index" : 37
+				},
+				{
 					"id" : "gmock::@4b9ead47e321c1b28e4a",
-					"index" : 33
+					"index" : 34
 				},
 				{
 					"id" : "gmock_main::@4b9ead47e321c1b28e4a",
-					"index" : 34
+					"index" : 35
 				}
 			],
 			"paths" : 
@@ -125,7 +125,7 @@
 				"lib/libgtest.a"
 			],
 			"targetId" : "gtest::@89990bd92d21556e44bd",
-			"targetIndex" : 35,
+			"targetIndex" : 36,
 			"type" : "target"
 		},
 		{
@@ -137,7 +137,7 @@
 				"lib/libgtest_main.a"
 			],
 			"targetId" : "gtest_main::@89990bd92d21556e44bd",
-			"targetIndex" : 36,
+			"targetIndex" : 37,
 			"type" : "target"
 		},
 		{

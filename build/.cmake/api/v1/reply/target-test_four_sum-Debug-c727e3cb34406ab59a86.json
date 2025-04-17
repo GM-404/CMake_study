@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lesson3_1/lesson3_1.exe"
+			"path" : "Test/C++/test_four_sum.exe"
 		},
 		{
-			"path" : "lesson3_1/lesson3_1.pdb"
+			"path" : "Test/C++/test_four_sum.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -14,11 +14,12 @@
 		"commands" : 
 		[
 			"add_executable",
-			"include_directories"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"lesson3_1/CMakeLists.txt"
+			"Test/C++/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,13 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 1,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 51,
 				"parent" : 0
 			}
 		]
@@ -51,8 +58,18 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/19513/Desktop/cmake/lesson3_1/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -60,7 +77,7 @@
 			{
 				"backtraces" : 
 				[
-					1
+					2
 				],
 				"standard" : "17"
 			},
@@ -71,7 +88,18 @@
 			]
 		}
 	],
-	"id" : "lesson3_1::@f7dbcf3a521522d18336",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@89990bd92d21556e44bd"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@89990bd92d21556e44bd"
+		}
+	],
+	"id" : "test_four_sum::@ec39104b73891538ddf2",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -85,18 +113,28 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "lesson3_1",
-	"nameOnDisk" : "lesson3_1.exe",
+	"name" : "test_four_sum",
+	"nameOnDisk" : "test_four_sum.exe",
 	"paths" : 
 	{
-		"build" : "lesson3_1",
-		"source" : "lesson3_1"
+		"build" : "Test/C++",
+		"source" : "Test/C++"
 	},
 	"sourceGroups" : 
 	[
@@ -114,13 +152,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lesson3_1/temporary_test.cpp",
+			"path" : "Test/C++/test_four_sum.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lesson3_1/source/subarray.cpp",
+			"path" : "lesson3_1/source/four_sum.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

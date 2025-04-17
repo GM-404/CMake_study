@@ -2,7 +2,7 @@
 result1 = [10 20; 30 40];
 
 % 定义 bit_positions 向量
-bit_positions = uint32([1, 2, 4, 8, 16]);
+bit_positions =  uint32(2.^(31:-1:0));
 
 % 初始化 result_3d 三维矩阵
 result_3d = false(size(result1, 1), size(result1, 2), length(bit_positions));

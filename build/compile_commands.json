@@ -91,6 +91,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_letter_combination.dir\\test_letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_letter_combination.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_letter_combination.dir\\test_letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock/include -IC:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googlemock -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\thirdpart\\googletest-1.16.0\\googlemock\\src\\gmock-all.cc",
   "output": "thirdpart\\googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
@@ -157,14 +169,26 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_letter_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_letter.dir\\bind_letter.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_letter.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_letter.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_letter.dir\\bind_letter.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_letter_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_letter.dir\\__\\lesson3_1\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_letter.dir\\__\\lesson3_1\\source\\letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
   "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
-  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\subarray.cpp.obj"
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\letter_combination.cpp.obj"
 }
 ]
