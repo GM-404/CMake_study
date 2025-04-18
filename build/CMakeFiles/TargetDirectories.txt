@@ -137,3 +137,10 @@ C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/list_install_components.
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/install/strip.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/lesson_Eigen.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/list_install_components.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/local.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/strip.dir

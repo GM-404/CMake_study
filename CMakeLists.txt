@@ -35,6 +35,7 @@ add_subdirectory(PythonWrapper)
 # 执行 lesson3_1 目录下的 CMakeLists.txt，用于配置存储力扣刷题代码相关的可执行文件或测试等设置
 add_subdirectory(lesson3_1)
 
+add_subdirectory(lesson3_2_Eigen)
 # 设置 C 和 C++ 编译器的 LTO 选项
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
@@ -56,3 +57,4 @@ endforeach()
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel" FORCE)
 endif()
+

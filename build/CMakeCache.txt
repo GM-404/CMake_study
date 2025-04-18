@@ -326,6 +326,9 @@ DART_TESTING_TIMEOUT:STRING=1500
 //Path to a library.
 DEL_LIB:FILEPATH=C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=F:/LFMCW-Radar-DSP_C-Language/build/ThirdParty/eigen-3.4.0
+
 //Use Abseil and RE2. Requires Abseil and RE2 to be separately
 // added to the build.
 GTEST_HAS_ABSL:BOOL=OFF
@@ -590,7 +593,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
