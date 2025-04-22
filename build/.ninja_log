@@ -41,6 +41,7 @@
 12263	12483	7660628477866591	lib/libgtest.a	f69077595a74bea3
 106	5598	7660628356292830	PythonWrapper/CMakeFiles/add.dir/bind_add.cpp.obj	f1b5842975bef939
 1343	7252	7660628368669688	PythonWrapper/CMakeFiles/del_ctest.dir/bind_del.cpp.obj	23df0b1d1c1ca8ac
+1875	2118	7666798510303311	lesson3_2_Eigen/lesson_Eigen.exe	857ea77dccb39939
 15	9829	7660612385792441	PythonWrapper/CMakeFiles/band_class.dir/bind_class.cpp.obj	8f801feb5a8e7a24
 1374	8544	7660628368978861	PythonWrapper/CMakeFiles/bind_sum.dir/bind_sum.cpp.obj	e669234c3bbc6449
 12483	12595	7660628480069987	lib/libgmock.a	c3c26dddde930133
@@ -53,13 +54,13 @@
 912	1154	7666013067674556	lesson3_1/lesson3_1.exe	f2174b3b40c1d4f3
 12	580	7659907608694054	lesson3_1/CMakeFiles/lesson3_1.dir/source/four_sum.cpp.obj	b9afc3769ae45bc8
 94	1575	7660628356173149	Test/C++/CMakeFiles/test_four_sum.dir/__/__/lesson3_1/source/four_sum.cpp.obj	73c93d5449300fe0
-19	681	7666798339299762	build.ninja	d1fcb0469f3a7c38
+19	681	7669095644690221	build.ninja	d1fcb0469f3a7c38
 608	776	7660613982481617	C:/Users/19513/Desktop/cmake/lesson2_1/lib/libdel.a	8fc60d3dd0e2721e
 27	954	7666024381232445	Test/C++/CMakeFiles/test_letter_combination.dir/__/__/lesson3_1/source/letter_combination.cpp.obj	cb8fe180695510be
 8544	8781	7660628440682228	PythonWrapper/bind_sum.cp313-win_amd64.pyd	6067a16bb2fabc29
 8	1506	7666037513493753	Test/C++/CMakeFiles/test_letter_combination.dir/test_letter_combination.cpp.obj	69d7753292aa37cc
 12	922	7666031811501845	PythonWrapper/CMakeFiles/bind_letter.dir/__/lesson3_1/source/letter_combination.cpp.obj	2f18d4ff34762574
-24	1676	7666798363045529	lesson3_2_Eigen/CMakeFiles/lesson_Eigen.dir/main.cpp.obj	dc2b503529342a27
-1677	1871	7666798379578443	lesson3_2_Eigen/lesson_Eigen.exe	857ea77dccb39939
 7	1875	7666798491627459	lesson3_2_Eigen/CMakeFiles/lesson_Eigen.dir/main.cpp.obj	dc2b503529342a27
-1875	2118	7666798510303311	lesson3_2_Eigen/lesson_Eigen.exe	857ea77dccb39939
+11	871	7669095647366513	lesson1_1/CMakeFiles/lesson1_1.dir/add.cpp.obj	4770e7051eb7c0f9
+6	938	7669095647316637	lesson1_1/CMakeFiles/lesson1_1.dir/main.cpp.obj	d9e0d2a36628895e
+938	1396	7669095656638870	lesson1_1/lesson1_1.exe	e7959a2079906439

@@ -1,0 +1,33 @@
+{ //folders 数组用于指定该工作区包含的文件夹。VS Code 会将这些文件夹下的文件和子文件夹纳入工作区管理。
+	"folders": [
+		{
+			"name": "cmake", // 文件夹名称，添加到工作区的文件夹名称,为工作区中的这个文件夹指定显示名称为cmake。也可以是其他任意名字
+			"path": ".." //指定该文件夹的实际路径为当前工作区文件所在目录的上一级目录。
+		},
+		{
+			"name": "python", //在工作区创建第二个文件夹，名称为python
+			"path": "../Test/Python" //指定该文件夹的实际路径为当前工作区文件所在目录的上一级目录下的Test/Python子目录。
+		}
+	],
+	"settings": { //这是一个数组，用于指定在使用 CMake 进行项目配置时传递的额外参数。
+		"cmake.configureArgs": [
+			"-DCMAKE_TOOLCHAIN_FILE=./Compilation_chain/toolchain-armclang.cmake" //-D 是用来定义 CMake 变量的选项
+		],
+		"cmake.generator": "Ninja", //表示使用 Ninja 作为生成器。Ninja 是一种专注于快速构建的生成器，
+		"files.associations": { //files.associations 是一个对象，用于指定文件扩展名或文件名与语言模式之间的关联。VS Code 会根据这些关联来为文件提供相应的语法高亮、代码提示等功能。
+			"*.H": "c", //将所有扩展名为 .H 的文件与 C 语言模式关联
+			"*.h": "c", //将所有扩展名为 .h 的文件与 C 语言模式关联
+			"*.c": "c", //将所有扩展名为 .c 的文件与 C 语言模式关联
+			"*.cpp": "cpp", //将所有扩展名为 .cpp 的文件与 C++ 语言模式关联
+			"*.py": "python", //将所有扩展名为 .py 的文件与 Python 语言模式关联
+			"*.json": "json", //将所有扩展名为 .json 的文件与 JSON 语言模式关联
+			"*.xml": "xml", //将所有扩展名为 .xml 的文件与 XML 语言模式关联
+			"*.yaml": "yaml", //将所有扩展名为 .yaml 的文件与 YAML 语言模式关联
+			"*.yml": "yaml", //将所有扩展名为 .yml 的文件与 YAML 语言模式关联
+			"*.sh": "shellscript", //将所有扩展名为 .sh 的文件与 Shell 脚本语言模式关联
+			"*.bat": "bat", //将所有扩展名为 .bat 的文件与批处理语言模式关联
+			"*.md": "markdown", //将所有扩展名为 .md 的文件与 Markdown 语言模式关联
+			"*.cmake": "cmake", //将所有扩展名为 .cmake 的文件与 CMake 语言模式关联
+		}
+	}
+}

@@ -102,11 +102,11 @@
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest::@89990bd92d21556e44bd"
+			"id" : "gtest_main::@89990bd92d21556e44bd"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "gtest_main::@89990bd92d21556e44bd"
+			"id" : "gtest::@89990bd92d21556e44bd"
 		}
 	],
 	"id" : "test_del::@ec39104b73891538ddf2",
