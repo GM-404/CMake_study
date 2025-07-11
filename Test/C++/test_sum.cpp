@@ -45,3 +45,17 @@ TEST(TwoSumTest, three)
         EXPECT_EQ(nums[result[0]] + nums[result[1]], target);
     }
 }
+TEST(TwoSumTest, four)
+{
+    Solution sol;
+    std::vector<int> nums = {0, 1, 2, 3, 4, 5};
+    int target = 6;
+    std::vector<int> result = sol.twoSum(nums, target);
+
+    // 验证结果是否正确
+    EXPECT_EQ(result.size(), 2);
+    if (result.size() == 2)
+    {
+        EXPECT_EQ(nums[result[0]] + nums[result[1]], target);
+    }
+}

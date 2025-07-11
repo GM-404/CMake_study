@@ -1,0 +1,1 @@
+﻿add_executable(lesson0_1 main.cpp)

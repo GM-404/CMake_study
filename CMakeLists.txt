@@ -14,6 +14,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_PROJECT_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 message(STATUS "Project root directory set to: ${CMAKE_PROJECT_ROOT}")
 
+# 执行 lesson0_1 目录下的 CMakeLists.txt，用于配置 lesson1_1 目录中的可执行文件相关设置
+add_subdirectory(lesson0_1)
+
 # 执行 lesson1_1 目录下的 CMakeLists.txt，用于配置 lesson1_1 目录中的可执行文件相关设置
 add_subdirectory(lesson1_1)
 
@@ -36,6 +39,7 @@ add_subdirectory(PythonWrapper)
 add_subdirectory(lesson3_1)
 
 add_subdirectory(lesson3_2_Eigen)
+
 # 设置 C 和 C++ 编译器的 LTO 选项
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
@@ -57,4 +61,3 @@ endforeach()
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel" FORCE)
 endif()
-
