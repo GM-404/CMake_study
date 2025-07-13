@@ -19,19 +19,20 @@ else()
     message(FATAL_ERROR "Google Test directory not found: ${GTEST_DIR}")
 endif()
 
+# 第一步：
 # 添加源文件和测试文件
+# 测试一般文件
 add_executable(test_add
     test_add.cpp
     ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
 
-add_executable(test_del
-    test_del.cpp
-)
-target_link_directories(test_del PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/lib) # 链接动态库
-
 add_executable(test_sum
     test_sum.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sum.cpp)
+
+add_executable(test_three_sum
+    test_three_sum.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/three_sum.cpp)
 
 add_executable(test_four_sum
     test_four_sum.cpp
@@ -41,6 +42,13 @@ add_executable(test_letter_combination
     test_letter_combination.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/letter_combination.cpp)
 
+# 测试动态库文件
+add_executable(test_del
+    test_del.cpp
+)
+target_link_directories(test_del PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/lib) # 链接动态库
+
+# 第二步：
 # 添加所需目录头文件
 target_include_directories(test_add PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson1_1/include)
@@ -52,7 +60,11 @@ target_include_directories(test_four_sum PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_letter_combination PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_three_sum PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
+# 第三步：
+# 添加 Google Test 头文件目录
 # 添加链接库
 target_link_libraries(test_add
     gtest_main
@@ -64,6 +76,9 @@ target_link_libraries(test_del
 target_link_libraries(test_sum
     gtest_main
     gtest)
+target_link_libraries(test_three_sum
+    gtest_main
+    gtest)
 target_link_libraries(test_four_sum
     gtest_main
     gtest)
@@ -71,9 +86,11 @@ target_link_libraries(test_letter_combination
     gtest_main
     gtest)
 
+# 第四步：
 # 添加测试
 add_test(NAME test_add COMMAND test_add)
 add_test(NAME test_del COMMAND test_del)
 add_test(NAME test_sum COMMAND test_sum)
+add_test(NAME test_three_sum COMMAND test_three_sum)
 add_test(NAME test_four_sum COMMAND test_four_sum)
 add_test(NAME test_letter_combination COMMAND test_letter_combination)

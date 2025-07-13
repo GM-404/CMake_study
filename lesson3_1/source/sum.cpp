@@ -74,15 +74,15 @@ int main()
     //::iterator：
     // 这是std::unordered_map内部定义的迭代器类型，用于遍历或访问哈希表中的元素。迭代器可以理解为 “指向容器中元素的指针”，通过它可以操作哈希表中的键值对。
     // “在字典（num_map）中查找单词（键）2，并把找到的位置（迭代器it1）记下来。
-    std::unordered_map<int, int>::iterator it1 = num_map.find(2);
-    if (it1 != num_map.end())
-    {
-        std::cout << "Key 2 found, value is: " << it1->second << std::endl;
-    }
-    else
-    {
-        std::cout << "Key 2 not found." << std::endl;
-    }
+    // std::unordered_map<int, int>::iterator it1 = num_map.find(2);
+    // if (it1 != num_map.end())
+    // {
+    //     std::cout << "Key 2 found, value is: " << it1->second << std::endl;
+    // }
+    // else
+    // {
+    //     std::cout << "Key 2 not found." << std::endl;
+    // }
 
     // 删除元素
     num_map.erase(3);
@@ -92,10 +92,30 @@ int main()
     {
         std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
     }
-    for (std::pair<const int, int> &pair : num_map) // 注意：unordered_map的键是const，必须加const
-    {
-        std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
-    }
+    // for (std::pair<const int, int> &pair : num_map) // 注意：unordered_map的键是const，必须加const
+    // {
+    //     std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
+    // }
     return 0;
 }
 // find找的是键值
+
+// 测试代码，运行时将以下部分复制到temporary_test.cpp中
+//  int main()
+//  {
+//      std::cout << "lesson3_1, temporary_test" << std::endl;
+//      Solution sol;
+//      std::vector<int> nums = {1, 2, 4, 10, 15, 7};
+//      int target = 11;
+//      std::vector<int> result = sol.twoSum(nums, target);
+//      if (!result.empty())
+//      {
+//          std::cout << "Indices: " << result[0] << ", " << result[1] << std::endl;
+//          std::cout << "Values: " << nums[result[0]] << ", " << nums[result[1]] << std::endl;
+//      }
+//      else
+//      {
+//          std::cout << "No two sum solution found." << std::endl;
+//      }
+//      return 0;
+//  }
