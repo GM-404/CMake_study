@@ -39,6 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("C:/Users/19513/Desktop/cmake/build/lesson0_1/cmake_install.cmake")
   include("C:/Users/19513/Desktop/cmake/build/lesson1_1/cmake_install.cmake")
   include("C:/Users/19513/Desktop/cmake/build/lesson1_2/cmake_install.cmake")
   include("C:/Users/19513/Desktop/cmake/build/lesson2_1/cmake_install.cmake")

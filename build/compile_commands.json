@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson0_1\\CMakeFiles\\lesson0_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\main.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\main.cpp",
+  "output": "lesson0_1\\CMakeFiles\\lesson0_1.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -Wall -Wextra -g -O0 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
@@ -61,12 +67,6 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_sum.dir\\test_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_sum.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_sum.dir\\test_sum.cpp.obj"
@@ -76,6 +76,18 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_sum.dir\\__\\__\\lesson3_1\\source\\sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_sum.dir\\__\\__\\lesson3_1\\source\\sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_three_sum.dir\\test_three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_three_sum.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_three_sum.dir\\test_three_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_three_sum.dir\\__\\__\\lesson3_1\\source\\three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_three_sum.dir\\__\\__\\lesson3_1\\source\\three_sum.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
@@ -100,6 +112,12 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
@@ -181,15 +199,45 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
-  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\temporary_test.cpp.obj"
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_three_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_three_sum.dir\\bind_three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_three_sum.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_three_sum.dir\\bind_three_sum.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
-  "output": "lesson3_1\\CMakeFiles\\lesson3_1.dir\\source\\letter_combination.cpp.obj"
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_three_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_three_sum.dir\\__\\lesson3_1\\source\\three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_three_sum.dir\\__\\lesson3_1\\source\\three_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_four_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\bind_four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_four_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_four_sum.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\bind_four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_four_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\__\\lesson3_1\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\__\\lesson3_1\\source\\four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\study_two_sum.dir\\source\\sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
+  "output": "lesson3_1\\CMakeFiles\\study_two_sum.dir\\source\\sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\temporary_test.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\source\\four_sum.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",

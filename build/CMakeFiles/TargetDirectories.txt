@@ -4,6 +4,13 @@ C:/Users/19513/Desktop/cmake/build/CMakeFiles/list_install_components.dir
 C:/Users/19513/Desktop/cmake/build/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/CMakeFiles/install/strip.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/lesson0_1.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/list_install_components.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/install.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/install/local.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/install/strip.dir
 C:/Users/19513/Desktop/cmake/build/lesson1_1/CMakeFiles/lesson1_1.dir
 C:/Users/19513/Desktop/cmake/build/lesson1_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson1_1/CMakeFiles/rebuild_cache.dir
@@ -81,10 +88,11 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousCoverage.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousSubmit.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_add.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_sum.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_three_sum.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_four_sum.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_letter_combination.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/list_install_components.dir
@@ -118,6 +126,8 @@ C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/band_class.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/del_ctest.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_sum.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_letter.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_three_sum.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_four_sum.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/list_install_components.dir
@@ -130,7 +140,8 @@ C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/list_install_co
 C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/strip.dir
-C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/lesson3_1.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/study_two_sum.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/temporary_test_four_sum.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/list_install_components.dir

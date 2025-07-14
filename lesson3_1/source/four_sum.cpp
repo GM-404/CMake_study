@@ -2,7 +2,15 @@
 #include <algorithm> // 排序函数
 #include "four_sum.hh"
 
-std::vector<std::vector<int>> Solution_four_sum::fourSum(std::vector<int> &nums, int target)
+/*
+问题叙述:
+给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组 [nums[a], nums[b], nums[c], nums[d]] （若两个四元组元素一一对应，则认为两个四元组重复）：
+0 <= a, b, c, d < n
+a、b、c 和 d 互不相同
+nums[a] + nums[b] + nums[c] + nums[d] == target
+*/
+// 方法1：暴力法
+std::vector<std::vector<int>> Solution_four_sum::four_Sum(std::vector<int> &nums, int target)
 {
     std::vector<std::vector<int>> result;
     int length = nums.size(); // 判断数组长度 ，如果长度小于 4，直接返回空结果
@@ -55,7 +63,10 @@ std::vector<std::vector<int>> Solution_four_sum::fourSum(std::vector<int> &nums,
     result.erase(last, result.end()); // 从最后一个元素一直往前删除
     return result;                    // 返回结果
 }
-std::vector<std::vector<int>> Solution_four_sum_quick::fourSum(std::vector<int> &nums, int target)
+// 方法2：双指针法
+// 这种方法的时间复杂度是 O(n^3)，比暴力法的 O(n^4) 更高效。我们通过排序数组，然后使用四个指针来找到满足条件的四元组。
+// 这种方法的核心思想是先固定前两个指针，然后使用双指针法来查找后两个指针的值。这样可以减少不必要的重复计算，提高效率。
+std::vector<std::vector<int>> Solution_four_sum_quick::four_Sum(std::vector<int> &nums, int target)
 {
     std::vector<std::vector<int>> result;
     int length = nums.size(); // 判断数组长度 ，如果长度小于 4，直接返回空结果
@@ -137,3 +148,18 @@ std::vector<std::vector<int>> Solution_four_sum_quick::fourSum(std::vector<int> 
     // result.erase(last, result.end()); // 从最后一个元素一直往前删除
     return result; // 返回结果
 }
+// 测试代码，运行时将以下部分复制到temporary_test.cpp中
+// int main()
+// {
+//     std::vector<int> nums = {1, 0, -1, 0, -2, 2};
+//     int target = 0;
+//     Solution_four_sum solution;
+//     std::vector<std::vector<int>> result = solution.four_Sum(nums, target);
+//     for (const auto &quadruplet : result)
+//     {
+//         for (int num : quadruplet)
+//         {//             std::cout << num << " ";
+// }
+// std::cout << std::endl;
+// }
+// return 0;

@@ -66,6 +66,10 @@ pybind11_add_module(bind_three_sum
     bind_three_sum.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/three_sum.cpp
 )
+pybind11_add_module(bind_four_sum
+    bind_four_sum.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/four_sum.cpp
+)
 
 # # 链接静态库到 pybind11 模块
 # target_link_libraries(del_ctest PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/lib/libdel.a)

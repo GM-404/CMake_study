@@ -8,7 +8,7 @@ TEST(Test_four_sum, one)
     Solution_four_sum_quick sol;
     std::vector<int> nums = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
     int target = 10;
-    result = sol.fourSum(nums, target);
+    result = sol.four_Sum(nums, target);
 
     std::cout << "The four numbers that sum to " << target << " have:" << result.size() << std::endl;
     // 打印结果
@@ -43,7 +43,7 @@ TEST(Test_four_sum, two)
     Solution_four_sum_quick sol;
     std::vector<int> nums = {1, 1, 2, 3, 4, 5, 6, 7, 7, 8, 9, 10};
     int target = 12;
-    result = sol.fourSum(nums, target);
+    result = sol.four_Sum(nums, target);
     std::cout << "The four numbers that sum to " << target << " have:" << result.size() << std::endl;
     // 打印结果
     if (!result.empty())
@@ -77,7 +77,7 @@ TEST(Test_four_sum, third)
     Solution_four_sum_quick sol;
     std::vector<int> nums = {2, 2, 2, 2, 2};
     int target = 8;
-    result = sol.fourSum(nums, target);
+    result = sol.four_Sum(nums, target);
     std::cout << "The four numbers that sum to " << target << " have:" << result.size() << std::endl;
     // 打印结果
     if (!result.empty())
