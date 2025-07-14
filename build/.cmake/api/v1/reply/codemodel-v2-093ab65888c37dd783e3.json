@@ -40,7 +40,7 @@
 					"source" : "lesson0_1",
 					"targetIndexes" : 
 					[
-						40
+						41
 					]
 				},
 				{
@@ -55,7 +55,7 @@
 					"source" : "lesson1_1",
 					"targetIndexes" : 
 					[
-						41
+						42
 					]
 				},
 				{
@@ -70,7 +70,7 @@
 					"source" : "lesson1_2",
 					"targetIndexes" : 
 					[
-						42
+						43
 					]
 				},
 				{
@@ -89,7 +89,7 @@
 					"source" : "lesson2_1",
 					"targetIndexes" : 
 					[
-						43
+						44
 					]
 				},
 				{
@@ -104,7 +104,7 @@
 					"source" : "lesson2_1/del",
 					"targetIndexes" : 
 					[
-						34
+						35
 					]
 				},
 				{
@@ -123,7 +123,7 @@
 					"source" : "lesson2_2",
 					"targetIndexes" : 
 					[
-						44
+						45
 					]
 				},
 				{
@@ -138,7 +138,7 @@
 					"source" : "lesson2_2/mul",
 					"targetIndexes" : 
 					[
-						46
+						47
 					]
 				},
 				{
@@ -202,12 +202,13 @@
 						25,
 						26,
 						27,
-						50,
 						51,
 						52,
 						53,
 						54,
-						55
+						55,
+						56,
+						57
 					]
 				},
 				{
@@ -233,7 +234,7 @@
 						12
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-thirdpart.googletest.googlemock-Debug-26939ea4f053bd3b43b4.json",
+					"jsonFile" : "directory-thirdpart.googletest.googlemock-Debug-c3d87a9a3bc94f3571f2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -243,14 +244,14 @@
 					"source" : "thirdpart/googletest-1.16.0/googlemock",
 					"targetIndexes" : 
 					[
-						36,
-						37
+						37,
+						38
 					]
 				},
 				{
 					"build" : "thirdpart/googletest/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-thirdpart.googletest.googletest-Debug-cedbaf392903603269f2.json",
+					"jsonFile" : "directory-thirdpart.googletest.googletest-Debug-14f65569448b42c94305.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -260,8 +261,8 @@
 					"source" : "thirdpart/googletest-1.16.0/googletest",
 					"targetIndexes" : 
 					[
-						38,
-						39
+						39,
+						40
 					]
 				},
 				{
@@ -286,7 +287,8 @@
 						31,
 						32,
 						33,
-						35
+						34,
+						36
 					]
 				},
 				{
@@ -312,8 +314,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						48,
-						49
+						49,
+						50
 					]
 				},
 				{
@@ -328,7 +330,7 @@
 					"source" : "lesson3_2_Eigen",
 					"targetIndexes" : 
 					[
-						45
+						46
 					]
 				},
 				{
@@ -343,7 +345,7 @@
 					"source" : "lesson4_1",
 					"targetIndexes" : 
 					[
-						47
+						48
 					]
 				}
 			],
@@ -412,7 +414,7 @@
 						33,
 						34,
 						35,
-						40,
+						36,
 						41,
 						42,
 						43,
@@ -427,7 +429,9 @@
 						52,
 						53,
 						54,
-						55
+						55,
+						56,
+						57
 					]
 				},
 				{
@@ -455,8 +459,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						36,
-						37
+						37,
+						38
 					]
 				},
 				{
@@ -468,8 +472,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						38,
-						39
+						39,
+						40
 					]
 				},
 				{
@@ -709,6 +713,13 @@
 				},
 				{
 					"directoryIndex" : 13,
+					"id" : "bind_subarray::@232b13413452662ae277",
+					"jsonFile" : "target-bind_subarray-Debug-8b42d8b8a517a1f12bb2.json",
+					"name" : "bind_subarray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
 					"id" : "bind_sum::@232b13413452662ae277",
 					"jsonFile" : "target-bind_sum-Debug-643897acac9764f39958.json",
 					"name" : "bind_sum",
@@ -731,7 +742,7 @@
 				{
 					"directoryIndex" : 13,
 					"id" : "del_ctest::@232b13413452662ae277",
-					"jsonFile" : "target-del_ctest-Debug-adfc9c48315885983b85.json",
+					"jsonFile" : "target-del_ctest-Debug-4771df5c9dd4a01a3e43.json",
 					"name" : "del_ctest",
 					"projectIndex" : 0
 				},
@@ -836,42 +847,49 @@
 				{
 					"directoryIndex" : 9,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-18a53c7e404dc8cee94d.json",
+					"jsonFile" : "target-test_add-Debug-4fc2f4c8719ee114611f.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-8b4e25cadc42a73ddd2f.json",
+					"jsonFile" : "target-test_del-Debug-1de3ac7a0decfad0501a.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_four_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_four_sum-Debug-225f3d73ba7c96b414d2.json",
+					"jsonFile" : "target-test_four_sum-Debug-e92eb8de0dd29e5d9af4.json",
 					"name" : "test_four_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_letter_combination::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_letter_combination-Debug-a97cba1f35967b973493.json",
+					"jsonFile" : "target-test_letter_combination-Debug-86b893914b20ff88c727.json",
 					"name" : "test_letter_combination",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
+					"id" : "test_subarray::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_subarray-Debug-770c2409b2a20a00b952.json",
+					"name" : "test_subarray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-8d2237935e34d2e16740.json",
+					"jsonFile" : "target-test_sum-Debug-c500145fe56082932897.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_three_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_three_sum-Debug-e157a45bc509cf701cde.json",
+					"jsonFile" : "target-test_three_sum-Debug-7dd829665a65b3bb7205.json",
 					"name" : "test_three_sum",
 					"projectIndex" : 0
 				}

@@ -1302,6 +1302,47 @@ build Test/C++/test_letter_combination.exe: CXX_EXECUTABLE_LINKER__test_letter_c
   TARGET_PDB = test_letter_combination.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_subarray
+
+
+#############################################
+# Order-only phony target for test_subarray
+
+build cmake_object_order_depends_target_test_subarray: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_subarray.dir/test_subarray.cpp.obj: CXX_COMPILER__test_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_subarray.cpp || cmake_object_order_depends_target_test_subarray
+  DEP_FILE = Test\C++\CMakeFiles\test_subarray.dir\test_subarray.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_subarray.dir
+
+build Test/C++/CMakeFiles/test_subarray.dir/__/__/lesson3_1/source/subarray.cpp.obj: CXX_COMPILER__test_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/subarray.cpp || cmake_object_order_depends_target_test_subarray
+  DEP_FILE = Test\C++\CMakeFiles\test_subarray.dir\__\__\lesson3_1\source\subarray.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_subarray.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_subarray
+
+
+#############################################
+# Link the executable Test\C++\test_subarray.exe
+
+build Test/C++/test_subarray.exe: CXX_EXECUTABLE_LINKER__test_subarray_Debug Test/C++/CMakeFiles/test_subarray.dir/test_subarray.cpp.obj Test/C++/CMakeFiles/test_subarray.dir/__/__/lesson3_1/source/subarray.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_subarray.exe
+  TARGET_IMPLIB = Test\C++\libtest_subarray.dll.a
+  TARGET_PDB = test_subarray.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -2265,6 +2306,49 @@ build PythonWrapper/bind_four_sum.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER
   TARGET_IMPLIB = PythonWrapper\libbind_four_sum.dll.a
   TARGET_PDB = bind_four_sum.cp313-win_amd64.pyd.dbg
 
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target bind_subarray
+
+
+#############################################
+# Order-only phony target for bind_subarray
+
+build cmake_object_order_depends_target_bind_subarray: phony || .
+
+build PythonWrapper/CMakeFiles/bind_subarray.dir/bind_subarray.cpp.obj: CXX_COMPILER__bind_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_subarray.cpp || cmake_object_order_depends_target_bind_subarray
+  DEFINES = -Dbind_subarray_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_subarray.dir\bind_subarray.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_subarray.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_subarray.dir
+
+build PythonWrapper/CMakeFiles/bind_subarray.dir/__/lesson3_1/source/subarray.cpp.obj: CXX_COMPILER__bind_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/subarray.cpp || cmake_object_order_depends_target_bind_subarray
+  DEFINES = -Dbind_subarray_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_subarray.dir\__\lesson3_1\source\subarray.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_subarray.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_subarray.dir\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target bind_subarray
+
+
+#############################################
+# Link the shared module PythonWrapper\bind_subarray.cp313-win_amd64.pyd
+
+build PythonWrapper/bind_subarray.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__bind_subarray_Debug PythonWrapper/CMakeFiles/bind_subarray.dir/bind_subarray.cpp.obj PythonWrapper/CMakeFiles/bind_subarray.dir/__/lesson3_1/source/subarray.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_subarray.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\bind_subarray.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libbind_subarray.dll.a
+  TARGET_PDB = bind_subarray.cp313-win_amd64.pyd.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2846,6 +2930,10 @@ build bind_letter: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
 
 build bind_letter.cp313-win_amd64.pyd: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
 
+build bind_subarray: phony PythonWrapper/bind_subarray.cp313-win_amd64.pyd
+
+build bind_subarray.cp313-win_amd64.pyd: phony PythonWrapper/bind_subarray.cp313-win_amd64.pyd
+
 build bind_sum: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
 
 build bind_sum.cp313-win_amd64.pyd: phony PythonWrapper/bind_sum.cp313-win_amd64.pyd
@@ -2934,6 +3022,10 @@ build test_letter_combination: phony Test/C++/test_letter_combination.exe
 
 build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
 
+build test_subarray: phony Test/C++/test_subarray.exe
+
+build test_subarray.exe: phony Test/C++/test_subarray.exe
+
 build test_sum: phony Test/C++/test_sum.exe
 
 build test_sum.exe: phony Test/C++/test_sum.exe
@@ -2957,7 +3049,7 @@ build all: phony lesson0_1/all lesson1_1/all lesson1_2/all lesson2_1/all lesson2
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd PythonWrapper/bind_letter.cp313-win_amd64.pyd PythonWrapper/bind_three_sum.cp313-win_amd64.pyd PythonWrapper/bind_four_sum.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd PythonWrapper/bind_letter.cp313-win_amd64.pyd PythonWrapper/bind_three_sum.cp313-win_amd64.pyd PythonWrapper/bind_four_sum.cp313-win_amd64.pyd PythonWrapper/bind_subarray.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
@@ -2971,7 +3063,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

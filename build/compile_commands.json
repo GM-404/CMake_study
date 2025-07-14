@@ -115,6 +115,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_subarray.dir\\test_subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_subarray.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_subarray.dir\\test_subarray.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_subarray.dir\\__\\__\\lesson3_1\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_subarray.dir\\__\\__\\lesson3_1\\source\\subarray.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
@@ -220,6 +232,18 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_four_sum_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\__\\lesson3_1\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
   "output": "PythonWrapper\\CMakeFiles\\bind_four_sum.dir\\__\\lesson3_1\\source\\four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_subarray_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_subarray.dir\\bind_subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_subarray.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_subarray.dir\\bind_subarray.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_subarray_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_subarray.dir\\__\\lesson3_1\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_subarray.dir\\__\\lesson3_1\\source\\subarray.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
