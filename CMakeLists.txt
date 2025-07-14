@@ -38,7 +38,11 @@ add_subdirectory(PythonWrapper)
 # 执行 lesson3_1 目录下的 CMakeLists.txt，用于配置存储力扣刷题代码相关的可执行文件或测试等设置
 add_subdirectory(lesson3_1)
 
+# 执行 lesson3_2_Eigen 目录下的 CMakeLists.txt，用于配置存储 Eigen 库相关的可执行文件或测试等设置
 add_subdirectory(lesson3_2_Eigen)
+
+# 执行 lesson4_1 目录下的 CMakeLists.txt，用于配置存储力扣刷题代码中遇到的一些问题的解决方案和语法知识点等设置
+add_subdirectory(lesson4_1)
 
 # 设置 C 和 C++ 编译器的 LTO 选项
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)

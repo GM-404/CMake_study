@@ -229,20 +229,38 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\temporary_test.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\temporary_test.cpp",
-  "output": "lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\temporary_test.cpp.obj"
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\temporary_test.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\three_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
-  "output": "lesson3_1\\CMakeFiles\\temporary_test_four_sum.dir\\source\\four_sum.cpp.obj"
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\four_sum.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\letter_combination.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem F:/LFMCW-Radar-DSP_C-Language/ThirdParty/eigen-3.4.0 -g -std=gnu++17 -o lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "output": "lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj"
 }
 ]

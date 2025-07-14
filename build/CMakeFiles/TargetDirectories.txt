@@ -141,7 +141,7 @@ C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/thirdpart/pybind11/CMakeFiles/install/strip.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/study_two_sum.dir
-C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/temporary_test_four_sum.dir
+C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/temporary_test.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_1/CMakeFiles/list_install_components.dir
@@ -155,3 +155,10 @@ C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/list_install_compo
 C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/strip.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_letter_combination.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/edit_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/rebuild_cache.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/list_install_components.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/install.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/install/local.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/install/strip.dir

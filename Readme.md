@@ -35,12 +35,17 @@ PYbind11和ASICII码表
 之后add_library()使用mul.cpp生成名为${dll_name_mul}的SHARED动态库
 ## lesson3_1
 存储力扣刷的题目
+## lesson3_2
+学习了一下eigen的用法
+## lesson4_1
+存储力扣刷的一些问题,语法知识点等
 ## PythonWrapper
 该文件加下面主要功能是将c++代码封装为python库，供python调用调式函数实现可视化
 首先包含将要封装的c++函数的头文件，然后添加 pybind11 子目录，由于不在同一文件夹下面，所以需要指定输出的二进制文件位置，${CMAKE_BINARY_DIR}指的是在bulid文件夹下面
 然后使用pybind11_add_moodule()使用bind_add.cpp和原C++函数一起绑定为lesson
 注意添加c++静态库的时候，可以指定目录（已注释），也可也使用find_package()查找，看一下类的绑定只需要.cpp文件，
 供给test文件夹下面使用
+
 # MATLAB
 里面包含60G雷达解析
 ## Test文件夹

@@ -414,6 +414,9 @@
 		{
 			"isExternal" : true,
 			"path" : "F:/LFMCW-Radar-DSP_C-Language/build/ThirdParty/eigen-3.4.0/Eigen3Targets.cmake"
+		},
+		{
+			"path" : "lesson4_1/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

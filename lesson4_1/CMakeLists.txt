@@ -1,0 +1,1 @@
+﻿add_executable(study_letter_combination src/study_letter_combination.cpp)

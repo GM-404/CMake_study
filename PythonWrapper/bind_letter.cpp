@@ -1,6 +1,6 @@
 ﻿#include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
-#include "letter.hh"
+#include "letter_combination.hh"
 PYBIND11_MODULE(bind_letter, m)
 {
     // 定义模块的文档字符串

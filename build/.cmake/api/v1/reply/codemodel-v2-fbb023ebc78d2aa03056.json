@@ -16,7 +16,8 @@
 						8,
 						13,
 						15,
-						16
+						16,
+						17
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -201,12 +202,12 @@
 						25,
 						26,
 						27,
-						49,
 						50,
 						51,
 						52,
 						53,
-						54
+						54,
+						55
 					]
 				},
 				{
@@ -311,8 +312,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						47,
-						48
+						48,
+						49
 					]
 				},
 				{
@@ -328,6 +329,21 @@
 					"targetIndexes" : 
 					[
 						45
+					]
+				},
+				{
+					"build" : "lesson4_1",
+					"jsonFile" : "directory-lesson4_1-Debug-c429b56ed6b6c4784836.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lesson4_1",
+					"targetIndexes" : 
+					[
+						47
 					]
 				}
 			],
@@ -354,7 +370,8 @@
 						9,
 						13,
 						15,
-						16
+						16,
+						17
 					],
 					"name" : "lesson1_2",
 					"targetIndexes" : 
@@ -409,7 +426,8 @@
 						51,
 						52,
 						53,
-						54
+						54,
+						55
 					]
 				},
 				{
@@ -783,7 +801,7 @@
 				{
 					"directoryIndex" : 16,
 					"id" : "lesson_Eigen::@40296d46f9266b220bc7",
-					"jsonFile" : "target-lesson_Eigen-Debug-ad46efcccd3b8410a2e2.json",
+					"jsonFile" : "target-lesson_Eigen-Debug-9d8d207273da9ae17adc.json",
 					"name" : "lesson_Eigen",
 					"projectIndex" : 0
 				},
@@ -795,6 +813,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 17,
+					"id" : "study_letter_combination::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_letter_combination-Debug-27594e6c365502d425eb.json",
+					"name" : "study_letter_combination",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 15,
 					"id" : "study_two_sum::@f7dbcf3a521522d18336",
 					"jsonFile" : "target-study_two_sum-Debug-2f8c6f043eaf957a3819.json",
@@ -803,9 +828,9 @@
 				},
 				{
 					"directoryIndex" : 15,
-					"id" : "temporary_test_four_sum::@f7dbcf3a521522d18336",
-					"jsonFile" : "target-temporary_test_four_sum-Debug-6b5707eabce11fd6456d.json",
-					"name" : "temporary_test_four_sum",
+					"id" : "temporary_test::@f7dbcf3a521522d18336",
+					"jsonFile" : "target-temporary_test-Debug-f318a42ef5826a71b9d2.json",
+					"name" : "temporary_test",
 					"projectIndex" : 0
 				},
 				{
