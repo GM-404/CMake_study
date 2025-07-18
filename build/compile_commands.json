@@ -127,6 +127,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_move_zero.dir\\test_move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_move_zero.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_move_zero.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_move_zero.dir\\test_move_zero.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_move_zero.dir\\__\\__\\lesson3_1\\source\\move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_move_zero.dir\\__\\__\\lesson3_1\\source\\move_zero.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
@@ -247,6 +259,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_move_zero_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_move_zero.dir\\bind_move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_move_zero.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\PythonWrapper\\bind_move_zero.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_move_zero.dir\\bind_move_zero.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -Dbind_move_zero_EXPORTS -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include -g -std=gnu++17 -fvisibility=hidden -o PythonWrapper\\CMakeFiles\\bind_move_zero.dir\\__\\lesson3_1\\source\\move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "output": "PythonWrapper\\CMakeFiles\\bind_move_zero.dir\\__\\lesson3_1\\source\\move_zero.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\study_two_sum.dir\\source\\sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
   "output": "lesson3_1\\CMakeFiles\\study_two_sum.dir\\source\\sum.cpp.obj"
@@ -274,6 +298,12 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
   "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\move_zero.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",

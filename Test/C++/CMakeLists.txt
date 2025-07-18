@@ -44,6 +44,9 @@ add_executable(test_letter_combination
 add_executable(test_subarray
     test_subarray.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/subarray.cpp)
+add_executable(test_move_zero
+    test_move_zero.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/move_zero.cpp)
 
 # 测试动态库文件
 add_executable(test_del
@@ -66,6 +69,8 @@ target_include_directories(test_letter_combination PRIVATE
 target_include_directories(test_three_sum PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_subarray PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_move_zero PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
 # 第三步：
@@ -93,6 +98,9 @@ target_link_libraries(test_letter_combination
 target_link_libraries(test_subarray
     gtest_main
     gtest)
+target_link_libraries(test_move_zero
+    gtest_main
+    gtest)
 
 # 第四步：
 # 添加测试
@@ -103,3 +111,4 @@ add_test(NAME test_three_sum COMMAND test_three_sum)
 add_test(NAME test_four_sum COMMAND test_four_sum)
 add_test(NAME test_letter_combination COMMAND test_letter_combination)
 add_test(NAME test_subarray COMMAND test_subarray)
+add_test(NAME test_move_zero COMMAND test_move_zero)

@@ -24,4 +24,5 @@ add_executable(temporary_test temporary_test.cpp
     source/three_sum.cpp
     source/four_sum.cpp
     source/letter_combination.cpp
+    source/move_zero.cpp # 移动零
 )

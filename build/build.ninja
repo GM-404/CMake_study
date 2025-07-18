@@ -1343,6 +1343,47 @@ build Test/C++/test_subarray.exe: CXX_EXECUTABLE_LINKER__test_subarray_Debug Tes
   TARGET_PDB = test_subarray.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_move_zero
+
+
+#############################################
+# Order-only phony target for test_move_zero
+
+build cmake_object_order_depends_target_test_move_zero: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_move_zero.dir/test_move_zero.cpp.obj: CXX_COMPILER__test_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_move_zero.cpp || cmake_object_order_depends_target_test_move_zero
+  DEP_FILE = Test\C++\CMakeFiles\test_move_zero.dir\test_move_zero.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_move_zero.dir
+
+build Test/C++/CMakeFiles/test_move_zero.dir/__/__/lesson3_1/source/move_zero.cpp.obj: CXX_COMPILER__test_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/move_zero.cpp || cmake_object_order_depends_target_test_move_zero
+  DEP_FILE = Test\C++\CMakeFiles\test_move_zero.dir\__\__\lesson3_1\source\move_zero.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_move_zero.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_move_zero
+
+
+#############################################
+# Link the executable Test\C++\test_move_zero.exe
+
+build Test/C++/test_move_zero.exe: CXX_EXECUTABLE_LINKER__test_move_zero_Debug Test/C++/CMakeFiles/test_move_zero.dir/test_move_zero.cpp.obj Test/C++/CMakeFiles/test_move_zero.dir/__/__/lesson3_1/source/move_zero.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_move_zero.exe
+  TARGET_IMPLIB = Test\C++\libtest_move_zero.dll.a
+  TARGET_PDB = test_move_zero.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -2349,6 +2390,49 @@ build PythonWrapper/bind_subarray.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER
   TARGET_IMPLIB = PythonWrapper\libbind_subarray.dll.a
   TARGET_PDB = bind_subarray.cp313-win_amd64.pyd.dbg
 
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target bind_move_zero
+
+
+#############################################
+# Order-only phony target for bind_move_zero
+
+build cmake_object_order_depends_target_bind_move_zero: phony || .
+
+build PythonWrapper/CMakeFiles/bind_move_zero.dir/bind_move_zero.cpp.obj: CXX_COMPILER__bind_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/PythonWrapper/bind_move_zero.cpp || cmake_object_order_depends_target_bind_move_zero
+  DEFINES = -Dbind_move_zero_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_move_zero.dir\bind_move_zero.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_move_zero.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_move_zero.dir
+
+build PythonWrapper/CMakeFiles/bind_move_zero.dir/__/lesson3_1/source/move_zero.cpp.obj: CXX_COMPILER__bind_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/move_zero.cpp || cmake_object_order_depends_target_bind_move_zero
+  DEFINES = -Dbind_move_zero_EXPORTS
+  DEP_FILE = PythonWrapper\CMakeFiles\bind_move_zero.dir\__\lesson3_1\source\move_zero.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fvisibility=hidden
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -IC:/Users/19513/Desktop/cmake/lesson2_1/lib -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/pybind11-2.13.6/include -isystem C:/Users/19513/AppData/Local/Programs/Python/Python313/Include
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_move_zero.dir
+  OBJECT_FILE_DIR = PythonWrapper\CMakeFiles\bind_move_zero.dir\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target bind_move_zero
+
+
+#############################################
+# Link the shared module PythonWrapper\bind_move_zero.cp313-win_amd64.pyd
+
+build PythonWrapper/bind_move_zero.cp313-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__bind_move_zero_Debug PythonWrapper/CMakeFiles/bind_move_zero.dir/bind_move_zero.cpp.obj PythonWrapper/CMakeFiles/bind_move_zero.dir/__/lesson3_1/source/move_zero.cpp.obj | C$:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = C:/Users/19513/AppData/Local/Programs/Python/Python313/libs/python313.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = PythonWrapper\CMakeFiles\bind_move_zero.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = PythonWrapper\bind_move_zero.cp313-win_amd64.pyd
+  TARGET_IMPLIB = PythonWrapper\libbind_move_zero.dll.a
+  TARGET_PDB = bind_move_zero.cp313-win_amd64.pyd.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2562,6 +2646,13 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj:
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
 
+build lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/move_zero.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\move_zero.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target temporary_test
@@ -2570,7 +2661,7 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj:
 #############################################
 # Link the executable lesson3_1\temporary_test.exe
 
-build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj
+build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
@@ -2930,6 +3021,10 @@ build bind_letter: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
 
 build bind_letter.cp313-win_amd64.pyd: phony PythonWrapper/bind_letter.cp313-win_amd64.pyd
 
+build bind_move_zero: phony PythonWrapper/bind_move_zero.cp313-win_amd64.pyd
+
+build bind_move_zero.cp313-win_amd64.pyd: phony PythonWrapper/bind_move_zero.cp313-win_amd64.pyd
+
 build bind_subarray: phony PythonWrapper/bind_subarray.cp313-win_amd64.pyd
 
 build bind_subarray.cp313-win_amd64.pyd: phony PythonWrapper/bind_subarray.cp313-win_amd64.pyd
@@ -3022,6 +3117,10 @@ build test_letter_combination: phony Test/C++/test_letter_combination.exe
 
 build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
 
+build test_move_zero: phony Test/C++/test_move_zero.exe
+
+build test_move_zero.exe: phony Test/C++/test_move_zero.exe
+
 build test_subarray: phony Test/C++/test_subarray.exe
 
 build test_subarray.exe: phony Test/C++/test_subarray.exe
@@ -3049,7 +3148,7 @@ build all: phony lesson0_1/all lesson1_1/all lesson1_2/all lesson2_1/all lesson2
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/PythonWrapper
 
-build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd PythonWrapper/bind_letter.cp313-win_amd64.pyd PythonWrapper/bind_three_sum.cp313-win_amd64.pyd PythonWrapper/bind_four_sum.cp313-win_amd64.pyd PythonWrapper/bind_subarray.cp313-win_amd64.pyd thirdpart/pybind11/all
+build PythonWrapper/all: phony PythonWrapper/add.cp313-win_amd64.pyd PythonWrapper/band_class.cp313-win_amd64.pyd PythonWrapper/del_ctest.cp313-win_amd64.pyd PythonWrapper/bind_sum.cp313-win_amd64.pyd PythonWrapper/bind_letter.cp313-win_amd64.pyd PythonWrapper/bind_three_sum.cp313-win_amd64.pyd PythonWrapper/bind_four_sum.cp313-win_amd64.pyd PythonWrapper/bind_subarray.cp313-win_amd64.pyd PythonWrapper/bind_move_zero.cp313-win_amd64.pyd thirdpart/pybind11/all
 
 # =============================================================================
 
@@ -3063,7 +3162,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

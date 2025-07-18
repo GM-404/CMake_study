@@ -93,6 +93,7 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_three_sum.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_four_sum.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_letter_combination.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_subarray.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_move_zero.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/rebuild_cache.dir
@@ -130,6 +131,7 @@ C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_letter.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_three_sum.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_four_sum.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_subarray.dir
+C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/bind_move_zero.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/PythonWrapper/CMakeFiles/list_install_components.dir

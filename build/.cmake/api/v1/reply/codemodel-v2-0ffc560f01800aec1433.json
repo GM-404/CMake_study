@@ -40,7 +40,7 @@
 					"source" : "lesson0_1",
 					"targetIndexes" : 
 					[
-						41
+						42
 					]
 				},
 				{
@@ -55,7 +55,7 @@
 					"source" : "lesson1_1",
 					"targetIndexes" : 
 					[
-						42
+						43
 					]
 				},
 				{
@@ -70,7 +70,7 @@
 					"source" : "lesson1_2",
 					"targetIndexes" : 
 					[
-						43
+						44
 					]
 				},
 				{
@@ -89,7 +89,7 @@
 					"source" : "lesson2_1",
 					"targetIndexes" : 
 					[
-						44
+						45
 					]
 				},
 				{
@@ -104,7 +104,7 @@
 					"source" : "lesson2_1/del",
 					"targetIndexes" : 
 					[
-						35
+						36
 					]
 				},
 				{
@@ -123,7 +123,7 @@
 					"source" : "lesson2_2",
 					"targetIndexes" : 
 					[
-						45
+						46
 					]
 				},
 				{
@@ -138,7 +138,7 @@
 					"source" : "lesson2_2/mul",
 					"targetIndexes" : 
 					[
-						47
+						48
 					]
 				},
 				{
@@ -202,13 +202,14 @@
 						25,
 						26,
 						27,
-						51,
 						52,
 						53,
 						54,
 						55,
 						56,
-						57
+						57,
+						58,
+						59
 					]
 				},
 				{
@@ -234,7 +235,7 @@
 						12
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-thirdpart.googletest.googlemock-Debug-c3d87a9a3bc94f3571f2.json",
+					"jsonFile" : "directory-thirdpart.googletest.googlemock-Debug-cb640d28607d9aeff90f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -244,14 +245,14 @@
 					"source" : "thirdpart/googletest-1.16.0/googlemock",
 					"targetIndexes" : 
 					[
-						37,
-						38
+						38,
+						39
 					]
 				},
 				{
 					"build" : "thirdpart/googletest/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-thirdpart.googletest.googletest-Debug-14f65569448b42c94305.json",
+					"jsonFile" : "directory-thirdpart.googletest.googletest-Debug-888cf308081fb390854c.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.13"
@@ -261,8 +262,8 @@
 					"source" : "thirdpart/googletest-1.16.0/googletest",
 					"targetIndexes" : 
 					[
-						39,
-						40
+						40,
+						41
 					]
 				},
 				{
@@ -288,7 +289,8 @@
 						32,
 						33,
 						34,
-						36
+						35,
+						37
 					]
 				},
 				{
@@ -314,8 +316,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						49,
-						50
+						50,
+						51
 					]
 				},
 				{
@@ -330,7 +332,7 @@
 					"source" : "lesson3_2_Eigen",
 					"targetIndexes" : 
 					[
-						46
+						47
 					]
 				},
 				{
@@ -345,7 +347,7 @@
 					"source" : "lesson4_1",
 					"targetIndexes" : 
 					[
-						48
+						49
 					]
 				}
 			],
@@ -415,7 +417,7 @@
 						34,
 						35,
 						36,
-						41,
+						37,
 						42,
 						43,
 						44,
@@ -431,7 +433,9 @@
 						54,
 						55,
 						56,
-						57
+						57,
+						58,
+						59
 					]
 				},
 				{
@@ -459,8 +463,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						37,
-						38
+						38,
+						39
 					]
 				},
 				{
@@ -472,8 +476,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						39,
-						40
+						40,
+						41
 					]
 				},
 				{
@@ -713,6 +717,13 @@
 				},
 				{
 					"directoryIndex" : 13,
+					"id" : "bind_move_zero::@232b13413452662ae277",
+					"jsonFile" : "target-bind_move_zero-Debug-e00a4d7aa1f609e9fd57.json",
+					"name" : "bind_move_zero",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
 					"id" : "bind_subarray::@232b13413452662ae277",
 					"jsonFile" : "target-bind_subarray-Debug-8b42d8b8a517a1f12bb2.json",
 					"name" : "bind_subarray",
@@ -742,7 +753,7 @@
 				{
 					"directoryIndex" : 13,
 					"id" : "del_ctest::@232b13413452662ae277",
-					"jsonFile" : "target-del_ctest-Debug-4771df5c9dd4a01a3e43.json",
+					"jsonFile" : "target-del_ctest-Debug-966eb68ccfc2ad591a96.json",
 					"name" : "del_ctest",
 					"projectIndex" : 0
 				},
@@ -756,7 +767,7 @@
 				{
 					"directoryIndex" : 11,
 					"id" : "gmock_main::@4b9ead47e321c1b28e4a",
-					"jsonFile" : "target-gmock_main-Debug-9fef457f07ac6f94b863.json",
+					"jsonFile" : "target-gmock_main-Debug-ee836de417d4ba3cc416.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
@@ -840,56 +851,63 @@
 				{
 					"directoryIndex" : 15,
 					"id" : "temporary_test::@f7dbcf3a521522d18336",
-					"jsonFile" : "target-temporary_test-Debug-f318a42ef5826a71b9d2.json",
+					"jsonFile" : "target-temporary_test-Debug-fe50249b39fbbb7bb94e.json",
 					"name" : "temporary_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-4fc2f4c8719ee114611f.json",
+					"jsonFile" : "target-test_add-Debug-457fa3071ee52452aa8c.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-1de3ac7a0decfad0501a.json",
+					"jsonFile" : "target-test_del-Debug-8dd2fed25192c70fd29b.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_four_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_four_sum-Debug-e92eb8de0dd29e5d9af4.json",
+					"jsonFile" : "target-test_four_sum-Debug-664e68c642c6ab2cba3e.json",
 					"name" : "test_four_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_letter_combination::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_letter_combination-Debug-86b893914b20ff88c727.json",
+					"jsonFile" : "target-test_letter_combination-Debug-47762dbff79e4e2b97af.json",
 					"name" : "test_letter_combination",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
+					"id" : "test_move_zero::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_move_zero-Debug-63b307fd23dbd6174b89.json",
+					"name" : "test_move_zero",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
 					"id" : "test_subarray::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_subarray-Debug-770c2409b2a20a00b952.json",
+					"jsonFile" : "target-test_subarray-Debug-4bfe9ccbeca38277a0c0.json",
 					"name" : "test_subarray",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-c500145fe56082932897.json",
+					"jsonFile" : "target-test_sum-Debug-a42b283604250fe600c5.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_three_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_three_sum-Debug-7dd829665a65b3bb7205.json",
+					"jsonFile" : "target-test_three_sum-Debug-0a93a04e7900ae8b46dc.json",
 					"name" : "test_three_sum",
 					"projectIndex" : 0
 				}

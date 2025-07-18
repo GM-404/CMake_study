@@ -10,7 +10,7 @@
 /* 参数设置 ========================================*/
 
 // #define FMCW_RISE_STEP_FREQ_KHZ (103U) ///< FMCW上升频率步长,单位KHz
-#define FMCW_RISE_STEP_FREQ_KHZ (363U) ///< FMCW上升频率步长,单位KHz
+#define FMCW_RISE_STEP_FREQ_KHZ (330U) ///< FMCW上升频率步长,单位KHz
 #define FMCW_RISE_STEP_NUM (2620U)     ///< FMCW上升频率步数, 步长FMCW_RISE_STEP
 // #define COHERENT_CHIRP_GAP (1120U)     ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
 #define COHERENT_CHIRP_GAP (770U) ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
