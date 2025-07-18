@@ -25,4 +25,5 @@ add_executable(temporary_test temporary_test.cpp
     source/four_sum.cpp
     source/letter_combination.cpp
     source/move_zero.cpp # 移动零
+    source/max_water.cpp # 盛最多水的容器
 )

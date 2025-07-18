@@ -2653,6 +2653,13 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj: CXX_COMP
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
 
+build lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/max_water.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\max_water.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target temporary_test
@@ -2661,7 +2668,7 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj: CXX_COMP
 #############################################
 # Link the executable lesson3_1\temporary_test.exe
 
-build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj
+build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir

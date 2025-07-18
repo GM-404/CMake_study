@@ -6,15 +6,13 @@
 #include "four_sum.hh"
 #include "letter_combination.hh"
 #include "move_zero.hh"
-
+#include "max_water.hh"
 int main()
 {
-    Solution_Move_Zero solution;
-    std::vector<int> nums = {0, 1, 0, 3, 12};
-    solution.Move_Zeroes(nums);
-    for (int i = 0; i < nums.size(); ++i)
-    {
-        std::cout << nums[i] << std::endl;
-    }
+    Solution_max_water solution;
+    int restult;
+    std::vector<int> height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+    restult = solution.max_water(height);
+    std::cout << restult << std::endl;
     return 0;
 }
