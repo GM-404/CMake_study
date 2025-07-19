@@ -209,7 +209,8 @@
 						56,
 						57,
 						58,
-						59
+						59,
+						60
 					]
 				},
 				{
@@ -435,7 +436,8 @@
 						56,
 						57,
 						58,
-						59
+						59,
+						60
 					]
 				},
 				{
@@ -851,63 +853,70 @@
 				{
 					"directoryIndex" : 15,
 					"id" : "temporary_test::@f7dbcf3a521522d18336",
-					"jsonFile" : "target-temporary_test-Debug-8770eb3f8d4eac4eabc9.json",
+					"jsonFile" : "target-temporary_test-Debug-ab66d378210436d723d1.json",
 					"name" : "temporary_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-457fa3071ee52452aa8c.json",
+					"jsonFile" : "target-test_add-Debug-2350c862f6a8813be137.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
+					"id" : "test_collect_rainwater::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_collect_rainwater-Debug-64250c61c69d6192c93a.json",
+					"name" : "test_collect_rainwater",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-8dd2fed25192c70fd29b.json",
+					"jsonFile" : "target-test_del-Debug-46f55e7d13b4bb0dcacf.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_four_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_four_sum-Debug-664e68c642c6ab2cba3e.json",
+					"jsonFile" : "target-test_four_sum-Debug-1cb3a515882c93984158.json",
 					"name" : "test_four_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_letter_combination::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_letter_combination-Debug-47762dbff79e4e2b97af.json",
+					"jsonFile" : "target-test_letter_combination-Debug-81447b9f29c138ed7c96.json",
 					"name" : "test_letter_combination",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_move_zero::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_move_zero-Debug-63b307fd23dbd6174b89.json",
+					"jsonFile" : "target-test_move_zero-Debug-36b35bfdcfa83ce0e347.json",
 					"name" : "test_move_zero",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_subarray::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_subarray-Debug-4bfe9ccbeca38277a0c0.json",
+					"jsonFile" : "target-test_subarray-Debug-3d83db005831276c12c3.json",
 					"name" : "test_subarray",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-a42b283604250fe600c5.json",
+					"jsonFile" : "target-test_sum-Debug-2061f673a48d4b8321d4.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_three_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_three_sum-Debug-0a93a04e7900ae8b46dc.json",
+					"jsonFile" : "target-test_three_sum-Debug-b1c15b1dd1b369c1616b.json",
 					"name" : "test_three_sum",
 					"projectIndex" : 0
 				}

@@ -20,3 +20,15 @@ public:
 };
 
 #endif
+
+// 测试用例
+
+// int main()
+// {
+//     Solution_max_water solution;
+//     int restult;
+//     std::vector<int> height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+//     restult = solution.max_water(height);
+//     std::cout << restult << std::endl;
+//     return 0;
+// }

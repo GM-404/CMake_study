@@ -1384,6 +1384,47 @@ build Test/C++/test_move_zero.exe: CXX_EXECUTABLE_LINKER__test_move_zero_Debug T
   TARGET_PDB = test_move_zero.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_collect_rainwater
+
+
+#############################################
+# Order-only phony target for test_collect_rainwater
+
+build cmake_object_order_depends_target_test_collect_rainwater: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_collect_rainwater.dir/test_collect_rainwater.cpp.obj: CXX_COMPILER__test_collect_rainwater_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_collect_rainwater.cpp || cmake_object_order_depends_target_test_collect_rainwater
+  DEP_FILE = Test\C++\CMakeFiles\test_collect_rainwater.dir\test_collect_rainwater.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
+
+build Test/C++/CMakeFiles/test_collect_rainwater.dir/__/__/lesson3_1/source/collect_rainwater.cpp.obj: CXX_COMPILER__test_collect_rainwater_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/collect_rainwater.cpp || cmake_object_order_depends_target_test_collect_rainwater
+  DEP_FILE = Test\C++\CMakeFiles\test_collect_rainwater.dir\__\__\lesson3_1\source\collect_rainwater.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_collect_rainwater
+
+
+#############################################
+# Link the executable Test\C++\test_collect_rainwater.exe
+
+build Test/C++/test_collect_rainwater.exe: CXX_EXECUTABLE_LINKER__test_collect_rainwater_Debug Test/C++/CMakeFiles/test_collect_rainwater.dir/test_collect_rainwater.cpp.obj Test/C++/CMakeFiles/test_collect_rainwater.dir/__/__/lesson3_1/source/collect_rainwater.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_collect_rainwater.exe
+  TARGET_IMPLIB = Test\C++\libtest_collect_rainwater.dll.a
+  TARGET_PDB = test_collect_rainwater.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -2660,6 +2701,13 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj: CXX_COMP
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
 
+build lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/collect_rainwater.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\collect_rainwater.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target temporary_test
@@ -2668,7 +2716,7 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj: CXX_COMP
 #############################################
 # Link the executable lesson3_1\temporary_test.exe
 
-build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj
+build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
@@ -3112,6 +3160,10 @@ build test_add: phony Test/C++/test_add.exe
 
 build test_add.exe: phony Test/C++/test_add.exe
 
+build test_collect_rainwater: phony Test/C++/test_collect_rainwater.exe
+
+build test_collect_rainwater.exe: phony Test/C++/test_collect_rainwater.exe
+
 build test_del: phony Test/C++/test_del.exe
 
 build test_del.exe: phony Test/C++/test_del.exe
@@ -3169,7 +3221,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

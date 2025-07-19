@@ -139,6 +139,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\test_collect_rainwater.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_collect_rainwater.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_collect_rainwater.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\test_collect_rainwater.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\__\\__\\lesson3_1\\source\\collect_rainwater.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\__\\__\\lesson3_1\\source\\collect_rainwater.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
@@ -310,6 +322,12 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\max_water.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\max_water.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\max_water.cpp",
   "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\max_water.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\collect_rainwater.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\collect_rainwater.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
