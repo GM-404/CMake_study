@@ -27,4 +27,5 @@ add_executable(temporary_test temporary_test.cpp
     source/move_zero.cpp # 移动零
     source/max_water.cpp # 盛最多水的容器
     source/collect_rainwater.cpp # 接雨水
+    source/sliding_window.cpp # 最长无重复字串
 )
