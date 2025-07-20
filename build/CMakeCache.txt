@@ -29,8 +29,8 @@ CMAKE_AR:FILEPATH=D:/SDK/w64devkit/bin/ar.exe
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=D:/SDK/w64devkit/bin/g++.exe
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=D:/SDK/w64devkit/bin/g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -58,8 +58,8 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=D:/SDK/w64devkit/bin/gcc.exe
+//C compiler
+CMAKE_C_COMPILER:STRING=D:/SDK/w64devkit/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -113,6 +113,9 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/19513/Desktop/cmake/build/CMakeFiles/pkgRedirects
+
+//Convert GNU import libraries to MS format (requires Visual Studio)
+CMAKE_GNUtoMS:BOOL=OFF
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -684,6 +687,8 @@ PYTHON_VERSION_MINOR:INTERNAL=13
 Python_ADDITIONAL_VERSIONS:INTERNAL=3.12;3.11;3.10;3.9;3.8;3.7
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
+//linker supports push/pop state
+_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run

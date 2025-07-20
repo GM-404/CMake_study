@@ -183,10 +183,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "D:/SDK/w64devkit/bin/g++.exe"
 		},
 		{
@@ -327,10 +327,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "D:/SDK/w64devkit/bin/gcc.exe"
 		},
 		{
@@ -680,6 +680,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "CMAKE_GNUtoMS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -2224,6 +2236,18 @@
 			],
 			"type" : "UNINITIALIZED",
 			"value" : ""
+		},
+		{
+			"name" : "_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

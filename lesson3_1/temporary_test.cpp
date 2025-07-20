@@ -13,9 +13,14 @@
 
 int main()
 {
-    std::string s = "abcabcb";
+    std::string s = "cbaebabacd";
+    std::string p = "abc";
     SlidingWindow sw;
-    int max_len = sw.lengthOfLongestSubstring(s);
-    std::cout << max_len << std::endl;
+    std::vector<int> result = sw.findAnagrams(s, p);
+    for (int index : result)
+    {
+        std::cout << index << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
