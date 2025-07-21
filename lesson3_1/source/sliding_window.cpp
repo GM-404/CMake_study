@@ -19,6 +19,7 @@ int SlidingWindow::lengthOfLongestSubstring(std::string &s)
 
     return maxLen;
 }
+// 找到字符串中所有字母异构词
 std::vector<int> SlidingWindow::findAnagrams(std::string &s, std::string &p)
 {
     std::vector<int> result;

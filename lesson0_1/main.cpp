@@ -10,7 +10,7 @@
 /* 参数设置 ========================================*/
 
 // #define FMCW_RISE_STEP_FREQ_KHZ (103U) ///< FMCW上升频率步长,单位KHz
-#define FMCW_RISE_STEP_FREQ_KHZ (330U) ///< FMCW上升频率步长,单位KHz
+#define FMCW_RISE_STEP_FREQ_KHZ (206U) ///< FMCW上升频率步长,单位KHz
 #define FMCW_RISE_STEP_NUM (2620U)     ///< FMCW上升频率步数, 步长FMCW_RISE_STEP
 // #define COHERENT_CHIRP_GAP (1120U)     ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
 #define COHERENT_CHIRP_GAP (770U) ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
@@ -49,7 +49,7 @@ int main()
     double range_bin_size = 149896229.0 / BANDWIDTH; // Range Bin大小
     std::cout << BANDWIDTH << std::endl;
     std::cout << range_bin_size << std::endl;
-    std::cout << range_bin_size * 32 << std::endl;
+    std::cout << range_bin_size * 16 << std::endl;
     std::cout << TIME_SUBFRAME_INTERVAL_US << std::endl;
     std::cout << TIME_CHIRP << std::endl;
     std::cout << TIME_CHRIP_TOTAL_EXPECTED << std::endl;
