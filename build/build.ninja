@@ -144,6 +144,39 @@ build lesson0_1/lesson0_1.exe: CXX_EXECUTABLE_LINKER__lesson0_1_Debug lesson0_1/
   TARGET_IMPLIB = lesson0_1\liblesson0_1.dll.a
   TARGET_PDB = lesson0_1.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lesson0_2
+
+
+#############################################
+# Order-only phony target for lesson0_2
+
+build cmake_object_order_depends_target_lesson0_2: phony || .
+
+build lesson0_1/CMakeFiles/lesson0_2.dir/main1.cpp.obj: CXX_COMPILER__lesson0_2_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson0_1/main1.cpp || cmake_object_order_depends_target_lesson0_2
+  DEP_FILE = lesson0_1\CMakeFiles\lesson0_2.dir\main1.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = lesson0_1\CMakeFiles\lesson0_2.dir
+  OBJECT_FILE_DIR = lesson0_1\CMakeFiles\lesson0_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lesson0_2
+
+
+#############################################
+# Link the executable lesson0_1\lesson0_2.exe
+
+build lesson0_1/lesson0_2.exe: CXX_EXECUTABLE_LINKER__lesson0_2_Debug lesson0_1/CMakeFiles/lesson0_2.dir/main1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson0_1\CMakeFiles\lesson0_2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson0_1\lesson0_2.exe
+  TARGET_IMPLIB = lesson0_1\liblesson0_2.dll.a
+  TARGET_PDB = lesson0_2.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2942,6 +2975,39 @@ build lesson4_1/study_letter_combination.exe: CXX_EXECUTABLE_LINKER__study_lette
   TARGET_IMPLIB = lesson4_1\libstudy_letter_combination.dll.a
   TARGET_PDB = study_letter_combination.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target study_list
+
+
+#############################################
+# Order-only phony target for study_list
+
+build cmake_object_order_depends_target_study_list: phony || .
+
+build lesson4_1/CMakeFiles/study_list.dir/src/study_list.cpp.obj: CXX_COMPILER__study_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson4_1/src/study_list.cpp || cmake_object_order_depends_target_study_list
+  DEP_FILE = lesson4_1\CMakeFiles\study_list.dir\src\study_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_list.dir
+  OBJECT_FILE_DIR = lesson4_1\CMakeFiles\study_list.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target study_list
+
+
+#############################################
+# Link the executable lesson4_1\study_list.exe
+
+build lesson4_1/study_list.exe: CXX_EXECUTABLE_LINKER__study_list_Debug lesson4_1/CMakeFiles/study_list.dir/src/study_list.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_list.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson4_1\study_list.exe
+  TARGET_IMPLIB = lesson4_1\libstudy_list.dll.a
+  TARGET_PDB = study_list.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -3117,6 +3183,10 @@ build lesson0_1: phony lesson0_1/lesson0_1.exe
 
 build lesson0_1.exe: phony lesson0_1/lesson0_1.exe
 
+build lesson0_2: phony lesson0_1/lesson0_2.exe
+
+build lesson0_2.exe: phony lesson0_1/lesson0_2.exe
+
 build lesson1_1: phony lesson1_1/lesson1_1.exe
 
 build lesson1_1.exe: phony lesson1_1/lesson1_1.exe
@@ -3154,6 +3224,10 @@ build mul: phony C$:/Users/19513/Desktop/cmake/lesson2_2/bin/libmul.dll
 build study_letter_combination: phony lesson4_1/study_letter_combination.exe
 
 build study_letter_combination.exe: phony lesson4_1/study_letter_combination.exe
+
+build study_list: phony lesson4_1/study_list.exe
+
+build study_list.exe: phony lesson4_1/study_list.exe
 
 build study_two_sum: phony lesson3_1/study_two_sum.exe
 
@@ -3235,7 +3309,7 @@ build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/t
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson0_1
 
-build lesson0_1/all: phony lesson0_1/lesson0_1.exe
+build lesson0_1/all: phony lesson0_1/lesson0_1.exe lesson0_1/lesson0_2.exe
 
 # =============================================================================
 
@@ -3298,7 +3372,7 @@ build lesson3_2_Eigen/all: phony lesson3_2_Eigen/lesson_Eigen.exe
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson4_1
 
-build lesson4_1/all: phony lesson4_1/study_letter_combination.exe
+build lesson4_1/all: phony lesson4_1/study_letter_combination.exe lesson4_1/study_list.exe
 
 # =============================================================================
 

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Test/C++/test_add.exe"
+			"path" : "Test/C++/test_subarray.exe"
 		},
 		{
-			"path" : "Test/C++/test_add.pdb"
+			"path" : "Test/C++/test_subarray.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 25,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 84,
+				"line" : 103,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 62,
+				"line" : 74,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/19513/Desktop/cmake/lesson1_1/include"
+					"path" : "C:/Users/19513/Desktop/cmake/lesson3_1/include"
 				},
 				{
 					"backtrace" : 2,
@@ -92,14 +92,14 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@89990bd92d21556e44bd"
+			"id" : "gtest_main::@89990bd92d21556e44bd"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@89990bd92d21556e44bd"
+			"id" : "gtest::@89990bd92d21556e44bd"
 		}
 	],
-	"id" : "test_add::@ec39104b73891538ddf2",
+	"id" : "test_subarray::@ec39104b73891538ddf2",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -129,8 +129,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_add",
-	"nameOnDisk" : "test_add.exe",
+	"name" : "test_subarray",
+	"nameOnDisk" : "test_subarray.exe",
 	"paths" : 
 	{
 		"build" : "Test/C++",
@@ -152,13 +152,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Test/C++/test_add.cpp",
+			"path" : "Test/C++/test_subarray.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lesson1_1/add.cpp",
+			"path" : "lesson3_1/source/subarray.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

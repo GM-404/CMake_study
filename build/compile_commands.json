@@ -7,6 +7,12 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson0_1\\CMakeFiles\\lesson0_2.dir\\main1.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\main1.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\main1.cpp",
+  "output": "lesson0_1\\CMakeFiles\\lesson0_2.dir\\main1.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -Wall -Wextra -g -O0 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
@@ -346,5 +352,11 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
   "output": "lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj"
 }
 ]

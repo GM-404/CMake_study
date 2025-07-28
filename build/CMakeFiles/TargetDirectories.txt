@@ -5,6 +5,7 @@ C:/Users/19513/Desktop/cmake/build/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/CMakeFiles/install/strip.dir
 C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/lesson0_1.dir
+C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/lesson0_2.dir
 C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson0_1/CMakeFiles/list_install_components.dir
@@ -161,6 +162,7 @@ C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/local.dir
 C:/Users/19513/Desktop/cmake/build/lesson3_2_Eigen/CMakeFiles/install/strip.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_letter_combination.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_list.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/list_install_components.dir
