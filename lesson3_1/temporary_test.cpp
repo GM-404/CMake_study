@@ -10,17 +10,9 @@
 #include "max_water.hh"
 #include "collect_rainwater.hh"
 #include "sliding_window.hh"
-
+#include "linked_list.hh"
 int main()
 {
-    std::string s = "cbaebabacd";
-    std::string p = "abc";
-    SlidingWindow sw;
-    std::vector<int> result = sw.findAnagrams(s, p);
-    for (int index : result)
-    {
-        std::cout << index << " ";
-    }
-    std::cout << std::endl;
+
     return 0;
 }

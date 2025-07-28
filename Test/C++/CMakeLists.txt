@@ -50,6 +50,9 @@ add_executable(test_move_zero
 add_executable(test_collect_rainwater
     test_collect_rainwater.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/collect_rainwater.cpp)
+add_executable(test_hasCycle
+    test_hasCycle.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
 
 # 测试动态库文件
 add_executable(test_del
@@ -76,6 +79,8 @@ target_include_directories(test_subarray PRIVATE
 target_include_directories(test_move_zero PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_collect_rainwater PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_hasCycle PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
 # 第三步：
@@ -109,6 +114,9 @@ target_link_libraries(test_move_zero
 target_link_libraries(test_collect_rainwater
     gtest_main
     gtest)
+target_link_libraries(test_hasCycle
+    gtest_main
+    gtest)
 
 # 第四步：
 # 添加测试
@@ -121,3 +129,4 @@ add_test(NAME test_letter_combination COMMAND test_letter_combination)
 add_test(NAME test_subarray COMMAND test_subarray)
 add_test(NAME test_move_zero COMMAND test_move_zero)
 add_test(NAME test_collect_rainwater COMMAND test_collect_rainwater)
+add_test(NAME test_hasCycle COMMAND test_hasCycle)

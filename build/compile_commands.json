@@ -157,6 +157,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_hasCycle.dir\\test_hasCycle.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_hasCycle.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_hasCycle.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_hasCycle.dir\\test_hasCycle.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_hasCycle.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_hasCycle.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"
@@ -343,6 +355,12 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\Linked_list.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem F:/LFMCW-Radar-DSP_C-Language/ThirdParty/eigen-3.4.0 -g -std=gnu++17 -o lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "output": "lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj"
@@ -361,8 +379,26 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_list_pro.dir\\src\\study_list_pro.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list_pro.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list_pro.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_list_pro.dir\\src\\study_list_pro.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
   "output": "lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_lists_pro.dir\\src\\study_double_lists_pro.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists_pro.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists_pro.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_double_lists_pro.dir\\src\\study_double_lists_pro.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_throw.dir\\src\\study_throw.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_throw.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_throw.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_throw.dir\\src\\study_throw.cpp.obj"
 }
 ]

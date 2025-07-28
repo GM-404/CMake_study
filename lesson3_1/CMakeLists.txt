@@ -28,4 +28,5 @@ add_executable(temporary_test temporary_test.cpp
     source/max_water.cpp # 盛最多水的容器
     source/collect_rainwater.cpp # 接雨水
     source/sliding_window.cpp # 最长无重复字串
+    source/Linked_list.cpp # 141. 环形链表
 )

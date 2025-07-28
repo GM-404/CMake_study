@@ -203,15 +203,16 @@
 						25,
 						26,
 						27,
-						55,
-						56,
-						57,
 						58,
 						59,
 						60,
 						61,
 						62,
-						63
+						63,
+						64,
+						65,
+						66,
+						67
 					]
 				},
 				{
@@ -318,8 +319,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						53,
-						54
+						56,
+						57
 					]
 				},
 				{
@@ -351,7 +352,10 @@
 					[
 						50,
 						51,
-						52
+						52,
+						53,
+						54,
+						55
 					]
 				}
 			],
@@ -443,7 +447,11 @@
 						60,
 						61,
 						62,
-						63
+						63,
+						64,
+						65,
+						66,
+						67
 					]
 				},
 				{
@@ -852,8 +860,15 @@
 				{
 					"directoryIndex" : 17,
 					"id" : "study_double_lists::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_double_lists-Debug-ad47c98231920b0e50b5.json",
+					"jsonFile" : "target-study_double_lists-Debug-09d8d8972d2670a22e49.json",
 					"name" : "study_double_lists",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "study_double_lists_pro::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_double_lists_pro-Debug-29e49cf67c60ca242fe6.json",
+					"name" : "study_double_lists_pro",
 					"projectIndex" : 0
 				},
 				{
@@ -871,6 +886,20 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 17,
+					"id" : "study_list_pro::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_list_pro-Debug-fa82530682bc14904abb.json",
+					"name" : "study_list_pro",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "study_throw::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_throw-Debug-a238f0d35886aa660ef3.json",
+					"name" : "study_throw",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 15,
 					"id" : "study_two_sum::@f7dbcf3a521522d18336",
 					"jsonFile" : "target-study_two_sum-Debug-2f8c6f043eaf957a3819.json",
@@ -880,70 +909,77 @@
 				{
 					"directoryIndex" : 15,
 					"id" : "temporary_test::@f7dbcf3a521522d18336",
-					"jsonFile" : "target-temporary_test-Debug-7040ba93996c9c99b8a9.json",
+					"jsonFile" : "target-temporary_test-Debug-7b0eb82328ac313f504c.json",
 					"name" : "temporary_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-625db7bc923c5f3473dd.json",
+					"jsonFile" : "target-test_add-Debug-ca67258c21f622728bb1.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_collect_rainwater::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_collect_rainwater-Debug-53f541fcbf6a55df7b37.json",
+					"jsonFile" : "target-test_collect_rainwater-Debug-21e8e8fad7756c924a38.json",
 					"name" : "test_collect_rainwater",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-5d8f6577479b9669abf6.json",
+					"jsonFile" : "target-test_del-Debug-db45a368ec23362c5033.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_four_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_four_sum-Debug-8d342120435178f83316.json",
+					"jsonFile" : "target-test_four_sum-Debug-0dcc1802633494c953c8.json",
 					"name" : "test_four_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
+					"id" : "test_hasCycle::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_hasCycle-Debug-7c390a39acd2bfb6054f.json",
+					"name" : "test_hasCycle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
 					"id" : "test_letter_combination::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_letter_combination-Debug-156c36638364e68bf485.json",
+					"jsonFile" : "target-test_letter_combination-Debug-b4254475771528792d29.json",
 					"name" : "test_letter_combination",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_move_zero::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_move_zero-Debug-83d0aac0d9961b87051c.json",
+					"jsonFile" : "target-test_move_zero-Debug-1fcf3b78a8a71e9a01b1.json",
 					"name" : "test_move_zero",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_subarray::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_subarray-Debug-91e795e127ad6b9ae20c.json",
+					"jsonFile" : "target-test_subarray-Debug-8c81039c80e9dd5a07f3.json",
 					"name" : "test_subarray",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-f1d3218e46e0225b9fd7.json",
+					"jsonFile" : "target-test_sum-Debug-4adfee11f8df0070e18f.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_three_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_three_sum-Debug-4e0e21d2463645464cbe.json",
+					"jsonFile" : "target-test_three_sum-Debug-49ea9f42b3cf5fa1bdff.json",
 					"name" : "test_three_sum",
 					"projectIndex" : 0
 				}
