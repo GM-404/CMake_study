@@ -1,2 +1,3 @@
 ﻿add_executable(study_letter_combination src/study_letter_combination.cpp)
 add_executable(study_list src/study_list.cpp)
+add_executable(study_double_lists src/study_double_lists.cpp)

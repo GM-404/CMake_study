@@ -358,5 +358,11 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
   "output": "lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj"
 }
 ]
