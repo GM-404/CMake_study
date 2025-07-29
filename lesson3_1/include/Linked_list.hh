@@ -1,9 +1,10 @@
-﻿#ifndef LINKED_LIST_H
-#define LINKED_LIST_H
+﻿#ifndef LINKED_LIST_HH
+#define LINKED_LIST_HH
 
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <stack>
 /*给你一个链表的头节点 head ，判断链表中是否有环。
 
     如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。
@@ -41,8 +42,20 @@ public:
             cur = cur->next;
         }
     }
+    // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针
     bool hasCycle2(Linked_Node *head); // 使用哈希表
+
+    // 160.相交链表
+    Linked_Node *getIntersectionNode(Linked_Node *headA, Linked_Node *headB);  // 使用哈希表
+    Linked_Node *getIntersectionNode1(Linked_Node *headA, Linked_Node *headB); // 使用双指针
+
+    // 206. 反转链表
+    Linked_Node *reverseList(Linked_Node *head); // 递归
+
+    // 234. 回文链表
+    bool isPalindrome(Linked_Node *head);  // 转化为数组
+    bool isPalindrome1(Linked_Node *head); // 递归
 };
 #endif
 // 示例

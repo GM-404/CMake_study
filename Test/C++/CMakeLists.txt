@@ -53,6 +53,16 @@ add_executable(test_collect_rainwater
 add_executable(test_hasCycle
     test_hasCycle.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+add_executable(test_intersect_list
+    test_intersect_list.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+add_executable(test_reverse_list
+    test_reverse_list.cpp
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+
+# add_executable(test_palindrome_list
+# test_palindrome_list.cpp
+# ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
 
 # 测试动态库文件
 add_executable(test_del
@@ -82,6 +92,13 @@ target_include_directories(test_collect_rainwater PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_hasCycle PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_intersect_list PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+target_include_directories(test_reverse_list PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+
+# target_link_directories(test_palindrome_list PRIVATE
+# ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 
 # 第三步：
 # 添加 Google Test 头文件目录
@@ -117,6 +134,16 @@ target_link_libraries(test_collect_rainwater
 target_link_libraries(test_hasCycle
     gtest_main
     gtest)
+target_link_libraries(test_intersect_list
+    gtest_main
+    gtest)
+target_link_libraries(test_reverse_list
+    gtest_main
+    gtest)
+
+# target_link_libraries(test_palindrome_list
+# gtest_main
+# gtest)
 
 # 第四步：
 # 添加测试
@@ -130,3 +157,7 @@ add_test(NAME test_subarray COMMAND test_subarray)
 add_test(NAME test_move_zero COMMAND test_move_zero)
 add_test(NAME test_collect_rainwater COMMAND test_collect_rainwater)
 add_test(NAME test_hasCycle COMMAND test_hasCycle)
+add_test(NAME test_intersect_list COMMAND test_intersect_list)
+add_test(NAME test_reverse_list COMMAND test_reverse_list)
+
+# add_test(NAME test_palindrome_list COMMAND test_palindrome_list)
