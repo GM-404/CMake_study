@@ -1581,6 +1581,47 @@ build Test/C++/test_reverse_list.exe: CXX_EXECUTABLE_LINKER__test_reverse_list_D
   TARGET_PDB = test_reverse_list.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_palindrome_list
+
+
+#############################################
+# Order-only phony target for test_palindrome_list
+
+build cmake_object_order_depends_target_test_palindrome_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_palindrome_list.dir/test_palindrome_list.cpp.obj: CXX_COMPILER__test_palindrome_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_palindrome_list.cpp || cmake_object_order_depends_target_test_palindrome_list
+  DEP_FILE = Test\C++\CMakeFiles\test_palindrome_list.dir\test_palindrome_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
+
+build Test/C++/CMakeFiles/test_palindrome_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_palindrome_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_palindrome_list
+  DEP_FILE = Test\C++\CMakeFiles\test_palindrome_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_palindrome_list
+
+
+#############################################
+# Link the executable Test\C++\test_palindrome_list.exe
+
+build Test/C++/test_palindrome_list.exe: CXX_EXECUTABLE_LINKER__test_palindrome_list_Debug Test/C++/CMakeFiles/test_palindrome_list.dir/test_palindrome_list.cpp.obj Test/C++/CMakeFiles/test_palindrome_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_palindrome_list.exe
+  TARGET_IMPLIB = Test\C++\libtest_palindrome_list.dll.a
+  TARGET_PDB = test_palindrome_list.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -3622,6 +3663,10 @@ build test_move_zero: phony Test/C++/test_move_zero.exe
 
 build test_move_zero.exe: phony Test/C++/test_move_zero.exe
 
+build test_palindrome_list: phony Test/C++/test_palindrome_list.exe
+
+build test_palindrome_list.exe: phony Test/C++/test_palindrome_list.exe
+
 build test_reverse_list: phony Test/C++/test_reverse_list.exe
 
 build test_reverse_list.exe: phony Test/C++/test_reverse_list.exe
@@ -3667,7 +3712,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

@@ -214,7 +214,8 @@
 						68,
 						69,
 						70,
-						71
+						71,
+						72
 					]
 				},
 				{
@@ -459,7 +460,8 @@
 						68,
 						69,
 						70,
-						71
+						71,
+						72
 					]
 				},
 				{
@@ -938,84 +940,91 @@
 				{
 					"directoryIndex" : 9,
 					"id" : "test_add::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_add-Debug-8f8c0e960f4563b39b1a.json",
+					"jsonFile" : "target-test_add-Debug-1a588040927a04218066.json",
 					"name" : "test_add",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_collect_rainwater::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_collect_rainwater-Debug-60b79b2f8a8120120089.json",
+					"jsonFile" : "target-test_collect_rainwater-Debug-11adbf61724931219ca4.json",
 					"name" : "test_collect_rainwater",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_del::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_del-Debug-84e987416149dbdec1da.json",
+					"jsonFile" : "target-test_del-Debug-bf87e2dbad4b96721064.json",
 					"name" : "test_del",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_four_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_four_sum-Debug-c751ce1e23e51034b9bf.json",
+					"jsonFile" : "target-test_four_sum-Debug-250ed5f11c0e925a0c60.json",
 					"name" : "test_four_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_hasCycle::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_hasCycle-Debug-6c2de51e6ade283ea44e.json",
+					"jsonFile" : "target-test_hasCycle-Debug-e8c45d5f9a45e05cb074.json",
 					"name" : "test_hasCycle",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_intersect_list::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_intersect_list-Debug-1cdd4a2ef1afb0b97b7a.json",
+					"jsonFile" : "target-test_intersect_list-Debug-d34ba23941f6a47d5948.json",
 					"name" : "test_intersect_list",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_letter_combination::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_letter_combination-Debug-078fdf8e95d8916ed23c.json",
+					"jsonFile" : "target-test_letter_combination-Debug-c2e119382f3d807a4c75.json",
 					"name" : "test_letter_combination",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_move_zero::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_move_zero-Debug-970115b37ba69deb266d.json",
+					"jsonFile" : "target-test_move_zero-Debug-e3e7911294145f77412c.json",
 					"name" : "test_move_zero",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
+					"id" : "test_palindrome_list::@ec39104b73891538ddf2",
+					"jsonFile" : "target-test_palindrome_list-Debug-78cf2e62818244b1580f.json",
+					"name" : "test_palindrome_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
 					"id" : "test_reverse_list::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_reverse_list-Debug-2ca49c56156eb43f1dc6.json",
+					"jsonFile" : "target-test_reverse_list-Debug-c8c8b5ca157a65ebe18c.json",
 					"name" : "test_reverse_list",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_subarray::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_subarray-Debug-ca7107159bdeb0a5ce17.json",
+					"jsonFile" : "target-test_subarray-Debug-8439509759b28ed7468b.json",
 					"name" : "test_subarray",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_sum-Debug-f79f65157151bf99fc82.json",
+					"jsonFile" : "target-test_sum-Debug-5b01915d384ea7db3dd5.json",
 					"name" : "test_sum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "test_three_sum::@ec39104b73891538ddf2",
-					"jsonFile" : "target-test_three_sum-Debug-9bd7a363dec6bfcd2902.json",
+					"jsonFile" : "target-test_three_sum-Debug-b24009589d627fcdd7af.json",
 					"name" : "test_three_sum",
 					"projectIndex" : 0
 				}
