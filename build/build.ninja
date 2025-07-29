@@ -1499,6 +1499,88 @@ build Test/C++/test_hasCycle.exe: CXX_EXECUTABLE_LINKER__test_hasCycle_Debug Tes
   TARGET_PDB = test_hasCycle.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_intersect_list
+
+
+#############################################
+# Order-only phony target for test_intersect_list
+
+build cmake_object_order_depends_target_test_intersect_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_intersect_list.dir/test_intersect_list.cpp.obj: CXX_COMPILER__test_intersect_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_intersect_list.cpp || cmake_object_order_depends_target_test_intersect_list
+  DEP_FILE = Test\C++\CMakeFiles\test_intersect_list.dir\test_intersect_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
+
+build Test/C++/CMakeFiles/test_intersect_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_intersect_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_intersect_list
+  DEP_FILE = Test\C++\CMakeFiles\test_intersect_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_intersect_list.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_intersect_list
+
+
+#############################################
+# Link the executable Test\C++\test_intersect_list.exe
+
+build Test/C++/test_intersect_list.exe: CXX_EXECUTABLE_LINKER__test_intersect_list_Debug Test/C++/CMakeFiles/test_intersect_list.dir/test_intersect_list.cpp.obj Test/C++/CMakeFiles/test_intersect_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_intersect_list.exe
+  TARGET_IMPLIB = Test\C++\libtest_intersect_list.dll.a
+  TARGET_PDB = test_intersect_list.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_reverse_list
+
+
+#############################################
+# Order-only phony target for test_reverse_list
+
+build cmake_object_order_depends_target_test_reverse_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_reverse_list.dir/test_reverse_list.cpp.obj: CXX_COMPILER__test_reverse_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_reverse_list.cpp || cmake_object_order_depends_target_test_reverse_list
+  DEP_FILE = Test\C++\CMakeFiles\test_reverse_list.dir\test_reverse_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
+
+build Test/C++/CMakeFiles/test_reverse_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_reverse_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_reverse_list
+  DEP_FILE = Test\C++\CMakeFiles\test_reverse_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_reverse_list.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_reverse_list
+
+
+#############################################
+# Link the executable Test\C++\test_reverse_list.exe
+
+build Test/C++/test_reverse_list.exe: CXX_EXECUTABLE_LINKER__test_reverse_list_Debug Test/C++/CMakeFiles/test_reverse_list.dir/test_reverse_list.cpp.obj Test/C++/CMakeFiles/test_reverse_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_reverse_list.exe
+  TARGET_IMPLIB = Test\C++\libtest_reverse_list.dll.a
+  TARGET_PDB = test_reverse_list.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -3221,6 +3303,40 @@ build lesson4_1/study_dynamic_array.exe: CXX_EXECUTABLE_LINKER__study_dynamic_ar
   TARGET_IMPLIB = lesson4_1\libstudy_dynamic_array.dll.a
   TARGET_PDB = study_dynamic_array.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target study_stack
+
+
+#############################################
+# Order-only phony target for study_stack
+
+build cmake_object_order_depends_target_study_stack: phony || .
+
+build lesson4_1/CMakeFiles/study_stack.dir/src/study_stack.cpp.obj: CXX_COMPILER__study_stack_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson4_1/src/study_stack.cpp || cmake_object_order_depends_target_study_stack
+  DEP_FILE = lesson4_1\CMakeFiles\study_stack.dir\src\study_stack.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson4_1/include
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_stack.dir
+  OBJECT_FILE_DIR = lesson4_1\CMakeFiles\study_stack.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target study_stack
+
+
+#############################################
+# Link the executable lesson4_1\study_stack.exe
+
+build lesson4_1/study_stack.exe: CXX_EXECUTABLE_LINKER__study_stack_Debug lesson4_1/CMakeFiles/study_stack.dir/src/study_stack.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson4_1\study_stack.exe
+  TARGET_IMPLIB = lesson4_1\libstudy_stack.dll.a
+  TARGET_PDB = study_stack.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -3458,6 +3574,10 @@ build study_list_pro: phony lesson4_1/study_list_pro.exe
 
 build study_list_pro.exe: phony lesson4_1/study_list_pro.exe
 
+build study_stack: phony lesson4_1/study_stack.exe
+
+build study_stack.exe: phony lesson4_1/study_stack.exe
+
 build study_throw: phony lesson4_1/study_throw.exe
 
 build study_throw.exe: phony lesson4_1/study_throw.exe
@@ -3490,6 +3610,10 @@ build test_hasCycle: phony Test/C++/test_hasCycle.exe
 
 build test_hasCycle.exe: phony Test/C++/test_hasCycle.exe
 
+build test_intersect_list: phony Test/C++/test_intersect_list.exe
+
+build test_intersect_list.exe: phony Test/C++/test_intersect_list.exe
+
 build test_letter_combination: phony Test/C++/test_letter_combination.exe
 
 build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
@@ -3497,6 +3621,10 @@ build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
 build test_move_zero: phony Test/C++/test_move_zero.exe
 
 build test_move_zero.exe: phony Test/C++/test_move_zero.exe
+
+build test_reverse_list: phony Test/C++/test_reverse_list.exe
+
+build test_reverse_list.exe: phony Test/C++/test_reverse_list.exe
 
 build test_subarray: phony Test/C++/test_subarray.exe
 
@@ -3539,7 +3667,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 
@@ -3609,7 +3737,7 @@ build lesson3_2_Eigen/all: phony lesson3_2_Eigen/lesson_Eigen.exe
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson4_1
 
-build lesson4_1/all: phony lesson4_1/study_letter_combination.exe lesson4_1/study_list.exe lesson4_1/study_list_pro.exe lesson4_1/study_double_lists.exe lesson4_1/study_double_lists_pro.exe lesson4_1/study_throw.exe lesson4_1/study_dynamic_array.exe
+build lesson4_1/all: phony lesson4_1/study_letter_combination.exe lesson4_1/study_list.exe lesson4_1/study_list_pro.exe lesson4_1/study_double_lists.exe lesson4_1/study_double_lists_pro.exe lesson4_1/study_throw.exe lesson4_1/study_dynamic_array.exe lesson4_1/study_stack.exe
 
 # =============================================================================
 
