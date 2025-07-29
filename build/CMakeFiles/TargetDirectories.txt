@@ -168,6 +168,7 @@ C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_list_pro.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_double_lists.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_double_lists_pro.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_throw.dir
+C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/study_dynamic_array.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/rebuild_cache.dir
 C:/Users/19513/Desktop/cmake/build/lesson4_1/CMakeFiles/list_install_components.dir

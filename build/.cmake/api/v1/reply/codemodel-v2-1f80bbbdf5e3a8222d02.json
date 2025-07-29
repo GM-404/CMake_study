@@ -203,7 +203,6 @@
 						25,
 						26,
 						27,
-						58,
 						59,
 						60,
 						61,
@@ -212,7 +211,8 @@
 						64,
 						65,
 						66,
-						67
+						67,
+						68
 					]
 				},
 				{
@@ -319,8 +319,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						56,
-						57
+						57,
+						58
 					]
 				},
 				{
@@ -355,7 +355,8 @@
 						52,
 						53,
 						54,
-						55
+						55,
+						56
 					]
 				}
 			],
@@ -451,7 +452,8 @@
 						64,
 						65,
 						66,
-						67
+						67,
+						68
 					]
 				},
 				{
@@ -783,7 +785,7 @@
 				{
 					"directoryIndex" : 11,
 					"id" : "gmock_main::@4b9ead47e321c1b28e4a",
-					"jsonFile" : "target-gmock_main-Debug-9fef457f07ac6f94b863.json",
+					"jsonFile" : "target-gmock_main-Debug-ee836de417d4ba3cc416.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
@@ -869,6 +871,13 @@
 					"id" : "study_double_lists_pro::@1b6d51dc19d592a70b9a",
 					"jsonFile" : "target-study_double_lists_pro-Debug-29e49cf67c60ca242fe6.json",
 					"name" : "study_double_lists_pro",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "study_dynamic_array::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_dynamic_array-Debug-7705ff2e7dba2cb7a290.json",
+					"name" : "study_dynamic_array",
 					"projectIndex" : 0
 				},
 				{

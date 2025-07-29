@@ -157,6 +157,64 @@ TEST(HasCycleTest, MultipleNodesWithCycleAtTail)
     deleteLinkedList(head);
 }
 
+TEST(HasCycleTest2, EmptyList)
+{
+    Linked_Node *head = nullptr;
+    Linked_Node testNode(0); // 创建一个测试对象用于调用成员函数
+    EXPECT_FALSE(testNode.hasCycle2(head));
+}
+
+TEST(HasCycleTest2, SingleNodeNoCycle)
+{
+    Linked_Node *head = new Linked_Node(1);
+    Linked_Node testNode(0);
+    EXPECT_FALSE(testNode.hasCycle2(head));
+    delete head;
+}
+
+TEST(HasCycleTest2, SingleNodeWithCycle)
+{
+    Linked_Node *head = new Linked_Node(1);
+    head->next = head; // 自环
+    Linked_Node testNode(0);
+    EXPECT_TRUE(testNode.hasCycle2(head));
+
+    // 特殊处理自环的释放
+    head->next = nullptr;
+    delete head;
+}
+
+TEST(HasCycleTest2, MultipleNodesNoCycle)
+{
+    Linked_Node *head = createLinkedList({1, 2, 3, 4, 5});
+    Linked_Node testNode(0);
+    EXPECT_FALSE(testNode.hasCycle2(head));
+    deleteLinkedList(head);
+}
+
+TEST(HasCycleTest2, MultipleNodesWithCycleAtHead)
+{
+    Linked_Node *head = createCyclicLinkedList({1, 2, 3, 4, 5}, 0); // 环在头节点
+    Linked_Node testNode(0);
+    EXPECT_TRUE(testNode.hasCycle2(head));
+    deleteLinkedList(head);
+}
+
+TEST(HasCycleTest2, MultipleNodesWithCycleInMiddle)
+{
+    Linked_Node *head = createCyclicLinkedList({1, 2, 3, 4, 5}, 2); // 环在第3个节点(值为3)
+    Linked_Node testNode(0);
+    EXPECT_TRUE(testNode.hasCycle2(head));
+    deleteLinkedList(head);
+}
+
+TEST(HasCycleTest2, MultipleNodesWithCycleAtTail)
+{
+    Linked_Node *head = createCyclicLinkedList({1, 2, 3, 4, 5}, 4); // 环在尾节点(自环)
+    Linked_Node testNode(0);
+    EXPECT_TRUE(testNode.hasCycle2(head));
+    deleteLinkedList(head);
+}
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);

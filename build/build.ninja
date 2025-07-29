@@ -3188,6 +3188,39 @@ build lesson4_1/study_throw.exe: CXX_EXECUTABLE_LINKER__study_throw_Debug lesson
   TARGET_IMPLIB = lesson4_1\libstudy_throw.dll.a
   TARGET_PDB = study_throw.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target study_dynamic_array
+
+
+#############################################
+# Order-only phony target for study_dynamic_array
+
+build cmake_object_order_depends_target_study_dynamic_array: phony || .
+
+build lesson4_1/CMakeFiles/study_dynamic_array.dir/src/study_dynamic_array.cpp.obj: CXX_COMPILER__study_dynamic_array_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson4_1/src/study_dynamic_array.cpp || cmake_object_order_depends_target_study_dynamic_array
+  DEP_FILE = lesson4_1\CMakeFiles\study_dynamic_array.dir\src\study_dynamic_array.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_dynamic_array.dir
+  OBJECT_FILE_DIR = lesson4_1\CMakeFiles\study_dynamic_array.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target study_dynamic_array
+
+
+#############################################
+# Link the executable lesson4_1\study_dynamic_array.exe
+
+build lesson4_1/study_dynamic_array.exe: CXX_EXECUTABLE_LINKER__study_dynamic_array_Debug lesson4_1/CMakeFiles/study_dynamic_array.dir/src/study_dynamic_array.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_dynamic_array.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson4_1\study_dynamic_array.exe
+  TARGET_IMPLIB = lesson4_1\libstudy_dynamic_array.dll.a
+  TARGET_PDB = study_dynamic_array.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -3409,6 +3442,10 @@ build study_double_lists_pro: phony lesson4_1/study_double_lists_pro.exe
 
 build study_double_lists_pro.exe: phony lesson4_1/study_double_lists_pro.exe
 
+build study_dynamic_array: phony lesson4_1/study_dynamic_array.exe
+
+build study_dynamic_array.exe: phony lesson4_1/study_dynamic_array.exe
+
 build study_letter_combination: phony lesson4_1/study_letter_combination.exe
 
 build study_letter_combination.exe: phony lesson4_1/study_letter_combination.exe
@@ -3572,7 +3609,7 @@ build lesson3_2_Eigen/all: phony lesson3_2_Eigen/lesson_Eigen.exe
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson4_1
 
-build lesson4_1/all: phony lesson4_1/study_letter_combination.exe lesson4_1/study_list.exe lesson4_1/study_list_pro.exe lesson4_1/study_double_lists.exe lesson4_1/study_double_lists_pro.exe lesson4_1/study_throw.exe
+build lesson4_1/all: phony lesson4_1/study_letter_combination.exe lesson4_1/study_list.exe lesson4_1/study_list_pro.exe lesson4_1/study_double_lists.exe lesson4_1/study_double_lists_pro.exe lesson4_1/study_throw.exe lesson4_1/study_dynamic_array.exe
 
 # =============================================================================
 
