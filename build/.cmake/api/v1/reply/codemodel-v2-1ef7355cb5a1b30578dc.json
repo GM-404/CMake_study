@@ -203,6 +203,9 @@
 						25,
 						26,
 						27,
+						57,
+						58,
+						59,
 						60,
 						61,
 						62,
@@ -212,10 +215,7 @@
 						66,
 						67,
 						68,
-						69,
-						70,
-						71,
-						72
+						69
 					]
 				},
 				{
@@ -322,8 +322,8 @@
 					"source" : "lesson3_1",
 					"targetIndexes" : 
 					[
-						58,
-						59
+						55,
+						56
 					]
 				},
 				{
@@ -357,10 +357,7 @@
 						51,
 						52,
 						53,
-						54,
-						55,
-						56,
-						57
+						54
 					]
 				}
 			],
@@ -458,10 +455,7 @@
 						66,
 						67,
 						68,
-						69,
-						70,
-						71,
-						72
+						69
 					]
 				},
 				{
@@ -869,58 +863,37 @@
 				},
 				{
 					"directoryIndex" : 17,
-					"id" : "study_double_lists::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_double_lists-Debug-09d8d8972d2670a22e49.json",
-					"name" : "study_double_lists",
+					"id" : "study_double_queue::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_double_queue-Debug-e62c9995d918ddcf47f8.json",
+					"name" : "study_double_queue",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 17,
-					"id" : "study_double_lists_pro::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_double_lists_pro-Debug-29e49cf67c60ca242fe6.json",
-					"name" : "study_double_lists_pro",
+					"id" : "study_heap::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_heap-Debug-d4f8c635e33ca1b9f8d2.json",
+					"name" : "study_heap",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 17,
-					"id" : "study_dynamic_array::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_dynamic_array-Debug-7705ff2e7dba2cb7a290.json",
-					"name" : "study_dynamic_array",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 17,
-					"id" : "study_letter_combination::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_letter_combination-Debug-27594e6c365502d425eb.json",
-					"name" : "study_letter_combination",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 17,
-					"id" : "study_list::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_list-Debug-72ffff058e6f50d4b2a3.json",
-					"name" : "study_list",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 17,
-					"id" : "study_list_pro::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_list_pro-Debug-fa82530682bc14904abb.json",
-					"name" : "study_list_pro",
+					"id" : "study_queue::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_queue-Debug-347198c5f02a174c285d.json",
+					"name" : "study_queue",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 17,
 					"id" : "study_stack::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_stack-Debug-41540faba5100ff8e194.json",
+					"jsonFile" : "target-study_stack-Debug-acb9657e350f8966ba6c.json",
 					"name" : "study_stack",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 17,
-					"id" : "study_throw::@1b6d51dc19d592a70b9a",
-					"jsonFile" : "target-study_throw-Debug-a238f0d35886aa660ef3.json",
-					"name" : "study_throw",
+					"id" : "study_stack0::@1b6d51dc19d592a70b9a",
+					"jsonFile" : "target-study_stack0-Debug-879997df3572f7711c20.json",
+					"name" : "study_stack0",
 					"projectIndex" : 0
 				},
 				{

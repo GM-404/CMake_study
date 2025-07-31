@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lesson4_1/study_double_lists.exe"
+			"path" : "lesson4_1/study_stack0.exe"
 		},
 		{
-			"path" : "lesson4_1/study_double_lists.pdb"
+			"path" : "lesson4_1/study_stack0.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "study_double_lists::@1b6d51dc19d592a70b9a",
+	"id" : "study_stack0::@1b6d51dc19d592a70b9a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "study_double_lists",
-	"nameOnDisk" : "study_double_lists.exe",
+	"name" : "study_stack0",
+	"nameOnDisk" : "study_stack0.exe",
 	"paths" : 
 	{
 		"build" : "lesson4_1",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lesson4_1/src/study_double_lists.cpp",
+			"path" : "lesson4_1/src/study_stack0.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

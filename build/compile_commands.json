@@ -403,50 +403,32 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_letter_combination.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_letter_combination.dir\\src\\study_letter_combination.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_list.dir\\src\\study_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_list_pro.dir\\src\\study_list_pro.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list_pro.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_list_pro.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_list_pro.dir\\src\\study_list_pro.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_double_lists.dir\\src\\study_double_lists.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_lists_pro.dir\\src\\study_double_lists_pro.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists_pro.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_lists_pro.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_double_lists_pro.dir\\src\\study_double_lists_pro.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_throw.dir\\src\\study_throw.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_throw.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_throw.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_throw.dir\\src\\study_throw.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_dynamic_array.dir\\src\\study_dynamic_array.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_dynamic_array.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_dynamic_array.cpp",
-  "output": "lesson4_1\\CMakeFiles\\study_dynamic_array.dir\\src\\study_dynamic_array.cpp.obj"
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_stack0.dir\\src\\study_stack0.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_stack0.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_stack0.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_stack0.dir\\src\\study_stack0.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson4_1/include -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_stack.dir\\src\\study_stack.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_stack.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_stack.cpp",
   "output": "lesson4_1\\CMakeFiles\\study_stack.dir\\src\\study_stack.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_heap.dir\\src\\study_heap.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_heap.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_heap.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_heap.dir\\src\\study_heap.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_queue.dir\\src\\study_queue.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_queue.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_queue.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_queue.dir\\src\\study_queue.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson4_1\\CMakeFiles\\study_double_queue.dir\\src\\study_double_queue.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_queue.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson4_1\\src\\study_double_queue.cpp",
+  "output": "lesson4_1\\CMakeFiles\\study_double_queue.dir\\src\\study_double_queue.cpp.obj"
 }
 ]

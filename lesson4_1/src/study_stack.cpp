@@ -1,8 +1,8 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include "my_stack.hh"
 // 测试整数栈
+// 使用自己编写的一些栈的API来测试栈的基本功能
 void testIntStack()
 {
     std::cout << "\n=== Testing Integer Stack ===" << std::endl;
