@@ -31,6 +31,46 @@ bool Linked_Node::hasCycle2(Linked_Node *head)
     }
     return false;
 }
+// 142. 环形链表 II
+// 根据：
+
+// f=2s （快指针每次2步，路程刚好2倍）
+
+// f = s + nb (相遇时，刚好多走了n圈）
+
+// 推出：s = nb
+
+// 从head结点走到入环点需要走 ： a + nb， 而slow已经走了nb，那么slow再走a步就是入环点了。
+
+// 如何知道slow刚好走了a步？ 从head开始，和slow指针一起走，相遇时刚好就是a步
+Linked_Node *detectCycle(Linked_Node *head)
+{
+    // 先判断链表是否为空或者只有一个节点
+    if (head == nullptr || head->next == nullptr)
+    {
+        return nullptr; // 空链表或只有一个节点
+    }
+    // 使用快慢指针检测环
+    Linked_Node *slow = head;
+    Linked_Node *fast = head;
+    while (fast != nullptr && fast->next != nullptr)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+        if (slow == fast)
+        {
+            // 找到环的起始点
+            Linked_Node *entry = head;
+            while (entry != slow)
+            {
+                entry = entry->next;
+                slow = slow->next;
+            }
+            return entry; // 返回环的起始点
+        }
+    }
+    return nullptr; // 没有环
+}
 // 160.相交链表
 Linked_Node *Linked_Node::getIntersectionNode(Linked_Node *headA, Linked_Node *headB)
 {

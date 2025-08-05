@@ -1622,6 +1622,40 @@ build Test/C++/test_palindrome_list.exe: CXX_EXECUTABLE_LINKER__test_palindrome_
   TARGET_PDB = test_palindrome_list.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_detectcycle
+
+
+#############################################
+# Order-only phony target for test_detectcycle
+
+build cmake_object_order_depends_target_test_detectcycle: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_detectcycle.dir/test_detectcycle.cpp.obj: CXX_COMPILER__test_detectcycle_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_detectcycle.cpp || cmake_object_order_depends_target_test_detectcycle
+  DEP_FILE = Test\C++\CMakeFiles\test_detectcycle.dir\test_detectcycle.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_detectcycle
+
+
+#############################################
+# Link the executable Test\C++\test_detectcycle.exe
+
+build Test/C++/test_detectcycle.exe: CXX_EXECUTABLE_LINKER__test_detectcycle_Debug Test/C++/CMakeFiles/test_detectcycle.dir/test_detectcycle.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_detectcycle.exe
+  TARGET_IMPLIB = Test\C++\libtest_detectcycle.dll.a
+  TARGET_PDB = test_detectcycle.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -3532,6 +3566,10 @@ build test_del: phony Test/C++/test_del.exe
 
 build test_del.exe: phony Test/C++/test_del.exe
 
+build test_detectcycle: phony Test/C++/test_detectcycle.exe
+
+build test_detectcycle.exe: phony Test/C++/test_detectcycle.exe
+
 build test_four_sum: phony Test/C++/test_four_sum.exe
 
 build test_four_sum.exe: phony Test/C++/test_four_sum.exe
@@ -3601,7 +3639,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

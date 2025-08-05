@@ -100,6 +100,7 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_hasCycle.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_intersect_list.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_reverse_list.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_palindrome_list.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_detectcycle.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/rebuild_cache.dir

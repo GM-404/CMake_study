@@ -62,7 +62,8 @@ add_executable(test_reverse_list
 add_executable(test_palindrome_list
     test_palindrome_list.cpp
     ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
-
+add_executable(test_detectcycle
+    test_detectcycle.cpp)
 # 测试动态库文件
 add_executable(test_del
     test_del.cpp
@@ -97,7 +98,8 @@ target_include_directories(test_reverse_list PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_palindrome_list PRIVATE
     ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-
+target_include_directories(test_detectcycle PRIVATE
+    ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 # 第三步：
 # 添加 Google Test 头文件目录
 # 添加链接库
@@ -141,7 +143,10 @@ target_link_libraries(test_reverse_list
 target_link_libraries(test_palindrome_list
     gtest_main
     gtest)
-
+target_link_libraries(test_detectcycle 
+    gtest_main
+    gtest)
+  
 # 第四步：
 # 添加测试
 add_test(NAME test_add COMMAND test_add)
@@ -157,3 +162,4 @@ add_test(NAME test_hasCycle COMMAND test_hasCycle)
 add_test(NAME test_intersect_list COMMAND test_intersect_list)
 add_test(NAME test_reverse_list COMMAND test_reverse_list)
 add_test(NAME test_palindrome_list COMMAND test_palindrome_list)
+add_test(NAME test_detectcycle COMMAND test_detectcycle)
