@@ -1,104 +1,108 @@
 ﻿#include <gtest/gtest.h>
 #include <vector>
-#include "Linked_list.hh" // 包含Linked_Node类的头文件
+#include "Linked_list.hh"
 
-// 辅助函数：创建链表
-Linked_Node *createList(const std::vector<int> &values)
+// 测试夹具类：封装共享逻辑
+class LinkedListPalindromeTest : public ::testing::Test
 {
-    if (values.empty())
-        return nullptr;
+protected:
+    // 共享的Linked_Node实例（用于调用isPalindrome1）
+    Linked_Node testNode{0};
 
-    Linked_Node *head = new Linked_Node(values[0]);
-    Linked_Node *current = head;
-
-    for (size_t i = 1; i < values.size(); ++i)
+    // 辅助函数：创建链表（复用）
+    Linked_Node *createList(const std::vector<int> &values)
     {
-        current->next = new Linked_Node(values[i]);
-        current = current->next;
+        if (values.empty())
+            return nullptr;
+        Linked_Node *head = new Linked_Node(values[0]);
+        Linked_Node *current = head;
+        for (size_t i = 1; i < values.size(); ++i)
+        {
+            current->next = new Linked_Node(values[i]);
+            current = current->next;
+        }
+        return head;
     }
 
-    return head;
-}
-
-// 辅助函数：销毁链表（防止内存泄漏）
-void destroyList(Linked_Node *head)
-{
-    while (head != nullptr)
+    // 辅助函数：销毁链表（复用）
+    void destroyList(Linked_Node *head)
     {
-        Linked_Node *temp = head;
-        head = head->next;
-        delete temp;
+        while (head != nullptr)
+        {
+            Linked_Node *temp = head;
+            head = head->next;
+            delete temp;
+        }
     }
-}
 
-// 测试用例1：空链表（视为回文）
-TEST(IsPalindromeTest, EmptyList)
+    // 每个测试用例结束后自动调用，确保链表被销毁（防泄漏）
+    void TearDown() override
+    {
+        // 这里可以统一处理销毁逻辑（如果链表指针在夹具中维护）
+        // 也可以在每个用例中显式调用destroyList，结合TearDown双重保障
+    }
+};
+
+// 测试用例1：空链表
+TEST_F(LinkedListPalindromeTest, EmptyList)
 {
     Linked_Node *head = nullptr;
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
+    EXPECT_TRUE(testNode.isPalindrome1(head)); // 直接使用夹具中的testNode
 }
 
-// 测试用例2：单节点链表（视为回文）
-TEST(IsPalindromeTest, SingleNode)
+// 测试用例2：单节点链表
+TEST_F(LinkedListPalindromeTest, SingleNode)
 {
-    Linked_Node *head = createList({5});
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
-    destroyList(head);
+    Linked_Node *head = createList({5}); // 直接调用夹具中的createList
+    EXPECT_TRUE(testNode.isPalindrome1(head));
+    destroyList(head); // 调用夹具中的destroyList
 }
 
 // 测试用例3：偶数个节点的回文链表
-TEST(IsPalindromeTest, EvenLengthPalindrome)
+TEST_F(LinkedListPalindromeTest, EvenLengthPalindrome)
 {
     Linked_Node *head = createList({1, 2, 2, 1});
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
+    EXPECT_TRUE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 
 // 测试用例4：奇数个节点的回文链表
-TEST(IsPalindromeTest, OddLengthPalindrome)
+TEST_F(LinkedListPalindromeTest, OddLengthPalindrome)
 {
     Linked_Node *head = createList({1, 2, 3, 2, 1});
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
+    EXPECT_TRUE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 
 // 测试用例5：非回文链表
-TEST(IsPalindromeTest, NotPalindrome)
+TEST_F(LinkedListPalindromeTest, NotPalindrome)
 {
     Linked_Node *head = createList({1, 2, 3, 4});
-    Linked_Node a(0);
-    EXPECT_FALSE(a.isPalindrome1(head));
+    EXPECT_FALSE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 
 // 测试用例6：所有节点值相同的链表（视为回文）
-TEST(IsPalindromeTest, AllSameValues)
+TEST_F(LinkedListPalindromeTest, AllSameValues)
 {
     Linked_Node *head = createList({5, 5, 5, 5});
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
+    EXPECT_TRUE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 
 // 测试用例7：两个节点的回文链表
-TEST(IsPalindromeTest, TwoNodesPalindrome)
+TEST_F(LinkedListPalindromeTest, TwoNodesPalindrome)
 {
     Linked_Node *head = createList({3, 3});
-    Linked_Node a(0);
-    EXPECT_TRUE(a.isPalindrome1(head));
+    EXPECT_TRUE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 
 // 测试用例8：两个节点的非回文链表
-TEST(IsPalindromeTest, TwoNodesNotPalindrome)
+TEST_F(LinkedListPalindromeTest, TwoNodesNotPalindrome)
 {
     Linked_Node *head = createList({3, 4});
-    Linked_Node a(0);
-    EXPECT_FALSE(a.isPalindrome1(head));
+    EXPECT_FALSE(testNode.isPalindrome1(head));
     destroyList(head);
 }
 

@@ -1656,6 +1656,47 @@ build Test/C++/test_detectcycle.exe: CXX_EXECUTABLE_LINKER__test_detectcycle_Deb
   TARGET_PDB = test_detectcycle.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_94
+
+
+#############################################
+# Order-only phony target for test_94
+
+build cmake_object_order_depends_target_test_94: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_94.dir/test_94.cpp.obj: CXX_COMPILER__test_94_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_94.cpp || cmake_object_order_depends_target_test_94
+  DEP_FILE = Test\C++\CMakeFiles\test_94.dir\test_94.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_94.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_94.dir
+
+build Test/C++/CMakeFiles/test_94.dir/__/__/lesson3_1/source/tree.cpp.obj: CXX_COMPILER__test_94_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/tree.cpp || cmake_object_order_depends_target_test_94
+  DEP_FILE = Test\C++\CMakeFiles\test_94.dir\__\__\lesson3_1\source\tree.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_94.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_94.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_94
+
+
+#############################################
+# Link the executable Test\C++\test_94.exe
+
+build Test/C++/test_94.exe: CXX_EXECUTABLE_LINKER__test_94_Debug Test/C++/CMakeFiles/test_94.dir/test_94.cpp.obj Test/C++/CMakeFiles/test_94.dir/__/__/lesson3_1/source/tree.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_94.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_94.exe
+  TARGET_IMPLIB = Test\C++\libtest_94.dll.a
+  TARGET_PDB = test_94.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -2953,6 +2994,13 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj: CXX_CO
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
 
+build lesson3_1/CMakeFiles/temporary_test.dir/source/tree.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/tree.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\tree.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target temporary_test
@@ -2961,7 +3009,7 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj: CXX_CO
 #############################################
 # Link the executable lesson3_1\temporary_test.exe
 
-build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/sliding_window.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj
+build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/sliding_window.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/tree.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
@@ -3313,6 +3361,40 @@ build lesson4_1/study_double_queue.exe: CXX_EXECUTABLE_LINKER__study_double_queu
   TARGET_IMPLIB = lesson4_1\libstudy_double_queue.dll.a
   TARGET_PDB = study_double_queue.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target study_tree
+
+
+#############################################
+# Order-only phony target for study_tree
+
+build cmake_object_order_depends_target_study_tree: phony || .
+
+build lesson4_1/CMakeFiles/study_tree.dir/src/study_tree.cpp.obj: CXX_COMPILER__study_tree_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson4_1/src/study_tree.cpp || cmake_object_order_depends_target_study_tree
+  DEP_FILE = lesson4_1\CMakeFiles\study_tree.dir\src\study_tree.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson4_1/include
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_tree.dir
+  OBJECT_FILE_DIR = lesson4_1\CMakeFiles\study_tree.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target study_tree
+
+
+#############################################
+# Link the executable lesson4_1\study_tree.exe
+
+build lesson4_1/study_tree.exe: CXX_EXECUTABLE_LINKER__study_tree_Debug lesson4_1/CMakeFiles/study_tree.dir/src/study_tree.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson4_1\CMakeFiles\study_tree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson4_1\study_tree.exe
+  TARGET_IMPLIB = lesson4_1\libstudy_tree.dll.a
+  TARGET_PDB = study_tree.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -3546,6 +3628,10 @@ build study_stack0: phony lesson4_1/study_stack0.exe
 
 build study_stack0.exe: phony lesson4_1/study_stack0.exe
 
+build study_tree: phony lesson4_1/study_tree.exe
+
+build study_tree.exe: phony lesson4_1/study_tree.exe
+
 build study_two_sum: phony lesson3_1/study_two_sum.exe
 
 build study_two_sum.exe: phony lesson3_1/study_two_sum.exe
@@ -3553,6 +3639,10 @@ build study_two_sum.exe: phony lesson3_1/study_two_sum.exe
 build temporary_test: phony lesson3_1/temporary_test.exe
 
 build temporary_test.exe: phony lesson3_1/temporary_test.exe
+
+build test_94: phony Test/C++/test_94.exe
+
+build test_94.exe: phony Test/C++/test_94.exe
 
 build test_add: phony Test/C++/test_add.exe
 
@@ -3639,7 +3729,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_94.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 
@@ -3709,7 +3799,7 @@ build lesson3_2_Eigen/all: phony lesson3_2_Eigen/lesson_Eigen.exe
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson4_1
 
-build lesson4_1/all: phony lesson4_1/study_stack0.exe lesson4_1/study_stack.exe lesson4_1/study_heap.exe lesson4_1/study_queue.exe lesson4_1/study_double_queue.exe
+build lesson4_1/all: phony lesson4_1/study_stack0.exe lesson4_1/study_stack.exe lesson4_1/study_heap.exe lesson4_1/study_queue.exe lesson4_1/study_double_queue.exe lesson4_1/study_tree.exe
 
 # =============================================================================
 

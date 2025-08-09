@@ -19,3 +19,7 @@ add_executable(study_heap src/study_heap.cpp)
 #队列的学习
 add_executable(study_queue src/study_queue.cpp)
 add_executable(study_double_queue src/study_double_queue.cpp)
+
+# 二叉树的学习
+add_executable(study_tree src/study_tree.cpp)
+target_include_directories(study_tree PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
