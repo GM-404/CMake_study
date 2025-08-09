@@ -17,5 +17,9 @@ public:
     // 题
     // 94.二叉树的中序遍历框架
     std::vector<int> inorderTraversal(TreeNode *root);
+    // 104. 二叉树的最大深度
+    int maxDepth(TreeNode *root);
+    // 226. 翻转二叉树
+    TreeNode *invertTree(TreeNode *root);
 };
 #endif // MY_TREE_H

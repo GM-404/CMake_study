@@ -18,10 +18,8 @@ int main()
     root->left = nullptr;
     root->right = new TreeNode(3);
     root->right->left = new TreeNode(2);
-    std::vector<int> result = root->inorderTraversal(root);
-    for (int i = 0; i < result.size(); i++)
-    {
-        std::cout << result[i] << std::endl;
-    }
+    int depth = root->maxDepth(root);
+    std::cout << "Maximum depth of the tree: " << depth << std::endl;
+
     return 0;
 }
