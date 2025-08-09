@@ -12,6 +12,8 @@ int Solution_longestConsecutive::longestConsecutive(std::vector<int> &nums)
     std::sort(nums.begin(), nums.end());
     int longest = 1;
     int currentLength = 1;
+    if (nums.empty())
+        return 0;
     for (int i = 1; i < nums.size(); i++)
     {
         if (nums[i] == nums[i - 1] + 1)
