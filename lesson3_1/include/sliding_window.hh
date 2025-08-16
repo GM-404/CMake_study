@@ -19,6 +19,8 @@ public:
     std::vector<int> findAnagrams(std::string &s, std::string &p);
     // 239.滑动窗口最大值
     std::vector<int> maxSlidingWindow(std::vector<int> &nums, int k);
+    // 76.最小覆盖子串
+    std::string minWindow(std::string &s, std::string &t);
 };
 #endif
 // 测试示例1.无重复字符的最长子串

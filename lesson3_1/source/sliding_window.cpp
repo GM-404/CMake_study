@@ -52,7 +52,7 @@ std::vector<int> SlidingWindow::findAnagrams(std::string &s, std::string &p)
     return result;
 }
 // 239.滑动窗口最大值
-std::vector<int> maxSlidingWindow(std::vector<int> &nums, int k)
+std::vector<int> SlidingWindow::maxSlidingWindow(std::vector<int> &nums, int k)
 {
     std::vector<int> results = {};
     std::deque<int> dq; // 存储索引，队列中元素对应的数值保持递减
@@ -85,3 +85,64 @@ std::vector<int> maxSlidingWindow(std::vector<int> &nums, int k)
 
     return results;
 }
+// 76.最小覆盖子串(哈希表+滑动窗口)
+std::string SlidingWindow::minWindow(std::string &s, std::string &t)
+{
+    if (s.empty() || t.empty() || s.size() < t.size())
+    {
+        return "";
+    }
+
+    std::unordered_map<char, int> tFreq, windowFreq;
+    for (char c : t)
+    {
+        tFreq[c]++;
+    }
+
+    int required = tFreq.size(); // 需要匹配的不同字符数量
+    int formed = 0;              // 已匹配的字符数量
+    int left = 0, right = 0;
+    int minLen = INT_MAX;
+    int minLeft = 0;
+
+    while (right < s.size())
+    {
+        char c = s[right];
+        windowFreq[c]++;
+
+        // 当当前字符是目标字符且频率刚好匹配时，增加已匹配计数
+        if (tFreq.find(c) != tFreq.end() && windowFreq[c] == tFreq[c])
+        {
+            formed++;
+        }
+
+        // 尝试收缩窗口：当所有字符都匹配时
+        while (left <= right && formed == required)
+        {
+            c = s[left];
+
+            // 更新最小窗口
+            int currentLen = right - left + 1;
+            if (currentLen < minLen)
+            {
+                minLen = currentLen;
+                minLeft = left;
+            }
+
+            // 移动左指针，缩小窗口
+            windowFreq[c]--;
+            // 如果收缩后导致字符频率不满足，减少已匹配计数
+            if (tFreq.find(c) != tFreq.end() && windowFreq[c] < tFreq[c])
+            {
+                formed--;
+            }
+
+            left++;
+        }
+
+        right++;
+    }
+
+    return minLen == INT_MAX ? "" : s.substr(minLeft, minLen);
+}
+//

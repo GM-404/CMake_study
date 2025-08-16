@@ -38,6 +38,9 @@ add_executable(test_detectcycle test_detectcycle.cpp)
 add_executable(test_94 test_94.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的中序遍历
 add_executable(test_104 test_104.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的最大深度
 add_executable(test_226 test_226.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的翻转
+add_executable(test_239 test_239.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sliding_window.cpp) # 滑动窗口最大值
+add_executable(test_76 test_76.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sliding_window.cpp) # 最小覆盖子串
+
 # 测试动态库文件
 add_executable(test_del
     test_del.cpp
@@ -63,6 +66,9 @@ target_include_directories(test_detectcycle PRIVATE ${CMAKE_PROJECT_ROOT}/lesson
 target_include_directories(test_94 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的中序遍历
 target_include_directories(test_104 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的最大深度
 target_include_directories(test_226 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的翻转
+target_include_directories(test_239 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 滑动窗口最大值
+target_include_directories(test_76 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 最小覆盖子串
+
 # 第三步：
 # 添加 Google Test 头文件目录
 # 添加链接库
@@ -78,11 +84,14 @@ target_link_libraries(test_collect_rainwater gtest_main gtest)
 target_link_libraries(test_hasCycle gtest_main gtest)
 target_link_libraries(test_intersect_list gtest_main gtest)
 target_link_libraries(test_reverse_list gtest_main gtest)
-target_link_libraries(test_palindrome_list  gtest_main gtest)
-target_link_libraries(test_detectcycle  gtest_main gtest)
+target_link_libraries(test_palindrome_list gtest_main gtest)
+target_link_libraries(test_detectcycle gtest_main gtest)
 target_link_libraries(test_94 gtest_main gtest)
 target_link_libraries(test_104 gtest_main gtest)
 target_link_libraries(test_226 gtest_main gtest) # 二叉树的翻转
+target_link_libraries(test_239 gtest_main gtest) # 滑动窗口最大值
+target_link_libraries(test_76 gtest_main gtest) # 最小覆盖子串
+
 # 第四步：
 # 添加测试
 add_test(NAME test_add COMMAND test_add)
@@ -102,3 +111,5 @@ add_test(NAME test_detectcycle COMMAND test_detectcycle)
 add_test(NAME test_94 COMMAND test_94)
 add_test(NAME test_104 COMMAND test_104)
 add_test(NAME test_226 COMMAND test_226) # 二叉树的翻转
+add_test(NAME test_239 COMMAND test_239) # 滑动窗口最大值
+add_test(NAME test_76 COMMAND test_76) # 最小覆盖子串
