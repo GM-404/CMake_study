@@ -47,9 +47,9 @@
 int main()
 {
     double range_bin_size = 149896229.0 / BANDWIDTH; // Range Bin大小
-    std::cout << BANDWIDTH << std::endl;
-    std::cout << range_bin_size << std::endl;
-    std::cout << range_bin_size * 32 << std::endl;
+    std::cout << "带宽" << BANDWIDTH << std::endl;
+    std::cout << "分辨率" << range_bin_size << std::endl;
+    std::cout << "距离范围" << range_bin_size * 32 << std::endl;
     std::cout << TIME_SUBFRAME_INTERVAL_US << std::endl;
     std::cout << TIME_CHIRP << std::endl;
     std::cout << TIME_CHRIP_TOTAL_EXPECTED << std::endl;

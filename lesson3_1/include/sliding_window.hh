@@ -17,6 +17,8 @@ public:
     int lengthOfLongestSubstring(std::string &s);
     // 2.找到字符串中所有字母异构词
     std::vector<int> findAnagrams(std::string &s, std::string &p);
+    // 239.滑动窗口最大值
+    std::vector<int> maxSlidingWindow(std::vector<int> &nums, int k);
 };
 #endif
 // 测试示例1.无重复字符的最长子串
