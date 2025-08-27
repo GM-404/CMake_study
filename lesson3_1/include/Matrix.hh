@@ -13,6 +13,7 @@ public:
     Matrix() = default;
 
     void setZeroes(std::vector<std::vector<int>> &matrix);
+    void setZeroes1(std::vector<std::vector<int>> &matrix);
     // 析构函数
     ~Matrix()
     {
