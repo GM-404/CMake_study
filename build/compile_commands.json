@@ -469,6 +469,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\subarray.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\Matrix.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\Matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -isystem F:/LFMCW-Radar-DSP_C-Language/ThirdParty/eigen-3.4.0 -g -std=gnu++17 -o lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_2_Eigen\\main.cpp",
   "output": "lesson3_2_Eigen\\CMakeFiles\\lesson_Eigen.dir\\main.cpp.obj"

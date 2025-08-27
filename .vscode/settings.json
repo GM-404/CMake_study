@@ -138,6 +138,9 @@
     "typeindex": "cpp",
     "valarray": "cpp",
     "hash_map": "cpp",
-    "future": "cpp"
+    "future": "cpp",
+    "*.expression": "cpp",
+    "alignedvector3": "cpp",
+    "fft": "cpp"
   }
 }

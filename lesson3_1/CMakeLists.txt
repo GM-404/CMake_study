@@ -30,4 +30,6 @@ add_executable(temporary_test temporary_test.cpp
     source/sliding_window.cpp # 最长无重复字串
     source/Linked_list.cpp # 141. 环形链表
     source/tree.cpp # 94. 二叉树的中序遍历
+    source/subarray.cpp # 53. 最大子数组和
+    source/matrix.cpp # 73. 矩阵置零
 )
