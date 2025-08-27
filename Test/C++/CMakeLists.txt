@@ -40,6 +40,7 @@ add_executable(test_104 test_104.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree
 add_executable(test_226 test_226.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的翻转
 add_executable(test_239 test_239.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sliding_window.cpp) # 滑动窗口最大值
 add_executable(test_76 test_76.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sliding_window.cpp) # 最小覆盖子串
+add_executable(test_73 test_73.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/matrix.cpp) # 矩阵置零
 
 # 测试动态库文件
 add_executable(test_del
@@ -68,6 +69,7 @@ target_include_directories(test_104 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/incl
 target_include_directories(test_226 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的翻转
 target_include_directories(test_239 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 滑动窗口最大值
 target_include_directories(test_76 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 最小覆盖子串
+target_include_directories(test_73 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 矩阵置零
 
 # 第三步：
 # 添加 Google Test 头文件目录
@@ -91,6 +93,7 @@ target_link_libraries(test_104 gtest_main gtest)
 target_link_libraries(test_226 gtest_main gtest) # 二叉树的翻转
 target_link_libraries(test_239 gtest_main gtest) # 滑动窗口最大值
 target_link_libraries(test_76 gtest_main gtest) # 最小覆盖子串
+target_link_libraries(test_73 gtest_main gtest) # 矩阵置零
 
 # 第四步：
 # 添加测试
@@ -113,3 +116,4 @@ add_test(NAME test_104 COMMAND test_104)
 add_test(NAME test_226 COMMAND test_226) # 二叉树的翻转
 add_test(NAME test_239 COMMAND test_239) # 滑动窗口最大值
 add_test(NAME test_76 COMMAND test_76) # 最小覆盖子串
+add_test(NAME test_73 COMMAND test_73) # 矩阵置零

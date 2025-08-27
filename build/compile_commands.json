@@ -271,6 +271,18 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_73.dir\\test_73.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_73.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_73.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_73.dir\\test_73.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_73.dir\\__\\__\\lesson3_1\\source\\Matrix.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_73.dir\\__\\__\\lesson3_1\\source\\Matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson2_1/del -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_del.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_del.dir\\test_del.cpp.obj"

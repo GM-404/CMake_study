@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Test/C++/test_detectcycle.exe"
+			"path" : "Test/C++/test_collect_rainwater.exe"
 		},
 		{
-			"path" : "Test/C++/test_detectcycle.pdb"
+			"path" : "Test/C++/test_collect_rainwater.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 37,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 88,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 65,
+				"line" : 61,
 				"parent" : 0
 			}
 		]
@@ -83,7 +83,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -98,7 +99,7 @@
 			"id" : "gtest_main::@89990bd92d21556e44bd"
 		}
 	],
-	"id" : "test_detectcycle::@ec39104b73891538ddf2",
+	"id" : "test_collect_rainwater::@ec39104b73891538ddf2",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +129,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_detectcycle",
-	"nameOnDisk" : "test_detectcycle.exe",
+	"name" : "test_collect_rainwater",
+	"nameOnDisk" : "test_collect_rainwater.exe",
 	"paths" : 
 	{
 		"build" : "Test/C++",
@@ -141,7 +142,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -150,7 +152,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Test/C++/test_detectcycle.cpp",
+			"path" : "Test/C++/test_collect_rainwater.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lesson3_1/source/collect_rainwater.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
