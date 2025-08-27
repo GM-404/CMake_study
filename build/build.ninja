@@ -1902,6 +1902,47 @@ build Test/C++/test_73.exe: CXX_EXECUTABLE_LINKER__test_73_Debug Test/C++/CMakeF
   TARGET_PDB = test_73.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test_54
+
+
+#############################################
+# Order-only phony target for test_54
+
+build cmake_object_order_depends_target_test_54: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_54.dir/test_54.cpp.obj: CXX_COMPILER__test_54_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_54.cpp || cmake_object_order_depends_target_test_54
+  DEP_FILE = Test\C++\CMakeFiles\test_54.dir\test_54.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_54.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_54.dir
+
+build Test/C++/CMakeFiles/test_54.dir/__/__/lesson3_1/source/Matrix.cpp.obj: CXX_COMPILER__test_54_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Matrix.cpp || cmake_object_order_depends_target_test_54
+  DEP_FILE = Test\C++\CMakeFiles\test_54.dir\__\__\lesson3_1\source\Matrix.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_54.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_54.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_54
+
+
+#############################################
+# Link the executable Test\C++\test_54.exe
+
+build Test/C++/test_54.exe: CXX_EXECUTABLE_LINKER__test_54_Debug Test/C++/CMakeFiles/test_54.dir/test_54.cpp.obj Test/C++/CMakeFiles/test_54.dir/__/__/lesson3_1/source/Matrix.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_54.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_54.exe
+  TARGET_IMPLIB = Test\C++\libtest_54.dll.a
+  TARGET_PDB = test_54.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target test_del
 
 
@@ -3871,6 +3912,10 @@ build test_239: phony Test/C++/test_239.exe
 
 build test_239.exe: phony Test/C++/test_239.exe
 
+build test_54: phony Test/C++/test_54.exe
+
+build test_54.exe: phony Test/C++/test_54.exe
+
 build test_73: phony Test/C++/test_73.exe
 
 build test_73.exe: phony Test/C++/test_73.exe
@@ -3968,7 +4013,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_94.exe Test/C++/test_104.exe Test/C++/test_226.exe Test/C++/test_239.exe Test/C++/test_76.exe Test/C++/test_73.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_94.exe Test/C++/test_104.exe Test/C++/test_226.exe Test/C++/test_239.exe Test/C++/test_76.exe Test/C++/test_73.exe Test/C++/test_54.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

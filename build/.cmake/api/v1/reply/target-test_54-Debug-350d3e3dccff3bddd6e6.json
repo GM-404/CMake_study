@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Test/C++/test_94.exe"
+			"path" : "Test/C++/test_54.exe"
 		},
 		{
-			"path" : "Test/C++/test_94.pdb"
+			"path" : "Test/C++/test_54.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 91,
+				"line" : 99,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 67,
+				"line" : 74,
 				"parent" : 0
 			}
 		]
@@ -99,7 +99,7 @@
 			"id" : "gtest_main::@89990bd92d21556e44bd"
 		}
 	],
-	"id" : "test_94::@ec39104b73891538ddf2",
+	"id" : "test_54::@ec39104b73891538ddf2",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -129,8 +129,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_94",
-	"nameOnDisk" : "test_94.exe",
+	"name" : "test_54",
+	"nameOnDisk" : "test_54.exe",
 	"paths" : 
 	{
 		"build" : "Test/C++",
@@ -152,13 +152,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Test/C++/test_94.cpp",
+			"path" : "Test/C++/test_54.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lesson3_1/source/tree.cpp",
+			"path" : "lesson3_1/source/Matrix.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

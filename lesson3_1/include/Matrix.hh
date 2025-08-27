@@ -11,9 +11,13 @@ class Matrix
 public:
     // 默认构造函数（无需初始化任何内部状态）
     Matrix() = default;
-
+    // 54. 螺旋矩阵
+    std::vector<int> spiralOrder(const std::vector<std::vector<int>> &matrix);
+    std::vector<int> spiralOrder2(const std::vector<std::vector<int>> &matrix);
+    // 73. 矩阵置零
     void setZeroes(std::vector<std::vector<int>> &matrix);
     void setZeroes1(std::vector<std::vector<int>> &matrix);
+
     // 析构函数
     ~Matrix()
     {

@@ -127,3 +127,109 @@ void Matrix::setZeroes1(std::vector<std::vector<int>> &matrix)
         }
     }
 }
+// 73暂时性测试
+//   std::vector<std::vector<int>> nums = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+//      std::vector<std::vector<int>> nums2 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+//      Matrix s;
+//      s.setZeroes(nums);
+//      s.setZeroes(nums2);
+//      for (const auto &row : nums)
+//      {
+//          for (const auto &val : row)
+//          {
+//              std::cout << val << " ";
+//          }
+//          std::cout << std::endl;
+//      }
+
+//  54. 螺旋矩阵
+std::vector<int> Matrix::spiralOrder(const std::vector<std::vector<int>> &matrix)
+{
+    std::vector<int> res;
+    if (matrix.empty())
+        return res; // 空矩阵直接返回
+    int m = matrix.size();
+    int n = matrix[0].size();
+    int left = 0, right = n - 1, top = 0, bottom = m - 1;
+    while (left <= right && top <= bottom)
+    {
+        for (int i = left; i <= right; i++)
+            res.push_back(matrix[top][i]);
+        top++;
+        for (int i = top; i <= bottom; i++)
+            res.push_back(matrix[i][right]);
+        right--;
+        if (top <= bottom)
+        { // 关键检查：避免只剩一行时重复遍历
+            for (int i = right; i >= left; i--)
+                res.push_back(matrix[bottom][i]);
+            bottom--;
+        }
+        if (left <= right)
+        { // 关键检查：避免只剩一列时重复遍历
+            for (int i = bottom; i >= top; i--)
+                res.push_back(matrix[i][left]);
+            left++;
+        }
+    }
+    return res;
+};
+std::vector<int> Matrix::spiralOrder2(const std::vector<std::vector<int>> &matrix)
+{
+    std::vector<int> res;
+    if (matrix.empty())
+        return res;
+
+    int m = matrix.size(), n = matrix[0].size();
+    // 定义4个方向：右、下、左、上（dx为行偏移，dy为列偏移）
+    std::vector<std::pair<int, int>> dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    int dir = 0; // 当前方向索引（0:右, 1:下, 2:左, 3:上）
+
+    // 边界：left=左边界, right=右边界, top=上边界, bottom=下边界
+    int left = 0, right = n - 1, top = 0, bottom = m - 1;
+    int x = 0, y = 0; // 当前位置
+
+    for (int i = 0; i < m * n; ++i)
+    {
+        res.push_back(matrix[x][y]); // 加入当前元素
+
+        // 计算下一个位置
+        int nx = x + dirs[dir].first;
+        int ny = y + dirs[dir].second;
+
+        // 若下一个位置越界或超出当前边界，则切换方向并收缩边界
+        if (nx < top || nx > bottom || ny < left || ny > right)
+        {
+            // 收缩边界（根据当前方向）
+            if (dir == 0)
+                top++; // 右移完，上边界下移
+            else if (dir == 1)
+                right--; // 下移完，右边界左移
+            else if (dir == 2)
+                bottom--; // 左移完，下边界上移
+            else if (dir == 3)
+                left++; // 上移完，左边界右移
+
+            dir = (dir + 1) % 4; // 切换到下一个方向
+            // 更新下一个位置（按新方向）
+            nx = x + dirs[dir].first;
+            ny = y + dirs[dir].second;
+        }
+
+        // 移动到下一个位置
+        x = nx;
+        y = ny;
+    }
+
+    return res;
+}
+// 54暂时性测试
+//   std::vector<std::vector<int>> nums = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+//     std::vector<std::vector<int>> nums2 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+//     Matrix s;
+//     std::vector<int> res = s.spiralOrder(nums2);
+//     for (const auto &val : res)
+//     {
+//         std::cout << val << " ";
+//     }
+//     return 0;
