@@ -22,19 +22,20 @@ endif()
 # 第一步：
 # 添加源文件和测试文件
 # 测试一般文件
-add_executable(test_add test_add.cpp ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
-add_executable(test_sum test_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sum.cpp)
-add_executable(test_three_sum test_three_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/three_sum.cpp)
-add_executable(test_four_sum test_four_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/four_sum.cpp)
-add_executable(test_letter_combination test_letter_combination.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/letter_combination.cpp)
-add_executable(test_subarray test_subarray.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/subarray.cpp)
-add_executable(test_move_zero test_move_zero.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/move_zero.cpp)
-add_executable(test_collect_rainwater test_collect_rainwater.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/collect_rainwater.cpp)
-add_executable(test_hasCycle test_hasCycle.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
-add_executable(test_intersect_list test_intersect_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
-add_executable(test_reverse_list test_reverse_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
-add_executable(test_palindrome_list test_palindrome_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
-add_executable(test_detectcycle test_detectcycle.cpp)
+
+# add_executable(test_add test_add.cpp ${CMAKE_PROJECT_ROOT}/lesson1_1/add.cpp)
+# add_executable(test_sum test_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sum.cpp)
+# add_executable(test_three_sum test_three_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/three_sum.cpp)
+# add_executable(test_four_sum test_four_sum.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/four_sum.cpp)
+# add_executable(test_letter_combination test_letter_combination.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/letter_combination.cpp)
+# add_executable(test_subarray test_subarray.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/subarray.cpp)
+# add_executable(test_move_zero test_move_zero.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/move_zero.cpp)
+# add_executable(test_collect_rainwater test_collect_rainwater.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/collect_rainwater.cpp)
+# add_executable(test_hasCycle test_hasCycle.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+# add_executable(test_intersect_list test_intersect_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+# add_executable(test_reverse_list test_reverse_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+# add_executable(test_palindrome_list test_palindrome_list.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp)
+# add_executable(test_detectcycle test_detectcycle.cpp)
 add_executable(test_94 test_94.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的中序遍历
 add_executable(test_104 test_104.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的最大深度
 add_executable(test_226 test_226.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/tree.cpp) # 二叉树的翻转
@@ -42,6 +43,7 @@ add_executable(test_239 test_239.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/slid
 add_executable(test_76 test_76.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/sliding_window.cpp) # 最小覆盖子串
 add_executable(test_73 test_73.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/matrix.cpp) # 矩阵置零
 add_executable(test_54 test_54.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/matrix.cpp) # 螺旋矩阵
+add_executable(test_21 test_21.cpp ${CMAKE_PROJECT_ROOT}/lesson3_1/source/Linked_list.cpp) # 合并两个有序链表
 
 # 测试动态库文件
 add_executable(test_del
@@ -51,20 +53,20 @@ target_link_directories(test_del PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/lib) # 
 
 # 第二步：
 # 添加所需目录头文件
-target_include_directories(test_add PRIVATE ${CMAKE_PROJECT_ROOT}/lesson1_1/include)
+# target_include_directories(test_add PRIVATE ${CMAKE_PROJECT_ROOT}/lesson1_1/include)
 target_include_directories(test_del PRIVATE ${CMAKE_PROJECT_ROOT}/lesson2_1/del)
-target_include_directories(test_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_four_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_letter_combination PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_three_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_subarray PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_move_zero PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_collect_rainwater PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_hasCycle PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_intersect_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_reverse_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_palindrome_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
-target_include_directories(test_detectcycle PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_four_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_letter_combination PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_three_sum PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_subarray PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_move_zero PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_collect_rainwater PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_hasCycle PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_intersect_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_reverse_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_palindrome_list PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
+# target_include_directories(test_detectcycle PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include)
 target_include_directories(test_94 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的中序遍历
 target_include_directories(test_104 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的最大深度
 target_include_directories(test_226 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 二叉树的翻转
@@ -72,24 +74,25 @@ target_include_directories(test_239 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/incl
 target_include_directories(test_76 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 最小覆盖子串
 target_include_directories(test_73 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 矩阵置零
 target_include_directories(test_54 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 螺旋矩阵
+target_include_directories(test_21 PRIVATE ${CMAKE_PROJECT_ROOT}/lesson3_1/include) # 合并两个有序链表
 
 # 第三步：
 # 添加 Google Test 头文件目录
 # 添加链接库
-target_link_libraries(test_add gtest_main gtest)
+# target_link_libraries(test_add gtest_main gtest)
 target_link_libraries(test_del gtest_main gtest del) # 假设库文件名为 libdel.a 或 del.lib
-target_link_libraries(test_sum gtest_main gtest)
-target_link_libraries(test_three_sum gtest_main gtest)
-target_link_libraries(test_four_sum gtest_main gtest)
-target_link_libraries(test_letter_combination gtest_main gtest)
-target_link_libraries(test_subarray gtest_main gtest)
-target_link_libraries(test_move_zero gtest_main gtest)
-target_link_libraries(test_collect_rainwater gtest_main gtest)
-target_link_libraries(test_hasCycle gtest_main gtest)
-target_link_libraries(test_intersect_list gtest_main gtest)
-target_link_libraries(test_reverse_list gtest_main gtest)
-target_link_libraries(test_palindrome_list gtest_main gtest)
-target_link_libraries(test_detectcycle gtest_main gtest)
+# target_link_libraries(test_sum gtest_main gtest)
+# target_link_libraries(test_three_sum gtest_main gtest)
+# target_link_libraries(test_four_sum gtest_main gtest)
+# target_link_libraries(test_letter_combination gtest_main gtest)
+# target_link_libraries(test_subarray gtest_main gtest)
+# target_link_libraries(test_move_zero gtest_main gtest)
+# target_link_libraries(test_collect_rainwater gtest_main gtest)
+# target_link_libraries(test_hasCycle gtest_main gtest)
+# target_link_libraries(test_intersect_list gtest_main gtest)
+# target_link_libraries(test_reverse_list gtest_main gtest)
+# target_link_libraries(test_palindrome_list gtest_main gtest)
+# target_link_libraries(test_detectcycle gtest_main gtest)
 target_link_libraries(test_94 gtest_main gtest)
 target_link_libraries(test_104 gtest_main gtest)
 target_link_libraries(test_226 gtest_main gtest) # 二叉树的翻转
@@ -97,23 +100,24 @@ target_link_libraries(test_239 gtest_main gtest) # 滑动窗口最大值
 target_link_libraries(test_76 gtest_main gtest) # 最小覆盖子串
 target_link_libraries(test_73 gtest_main gtest) # 矩阵置零
 target_link_libraries(test_54 gtest_main gtest) # 螺旋矩阵
+target_link_libraries(test_21 gtest_main gtest) # 合并两个有序链表
 
 # 第四步：
 # 添加测试
-add_test(NAME test_add COMMAND test_add)
+# add_test(NAME test_add COMMAND test_add)
 add_test(NAME test_del COMMAND test_del)
-add_test(NAME test_sum COMMAND test_sum)
-add_test(NAME test_three_sum COMMAND test_three_sum)
-add_test(NAME test_four_sum COMMAND test_four_sum)
-add_test(NAME test_letter_combination COMMAND test_letter_combination)
-add_test(NAME test_subarray COMMAND test_subarray)
-add_test(NAME test_move_zero COMMAND test_move_zero)
-add_test(NAME test_collect_rainwater COMMAND test_collect_rainwater)
-add_test(NAME test_hasCycle COMMAND test_hasCycle)
-add_test(NAME test_intersect_list COMMAND test_intersect_list)
-add_test(NAME test_reverse_list COMMAND test_reverse_list)
-add_test(NAME test_palindrome_list COMMAND test_palindrome_list)
-add_test(NAME test_detectcycle COMMAND test_detectcycle)
+# add_test(NAME test_sum COMMAND test_sum)
+# add_test(NAME test_three_sum COMMAND test_three_sum)
+# add_test(NAME test_four_sum COMMAND test_four_sum)
+# add_test(NAME test_letter_combination COMMAND test_letter_combination)
+# add_test(NAME test_subarray COMMAND test_subarray)
+# add_test(NAME test_move_zero COMMAND test_move_zero)
+# add_test(NAME test_collect_rainwater COMMAND test_collect_rainwater)
+# add_test(NAME test_hasCycle COMMAND test_hasCycle)
+# add_test(NAME test_intersect_list COMMAND test_intersect_list)
+# add_test(NAME test_reverse_list COMMAND test_reverse_list)
+# add_test(NAME test_palindrome_list COMMAND test_palindrome_list)
+# add_test(NAME test_detectcycle COMMAND test_detectcycle)
 add_test(NAME test_94 COMMAND test_94)
 add_test(NAME test_104 COMMAND test_104)
 add_test(NAME test_226 COMMAND test_226) # 二叉树的翻转
@@ -121,3 +125,4 @@ add_test(NAME test_239 COMMAND test_239) # 滑动窗口最大值
 add_test(NAME test_76 COMMAND test_76) # 最小覆盖子串
 add_test(NAME test_73 COMMAND test_73) # 矩阵置零
 add_test(NAME test_54 COMMAND test_54) # 螺旋矩阵
+add_test(NAME test_21 COMMAND test_21) # 合并两个有序链表

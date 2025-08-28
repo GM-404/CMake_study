@@ -88,19 +88,6 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousTest.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousCoverage.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/ContinuousSubmit.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_add.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_sum.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_three_sum.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_four_sum.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_letter_combination.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_subarray.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_move_zero.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_collect_rainwater.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_hasCycle.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_intersect_list.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_reverse_list.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_palindrome_list.dir
-C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_detectcycle.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_94.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_104.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_226.dir
@@ -108,6 +95,7 @@ C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_239.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_76.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_73.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_54.dir
+C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_21.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/test_del.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/edit_cache.dir
 C:/Users/19513/Desktop/cmake/build/Test/C++/CMakeFiles/rebuild_cache.dir

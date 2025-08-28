@@ -61,156 +61,6 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_add.dir\\test_add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_add.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_add.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_add.dir\\test_add.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_add.dir\\__\\__\\lesson1_1\\add.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\add.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_add.dir\\__\\__\\lesson1_1\\add.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_sum.dir\\test_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_sum.dir\\test_sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_sum.dir\\__\\__\\lesson3_1\\source\\sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_sum.dir\\__\\__\\lesson3_1\\source\\sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_three_sum.dir\\test_three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_three_sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_three_sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_three_sum.dir\\test_three_sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_three_sum.dir\\__\\__\\lesson3_1\\source\\three_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\three_sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_three_sum.dir\\__\\__\\lesson3_1\\source\\three_sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_four_sum.dir\\test_four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_four_sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_four_sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_four_sum.dir\\test_four_sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_four_sum.dir\\__\\__\\lesson3_1\\source\\four_sum.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\four_sum.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_four_sum.dir\\__\\__\\lesson3_1\\source\\four_sum.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_letter_combination.dir\\test_letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_letter_combination.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_letter_combination.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_letter_combination.dir\\test_letter_combination.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\letter_combination.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_letter_combination.dir\\__\\__\\lesson3_1\\source\\letter_combination.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_subarray.dir\\test_subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_subarray.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_subarray.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_subarray.dir\\test_subarray.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_subarray.dir\\__\\__\\lesson3_1\\source\\subarray.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\subarray.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_subarray.dir\\__\\__\\lesson3_1\\source\\subarray.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_move_zero.dir\\test_move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_move_zero.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_move_zero.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_move_zero.dir\\test_move_zero.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_move_zero.dir\\__\\__\\lesson3_1\\source\\move_zero.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\move_zero.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_move_zero.dir\\__\\__\\lesson3_1\\source\\move_zero.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\test_collect_rainwater.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_collect_rainwater.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_collect_rainwater.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\test_collect_rainwater.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\__\\__\\lesson3_1\\source\\collect_rainwater.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\collect_rainwater.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_collect_rainwater.dir\\__\\__\\lesson3_1\\source\\collect_rainwater.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_hasCycle.dir\\test_hasCycle.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_hasCycle.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_hasCycle.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_hasCycle.dir\\test_hasCycle.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_hasCycle.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_hasCycle.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_intersect_list.dir\\test_intersect_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_intersect_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_intersect_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_intersect_list.dir\\test_intersect_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_intersect_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_intersect_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_reverse_list.dir\\test_reverse_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_reverse_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_reverse_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_reverse_list.dir\\test_reverse_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_reverse_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_reverse_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_palindrome_list.dir\\test_palindrome_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_palindrome_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_palindrome_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_palindrome_list.dir\\test_palindrome_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_palindrome_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_palindrome_list.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
-  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_detectcycle.dir\\test_detectcycle.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_detectcycle.cpp",
-  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_detectcycle.cpp",
-  "output": "Test\\C++\\CMakeFiles\\test_detectcycle.dir\\test_detectcycle.cpp.obj"
-},
-{
-  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_94.dir\\test_94.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_94.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_94.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_94.dir\\test_94.cpp.obj"
@@ -292,6 +142,18 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_54.dir\\__\\__\\lesson3_1\\source\\Matrix.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Matrix.cpp",
   "output": "Test\\C++\\CMakeFiles\\test_54.dir\\__\\__\\lesson3_1\\source\\Matrix.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_21.dir\\test_21.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_21.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\Test\\C++\\test_21.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_21.dir\\test_21.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest -g -std=gnu++17 -o Test\\C++\\CMakeFiles\\test_21.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\Linked_list.cpp",
+  "output": "Test\\C++\\CMakeFiles\\test_21.dir\\__\\__\\lesson3_1\\source\\Linked_list.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",

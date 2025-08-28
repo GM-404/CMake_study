@@ -1130,532 +1130,6 @@ build Test/C++/ContinuousMemCheck: phony Test/C++/CMakeFiles/ContinuousMemCheck
 build Test/C++/ContinuousSubmit: phony Test/C++/CMakeFiles/ContinuousSubmit
 
 # =============================================================================
-# Object build statements for EXECUTABLE target test_add
-
-
-#############################################
-# Order-only phony target for test_add
-
-build cmake_object_order_depends_target_test_add: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_add.dir/test_add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_add.cpp || cmake_object_order_depends_target_test_add
-  DEP_FILE = Test\C++\CMakeFiles\test_add.dir\test_add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_add.dir
-
-build Test/C++/CMakeFiles/test_add.dir/__/__/lesson1_1/add.cpp.obj: CXX_COMPILER__test_add_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson1_1/add.cpp || cmake_object_order_depends_target_test_add
-  DEP_FILE = Test\C++\CMakeFiles\test_add.dir\__\__\lesson1_1\add.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson1_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_add.dir\__\__\lesson1_1
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_add
-
-
-#############################################
-# Link the executable Test\C++\test_add.exe
-
-build Test/C++/test_add.exe: CXX_EXECUTABLE_LINKER__test_add_Debug Test/C++/CMakeFiles/test_add.dir/test_add.cpp.obj Test/C++/CMakeFiles/test_add.dir/__/__/lesson1_1/add.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_add.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_add.exe
-  TARGET_IMPLIB = Test\C++\libtest_add.dll.a
-  TARGET_PDB = test_add.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_sum
-
-
-#############################################
-# Order-only phony target for test_sum
-
-build cmake_object_order_depends_target_test_sum: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_sum.dir/test_sum.cpp.obj: CXX_COMPILER__test_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_sum.cpp || cmake_object_order_depends_target_test_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_sum.dir\test_sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_sum.dir
-
-build Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum.cpp.obj: CXX_COMPILER__test_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/sum.cpp || cmake_object_order_depends_target_test_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_sum.dir\__\__\lesson3_1\source\sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_sum.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_sum
-
-
-#############################################
-# Link the executable Test\C++\test_sum.exe
-
-build Test/C++/test_sum.exe: CXX_EXECUTABLE_LINKER__test_sum_Debug Test/C++/CMakeFiles/test_sum.dir/test_sum.cpp.obj Test/C++/CMakeFiles/test_sum.dir/__/__/lesson3_1/source/sum.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_sum.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_sum.exe
-  TARGET_IMPLIB = Test\C++\libtest_sum.dll.a
-  TARGET_PDB = test_sum.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_three_sum
-
-
-#############################################
-# Order-only phony target for test_three_sum
-
-build cmake_object_order_depends_target_test_three_sum: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_three_sum.dir/test_three_sum.cpp.obj: CXX_COMPILER__test_three_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_three_sum.cpp || cmake_object_order_depends_target_test_three_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_three_sum.dir\test_three_sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_three_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_three_sum.dir
-
-build Test/C++/CMakeFiles/test_three_sum.dir/__/__/lesson3_1/source/three_sum.cpp.obj: CXX_COMPILER__test_three_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/three_sum.cpp || cmake_object_order_depends_target_test_three_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_three_sum.dir\__\__\lesson3_1\source\three_sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_three_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_three_sum.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_three_sum
-
-
-#############################################
-# Link the executable Test\C++\test_three_sum.exe
-
-build Test/C++/test_three_sum.exe: CXX_EXECUTABLE_LINKER__test_three_sum_Debug Test/C++/CMakeFiles/test_three_sum.dir/test_three_sum.cpp.obj Test/C++/CMakeFiles/test_three_sum.dir/__/__/lesson3_1/source/three_sum.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_three_sum.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_three_sum.exe
-  TARGET_IMPLIB = Test\C++\libtest_three_sum.dll.a
-  TARGET_PDB = test_three_sum.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_four_sum
-
-
-#############################################
-# Order-only phony target for test_four_sum
-
-build cmake_object_order_depends_target_test_four_sum: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_four_sum.dir/test_four_sum.cpp.obj: CXX_COMPILER__test_four_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_four_sum.cpp || cmake_object_order_depends_target_test_four_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_four_sum.dir\test_four_sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_four_sum.dir
-
-build Test/C++/CMakeFiles/test_four_sum.dir/__/__/lesson3_1/source/four_sum.cpp.obj: CXX_COMPILER__test_four_sum_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/four_sum.cpp || cmake_object_order_depends_target_test_four_sum
-  DEP_FILE = Test\C++\CMakeFiles\test_four_sum.dir\__\__\lesson3_1\source\four_sum.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_four_sum.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_four_sum
-
-
-#############################################
-# Link the executable Test\C++\test_four_sum.exe
-
-build Test/C++/test_four_sum.exe: CXX_EXECUTABLE_LINKER__test_four_sum_Debug Test/C++/CMakeFiles/test_four_sum.dir/test_four_sum.cpp.obj Test/C++/CMakeFiles/test_four_sum.dir/__/__/lesson3_1/source/four_sum.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_four_sum.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_four_sum.exe
-  TARGET_IMPLIB = Test\C++\libtest_four_sum.dll.a
-  TARGET_PDB = test_four_sum.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_letter_combination
-
-
-#############################################
-# Order-only phony target for test_letter_combination
-
-build cmake_object_order_depends_target_test_letter_combination: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_letter_combination.dir/test_letter_combination.cpp.obj: CXX_COMPILER__test_letter_combination_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_letter_combination.cpp || cmake_object_order_depends_target_test_letter_combination
-  DEP_FILE = Test\C++\CMakeFiles\test_letter_combination.dir\test_letter_combination.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
-
-build Test/C++/CMakeFiles/test_letter_combination.dir/__/__/lesson3_1/source/letter_combination.cpp.obj: CXX_COMPILER__test_letter_combination_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/letter_combination.cpp || cmake_object_order_depends_target_test_letter_combination
-  DEP_FILE = Test\C++\CMakeFiles\test_letter_combination.dir\__\__\lesson3_1\source\letter_combination.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_letter_combination.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_letter_combination
-
-
-#############################################
-# Link the executable Test\C++\test_letter_combination.exe
-
-build Test/C++/test_letter_combination.exe: CXX_EXECUTABLE_LINKER__test_letter_combination_Debug Test/C++/CMakeFiles/test_letter_combination.dir/test_letter_combination.cpp.obj Test/C++/CMakeFiles/test_letter_combination.dir/__/__/lesson3_1/source/letter_combination.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_letter_combination.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_letter_combination.exe
-  TARGET_IMPLIB = Test\C++\libtest_letter_combination.dll.a
-  TARGET_PDB = test_letter_combination.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_subarray
-
-
-#############################################
-# Order-only phony target for test_subarray
-
-build cmake_object_order_depends_target_test_subarray: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_subarray.dir/test_subarray.cpp.obj: CXX_COMPILER__test_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_subarray.cpp || cmake_object_order_depends_target_test_subarray
-  DEP_FILE = Test\C++\CMakeFiles\test_subarray.dir\test_subarray.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_subarray.dir
-
-build Test/C++/CMakeFiles/test_subarray.dir/__/__/lesson3_1/source/subarray.cpp.obj: CXX_COMPILER__test_subarray_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/subarray.cpp || cmake_object_order_depends_target_test_subarray
-  DEP_FILE = Test\C++\CMakeFiles\test_subarray.dir\__\__\lesson3_1\source\subarray.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_subarray.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_subarray
-
-
-#############################################
-# Link the executable Test\C++\test_subarray.exe
-
-build Test/C++/test_subarray.exe: CXX_EXECUTABLE_LINKER__test_subarray_Debug Test/C++/CMakeFiles/test_subarray.dir/test_subarray.cpp.obj Test/C++/CMakeFiles/test_subarray.dir/__/__/lesson3_1/source/subarray.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_subarray.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_subarray.exe
-  TARGET_IMPLIB = Test\C++\libtest_subarray.dll.a
-  TARGET_PDB = test_subarray.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_move_zero
-
-
-#############################################
-# Order-only phony target for test_move_zero
-
-build cmake_object_order_depends_target_test_move_zero: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_move_zero.dir/test_move_zero.cpp.obj: CXX_COMPILER__test_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_move_zero.cpp || cmake_object_order_depends_target_test_move_zero
-  DEP_FILE = Test\C++\CMakeFiles\test_move_zero.dir\test_move_zero.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_move_zero.dir
-
-build Test/C++/CMakeFiles/test_move_zero.dir/__/__/lesson3_1/source/move_zero.cpp.obj: CXX_COMPILER__test_move_zero_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/move_zero.cpp || cmake_object_order_depends_target_test_move_zero
-  DEP_FILE = Test\C++\CMakeFiles\test_move_zero.dir\__\__\lesson3_1\source\move_zero.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_move_zero.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_move_zero
-
-
-#############################################
-# Link the executable Test\C++\test_move_zero.exe
-
-build Test/C++/test_move_zero.exe: CXX_EXECUTABLE_LINKER__test_move_zero_Debug Test/C++/CMakeFiles/test_move_zero.dir/test_move_zero.cpp.obj Test/C++/CMakeFiles/test_move_zero.dir/__/__/lesson3_1/source/move_zero.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_move_zero.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_move_zero.exe
-  TARGET_IMPLIB = Test\C++\libtest_move_zero.dll.a
-  TARGET_PDB = test_move_zero.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_collect_rainwater
-
-
-#############################################
-# Order-only phony target for test_collect_rainwater
-
-build cmake_object_order_depends_target_test_collect_rainwater: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_collect_rainwater.dir/test_collect_rainwater.cpp.obj: CXX_COMPILER__test_collect_rainwater_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_collect_rainwater.cpp || cmake_object_order_depends_target_test_collect_rainwater
-  DEP_FILE = Test\C++\CMakeFiles\test_collect_rainwater.dir\test_collect_rainwater.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
-
-build Test/C++/CMakeFiles/test_collect_rainwater.dir/__/__/lesson3_1/source/collect_rainwater.cpp.obj: CXX_COMPILER__test_collect_rainwater_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/collect_rainwater.cpp || cmake_object_order_depends_target_test_collect_rainwater
-  DEP_FILE = Test\C++\CMakeFiles\test_collect_rainwater.dir\__\__\lesson3_1\source\collect_rainwater.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_collect_rainwater
-
-
-#############################################
-# Link the executable Test\C++\test_collect_rainwater.exe
-
-build Test/C++/test_collect_rainwater.exe: CXX_EXECUTABLE_LINKER__test_collect_rainwater_Debug Test/C++/CMakeFiles/test_collect_rainwater.dir/test_collect_rainwater.cpp.obj Test/C++/CMakeFiles/test_collect_rainwater.dir/__/__/lesson3_1/source/collect_rainwater.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_collect_rainwater.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_collect_rainwater.exe
-  TARGET_IMPLIB = Test\C++\libtest_collect_rainwater.dll.a
-  TARGET_PDB = test_collect_rainwater.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_hasCycle
-
-
-#############################################
-# Order-only phony target for test_hasCycle
-
-build cmake_object_order_depends_target_test_hasCycle: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_hasCycle.dir/test_hasCycle.cpp.obj: CXX_COMPILER__test_hasCycle_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_hasCycle.cpp || cmake_object_order_depends_target_test_hasCycle
-  DEP_FILE = Test\C++\CMakeFiles\test_hasCycle.dir\test_hasCycle.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_hasCycle.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_hasCycle.dir
-
-build Test/C++/CMakeFiles/test_hasCycle.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_hasCycle_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_hasCycle
-  DEP_FILE = Test\C++\CMakeFiles\test_hasCycle.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_hasCycle.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_hasCycle.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_hasCycle
-
-
-#############################################
-# Link the executable Test\C++\test_hasCycle.exe
-
-build Test/C++/test_hasCycle.exe: CXX_EXECUTABLE_LINKER__test_hasCycle_Debug Test/C++/CMakeFiles/test_hasCycle.dir/test_hasCycle.cpp.obj Test/C++/CMakeFiles/test_hasCycle.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_hasCycle.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_hasCycle.exe
-  TARGET_IMPLIB = Test\C++\libtest_hasCycle.dll.a
-  TARGET_PDB = test_hasCycle.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_intersect_list
-
-
-#############################################
-# Order-only phony target for test_intersect_list
-
-build cmake_object_order_depends_target_test_intersect_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_intersect_list.dir/test_intersect_list.cpp.obj: CXX_COMPILER__test_intersect_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_intersect_list.cpp || cmake_object_order_depends_target_test_intersect_list
-  DEP_FILE = Test\C++\CMakeFiles\test_intersect_list.dir\test_intersect_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
-
-build Test/C++/CMakeFiles/test_intersect_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_intersect_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_intersect_list
-  DEP_FILE = Test\C++\CMakeFiles\test_intersect_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_intersect_list.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_intersect_list
-
-
-#############################################
-# Link the executable Test\C++\test_intersect_list.exe
-
-build Test/C++/test_intersect_list.exe: CXX_EXECUTABLE_LINKER__test_intersect_list_Debug Test/C++/CMakeFiles/test_intersect_list.dir/test_intersect_list.cpp.obj Test/C++/CMakeFiles/test_intersect_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_intersect_list.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_intersect_list.exe
-  TARGET_IMPLIB = Test\C++\libtest_intersect_list.dll.a
-  TARGET_PDB = test_intersect_list.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_reverse_list
-
-
-#############################################
-# Order-only phony target for test_reverse_list
-
-build cmake_object_order_depends_target_test_reverse_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_reverse_list.dir/test_reverse_list.cpp.obj: CXX_COMPILER__test_reverse_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_reverse_list.cpp || cmake_object_order_depends_target_test_reverse_list
-  DEP_FILE = Test\C++\CMakeFiles\test_reverse_list.dir\test_reverse_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
-
-build Test/C++/CMakeFiles/test_reverse_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_reverse_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_reverse_list
-  DEP_FILE = Test\C++\CMakeFiles\test_reverse_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_reverse_list.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_reverse_list
-
-
-#############################################
-# Link the executable Test\C++\test_reverse_list.exe
-
-build Test/C++/test_reverse_list.exe: CXX_EXECUTABLE_LINKER__test_reverse_list_Debug Test/C++/CMakeFiles/test_reverse_list.dir/test_reverse_list.cpp.obj Test/C++/CMakeFiles/test_reverse_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_reverse_list.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_reverse_list.exe
-  TARGET_IMPLIB = Test\C++\libtest_reverse_list.dll.a
-  TARGET_PDB = test_reverse_list.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_palindrome_list
-
-
-#############################################
-# Order-only phony target for test_palindrome_list
-
-build cmake_object_order_depends_target_test_palindrome_list: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_palindrome_list.dir/test_palindrome_list.cpp.obj: CXX_COMPILER__test_palindrome_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_palindrome_list.cpp || cmake_object_order_depends_target_test_palindrome_list
-  DEP_FILE = Test\C++\CMakeFiles\test_palindrome_list.dir\test_palindrome_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
-
-build Test/C++/CMakeFiles/test_palindrome_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_palindrome_list_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_palindrome_list
-  DEP_FILE = Test\C++\CMakeFiles\test_palindrome_list.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir\__\__\lesson3_1\source
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_palindrome_list
-
-
-#############################################
-# Link the executable Test\C++\test_palindrome_list.exe
-
-build Test/C++/test_palindrome_list.exe: CXX_EXECUTABLE_LINKER__test_palindrome_list_Debug Test/C++/CMakeFiles/test_palindrome_list.dir/test_palindrome_list.cpp.obj Test/C++/CMakeFiles/test_palindrome_list.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_palindrome_list.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_palindrome_list.exe
-  TARGET_IMPLIB = Test\C++\libtest_palindrome_list.dll.a
-  TARGET_PDB = test_palindrome_list.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target test_detectcycle
-
-
-#############################################
-# Order-only phony target for test_detectcycle
-
-build cmake_object_order_depends_target_test_detectcycle: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build Test/C++/CMakeFiles/test_detectcycle.dir/test_detectcycle.cpp.obj: CXX_COMPILER__test_detectcycle_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_detectcycle.cpp || cmake_object_order_depends_target_test_detectcycle
-  DEP_FILE = Test\C++\CMakeFiles\test_detectcycle.dir\test_detectcycle.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
-  OBJECT_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
-  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target test_detectcycle
-
-
-#############################################
-# Link the executable Test\C++\test_detectcycle.exe
-
-build Test/C++/test_detectcycle.exe: CXX_EXECUTABLE_LINKER__test_detectcycle_Debug Test/C++/CMakeFiles/test_detectcycle.dir/test_detectcycle.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Test\C++\CMakeFiles\test_detectcycle.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test\C++\test_detectcycle.exe
-  TARGET_IMPLIB = Test\C++\libtest_detectcycle.dll.a
-  TARGET_PDB = test_detectcycle.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target test_94
 
 
@@ -1941,6 +1415,47 @@ build Test/C++/test_54.exe: CXX_EXECUTABLE_LINKER__test_54_Debug Test/C++/CMakeF
   TARGET_FILE = Test\C++\test_54.exe
   TARGET_IMPLIB = Test\C++\libtest_54.dll.a
   TARGET_PDB = test_54.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_21
+
+
+#############################################
+# Order-only phony target for test_21
+
+build cmake_object_order_depends_target_test_21: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build Test/C++/CMakeFiles/test_21.dir/test_21.cpp.obj: CXX_COMPILER__test_21_unscanned_Debug C$:/Users/19513/Desktop/cmake/Test/C++/test_21.cpp || cmake_object_order_depends_target_test_21
+  DEP_FILE = Test\C++\CMakeFiles\test_21.dir\test_21.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_21.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_21.dir
+
+build Test/C++/CMakeFiles/test_21.dir/__/__/lesson3_1/source/Linked_list.cpp.obj: CXX_COMPILER__test_21_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/Linked_list.cpp || cmake_object_order_depends_target_test_21
+  DEP_FILE = Test\C++\CMakeFiles\test_21.dir\__\__\lesson3_1\source\Linked_list.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest/include -isystem C:/Users/19513/Desktop/cmake/thirdpart/googletest-1.16.0/googletest
+  OBJECT_DIR = Test\C++\CMakeFiles\test_21.dir
+  OBJECT_FILE_DIR = Test\C++\CMakeFiles\test_21.dir\__\__\lesson3_1\source
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_21
+
+
+#############################################
+# Link the executable Test\C++\test_21.exe
+
+build Test/C++/test_21.exe: CXX_EXECUTABLE_LINKER__test_21_Debug Test/C++/CMakeFiles/test_21.dir/test_21.cpp.obj Test/C++/CMakeFiles/test_21.dir/__/__/lesson3_1/source/Linked_list.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Test\C++\CMakeFiles\test_21.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test\C++\test_21.exe
+  TARGET_IMPLIB = Test\C++\libtest_21.dll.a
+  TARGET_PDB = test_21.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_del
@@ -3904,6 +3419,10 @@ build test_104: phony Test/C++/test_104.exe
 
 build test_104.exe: phony Test/C++/test_104.exe
 
+build test_21: phony Test/C++/test_21.exe
+
+build test_21.exe: phony Test/C++/test_21.exe
+
 build test_226: phony Test/C++/test_226.exe
 
 build test_226.exe: phony Test/C++/test_226.exe
@@ -3928,61 +3447,9 @@ build test_94: phony Test/C++/test_94.exe
 
 build test_94.exe: phony Test/C++/test_94.exe
 
-build test_add: phony Test/C++/test_add.exe
-
-build test_add.exe: phony Test/C++/test_add.exe
-
-build test_collect_rainwater: phony Test/C++/test_collect_rainwater.exe
-
-build test_collect_rainwater.exe: phony Test/C++/test_collect_rainwater.exe
-
 build test_del: phony Test/C++/test_del.exe
 
 build test_del.exe: phony Test/C++/test_del.exe
-
-build test_detectcycle: phony Test/C++/test_detectcycle.exe
-
-build test_detectcycle.exe: phony Test/C++/test_detectcycle.exe
-
-build test_four_sum: phony Test/C++/test_four_sum.exe
-
-build test_four_sum.exe: phony Test/C++/test_four_sum.exe
-
-build test_hasCycle: phony Test/C++/test_hasCycle.exe
-
-build test_hasCycle.exe: phony Test/C++/test_hasCycle.exe
-
-build test_intersect_list: phony Test/C++/test_intersect_list.exe
-
-build test_intersect_list.exe: phony Test/C++/test_intersect_list.exe
-
-build test_letter_combination: phony Test/C++/test_letter_combination.exe
-
-build test_letter_combination.exe: phony Test/C++/test_letter_combination.exe
-
-build test_move_zero: phony Test/C++/test_move_zero.exe
-
-build test_move_zero.exe: phony Test/C++/test_move_zero.exe
-
-build test_palindrome_list: phony Test/C++/test_palindrome_list.exe
-
-build test_palindrome_list.exe: phony Test/C++/test_palindrome_list.exe
-
-build test_reverse_list: phony Test/C++/test_reverse_list.exe
-
-build test_reverse_list.exe: phony Test/C++/test_reverse_list.exe
-
-build test_subarray: phony Test/C++/test_subarray.exe
-
-build test_subarray.exe: phony Test/C++/test_subarray.exe
-
-build test_sum: phony Test/C++/test_sum.exe
-
-build test_sum.exe: phony Test/C++/test_sum.exe
-
-build test_three_sum: phony Test/C++/test_three_sum.exe
-
-build test_three_sum.exe: phony Test/C++/test_three_sum.exe
 
 # =============================================================================
 # Folder targets.
@@ -4013,7 +3480,7 @@ build Test/all: phony Test/C++/all
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/Test/C++
 
-build Test/C++/all: phony Test/C++/test_add.exe Test/C++/test_sum.exe Test/C++/test_three_sum.exe Test/C++/test_four_sum.exe Test/C++/test_letter_combination.exe Test/C++/test_subarray.exe Test/C++/test_move_zero.exe Test/C++/test_collect_rainwater.exe Test/C++/test_hasCycle.exe Test/C++/test_intersect_list.exe Test/C++/test_reverse_list.exe Test/C++/test_palindrome_list.exe Test/C++/test_detectcycle.exe Test/C++/test_94.exe Test/C++/test_104.exe Test/C++/test_226.exe Test/C++/test_239.exe Test/C++/test_76.exe Test/C++/test_73.exe Test/C++/test_54.exe Test/C++/test_del.exe thirdpart/googletest/all
+build Test/C++/all: phony Test/C++/test_94.exe Test/C++/test_104.exe Test/C++/test_226.exe Test/C++/test_239.exe Test/C++/test_76.exe Test/C++/test_73.exe Test/C++/test_54.exe Test/C++/test_21.exe Test/C++/test_del.exe thirdpart/googletest/all
 
 # =============================================================================
 

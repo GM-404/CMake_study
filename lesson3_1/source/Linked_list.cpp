@@ -1,5 +1,31 @@
 ﻿#include "Linked_list.hh"
 
+// 21.合并两个有序链表
+Linked_Node *Linked_Node::mergeTwoLists(Linked_Node *l1, Linked_Node *l2) {
+  // 创建一个虚拟头节点，简化操作
+  Linked_Node dummy;
+  Linked_Node *tail = &dummy;
+
+  while (l1 != nullptr && l2 != nullptr) {
+    if (l1->val < l2->val) {
+      tail->next = l1;
+      l1 = l1->next;
+    } else {
+      tail->next = l2;
+      l2 = l2->next;
+    }
+    tail = tail->next;
+  }
+
+  // 连接剩余的节点
+  if (l1 != nullptr) {
+    tail->next = l1;
+  } else {
+    tail->next = l2;
+  }
+
+  return dummy.next; // 返回合并后的链表头节点
+}
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head)
 {

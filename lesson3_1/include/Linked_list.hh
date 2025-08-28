@@ -23,7 +23,10 @@ class Linked_Node
 public:
     int val;
     Linked_Node *next;
+    Linked_Node() : val(0), next(nullptr) {};
     Linked_Node(int x) : val(x), next(nullptr) {};
+    Linked_Node(int x, Linked_Node *next) : val(x), next(next) {};
+    // 通过数组创建链表
     Linked_Node(std::vector<int> &arr) : val(0), next(nullptr)
     {
         if (arr.empty())
@@ -42,6 +45,9 @@ public:
             cur = cur->next;
         }
     }
+    // 21.合并两个有序链表
+    static Linked_Node *mergeTwoLists(Linked_Node *l1, Linked_Node *l2);
+
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针
     bool hasCycle2(Linked_Node *head); // 使用哈希表
