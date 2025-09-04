@@ -1,5 +1,35 @@
 ﻿#include "Linked_list.hh"
 
+// 19.删除链表的倒数第N个节点
+Linked_Node *Linked_Node::removeNthFromEnd(Linked_Node *head, int n) {
+
+  int length = 0;
+  int target = 0;
+  Linked_Node *current = head;
+  // 计算链表长度
+  while (current != nullptr) {
+    length++;
+    current = current->next;
+  }
+  // 如果n大于链表长度，删除头节点
+  if (n > length || length == 0 || n <= 0) {
+    return head; // n超过链表长度，返回原链表
+  } else if (n == length) {
+    Linked_Node *newHead = head->next;
+    delete head; // 释放原头节点内存
+    return newHead;
+  } else {
+    target = length - n; // 计算需要删除的节点位置（从0开始）
+    current = head;
+    for (int i = 1; i < target; i++) {
+      current = current->next; // 移动到目标节点的前一个节点
+    }
+    Linked_Node *nodeToDelete = current->next;
+    current->next = current->next->next; // 删除目标节点
+    delete nodeToDelete;                 // 释放目标节点内存
+    return head;                         // 返回修改后的链表头节点
+  }
+}
 // 21.合并两个有序链表
 Linked_Node *Linked_Node::mergeTwoLists(Linked_Node *l1, Linked_Node *l2) {
   // 创建一个虚拟头节点，简化操作

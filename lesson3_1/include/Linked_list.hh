@@ -45,6 +45,8 @@ public:
             cur = cur->next;
         }
     }
+    // 19.删除链表的倒数第N个节点
+    static Linked_Node *removeNthFromEnd(Linked_Node *head, int n);
     // 21.合并两个有序链表
     static Linked_Node *mergeTwoLists(Linked_Node *l1, Linked_Node *l2);
 
