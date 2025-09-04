@@ -46,9 +46,15 @@ public:
         }
     }
     // 19.删除链表的倒数第N个节点
-    static Linked_Node *removeNthFromEnd(Linked_Node *head, int n);
+    static Linked_Node *removeNthFromEnd(Linked_Node *head,
+                                         int n); // 需要遍历两次
+    static Linked_Node *removeNthFromEnd1(Linked_Node *head,
+                                          int n); // 只需要遍历一次
     // 21.合并两个有序链表
     static Linked_Node *mergeTwoLists(Linked_Node *l1, Linked_Node *l2);
+
+    // 23.合并K个升序链表
+    Linked_Node *mergeKLists(std::vector<Linked_Node *> &lists);
 
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针

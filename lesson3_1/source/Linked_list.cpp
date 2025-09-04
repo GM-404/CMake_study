@@ -1,4 +1,5 @@
 ﻿#include "Linked_list.hh"
+#include <algorithm>
 
 // 19.删除链表的倒数第N个节点
 Linked_Node *Linked_Node::removeNthFromEnd(Linked_Node *head, int n) {
@@ -30,6 +31,24 @@ Linked_Node *Linked_Node::removeNthFromEnd(Linked_Node *head, int n) {
     return head;                         // 返回修改后的链表头节点
   }
 }
+Linked_Node *Linked_Node::removeNthFromEnd1(Linked_Node *head, int n) {
+  Linked_Node *fast = head;
+  Linked_Node *slow = head;
+  // 让快指针先走n步
+  for (int i = 0; i < n; i++) {
+    fast = fast->next;
+  }
+  // 如果快指针到达尾部，说明链表长度小于n，删除头节点
+  if (fast == nullptr) {
+    return head->next;
+  }
+  while (fast->next != nullptr) {
+    fast = fast->next;
+    slow = slow->next;
+  }
+  slow->next = slow->next->next;
+  return head;
+}
 // 21.合并两个有序链表
 Linked_Node *Linked_Node::mergeTwoLists(Linked_Node *l1, Linked_Node *l2) {
   // 创建一个虚拟头节点，简化操作
@@ -56,36 +75,62 @@ Linked_Node *Linked_Node::mergeTwoLists(Linked_Node *l1, Linked_Node *l2) {
 
   return dummy.next; // 返回合并后的链表头节点
 }
-// 141.判断链表是否有环(快慢指针法)
-bool Linked_Node::hasCycle(Linked_Node *head)
-{
-    Linked_Node *fast = head;
-    Linked_Node *slow = head;
-    while (fast != nullptr && fast->next != nullptr)
-    {
-        fast = fast->next->next;
-        slow = slow->next;
-        if (fast == slow)
-        {
-            return true;
-        }
+// 23.合并K个升序链表(暴力求解法)
+Linked_Node *Linked_Node::mergeKLists(std::vector<Linked_Node *> &lists) {
+  std::vector<int> values;
+
+  // 遍历所有链表，将节点值存入数组
+  for (Linked_Node *list : lists) {
+    Linked_Node *current = list;
+    while (current != nullptr) {
+      values.push_back(current->val);
+      current = current->next;
     }
-    return false;
+  }
+
+  // 如果没有节点，返回空
+  if (values.empty()) {
+    return nullptr;
+  }
+
+  // 对数组进行排序
+  std::sort(values.begin(), values.end());
+
+  // 根据排序后的数组创建新的链表
+  Linked_Node *dummy = new Linked_Node(0);
+  Linked_Node *current = dummy;
+
+  for (int val : values) {
+    current->next = new Linked_Node(val);
+    current = current->next;
+  }
+
+  return dummy->next;
+}
+// 141.判断链表是否有环(快慢指针法)
+bool Linked_Node::hasCycle(Linked_Node *head) {
+  Linked_Node *fast = head;
+  Linked_Node *slow = head;
+  while (fast != nullptr && fast->next != nullptr) {
+    fast = fast->next->next;
+    slow = slow->next;
+    if (fast == slow) {
+      return true;
+    }
+  }
+  return false;
 }
 // 141.判断链表是否有环(哈希表法)
-bool Linked_Node::hasCycle2(Linked_Node *head)
-{
-    std::unordered_map<Linked_Node *, int> map;
-    while (head != nullptr)
-    {
-        if (map.find(head) != map.end())
-        {
-            return true;
-        }
-        map[head] = head->val; // 存储节点地址和对应的值
-        head = head->next;
+bool Linked_Node::hasCycle2(Linked_Node *head) {
+  std::unordered_map<Linked_Node *, int> map;
+  while (head != nullptr) {
+    if (map.find(head) != map.end()) {
+      return true;
     }
-    return false;
+    map[head] = head->val; // 存储节点地址和对应的值
+    head = head->next;
+  }
+  return false;
 }
 // 142. 环形链表 II
 // 根据：
