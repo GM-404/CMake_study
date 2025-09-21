@@ -45,6 +45,8 @@ public:
             cur = cur->next;
         }
     }
+    // 2.两数相加
+    Linked_Node *addTwoNumbers(Linked_Node *l1, Linked_Node *l2);
     // 19.删除链表的倒数第N个节点
     static Linked_Node *removeNthFromEnd(Linked_Node *head,
                                          int n); // 需要遍历两次
