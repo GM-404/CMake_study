@@ -11,6 +11,11 @@ class Solution_subarray // 解决的是连续子数组
 public:
   // 53. 最大子数组和
   int maxSubArray(std::vector<int> &nums);
+  // 56. 合并区间
+  std::vector<std::vector<int>> merge(std::vector<std::vector<int>> &intervals);
+  // 189. 旋转数组
+  void rotate(std::vector<int> &nums, int k);
+  void rotate1(std::vector<int> &nums, int k);
   // 560. 和为 K 的子数组
   int maxSubArray(std::vector<int> &nums, int &target);
 };

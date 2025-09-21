@@ -1,6 +1,8 @@
 ﻿#include "subarray.hh"
-#include <vector>
+#include <algorithm> // std::sort
 #include <unordered_map>
+#include <vector>
+
 // 53. 最大子数组和
 int Solution_subarray::maxSubArray(std::vector<int> &nums) {
   // 主体思想为加上当前元素，相对于目前最大子数组和是变小了还是变大了
@@ -11,6 +13,48 @@ int Solution_subarray::maxSubArray(std::vector<int> &nums) {
     maxSum = std::max(maxSum, currentSum);
   }
   return maxSum;
+}
+// 56. 合并区间
+std::vector<std::vector<int>>
+Solution_subarray::merge(std::vector<std::vector<int>> &intervals) {
+  // 检查输入是否为空
+  if (size(intervals) == 0)
+    return {};
+  // 对区间进行排序
+  std::sort(
+      intervals.begin(), intervals.end(),
+      [](std::vector<int> &a, std::vector<int> &b) { return a[0] < b[0]; });
+  // 先定义一个区间把第一个区间放进去
+  std::vector<std::vector<int>> merged;
+  merged.push_back(intervals[0]);
+  // 合并区间
+  for (int i = 1; i < intervals.size(); i++) {
+    // merged.back()[1] 表示结果数组中最后一个区间的右端点。
+    if (merged.back()[1] >= intervals[i][0]) {
+      merged.back()[1] = std::max(merged.back()[1], intervals[i][1]);
+    } else {
+      merged.push_back(intervals[i]);
+    }
+  }
+  return merged;
+}
+// 189. 旋转数组
+void Solution_subarray::rotate(std::vector<int> &nums, int k) {
+  int n = nums.size();
+  k = k % n;
+  // 逆序
+  std::reverse(nums.begin(), nums.end());
+  std::reverse(nums.begin(), nums.begin() + k);
+  std::reverse(nums.begin() + k, nums.end());
+}
+void Solution_subarray::rotate1(std::vector<int> &nums, int k) {
+  int n = nums.size();
+  std::vector<int> newArr(n);
+  for (int i = 0; i < n; ++i) {
+    newArr[(i + k) % n] = nums[i];
+  }
+  // 用新的元素替换容器中现有的所有元素。
+  nums.assign(newArr.begin(), newArr.end());
 }
 // 560. 和为 K 的子数组
 int Solution_subarray::maxSubArray(std::vector<int> &nums, int &target)
