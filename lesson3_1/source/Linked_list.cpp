@@ -3,33 +3,31 @@
 // 2.两数相加
 Linked_Node *Linked_Node::addTwoNumbers(Linked_Node *l1, Linked_Node *l2) {
   // 创建一个虚拟头节点，简化操作
-  Linked_Node dummy(0);
-  //进位标志
+  Linked_Node *dummy = new Linked_Node(0);
+  Linked_Node *curr = dummy; // 当前操作的节点指针
+  // 进位标志
   int carry = 0;
+  // 如果两个链表都为空，返回空
+  if (!l1 && !l2)
+    return nullptr;
 
-  Linked_Node *p = &dummy;
   while (l1 != nullptr || l2 != nullptr|| carry != 0) {
-    //主体加法
-    dummy.val = (l1 ? l1->val : 0) + (l2 ? l2->val : 0) + carry;
-    //判断进位
-    if(dummy.val >= 10){
-      carry = 1;
-      dummy.val -= 10;
-    }else{
-      carry = 0;
-    }
-    //移动链表指针
-    if (l1 != nullptr) {
+    // 计算当前位的和（处理空指针情况）
+    int sum = (l1 ? l1->val : 0) + (l2 ? l2->val : 0) + carry;
+    carry = sum / 10;     // 新的进位（sum >= 10时carry=1，否则0）
+    int digit = sum % 10; // 当前位的数字
+
+    // 创建新节点并连接到结果链表
+    curr->next = new Linked_Node(digit);
+    curr = curr->next;
+
+    // 移动原链表指针
+    if (l1 != nullptr)
       l1 = l1->next;
-    }
-    if (l2 != nullptr) {
+    if (l2 != nullptr)
       l2 = l2->next;
-    }
-    //创建新节点
-    p->next = new Linked_Node(dummy.val);
-    p = p->next;
   }
-  return dummy.next;
+  return dummy->next;
 }
 // 19.删除链表的倒数第N个节点
 Linked_Node *Linked_Node::removeNthFromEnd(Linked_Node *head, int n) {

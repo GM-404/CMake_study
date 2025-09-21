@@ -9,6 +9,9 @@
 class Solution_subarray // 解决的是连续子数组
 {
 public:
-    int maxSubArray(std::vector<int> &nums, int &target);
+  // 53. 最大子数组和
+  int maxSubArray(std::vector<int> &nums);
+  // 560. 和为 K 的子数组
+  int maxSubArray(std::vector<int> &nums, int &target);
 };
 #endif

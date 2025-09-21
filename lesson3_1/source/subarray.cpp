@@ -1,7 +1,18 @@
 ﻿#include "subarray.hh"
 #include <vector>
 #include <unordered_map>
-
+// 53. 最大子数组和
+int Solution_subarray::maxSubArray(std::vector<int> &nums) {
+  // 主体思想为加上当前元素，相对于目前最大子数组和是变小了还是变大了
+  int maxSum = nums[0];
+  int currentSum = nums[0];
+  for (int i = 1; i < nums.size(); i++) {
+    currentSum = std::max(nums[i], currentSum + nums[i]);
+    maxSum = std::max(maxSum, currentSum);
+  }
+  return maxSum;
+}
+// 560. 和为 K 的子数组
 int Solution_subarray::maxSubArray(std::vector<int> &nums, int &target)
 {
     // 检查输入数组是否为空
