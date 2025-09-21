@@ -3,8 +3,36 @@
 #include <unordered_map>
 #include <vector>
 
+// 41. 缺失的第一个正数
+int Solution_subarray::firstMissingPositive(std::vector<int> &nums) {
+  int n = nums.size();
+  // 如果数组中包含 x∈[1,N]，那么恢复后，数组的第 x−1 个元素为 x
+  for (int i = 0; i < n; i++) {
+    while (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
+      std::swap(nums[i], nums[nums[i] - 1]);
+    }
+  }
+  for (int i = 0; i < n; i++) {
+    if (nums[i] != i + 1)
+      return i + 1;
+  }
+  return n + 1;
+}
+// 哈希表
+int Solution_subarray::firstMissingPositive1(std::vector<int> &nums) {
+  int n = nums.size();
+  std::unordered_map<int, int> map;
+  for (int i = 0; i < n; i++) {
+    map[nums[i]] = 1;
+  }
+  for (int i = 1; i <= n; i++) {
+    if (map.find(i) == map.end())
+      return i;
+  }
+  return n + 1;
+}
 // 53. 最大子数组和
-int Solution_subarray::maxSubArray(std::vector<int> &nums) {
+int Solution_subarray::bestMaxSubArray(std::vector<int> &nums) {
   // 主体思想为加上当前元素，相对于目前最大子数组和是变小了还是变大了
   int maxSum = nums[0];
   int currentSum = nums[0];
@@ -55,6 +83,23 @@ void Solution_subarray::rotate1(std::vector<int> &nums, int k) {
   }
   // 用新的元素替换容器中现有的所有元素。
   nums.assign(newArr.begin(), newArr.end());
+}
+// 238. 除自身以外数组的乘积
+std::vector<int> Solution_subarray::productExceptSelf(std::vector<int> &nums) {
+  int length = nums.size();
+  std::vector<int> leftProduct(length, 1);
+  std::vector<int> rightProduct(length, 1);
+  for (int i = 1; i < length; i++) {
+    leftProduct[i] = leftProduct[i - 1] * nums[i - 1];
+  }
+  for (int i = length - 2; i >= 0; i--) {
+    rightProduct[i] = rightProduct[i + 1] * nums[i + 1];
+  }
+  std::vector<int> result(length);
+  for (int i = 0; i < length; i++) {
+    result[i] = leftProduct[i] * rightProduct[i];
+  }
+  return result;
 }
 // 560. 和为 K 的子数组
 int Solution_subarray::maxSubArray(std::vector<int> &nums, int &target)
