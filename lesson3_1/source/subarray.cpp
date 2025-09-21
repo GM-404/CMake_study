@@ -18,6 +18,7 @@ int Solution_subarray::firstMissingPositive(std::vector<int> &nums) {
   }
   return n + 1;
 }
+
 // 哈希表
 int Solution_subarray::firstMissingPositive1(std::vector<int> &nums) {
   int n = nums.size();
