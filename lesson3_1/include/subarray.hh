@@ -11,6 +11,8 @@ public:
   // 41. 缺失的第一个正数
   int firstMissingPositive(std::vector<int> &nums);
   int firstMissingPositive1(std::vector<int> &nums);
+  // 48. 旋转图像
+  void rotate(std::vector<std::vector<int>> &matrix);
   // 53. 最大子数组和
   int bestMaxSubArray(std::vector<int> &nums);
   // 56. 合并区间

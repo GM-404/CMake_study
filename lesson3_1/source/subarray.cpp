@@ -32,6 +32,17 @@ int Solution_subarray::firstMissingPositive1(std::vector<int> &nums) {
   }
   return n + 1;
 }
+void Solution_subarray::rotate(std::vector<std::vector<int>> &matrix) {
+  int n = matrix.size();
+  // 顺时针旋转90度
+  for (int i = 0; i < n / 2; i++) {
+    for (int j = n - i - 1; j > i; j--) {
+      std::swap(matrix[i][j], matrix[j][n - i - 1]);
+      std::swap(matrix[i][j], matrix[n - i - 1][n - j - 1]);
+      std::swap(matrix[i][j], matrix[n - j - 1][i]);
+    }
+  }
+}
 // 53. 最大子数组和
 int Solution_subarray::bestMaxSubArray(std::vector<int> &nums) {
   // 主体思想为加上当前元素，相对于目前最大子数组和是变小了还是变大了
