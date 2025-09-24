@@ -113,3 +113,13 @@
 3213	4509	7804246698340417	lesson3_1/temporary_test.exe	33984d9bec2addbe
 152	9068	7804246667737588	PythonWrapper/CMakeFiles/bind_subarray.dir/bind_subarray.cpp.obj	21295c22c376fd37
 9068	9350	7804246756900989	PythonWrapper/bind_subarray.cp313-win_amd64.pyd	9668b8d019a02f0
+95	1582	7804291265639165	lesson3_1/CMakeFiles/temporary_test.dir/source/subarray.cpp.obj	c058403f72ceb91c
+87	1586	7804291265550894	PythonWrapper/CMakeFiles/bind_subarray.dir/__/lesson3_1/source/subarray.cpp.obj	b57b6f14749348c7
+89	1729	7804291265580806	lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj	9bdedfff700896e3
+92	1960	7804291265609251	lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj	808f8e2aebf90a9e
+65	1970	7804291265339985	Test/C++/CMakeFiles/test_21.dir/__/__/lesson3_1/source/Linked_list.cpp.obj	59b48d27c4be709e
+1960	2627	7804291284291997	lesson3_1/temporary_test.exe	33984d9bec2addbe
+48	3197	7804291265175644	Test/C++/CMakeFiles/test_21.dir/test_21.cpp.obj	4bdcaae749b3d6e8
+3197	3675	7804291296658828	Test/C++/test_21.exe	369c3987fa741c67
+74	6735	7804291265431213	PythonWrapper/CMakeFiles/bind_subarray.dir/bind_subarray.cpp.obj	21295c22c376fd37
+6735	7003	7804291332037764	PythonWrapper/bind_subarray.cp313-win_amd64.pyd	9668b8d019a02f0

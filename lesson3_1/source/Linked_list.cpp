@@ -135,6 +135,39 @@ Linked_Node *Linked_Node::mergeKLists(std::vector<Linked_Node *> &lists) {
 
   return dummy->next;
 }
+Linked_Node *Linked_Node::swapPairs(Linked_Node *head) {
+  Linked_Node *dummy = new Linked_Node(0);
+  dummy->next = head;
+  Linked_Node *prev = dummy;
+  while (head != nullptr && head->next != nullptr) {
+    Linked_Node *node1 = head;
+    Linked_Node *node2 = head->next;
+    prev->next = node2;
+    node1->next = node2->next;
+    node2->next = node1;
+    prev = node1;
+    head = node1->next;
+  }
+  return dummy->next;
+}
+Linked_Node *Linked_Node::swapPairs1(Linked_Node *head) {
+  // 递归终止条件：当前节点为空或只有一个节点，无需交换
+  if (head == nullptr || head->next == nullptr) {
+    return head;
+  }
+
+  // 标记要交换的两个节点
+  Linked_Node *node1 = head;
+  Linked_Node *node2 = head->next;
+
+  // 递归处理剩余节点，并将结果连接到node1后面
+  node1->next = swapPairs(node2->next);
+  // 交换node1和node2
+  node2->next = node1;
+
+  // node2成为新的头节点
+  return node2;
+}
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {
   Linked_Node *fast = head;

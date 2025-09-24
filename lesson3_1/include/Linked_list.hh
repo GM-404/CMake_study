@@ -58,6 +58,10 @@ public:
     // 23.合并K个升序链表
     Linked_Node *mergeKLists(std::vector<Linked_Node *> &lists);
 
+    // 24.两两交换链表中的节点
+    Linked_Node *swapPairs(Linked_Node *head);
+    Linked_Node *swapPairs1(Linked_Node *head);
+
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针
     bool hasCycle2(Linked_Node *head); // 使用哈希表
