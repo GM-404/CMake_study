@@ -22,6 +22,11 @@ public:
   void rotate1(std::vector<int> &nums, int k);
   // 238. 除自身以外数组的乘积
   std::vector<int> productExceptSelf(std::vector<int> &nums);
+  // 240. 搜索二维矩阵 II
+  bool searchMatrix(std::vector<std::vector<int>> &matrix,
+                    int target); // 笨方法
+  bool searchMatrix1(std::vector<std::vector<int>> &matrix,
+                     int target); // 笨方法
   // 560. 和为 K 的子数组
   int maxSubArray(std::vector<int> &nums, int &target);
 };

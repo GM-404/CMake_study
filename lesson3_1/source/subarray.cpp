@@ -113,6 +113,42 @@ std::vector<int> Solution_subarray::productExceptSelf(std::vector<int> &nums) {
   }
   return result;
 }
+// 240. 搜索二维矩阵 II
+bool Solution_subarray::searchMatrix(std::vector<std::vector<int>> &matrix,
+                                     int target) {
+
+  for (int i = 0; i < matrix.size(); i++) {
+    for (int j = 0; j < matrix[i].size(); j++) {
+      if (matrix[i][j] == target) {
+        return true;
+      }
+      if (matrix[i][j] > target) {
+        continue;
+      }
+    }
+    if (matrix[i][0] > target) {
+      return false;
+    }
+  }
+  return false;
+}
+/*如下图所示，我们将矩阵逆时针旋转 45° ，并将其转化为图形式，发现其类似于
+二叉搜索树 ，即对于每个元素，其左分支元素更小、右分支元素更大。因此，通过从
+“根节点” 开始搜索，遇到比 target 大的元素就向左，反之向右，即可找到目标值 target
+*/
+bool Solution_subarray::searchMatrix1(std::vector<std::vector<int>> &matrix,
+                                      int target) {
+  int i = matrix.size() - 1, j = 0;
+  while (i >= 0 && j < matrix[0].size()) {
+    if (matrix[i][j] > target)
+      i--;
+    else if (matrix[i][j] < target)
+      j++;
+    else
+      return true;
+  }
+  return false;
+}
 // 560. 和为 K 的子数组
 int Solution_subarray::maxSubArray(std::vector<int> &nums, int &target)
 {
