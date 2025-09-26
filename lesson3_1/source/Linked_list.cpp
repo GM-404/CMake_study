@@ -135,6 +135,7 @@ Linked_Node *Linked_Node::mergeKLists(std::vector<Linked_Node *> &lists) {
 
   return dummy->next;
 }
+// 24.两两交换链表中的节点
 Linked_Node *Linked_Node::swapPairs(Linked_Node *head) {
   Linked_Node *dummy = new Linked_Node(0);
   dummy->next = head;
@@ -167,6 +168,16 @@ Linked_Node *Linked_Node::swapPairs1(Linked_Node *head) {
 
   // node2成为新的头节点
   return node2;
+}
+// 25. K 个一组翻转链表
+Linked_Node *Linked_Node::reverseKGroup(Linked_Node *head, int k) {
+  // if (head == nullptr) {
+  //   return nullptr;
+  // }
+  // Linked_Node *current = head;
+  // Linked_Node *prev = nullptr;
+  // Linked_Node *next = nullptr;
+  // int count = 0;
 }
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {

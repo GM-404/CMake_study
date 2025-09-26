@@ -62,6 +62,9 @@ public:
     Linked_Node *swapPairs(Linked_Node *head);
     Linked_Node *swapPairs1(Linked_Node *head);
 
+    // 25. K 个一组翻转链表
+    Linked_Node *reverseKGroup(Linked_Node *head, int k);
+
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针
     bool hasCycle2(Linked_Node *head); // 使用哈希表
