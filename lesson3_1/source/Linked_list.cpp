@@ -215,7 +215,50 @@ Linked_Node *Linked_Node::reverseKGroup(Linked_Node *head, int k) {
   return prev;
 }
 // 25. K 个一组翻转链表(迭代法)
-Linked_Node *Linked_Node::reverseKGroup1(Linked_Node *head, int k) {}
+Linked_Node *Linked_Node::reverseKGroup1(Linked_Node *head, int k) {
+
+  if (!head || k == 1)
+    return head; // 空链表或k=1直接返回
+
+  // 创建哑节点，简化头节点处理
+  Linked_Node *dummy = new Linked_Node(0);
+  dummy->next = head;
+
+  // pre是当前组的前一个节点，用于连接翻转后的子链表
+  Linked_Node *pre = dummy;
+  // end用于定位当前组的最后一个节点
+  Linked_Node *end = dummy;
+
+  while (end->next != nullptr) {
+    // 检查剩余节点是否有k个，移动end到当前组的最后一个节点
+    for (int i = 0; i < k && end != nullptr; ++i) {
+      end = end->next;
+    }
+    if (end == nullptr)
+      break; // 剩余节点不足k个，停止处理
+
+    // 记录当前组的第一个节点和下一组的第一个节点
+    Linked_Node *start = pre->next;
+    Linked_Node *nextGroup = end->next;
+
+    // 断开当前组与下一组的连接，便于翻转
+    end->next = nullptr;
+
+    // 翻转当前组，并将翻转后的头节点与pre连接
+    pre->next = reverseList(start);
+
+    // 将翻转后的尾节点（原start）与下一组连接
+    start->next = nextGroup;
+
+    // 更新pre和end，准备处理下一组
+    pre = start;
+    end = pre;
+  }
+
+  Linked_Node *result = dummy->next;
+  delete dummy; // 释放哑节点内存
+  return result;
+}
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {
   Linked_Node *fast = head;
