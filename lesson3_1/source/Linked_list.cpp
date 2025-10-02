@@ -169,16 +169,53 @@ Linked_Node *Linked_Node::swapPairs1(Linked_Node *head) {
   // node2成为新的头节点
   return node2;
 }
-// 25. K 个一组翻转链表
+/*
+核心思路：通用分组翻转
+无论是迭代还是递归，都需要完成三个步骤：
+
+1.分组检查： 确定当前组（k 个节点）是否存在。如果不存在（不足
+k个），则停止操作。 2.翻转： 对这 k 个节点进行原地翻转。
+3. 连接： 将翻转后的组与前一个片段和后一个片段正确连接起来。*/
+
+// 25. K 个一组翻转链表(递归法)
 Linked_Node *Linked_Node::reverseKGroup(Linked_Node *head, int k) {
-  // if (head == nullptr) {
-  //   return nullptr;
-  // }
-  // Linked_Node *current = head;
-  // Linked_Node *prev = nullptr;
-  // Linked_Node *next = nullptr;
-  // int count = 0;
+  // 1. 检查是否存在 k 个节点
+  Linked_Node *check = head;
+  for (int i = 0; i < k; ++i) {
+    if (check == nullptr) {
+      return head; // 不足 k 个，不翻转，直接返回
+    }
+    check = check->next;
+  }
+
+  // 2. 存储下一组的起始节点 (check 现在是下一组的 head)
+  Linked_Node *next_group_start = check;
+
+  // 3. 递归处理下一组
+  Linked_Node *new_next_group_head = reverseKGroup(next_group_start, k);
+
+  // 4. 翻转当前 k 个节点 (head 到 next_group_start 之前的节点)
+  // 标准的三指针原地翻转法
+  Linked_Node *prev = nullptr;
+  Linked_Node *curr = head;
+
+  // 翻转 k 个节点
+  while (curr != next_group_start) {
+    Linked_Node *next_node = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next_node;
+  }
+
+  // 5. 连接
+  // 翻转后，原 head 变成了尾部，将它连接到递归返回的下一组新头部
+  head->next = new_next_group_head;
+
+  // 6. 返回翻转后的新头部 (即翻转前的第 k 个节点，现在是 prev)
+  return prev;
 }
+// 25. K 个一组翻转链表(迭代法)
+Linked_Node *Linked_Node::reverseKGroup1(Linked_Node *head, int k) {}
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {
   Linked_Node *fast = head;
