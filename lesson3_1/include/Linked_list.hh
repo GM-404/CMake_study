@@ -23,6 +23,7 @@ class Linked_Node
 public:
     int val;
     Linked_Node *next;
+    Linked_Node *random; // 用于138中的随机指针
     Linked_Node() : val(0), next(nullptr) {};
     Linked_Node(int x) : val(x), next(nullptr) {};
     Linked_Node(int x, Linked_Node *next) : val(x), next(next) {};
@@ -65,6 +66,9 @@ public:
     // 25. K 个一组翻转链表
     Linked_Node *reverseKGroup(Linked_Node *head, int k);
     Linked_Node *reverseKGroup1(Linked_Node *head, int k);
+
+    // 138.复制带随机指针的链表
+    Linked_Node *copyRandomList(Linked_Node *head);
 
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针

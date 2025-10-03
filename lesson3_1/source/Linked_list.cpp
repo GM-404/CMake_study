@@ -324,6 +324,54 @@ Linked_Node *detectCycle(Linked_Node *head)
     }
     return nullptr; // 没有环
 }
+Linked_Node *Linked_Node::copyRandomList(Linked_Node *head) {
+  if (!head) {
+    return nullptr;
+  }
+  // 第一次遍历：在每个原节点后插入复制节点
+  Linked_Node *curr = head;
+  while (curr != nullptr) {
+    Linked_Node *copy = new Linked_Node(curr->val); // 创建复制节点
+    copy->next = curr->next; // 复制节点指向原节点的下一个
+    curr->next = copy;       // 原节点指向复制节点
+    curr = copy->next;       // 移动到下一个原节点
+  }
+
+  // 第二次遍历：设置复制节点的random指针
+  curr = head;
+  while (curr) {
+    Linked_Node *copy = curr->next;
+    // 若原节点random不为空，复制节点的random指向原random的复制节点
+    if (curr->random != nullptr) {
+      copy->random = curr->random->next;
+    } else {
+      copy->random = nullptr;
+    }
+    curr = copy->next; // 移动到下一个原节点
+  }
+
+  // 第三次遍历：拆分原链表和复制链表
+  curr = head;
+  Linked_Node *dummy = new Linked_Node(0);
+  Linked_Node *copyCurr = dummy;
+
+  while (curr) {
+    Linked_Node *copy = curr->next;
+    Linked_Node *nextOrig = copy->next; // 保存下一个原节点
+
+    // 构建复制链表的next关系
+    copyCurr->next = copy;
+    copyCurr = copy;
+
+    // 恢复原链表的next关系
+    curr->next = nextOrig;
+    curr = nextOrig;
+  }
+
+  Linked_Node *result = dummy->next;
+  delete dummy; // 释放哑节点
+  return result;
+}
 // 148.排序链表(递归)
 Linked_Node *Linked_Node::sortList(Linked_Node *head) {
   // 当为空数组或只有一个节点时，直接返回
@@ -355,7 +403,8 @@ Linked_Node *Linked_Node::sortList(Linked_Node *head) {
   Linked_Node *sorted_right = sortList(slow); // 排序后半部分
 
   // 3. 合并（Combine）：将排好序的两部分合并
-  return mergeTwoLists(sorted_left, sorted_right);
+  Linked_Node *result = mergeTwoLists(sorted_left, sorted_right);
+  return result;
 }
 // 160.相交链表
 Linked_Node *Linked_Node::getIntersectionNode(Linked_Node *headA, Linked_Node *headB)
