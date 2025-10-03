@@ -1,5 +1,8 @@
 ﻿#include "Linked_list.hh"
 #include <algorithm>
+
+#include <stack>
+#include <unordered_map>
 // 2.两数相加
 Linked_Node *Linked_Node::addTwoNumbers(Linked_Node *l1, Linked_Node *l2) {
   // 创建一个虚拟头节点，简化操作

@@ -141,3 +141,15 @@
 58	1014	7811795603705877	Test/C++/CMakeFiles/test_21.dir/__/__/lesson3_1/source/Linked_list.cpp.obj	59b48d27c4be709e
 982	1390	7811795612940025	lesson3_1/temporary_test.exe	33984d9bec2addbe
 1014	1528	7811795613268635	Test/C++/test_21.exe	369c3987fa741c67
+32	1420	7811806067610146	lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj	9bdedfff700896e3
+36	1544	7811806067650026	lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj	808f8e2aebf90a9e
+28	1557	7811806067570237	Test/C++/CMakeFiles/test_21.dir/__/__/lesson3_1/source/Linked_list.cpp.obj	59b48d27c4be709e
+1544	2143	7811806082736487	lesson3_1/temporary_test.exe	33984d9bec2addbe
+23	2583	7811806067520377	Test/C++/CMakeFiles/test_21.dir/test_21.cpp.obj	4bdcaae749b3d6e8
+2583	2995	7811806093126261	Test/C++/test_21.exe	369c3987fa741c67
+41	821	7811806350388575	lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj	9bdedfff700896e3
+45	1144	7811806350428479	lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj	43971402c4439842
+37	1156	7811806350348766	PythonWrapper/CMakeFiles/bind_letter.dir/__/lesson3_1/source/letter_combination.cpp.obj	2f18d4ff34762574
+1144	1486	7811806361428406	lesson3_1/temporary_test.exe	33984d9bec2addbe
+32	7262	7811806350298405	PythonWrapper/CMakeFiles/bind_letter.dir/bind_letter.cpp.obj	111bb8e87796a2d0
+7262	7577	7811806422597168	PythonWrapper/bind_letter.cp313-win_amd64.pyd	24e611b84098abba

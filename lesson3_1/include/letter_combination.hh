@@ -1,7 +1,6 @@
 ﻿#ifndef LETTER_HH
 #define LETTER_HH
 
-#include <iostream>
 #include <vector>
 #include <string>
 /*
