@@ -324,6 +324,39 @@ Linked_Node *detectCycle(Linked_Node *head)
     }
     return nullptr; // 没有环
 }
+// 148.排序链表(递归)
+Linked_Node *Linked_Node::sortList(Linked_Node *head) {
+  // 当为空数组或只有一个节点时，直接返回
+  if (head == nullptr || head->next == nullptr) {
+    return head;
+  }
+  // 1. 分割（Divide）：寻找中点
+  Linked_Node *slow = head;
+  Linked_Node *fast = head;
+  Linked_Node *prev = nullptr; // 用于断开链表
+
+  while (fast != nullptr && fast->next != nullptr) {
+    prev = slow;
+    slow = slow->next; // 慢指针指向后半部分的头
+    fast = fast->next->next;
+  }
+
+  // 断开链表：将前半部分的尾部 next 指向 nullptr
+  if (prev != nullptr) {
+    prev->next = nullptr;
+  }
+
+  // 此时：
+  // left_half_head = head
+  // right_half_head = slow
+
+  // 2. 递归（Conquer）：排序左右两部分
+  Linked_Node *sorted_left = sortList(head);  // 排序前半部分
+  Linked_Node *sorted_right = sortList(slow); // 排序后半部分
+
+  // 3. 合并（Combine）：将排好序的两部分合并
+  return mergeTwoLists(sorted_left, sorted_right);
+}
 // 160.相交链表
 Linked_Node *Linked_Node::getIntersectionNode(Linked_Node *headA, Linked_Node *headB)
 {

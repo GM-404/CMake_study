@@ -73,6 +73,8 @@ public:
     // 142. 环形链表 II
     Linked_Node *detectCycle(Linked_Node *head);
 
+    // 148.排序链表
+    Linked_Node *sortList(Linked_Node *head);
     // 160.相交链表
     Linked_Node *getIntersectionNode(Linked_Node *headA, Linked_Node *headB);  // 使用哈希表
     Linked_Node *getIntersectionNode1(Linked_Node *headA, Linked_Node *headB); // 使用双指针
