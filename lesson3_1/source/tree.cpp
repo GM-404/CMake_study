@@ -5,7 +5,7 @@
 #include <functional>
 #include <queue>
 #include <vector>
-
+#include <stack>
 // 94.二叉树的中序遍历框架
 std::vector<int> TreeNode::inorderTraversal(TreeNode *root)
 {
@@ -188,13 +188,11 @@ TreeNode *TreeNode::sortedArrayToBST(std::vector<int> &nums) {
 }
 // 辅助递归函数：在数组的指定区间 [left, right] 内构建 BST
 TreeNode *TreeNode::buildBST(std::vector<int> &nums, int left, int right) {
-
   // 1. 递归终止条件
   // 如果左边界大于右边界，说明当前子数组为空，返回空指针
-  if (left > right) {
+    if (left > right) {
     return nullptr;
-  }
-
+    }
   // 2. 找到当前子数组的中间元素作为根节点
   // 选取中间元素是为了保证左右子树的节点数相差最小，从而保证树的高度平衡。
   int mid = left + (right - left) / 2; // 安全计算中点，防止溢出
@@ -204,14 +202,14 @@ TreeNode *TreeNode::buildBST(std::vector<int> &nums, int left, int right) {
 
   // 4. 递归构建左子树
   // 左子树的节点来自数组的左半部分 [left, mid - 1]
-  root->left = buildBST(nums, left, mid - 1);
+    root->left = buildBST(nums, left, mid - 1);
 
   // 5. 递归构建右子树
   // 右子树的节点来自数组的右半部分 [mid + 1, right]
-  root->right = buildBST(nums, mid + 1, right);
+    root->right = buildBST(nums, mid + 1, right);
 
   // 6. 返回当前子树的根节点
-  return root;
+    return root;
 }
 // 226. 翻转二叉树
 TreeNode *TreeNode::invertTree(TreeNode *root)
@@ -226,18 +224,59 @@ TreeNode *TreeNode::invertTree(TreeNode *root)
     root->right = left;
     return root;
 }
+// 230. 二叉搜索树中第K小的元素。使用递归中序遍历将整个二叉搜索树（BST）的所有元素存储在一个 std::vector 中，然后直接返回第 K 个元素（elements[k - 1]）。
+int TreeNode::kthSmallest(TreeNode *root, int k) {
+    std::vector<int> elements;
+  std::function<void(TreeNode *)> inorder = [&](TreeNode *node) {
+    if (node == nullptr) {
+        return;
+    }
+    // 中序遍历
+    // 二叉搜索树使用中序遍历得到的结果是递增的
+    inorder(node->left);
+    elements.push_back(node->val);
+    inorder(node->right);
+    };
+    inorder(root);
+  return elements[k - 1]; // k 是从 1 开始的索引
+}
+// 230. 二叉搜索树中第K小的元素。由中序遍历二叉搜索数是递增的，搜到第K个就是所要的
+int TreeNode::kthSmallest1(TreeNode *root, int k) 
+{
+    std::stack<TreeNode *> s;
+    TreeNode *curr = root;
+    while (curr != nullptr || !s.empty()) {
+        // 1. 递归下降到最左子节点 (中序遍历的第一步)
+        while (curr != nullptr) {
+            s.push(curr);
+            curr = curr->left;
+        }
+        // 2. 弹出并访问节点 (中序遍历的第二步)
+        curr = s.top();
+        s.pop();
+        // 3. 检查 K
+        k--;
+        if (k == 0) {
+            return curr->val; // 找到第 K 小元素，立即返回
+        }
+        // 4. 转向右子树 (中序遍历的第三步)
+        curr = curr->right;
+    }
+    // 理论上不会执行到这里，因为 K 保证有效
+    return -1; 
+}
 // 543. 二叉树的直径
 int TreeNode::diameterOfBinaryTree(TreeNode *root) {
-  int diameter = 0;
+    int diameter = 0;
   std::function<int(TreeNode *)> depth = [&](TreeNode *node) {
     if (node == nullptr) {
-      return 0;
+        return 0;
     }
     int leftDepth = depth(node->left);
     int rightDepth = depth(node->right);
     diameter = std::max(diameter, leftDepth + rightDepth);
     return std::max(leftDepth, rightDepth) + 1;
-  };
-  depth(root);
-  return diameter;
+    };
+    depth(root);
+    return diameter;
 }
