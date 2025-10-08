@@ -174,6 +174,7 @@ int TreeNode::maxDepth(TreeNode *root)
     int rightDepth = maxDepth(root->right);
     return std::max(leftDepth, rightDepth) + 1;
 }
+//108. 将有序升序数组转换为二叉搜索树
 /**
  * 108. 将有序升序数组转换为二叉搜索树
  *
@@ -210,6 +211,41 @@ TreeNode *TreeNode::buildBST(std::vector<int> &nums, int left, int right) {
 
   // 6. 返回当前子树的根节点
     return root;
+}
+// 199. 二叉树的右视图
+/*层序遍历，保存每一层的最后的值*/
+std::vector<int> TreeNode::rightSideView(TreeNode*root)
+{
+  std::vector<int>result;
+  if (root == nullptr) {
+      return result;
+  }
+  // 申请一个队列
+  std::queue<TreeNode *> queue;
+  // 将二叉树的根目录放进去，因为前期已经判断过根节点不为空
+  queue.push(root);
+  while(queue.size() != 0){
+      // 保存这一层的节点个数
+      int size = queue.size();
+      // 遍历这一层的节点
+      for (int i = 0; i < size; i++) {
+          TreeNode *index = queue.front(); // 取出当前层的第一个
+          queue.pop();                     // 移除队首元素
+          // 看一下这个数的左面还有没有子树,有就加进去
+          if (index->left != nullptr) {
+              queue.push(index->left);
+          }
+          // 看一下这个数的右面还有没有子树,有就加进去
+          if (index->right != nullptr) {
+              queue.push(index->right);
+          }
+          // 如果是这一层的最后一个节点，就把它放进结果中
+          if(i == size - 1){
+              result.push_back(index->val);
+          }
+      }
+  }
+  return result;
 }
 // 226. 翻转二叉树
 TreeNode *TreeNode::invertTree(TreeNode *root)

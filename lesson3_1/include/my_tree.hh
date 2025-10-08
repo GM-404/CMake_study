@@ -31,8 +31,8 @@ public:
     // 108 将有序数组转换为二叉搜索树
     TreeNode *sortedArrayToBST(std::vector<int> &nums);
     TreeNode *buildBST(std::vector<int> &nums, int left, int right); // 辅助函数
-    //199. 二叉树的右视图
-    std::vector<int> rightSideView(TreeNode* root);
+    // 199. 二叉树的右视图
+    std::vector<int> rightSideView(TreeNode* root); //深度优先搜索
     // 226. 翻转二叉树
     TreeNode *invertTree(TreeNode *root);
     // 230. 二叉搜索树中第K小的元素
