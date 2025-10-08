@@ -19,9 +19,14 @@ public:
     // 101. 对称二叉树
     bool isSymmetric(TreeNode *root);
     bool isSymmetric1(TreeNode *root);
+    // 102. 二叉树的层序遍历
+    std::vector<std::vector<int>> levelOrder(TreeNode *root);
+    std::vector<std::vector<int>> levelOrder1(TreeNode *root);
     // 104. 二叉树的最大深度
     int maxDepth(TreeNode *root);
     // 226. 翻转二叉树
     TreeNode *invertTree(TreeNode *root);
+    // 543. 二叉树的直径
+    int diameterOfBinaryTree(TreeNode *root);
 };
 #endif // MY_TREE_H

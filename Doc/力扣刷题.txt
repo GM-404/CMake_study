@@ -1,0 +1,35 @@
+std::vector<std::vector<int>> TreeNode::levelOrder1(TreeNode *root) {
+  std::vector<std::vector<int>> result;
+  if (root == nullptr) {
+    return result;
+  }
+  // 申请一个队列
+  std::queue<TreeNode *> queue;
+  //将二叉树的根目录放进去，因为前期已经判断过根节点不为空
+  queue.push(root);
+  //while(!queue.empty)
+  while(queue.size != 0)
+  {
+    int size = queue.size(); //先看一下这一层有几个数据，方便后续遍历多少次来取数据
+    std::vector<int> level;  //暂存当前层的数据
+    for(int i = 0;i<size;i++)
+    {
+    TreeNode *index = queue.front();  //取出当前层的第一个
+    level.push_back(index->val);  //将这个值放进结果中
+    queue.erase(queue.begin());   //擦除这个数
+    //看一下这个数的左面还有没有子树,有就加进去
+    if(index->left != nullptr)
+    {
+         queue.push_back(index->left);
+    }
+    //看一下这个数的右面还有没有子树,有就加进去
+    if(index->right != nullptr)
+    {
+         queue.push_back(index->right);
+    }
+    }
+    //将这一层的数加进结果中
+     result.push_back(level);
+  }
+   return result;
+}
