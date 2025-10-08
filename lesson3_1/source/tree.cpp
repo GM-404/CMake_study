@@ -212,6 +212,67 @@ TreeNode *TreeNode::buildBST(std::vector<int> &nums, int left, int right) {
   // 6. 返回当前子树的根节点
     return root;
 }
+// 114.二叉树展开为链表(从下而上展开)
+void TreeNode::flatten(TreeNode* root){
+    if (root == nullptr) {
+        return;
+    }
+    flatten(root->left);
+    flatten(root->right);
+    TreeNode* left = root->left;
+    TreeNode* right = root->right;
+    root->left = nullptr;
+    root->right = left;
+    TreeNode* curr = root;
+    while (curr->right != nullptr) {
+        curr = curr->right;
+    }
+    curr->right = right;
+}
+// 114.二叉树展开为链表(从上而下展开)
+void TreeNode::flatten1(TreeNode* root){
+    if (root == nullptr) {
+        return;
+    }
+    std::stack<TreeNode*> s;
+    s.push(root);
+    TreeNode* curr = root;
+    while (!s.empty()) {
+        curr = s.top();
+        s.pop();
+        if (curr->right != nullptr) {
+            s.push(curr->right);
+        }
+        if (curr->left != nullptr) {
+            s.push(curr->left);
+        }
+        curr->left = nullptr;
+        if (!s.empty()) {
+            curr->right = s.top();
+        }
+    }
+}
+// 114.二叉树展开为链表(从上而下展开)
+void TreeNode::flatten2(TreeNode* root){
+    if (root == nullptr) {
+        return;
+    }
+    TreeNode* curr = root;
+    TreeNode* left = curr->left;
+    TreeNode* right = curr->right;
+    while (curr != nullptr) {
+        if (curr->left != nullptr) {
+            left = curr->left;
+            right = curr->right;
+            curr->left = nullptr;
+            curr->right = left;
+            while (left->right != nullptr) {
+                left = left->right;
+            }
+            left->right = right;
+        }
+    }
+}
 // 199. 二叉树的右视图
 /*层序遍历，保存每一层的最后的值*/
 std::vector<int> TreeNode::rightSideView(TreeNode*root)
