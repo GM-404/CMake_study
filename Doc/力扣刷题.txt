@@ -1,35 +1,71 @@
-std::vector<std::vector<int>> TreeNode::levelOrder1(TreeNode *root) {
-  std::vector<std::vector<int>> result;
-  if (root == nullptr) {
-    return result;
-  }
-  // 申请一个队列
-  std::queue<TreeNode *> queue;
-  //将二叉树的根目录放进去，因为前期已经判断过根节点不为空
-  queue.push(root);
-  //while(!queue.empty)
-  while(queue.size != 0)
-  {
-    int size = queue.size(); //先看一下这一层有几个数据，方便后续遍历多少次来取数据
-    std::vector<int> level;  //暂存当前层的数据
-    for(int i = 0;i<size;i++)
+//
+bool TreeNode::isValidBST(TreeNode *root)
+{
+    //对于左子树，子树的左子节点必须小于左节点，子树的右节点必须在左节点和根节点之间
+    //对于右子树，子树的左节点必须在右节点和根节点之间，子树的右子点必须在大于右节点
+    if(root == nullptr)
     {
-    TreeNode *index = queue.front();  //取出当前层的第一个
-    level.push_back(index->val);  //将这个值放进结果中
-    queue.erase(queue.begin());   //擦除这个数
-    //看一下这个数的左面还有没有子树,有就加进去
-    if(index->left != nullptr)
+        return true;
+    }
+    int threshold = root->val; //记录下节点的值传入下一个作为区间判断
+    //先判断一下根节点的左右是否符合条件
+    if(root->left!= nullptr)
     {
-         queue.push_back(index->left);
+        if(root->left > root->val)
+        return false;
     }
-    //看一下这个数的右面还有没有子树,有就加进去
-    if(index->right != nullptr)
+    if(root->right!= nullptr)
     {
-         queue.push_back(index->right);
+        if(root->right < root->val)
+        return false;
     }
+    //对于左子树
+    bool n1 =  leftIsValidBST(root->left,  threshold)
+    //对于右子树
+    bool n2 =  rightIsValidBST(root->right,  threshold)
+    if(n1 == true && n2 == true)
+    {
+        return true;
     }
-    //将这一层的数加进结果中
-     result.push_back(level);
-  }
-   return result;
+    else{
+         return false;
+    }
+}
+bool *TreeNode:: leftIsValidBST(TreeNode *root, int thr)
+{
+     int threshold = root->val; //记录下节点的值传入下一个作为区间判断
+     if(root->left!= nullptr)
+    {
+        bool n1 =leftIsValidBST(TreeNode *root->left, int threshold);
+    }
+    if(root->right!= nullptr)
+    {
+         bool n2= rightIsValidBST(TreeNode *root->right, int threshold)
+    }
+    if(root->left->val < root->val && root->val < root->right->val < thr&&n1==ture&& n2 == ture)
+    {
+        return ture;
+    }
+    else{
+        return false;
+    }
+}
+bool *TreeNode::rightIsValidBST(TreeNode *root, int thr)
+{
+     int threshold = root->val; //记录下节点的值传入下一个作为区间判断
+     if(root->left!= nullptr)
+    {
+        bool n1 =leftIsValidBST(TreeNode *root->left, int threshold);
+    }
+    if(root->right!= nullptr)
+    {
+         bool n2= rightIsValidBST(TreeNode *root->right, int threshold)
+    }
+    if(root->right->val > && root->val < root->left->val < thr&&n1==ture&& n2 == ture)
+    {
+        return ture;
+    }
+    else{
+        return false;
+    }
 }

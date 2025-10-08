@@ -1,5 +1,7 @@
 #include "my_tree.hh"
 
+#include <algorithm>
+#include <climits>
 #include <functional>
 #include <queue>
 #include <vector>
@@ -21,6 +23,41 @@ std::vector<int> TreeNode::inorderTraversal(TreeNode *root)
     result_right = inorderTraversal(cur->right);
     result.insert(result.end(), result_right.begin(), result_right.end());
     return result;
+}
+// 98. 验证二叉搜索树
+bool TreeNode::isValidBST(TreeNode *root) {
+  std::function<bool(TreeNode *, long, long)> validate =
+      [&](TreeNode *node, long min, long max) {
+        if (node == nullptr) {
+          return true;
+        }
+        if (node->val <= min || node->val >= max) {
+          return false;
+        }
+        return validate(node->left, min, node->val) &&
+               validate(node->right, node->val, max);
+      };
+  return validate(root, LONG_MIN, LONG_MAX);
+}
+// 98. 验证二叉搜索树
+//  使用辅助函数
+bool TreeNode::isValidBST1(TreeNode *root) {
+  // 初始范围：负无穷到正无穷（用long long避免int溢出）
+  return isValid(root, LLONG_MIN, LLONG_MAX);
+}
+// 辅助函数：验证以root为根的树是否在[lower, upper]范围内
+bool TreeNode::isValid(TreeNode *root, long long lower, long long upper) {
+  if (root == nullptr) {
+    return true; // 空树是BST
+  }
+  // 当前节点值必须在[lower, upper]范围内
+  if (root->val <= lower || root->val >= upper) {
+    return false;
+  }
+  // 左子树的范围：[lower, 当前节点值)
+  // 右子树的范围：(当前节点值, upper]
+  return isValid(root->left, lower, root->val) &&
+         isValid(root->right, root->val, upper);
 }
 // 101. 对称二叉树（递归）
 bool TreeNode::isSymmetric(TreeNode *root) {
@@ -136,6 +173,45 @@ int TreeNode::maxDepth(TreeNode *root)
     int leftDepth = maxDepth(root->left);
     int rightDepth = maxDepth(root->right);
     return std::max(leftDepth, rightDepth) + 1;
+}
+/**
+ * 108. 将有序升序数组转换为二叉搜索树
+ *
+ * 核心思路：递归地选取当前子数组的中点作为根节点，确保树是高度平衡的。
+ * 特性：先看一下数组的大小，平衡二叉树的特性为高度平衡二叉树，说到它的高度为O(logN)，确定所构建的树是平衡的
+ * @param nums 有序升序数组
+ * @return 构建完成的二叉搜索树的根节点
+ */
+TreeNode *TreeNode::sortedArrayToBST(std::vector<int> &nums) {
+  // 启动递归过程，使用整个数组的索引范围 [0, nums.size() - 1]
+  return buildBST(nums, 0, nums.size() - 1);
+}
+// 辅助递归函数：在数组的指定区间 [left, right] 内构建 BST
+TreeNode *TreeNode::buildBST(std::vector<int> &nums, int left, int right) {
+
+  // 1. 递归终止条件
+  // 如果左边界大于右边界，说明当前子数组为空，返回空指针
+  if (left > right) {
+    return nullptr;
+  }
+
+  // 2. 找到当前子数组的中间元素作为根节点
+  // 选取中间元素是为了保证左右子树的节点数相差最小，从而保证树的高度平衡。
+  int mid = left + (right - left) / 2; // 安全计算中点，防止溢出
+
+  // 3. 创建根节点
+  TreeNode *root = new TreeNode(nums[mid]);
+
+  // 4. 递归构建左子树
+  // 左子树的节点来自数组的左半部分 [left, mid - 1]
+  root->left = buildBST(nums, left, mid - 1);
+
+  // 5. 递归构建右子树
+  // 右子树的节点来自数组的右半部分 [mid + 1, right]
+  root->right = buildBST(nums, mid + 1, right);
+
+  // 6. 返回当前子树的根节点
+  return root;
 }
 // 226. 翻转二叉树
 TreeNode *TreeNode::invertTree(TreeNode *root)
