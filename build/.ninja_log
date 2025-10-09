@@ -119,3 +119,15 @@
 5053	5779	7817160511045808	Test/C++/test_104.exe	d256a1245c1d7c5f
 5141	5791	7817160511914337	Test/C++/test_226.exe	d9fe03f292ae4b9b
 5098	5803	7817160511491142	Test/C++/test_94.exe	10ebf20aa57a1cb5
+409	3914	7817235792641158	lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj	9bdedfff700896e3
+394	5441	7817235792481582	Test/C++/CMakeFiles/test_104.dir/test_104.cpp.obj	18ab5b2ab6dd5b93
+263	5446	7817235791176004	Test/C++/CMakeFiles/test_94.dir/test_94.cpp.obj	ea19bcd08c495401
+401	5462	7817235792561364	Test/C++/CMakeFiles/test_226.dir/test_226.cpp.obj	fe3bd1a6c1f4157f
+26	1353	7817237891236026	lesson3_1/CMakeFiles/temporary_test.dir/source/tree.cpp.obj	14bd706c908b4f1
+18	1372	7817237891155194	Test/C++/CMakeFiles/test_104.dir/__/__/lesson3_1/source/tree.cpp.obj	b6e9ed6474f46af1
+22	1383	7817237891186122	Test/C++/CMakeFiles/test_226.dir/__/__/lesson3_1/source/tree.cpp.obj	66a44f0b2bdce510
+14	1395	7817237891108534	Test/C++/CMakeFiles/test_94.dir/__/__/lesson3_1/source/tree.cpp.obj	746b37970e41735d
+1354	2468	7817237904514889	lesson3_1/temporary_test.exe	33984d9bec2addbe
+1383	2560	7817237904800079	Test/C++/test_226.exe	d9fe03f292ae4b9b
+1395	2570	7817237904925725	Test/C++/test_94.exe	10ebf20aa57a1cb5
+1372	2576	7817237904689923	Test/C++/test_104.exe	d256a1245c1d7c5f

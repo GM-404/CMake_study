@@ -6,7 +6,8 @@
 #include <queue>
 #include <vector>
 #include <stack>
-
+#include <limits>    // 必须包含此头文件才能使用 std::numeric_limits
+#include <algorithm> // 如果您使用了 std::max，也需要这个
 
 // 94.二叉树的中序遍历框架
 std::vector<int> TreeNode::inorderTraversal(TreeNode *root){
@@ -299,9 +300,32 @@ void TreeNode::flatten2(TreeNode* root){
     }
 }
 // 124. 二叉树中的最大路径和
+int TreeNode::maxGain(TreeNode* node, int& maxSum) {
+  // 递归终止条件
+  if (node == nullptr) {
+      return 0;
+  }
+  // 1. 递归计算左右子树的最大贡献
+  // 注意：如果左右子树的贡献是负值，我们选择 0 (即不选该子树，从当前节点重新开始路径)。
+  int leftGain = std::max(0, maxGain(node->left, maxSum));
+  int rightGain = std::max(0, maxGain(node->right, maxSum));
+
+  // 2. 更新全局最大路径和 (Max Path Sum Across Current Node)
+  // 穿过当前节点的最大路径和 = 左子树最大贡献 + 右子树最大贡献 + 节点值。
+  // 这个值只用于更新全局 maxSum，因为它不符合 '路径只能向下' 的要求，不能上传给父节点。
+  int pathSumAcrossNode = node->val + leftGain + rightGain;
+  maxSum = std::max(maxSum, pathSumAcrossNode);
+
+  // 3. 返回当前节点的最大贡献 (Max Gain Upwards)
+  // 当前节点只能选择【向下】的单边路径（左或右）来贡献给它的父节点。
+  // 返回值为：当前节点值 + max(左子树最大贡献, 右子树最大贡献)。
+  return node->val + std::max(leftGain, rightGain);
+    }
 int TreeNode::maxPathSum(TreeNode* root){
-  int ans = 2;
-  return ans;
+  // 初始化全局最大路径和为一个极小值（保证负数节点也能正确处理）
+  int maxSum = std::numeric_limits<int>::min();
+  maxGain(root, maxSum);
+  return maxSum;
 }
 // 199. 二叉树的右视图
 /*层序遍历，保存每一层的最后的值*/

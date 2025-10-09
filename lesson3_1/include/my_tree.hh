@@ -38,6 +38,7 @@ public:
     void flatten1(TreeNode* root);  //从上而下展开
     void flatten2(TreeNode* root);  //从上而下展开
     // 124. 二叉树中的最大路径和
+    int maxGain(TreeNode* node, int& maxSum);  //辅助函数
     int maxPathSum(TreeNode* root);
     // 199. 二叉树的右视图
     std::vector<int> rightSideView(TreeNode* root); //深度优先搜索
