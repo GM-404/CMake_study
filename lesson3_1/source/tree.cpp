@@ -6,9 +6,10 @@
 #include <queue>
 #include <vector>
 #include <stack>
+
+
 // 94.二叉树的中序遍历框架
-std::vector<int> TreeNode::inorderTraversal(TreeNode *root)
-{
+std::vector<int> TreeNode::inorderTraversal(TreeNode *root){
     std::vector<int> result;
     std::vector<int> result_left;
     std::vector<int> result_right;
@@ -73,7 +74,7 @@ bool TreeNode::isSymmetric(TreeNode *root) {
       return false;
     }
     return (t1->val == t2->val) && isMirror(t1->left, t2->right) &&
-           isMirror(t1->right, t2->left);
+          isMirror(t1->right, t2->left);
   };
   return isMirror(root->left, root->right);
 }
@@ -297,10 +298,14 @@ void TreeNode::flatten2(TreeNode* root){
         }
     }
 }
+// 124. 二叉树中的最大路径和
+int TreeNode::maxPathSum(TreeNode* root){
+  int ans = 2;
+  return ans;
+}
 // 199. 二叉树的右视图
 /*层序遍历，保存每一层的最后的值*/
-std::vector<int> TreeNode::rightSideView(TreeNode*root)
-{
+std::vector<int> TreeNode::rightSideView(TreeNode*root){
   std::vector<int>result;
   if (root == nullptr) {
       return result;
@@ -333,8 +338,7 @@ std::vector<int> TreeNode::rightSideView(TreeNode*root)
   return result;
 }
 // 226. 翻转二叉树
-TreeNode *TreeNode::invertTree(TreeNode *root)
-{
+TreeNode *TreeNode::invertTree(TreeNode *root){
     if (root == nullptr)
     {
         return nullptr;
@@ -362,8 +366,7 @@ int TreeNode::kthSmallest(TreeNode *root, int k) {
   return elements[k - 1]; // k 是从 1 开始的索引
 }
 // 230. 二叉搜索树中第K小的元素。由中序遍历二叉搜索数是递增的，搜到第K个就是所要的
-int TreeNode::kthSmallest1(TreeNode *root, int k) 
-{
+int TreeNode::kthSmallest1(TreeNode *root, int k) {
     std::stack<TreeNode *> s;
     TreeNode *curr = root;
     while (curr != nullptr || !s.empty()) {
@@ -385,6 +388,48 @@ int TreeNode::kthSmallest1(TreeNode *root, int k)
     }
     // 理论上不会执行到这里，因为 K 保证有效
     return -1; 
+}
+// 236. 二叉树的最近公共祖先 - 最优递归解法
+TreeNode* TreeNode::lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    
+    // 如果节点为空，返回空。
+    // 如果当前节点就是 p 或 q，那么它一定是 LCA (如果另一个节点在它的子树中)，
+    // 或者它就是 p 和 q 路径的起点。直接返回该节点。
+    if (root == nullptr || root == p || root == q) {
+        return root;
+    }
+
+    // 2. 递归查找左右子树
+    // left_lca 存储在左子树中找到的 p 或 q (或它们的 LCA)
+    TreeNode* left_lca = lowestCommonAncestor(root->left, p, q);
+    // right_lca 存储在右子树中找到的 p 或 q (或它们的 LCA)
+    TreeNode* right_lca = lowestCommonAncestor(root->right, p, q);
+
+    // 3. 回溯与判定
+    
+    // 情况 A: 左右子树都找到了 (left_lca != nullptr 且 right_lca != nullptr)
+    // 这意味着 p 和 q 分别位于当前根节点的左右两侧。
+    // 此时，当前 root 就是 LCA。
+    if (left_lca != nullptr && right_lca != nullptr) {
+        return root;
+    }
+
+    // 情况 B: 只有左子树找到了 (right_lca == nullptr)
+    // 说明 p 和 q 都在左子树中，或者 p 或 q 是 left_lca。
+    // 将 left_lca 向上返回。
+    if (left_lca != nullptr) {
+        return left_lca;
+    }
+
+    // 情况 C: 只有右子树找到了 (left_lca == nullptr)
+    // 说明 p 和 q 都在右子树中，或者 p 或 q 是 right_lca。
+    // 将 right_lca 向上返回。
+    if (right_lca != nullptr) {
+        return right_lca;
+    }
+
+    // 情况 D: 左右子树都没找到 p 和 q
+    return nullptr;
 }
 // 437. 路径总和 III
 int TreeNode::pathSum(TreeNode *root, int targetSum) {

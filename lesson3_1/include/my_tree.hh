@@ -37,6 +37,8 @@ public:
     void flatten(TreeNode* root);   //从下而上展开
     void flatten1(TreeNode* root);  //从上而下展开
     void flatten2(TreeNode* root);  //从上而下展开
+    // 124. 二叉树中的最大路径和
+    int maxPathSum(TreeNode* root);
     // 199. 二叉树的右视图
     std::vector<int> rightSideView(TreeNode* root); //深度优先搜索
     // 226. 翻转二叉树
@@ -44,6 +46,8 @@ public:
     // 230. 二叉搜索树中第K小的元素
     int kthSmallest(TreeNode *root, int k); //遍历整个数组之后返回第K-1个
     int kthSmallest1(TreeNode *root, int k);//由中序遍历二叉搜索数是递增的，搜到第K个就是所要的
+    // 236.二叉树的最近公共祖先
+    TreeNode* lowestCommonAncestor(TreeNode* root,TreeNode* p,TreeNode* q);
     // 437. 路径总和 III
     int pathSum(TreeNode *root, int targetSum);
     int pathSum1(TreeNode *root, int targetSum);
