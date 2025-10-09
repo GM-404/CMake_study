@@ -46,6 +46,7 @@ public:
     int kthSmallest1(TreeNode *root, int k);//由中序遍历二叉搜索数是递增的，搜到第K个就是所要的
     // 437. 路径总和 III
     int pathSum(TreeNode *root, int targetSum);
+    int pathSum1(TreeNode *root, int targetSum);
     // 543. 二叉树的直径
     int diameterOfBinaryTree(TreeNode *root);
 };

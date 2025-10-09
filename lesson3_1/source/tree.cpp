@@ -391,7 +391,7 @@ int TreeNode::pathSum(TreeNode *root, int targetSum) {
     if (root == nullptr) {
         return 0;
     }
-    // 计算以当前节点为起点的路径数量
+    // 计算以当前节点为起点的路径数量(即根目录)
     int paths_from_root = 0;
     std::function<void(TreeNode *, long long)> countPaths = [&](TreeNode *node, long long currentSum) {
         if (node == nullptr) {
@@ -411,6 +411,40 @@ int TreeNode::pathSum(TreeNode *root, int targetSum) {
     int paths_in_right = pathSum(root->right, targetSum);
 
     return paths_from_root + paths_in_left + paths_in_right;
+}
+// 437. 路径总和 III
+int TreeNode::pathSum1(TreeNode *root, int targetSum) {
+    std::function<int(TreeNode *,int,long long,std::unordered_map<long long,int>&)> 
+    dfs = [&](TreeNode *node,int targetSum,long long currentSum,std::unordered_map<long long,int>& prefixSumCount) {
+    //结束条件
+    if (node == nullptr) {
+      return 0;
+    };
+    // 1. 更新当前路径的前缀和（从根到当前节点）
+        currentSum += node->val;
+        
+    // 2. 计算当前有多少条路径的和等于target：
+        //    即寻找前缀和为 (currentSum - target) 的次数
+        int res = prefixSumCount[currentSum - targetSum];
+
+    // 3. 将当前前缀和加入哈希表（供子节点使用）
+        prefixSumCount[currentSum]++;
+
+    // 4. 递归处理左右子树
+        res += dfs(node->left, targetSum, currentSum, prefixSumCount);
+        res += dfs(node->right, targetSum, currentSum, prefixSumCount);
+
+    // 5. 回溯：移除当前前缀和（避免影响其他路径）
+        prefixSumCount[currentSum]--;
+
+      return res;
+      };
+    // 哈希表：key=前缀和，value=该前缀和出现的次数
+        std::unordered_map<long long, int> prefixSumCount;
+        // 初始化：前缀和为0的情况（处理路径从根节点开始的情况）
+        prefixSumCount[0] = 1;
+        // 递归计算
+        return dfs(root, targetSum, 0, prefixSumCount);
 }
 // 543. 二叉树的直径
 int TreeNode::diameterOfBinaryTree(TreeNode *root) {
