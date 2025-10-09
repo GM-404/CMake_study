@@ -174,6 +174,30 @@ int TreeNode::maxDepth(TreeNode *root)
     int rightDepth = maxDepth(root->right);
     return std::max(leftDepth, rightDepth) + 1;
 }
+// 105. 从前序与中序遍历序列构造二叉树
+TreeNode *TreeNode::buildTree(std::vector<int> &preorder, std::vector<int> &inorder) {
+  if (preorder.size() == 0 || inorder.size() == 0) {
+    return nullptr;
+  }
+  TreeNode *root = new TreeNode(preorder[0]); //前序遍历的第一个一定是根节点
+  int index= 0;
+  for(int i = 0;i<inorder.size();i++)
+  {
+    if(inorder[i] == preorder[0])
+    {
+      index = i;
+      break;
+    }
+  }
+  std::vector<int> left_inorder(inorder.begin(), inorder.begin() + index);
+  std::vector<int> right_inorder(inorder.begin() + index + 1, inorder.end());
+  std::vector<int> left_preorder(preorder.begin() + 1, preorder.begin() + index + 1);
+  std::vector<int> right_preorder(preorder.begin() + index + 1, preorder.end());
+  root->left = buildTree(left_preorder, left_inorder);
+  root->right = buildTree(right_preorder, right_inorder);
+  return root;
+}
+
 //108. 将有序升序数组转换为二叉搜索树
 /**
  * 108. 将有序升序数组转换为二叉搜索树
@@ -361,6 +385,32 @@ int TreeNode::kthSmallest1(TreeNode *root, int k)
     }
     // 理论上不会执行到这里，因为 K 保证有效
     return -1; 
+}
+// 437. 路径总和 III
+int TreeNode::pathSum(TreeNode *root, int targetSum) {
+    if (root == nullptr) {
+        return 0;
+    }
+    // 计算以当前节点为起点的路径数量
+    int paths_from_root = 0;
+    std::function<void(TreeNode *, long long)> countPaths = [&](TreeNode *node, long long currentSum) {
+        if (node == nullptr) {
+            return;
+        }
+        currentSum += node->val;
+        if (currentSum == targetSum) {
+            paths_from_root++;
+        }
+        countPaths(node->left, currentSum);
+        countPaths(node->right, currentSum);
+    };
+    countPaths(root, 0);
+
+    // 递归计算左子树和右子树中的路径数量
+    int paths_in_left = pathSum(root->left, targetSum);
+    int paths_in_right = pathSum(root->right, targetSum);
+
+    return paths_from_root + paths_in_left + paths_in_right;
 }
 // 543. 二叉树的直径
 int TreeNode::diameterOfBinaryTree(TreeNode *root) {

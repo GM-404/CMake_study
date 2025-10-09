@@ -28,6 +28,8 @@ public:
     std::vector<std::vector<int>> levelOrder1(TreeNode *root);
     // 104. 二叉树的最大深度
     int maxDepth(TreeNode *root);
+    // 105. 从前序与中序遍历序列构造二叉树
+    TreeNode *buildTree(std::vector<int> &preorder, std::vector<int> &inorder);
     // 108 将有序数组转换为二叉搜索树
     TreeNode *sortedArrayToBST(std::vector<int> &nums);
     TreeNode *buildBST(std::vector<int> &nums, int left, int right); // 辅助函数
@@ -42,6 +44,8 @@ public:
     // 230. 二叉搜索树中第K小的元素
     int kthSmallest(TreeNode *root, int k); //遍历整个数组之后返回第K-1个
     int kthSmallest1(TreeNode *root, int k);//由中序遍历二叉搜索数是递增的，搜到第K个就是所要的
+    // 437. 路径总和 III
+    int pathSum(TreeNode *root, int targetSum);
     // 543. 二叉树的直径
     int diameterOfBinaryTree(TreeNode *root);
 };
