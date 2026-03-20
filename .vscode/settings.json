@@ -2,8 +2,13 @@
   "python.analysis.extraPaths": [ //静态分析路径中加入自己用C++封装的Python模块
     "C:\\Users\\19513\\Desktop\\cmake\\build\\PythonWrapper"
   ],
+    "clangd.arguments": [
+    "--header-insertion=never",
+    "--background-index",  // 后台建立索引，支持大型项目
+    "--query-driver=D:/SDK/w64devkit/bin/gcc.exe"  // 替换为你的 gcc 路径
+  ],
   // "cmake.configureSettings": { //CMake配置时的设置,message(STATUS ...) 输出的信息默认情况下可能不会在终端中显示，这是因为 CMake 的输出级别设置问题。要使这些信息显示出来，
-  //   "CMAKE_VERBOSE_MAKEFILE": "ON"
+  //   "CMAKE_VERBOSE_MAKEFILE": "ON"          //可以在 CMake 配置时将 CMAKE_VERBOSE_MAKEFILE 选项设置为 ON，这样可以启用详细的输出。
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",

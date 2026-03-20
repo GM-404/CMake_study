@@ -45,7 +45,7 @@ public:
 
     // 23.合并K个升序链表
     Linked_Node *mergeKLists(std::vector<Linked_Node *> &lists);
-
+    Linked_Node *mergeKLists1(std::vector<Linked_Node *> &lists);
     // 24.两两交换链表中的节点
     Linked_Node *swapPairs(Linked_Node *head);
     Linked_Node *swapPairs1(Linked_Node *head);
@@ -76,6 +76,10 @@ public:
     // 234. 回文链表
     bool isPalindrome(Linked_Node *head);  // 转化为数组
     bool isPalindrome1(Linked_Node *head); // 递归
+
+    // 876. 链表的中间结点
+    //https://leetcode.cn/problems/middle-of-the-linked-list/
+    Linked_Node *middleNode(Linked_Node *head);
 };
 // 146. LRU缓存机制
 class LRUCache {

@@ -138,6 +138,9 @@ Linked_Node *Linked_Node::mergeKLists(std::vector<Linked_Node *> &lists) {
 
   return dummy->next;
 }
+// 23.合并K个升序链表（优化法）
+Linked_Node *Linked_Node::mergeKLists1(std::vector<Linked_Node *> &lists) {
+}
 // 24.两两交换链表中的节点
 Linked_Node *Linked_Node::swapPairs(Linked_Node *head) {
   Linked_Node *dummy = new Linked_Node(0);
@@ -426,7 +429,7 @@ Linked_Node *Linked_Node::getIntersectionNode(Linked_Node *headA, Linked_Node *h
         }
         headB = headB->next;
     }
-    return nullptr; // 该函数需要实现具体的逻辑
+    return nullptr; 
 }
 // 160.相交链表(双指针法)
 Linked_Node *Linked_Node::getIntersectionNode1(Linked_Node *headA, Linked_Node *headB)
@@ -506,4 +509,24 @@ bool Linked_Node::isPalindrome1(Linked_Node *head)
         cur = cur->next;
     }
     return true;
+}
+// 876.链表的中间节点
+
+Linked_Node *Linked_Node::middleNode(Linked_Node *head) {
+    
+    //先进行帧头判断
+    if(head == nullptr){
+      return nullptr;
+
+    }
+    //快慢指针法
+    Linked_Node * slow = head;
+    Linked_Node * fast = head;
+    while(fast != nullptr && fast->next != nullptr){   //判断快指针和快指针的下一个，这样如果下下一个是空的，慢指针就会停留在中间第二个
+
+      slow = slow->next;        //先让慢指针先走
+      fast = fast->next->next;  //再让快指针走两步
+
+    }
+    return slow;
 }
