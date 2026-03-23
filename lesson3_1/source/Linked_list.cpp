@@ -284,7 +284,7 @@ Linked_Node* Linked_Node::partition(Linked_Node *head, int x){
         return nullptr;
     }
     Linked_Node *p1 = head;
-    Linked_Node *p2 = head;
+    // Linked_Node *p2 = head;
     Linked_Node *dummy1 = new Linked_Node(0);
     Linked_Node *dummy2 = new Linked_Node(0);
     Linked_Node *tail1 = dummy1;
@@ -299,15 +299,34 @@ Linked_Node* Linked_Node::partition(Linked_Node *head, int x){
             tail1 = tail1->next;
         }
         p1 = p1->next;
-        p2->next = nullptr;
-        p2 = p1;
+        // p2->next = nullptr;
+        // p2 = p1;
     }
+    tail2->next = nullptr;
     tail1->next = dummy2->next;
+    Linked_Node* result = dummy1->next;
     delete dummy1;
     delete dummy2;
-    return dummy1->next;
+    return result;
 }
-
+Linked_Node* Linked_Node::partition1(Linked_Node* head, int x) {
+    Linked_Node leftDummy(0), rightDummy(0);
+    Linked_Node *left = &leftDummy, *right = &rightDummy;
+    
+    for (Linked_Node* p = head; p; p = p->next) {
+        if (p->val < x) {
+            left->next = p;
+            left = left->next;
+        } else {
+            right->next = p;
+            right = right->next;
+        }
+    }
+    left->next = rightDummy.next;   // 拼接
+    right->next = nullptr;          // 断尾（防止环）
+    
+    return leftDummy.next;
+}
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {
   Linked_Node *fast = head;
