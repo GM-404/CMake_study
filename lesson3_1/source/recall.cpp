@@ -90,6 +90,53 @@ void Recall::backtrack46(std::vector<int>& nums, int start, std::vector<std::vec
         std::swap(nums[start], nums[i]); // 回溯：恢复原数组（关键！）
     }
 }
+//51. N皇后
+std::vector<std::vector<std::string>> Recall::solveNQueens(int n){
+    std::vector<std::vector<std::string>> res;    // 存储所有合法的棋盘方案
+    std::vector<std::string> board(n, std::string(n, '.')); // 初始化棋盘，全部为'.'
+    // 三个数组记录冲突：列、正对角线(行-列)、反对角线(行+列)
+    std::vector<bool> col(n, false);   // col[j] = true 表示第j列已有皇后
+    std::vector<bool> diag1(2*n-1, false); // 正对角线：行-列 = 常数，范围[-(n-1), n-1]，映射为行-列 + n-1
+    std::vector<bool> diag2(2*n-1, false); // 反对角线：行+列 = 常数，范围[0, 2n-2]
+
+    backtrack51(n, 0, board, col, diag1, diag2, res);
+    return res;
+}
+void Recall::backtrack51(int n, int row, std::vector<std::string>& board, std::vector<bool>& col, std::vector<bool>& diag1, std::vector<bool>& diag2, std::vector<std::vector<std::string>>& res){
+    // 终止条件：所有行都放置了皇后，记录当前方案
+    if (row == n) {
+        res.push_back(board);
+        return;
+    }
+
+    // 遍历当前行的所有列，尝试放置皇后
+    for (int j = 0; j < n; ++j) {
+        // 计算对角线索引（避免负数）
+        int d1 = row - j + n - 1; // 正对角线映射索引
+        int d2 = row + j;         // 反对角线索引
+
+        // 剪枝：列/正对角线/反对角线有冲突，跳过当前列
+        if (col[j] || diag1[d1] || diag2[d2]) {
+            continue;
+        }
+
+        // 选择：在(row,j)放置皇后
+        board[row][j] = 'Q';
+        col[j] = true;
+        diag1[d1] = true;
+        diag2[d2] = true;
+
+        // 递归：处理下一行
+        backtrack51(n, row + 1, board, col, diag1, diag2, res);
+
+        // 回溯：撤销选择，恢复状态
+        board[row][j] = '.';
+        col[j] = false;
+        diag1[d1] = false;
+        diag2[d2] = false;
+    }
+}
+
 //78. 子集
 std::vector<std::vector<int>> Recall::subsets(std::vector<int>& nums){
     std::vector<std::vector<int>> res;
@@ -109,5 +156,82 @@ void Recall::backtrack78(std::vector<int>& nums, int start, std::vector<int>& su
         subset.push_back(nums[i]);
         backtrack78(nums, i + 1, subset, res);
         subset.pop_back();  //删除向量最后一个元素，且不会返回该元素
+    }
+}
+//79. 单词搜索
+bool Recall::exist(std::vector<std::vector<char>>& board, std::string word){
+    // 遍历棋盘的每个位置作为起始点
+    for (int i = 0; i < board.size(); ++i) {
+        for (int j = 0; j < board[0].size(); ++j) {
+            // 从(i,j)开始DFS搜索，匹配word的第0个字符
+            if (backtrack79(board, word, i, j, 0)) {
+                return true;
+            }
+        }
+    }
+    // 所有起始点都匹配失败
+    return false;
+}
+// DFS回溯函数：board=棋盘，word=目标单词，i/j=当前棋盘位置，idx=当前匹配到word的第几个字符
+bool Recall::backtrack79(std::vector<std::vector<char>>& board, const std::string& word, int i, int j, int idx) {
+    // 终止条件1：匹配完所有字符，成功
+    if (idx == word.size()) {
+        return true;
+    }
+    // 终止条件2：越界 或 当前字符不匹配，失败
+    if (i < 0 || i >= board.size() || j < 0 || j >= board[0].size() || board[i][j] != word[idx]) {
+        return false;
+    }
+
+    // 标记当前位置已访问（避免重复使用）：临时修改为特殊字符
+    char temp = board[i][j];
+    board[i][j] = '#';
+
+    // 向上下左右四个方向递归搜索，匹配下一个字符
+    bool found = backtrack79(board, word, i - 1, j, idx + 1)   // 上
+            || backtrack79(board, word, i + 1, j, idx + 1)   // 下
+            || backtrack79(board, word, i, j - 1, idx + 1)   // 左
+            || backtrack79(board, word, i, j + 1, idx + 1);  // 右
+
+    // 回溯：恢复当前位置的原始字符（关键！）
+    board[i][j] = temp;
+
+    return found;
+}
+//131. 分割回文串
+std::vector<std::vector<std::string>> Recall::partition(std::string s){
+    std::vector<std::vector<std::string>> res; // 存储所有分割方案
+    std::vector<std::string> path;        // 存储当前分割路径
+    backtrack131(s, 0, path, res);
+    return res;
+}
+// 辅助函数：判断s[left..right]是否为回文串（闭区间）
+bool isPalindrome(const std::string& s, int left, int right) {
+    while (left < right) {
+        if (s[left++] != s[right--]) {
+            return false;
+        }
+    }
+    return true;
+}
+void Recall::backtrack131(const std::string& s, int start, std::vector<std::string>& path, std::vector<std::vector<std::string>>& res){
+    // 终止条件：分割到字符串末尾，记录当前路径
+    if (start == s.size()) {
+        res.push_back(path);
+        return;
+    }
+
+    // 遍历所有可能的分割点（从start到字符串末尾）
+    for (int i = start; i < s.size(); ++i) {
+        // 剪枝：如果s[start..i]不是回文，跳过该分割点
+        if (!isPalindrome(s, start, i)) {
+            continue;
+        }
+        // 选择：将回文子串加入当前路径
+        path.push_back(s.substr(start, i - start + 1));
+        // 递归：处理剩余子串（从i+1开始分割）
+        backtrack131(s, i + 1, path, res);
+        // 回溯：撤销选择，移除当前子串
+        path.pop_back();
     }
 }
