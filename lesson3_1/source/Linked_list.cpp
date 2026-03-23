@@ -277,6 +277,28 @@ Linked_Node *Linked_Node::reverseKGroup1(Linked_Node *head, int k) {
   delete dummy; // 释放哑节点内存
   return result;
 }
+//83. 删除排序链表中的重复元素 II
+Linked_Node *Linked_Node::deleteDuplicates(Linked_Node *head){
+  if (head == nullptr) {
+      return nullptr;
+  }
+  Linked_Node* slow = head;
+  Linked_Node* fast = head;
+
+  while (fast != nullptr) {
+      if (slow->val != fast->val) {
+          slow->next = fast;
+          slow = slow->next;  
+          fast = fast->next;
+      }
+      else{
+          fast = fast->next;
+      }
+  }
+  slow->next = nullptr;
+  return head;
+}
+
 //86. 分隔链表
 //思路：使用两个虚拟头节点，一个存放小于x的节点，一个存放大于等于x的节点
 Linked_Node* Linked_Node::partition(Linked_Node *head, int x){

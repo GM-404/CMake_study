@@ -77,7 +77,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -125,7 +126,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -201,6 +203,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "lesson3_1/source/Matrix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lesson3_1/source/array.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

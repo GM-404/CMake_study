@@ -1,7 +1,6 @@
 ﻿
-#include <unordered_map>
+// #include <unordered_map>
 #include <algorithm> // 排序函数
-#include <iostream>
 #include <vector>
 #include "longestConsecutive.hh"
 
@@ -10,8 +9,6 @@ int Solution_longestConsecutive::longestConsecutive(std::vector<int> &nums)
     int longest = 1;
     int currentLength = 1;
     std::sort(nums.begin(), nums.end());
-    int longest = 1;
-    int currentLength = 1;
     if (nums.empty())
         return 0;
     for (int i = 1; i < nums.size(); i++)

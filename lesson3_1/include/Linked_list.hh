@@ -56,7 +56,9 @@ public:
 
     // 138.复制带随机指针的链表
     Linked_Node *copyRandomList(Linked_Node *head);
-
+    
+    // 83. 删除排序链表中的重复元素
+    Linked_Node *deleteDuplicates(Linked_Node *head);
     // 86. 分隔链表
     Linked_Node *partition(Linked_Node *head, int x);
     Linked_Node *partition1(Linked_Node *head, int x);
