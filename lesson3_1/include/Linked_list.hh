@@ -57,6 +57,8 @@ public:
     // 138.复制带随机指针的链表
     Linked_Node *copyRandomList(Linked_Node *head);
 
+    // 86. 分隔链表
+    Linked_Node *partition(Linked_Node *head, int x);
     // 141.判断链表是否有环
     bool hasCycle(Linked_Node *head);  // 使用快慢指针
     bool hasCycle2(Linked_Node *head); // 使用哈希表

@@ -139,8 +139,20 @@ Linked_Node *Linked_Node::mergeKLists(std::vector<Linked_Node *> &lists) {
   return dummy->next;
 }
 // 23.合并K个升序链表（优化法）
-Linked_Node *Linked_Node::mergeKLists1(std::vector<Linked_Node *> &lists) {
+Linked_Node* merge(std::vector<Linked_Node*>& lists, int left, int right) {
+    if (left == right) return lists[left];
+    if (left > right) return nullptr;
+    
+    int mid = left + (right - left) / 2;
+    Linked_Node* l1 = merge(lists, left, mid);
+    Linked_Node* l2 = merge(lists, mid + 1, right);
+    return Linked_Node::mergeTwoLists(l1, l2);
 }
+Linked_Node* mergeKLists(std::vector<Linked_Node*>& lists) {
+    if (lists.empty()) return nullptr;
+    return merge(lists, 0, lists.size() - 1);
+}
+
 // 24.两两交换链表中的节点
 Linked_Node *Linked_Node::swapPairs(Linked_Node *head) {
   Linked_Node *dummy = new Linked_Node(0);
@@ -265,6 +277,37 @@ Linked_Node *Linked_Node::reverseKGroup1(Linked_Node *head, int k) {
   delete dummy; // 释放哑节点内存
   return result;
 }
+//86. 分隔链表
+//思路：使用两个虚拟头节点，一个存放小于x的节点，一个存放大于等于x的节点
+Linked_Node* Linked_Node::partition(Linked_Node *head, int x){
+    if(head == nullptr){
+        return nullptr;
+    }
+    Linked_Node *p1 = head;
+    Linked_Node *p2 = head;
+    Linked_Node *dummy1 = new Linked_Node(0);
+    Linked_Node *dummy2 = new Linked_Node(0);
+    Linked_Node *tail1 = dummy1;
+    Linked_Node *tail2 = dummy2;
+    while(p1!=nullptr){
+        if(p1->val >= x){
+            tail2->next = p1;
+            tail2 = tail2->next;
+        }
+        else{
+            tail1->next = p1;
+            tail1 = tail1->next;
+        }
+        p1 = p1->next;
+        p2->next = nullptr;
+        p2 = p1;
+    }
+    tail1->next = dummy2->next;
+    delete dummy1;
+    delete dummy2;
+    return dummy1->next;
+}
+
 // 141.判断链表是否有环(快慢指针法)
 bool Linked_Node::hasCycle(Linked_Node *head) {
   Linked_Node *fast = head;
