@@ -136,7 +136,6 @@ void Recall::backtrack51(int n, int row, std::vector<std::string>& board, std::v
         diag2[d2] = false;
     }
 }
-
 //78. 子集
 std::vector<std::vector<int>> Recall::subsets(std::vector<int>& nums){
     std::vector<std::vector<int>> res;

@@ -1,96 +1,125 @@
-﻿#include <iostream>
+﻿// #include <stdio.h>
+// #include <string.h>   // C 语言字符串头文件
+// #include <stdlib.h>   // malloc / free
 
-/* 常数（请勿修改） ----------------------------------------*/
-#define FMCW_RISE_STEP (12.02e-9)        ///< FMCW上升时间步长,单位s
-#define WAVE_LENGTH (0.0124266303834197) ///< 波长
-#define ADC_SAMPLE_RATE (10.4e6)         ///< ADC采样率
-#define NUM_TX_ANTENNA (1)               ///< 发射天线数量
-#define NUM_RX_ANTENNA (2)               ///< 接收天线数量
+// const int   g_A = 10;     // 常量区（只读数据段）
+// int         g_B = 20;     // 数据段（已初始化全局）
+// static int  g_C = 30;     // 数据段（已初始化静态全局）
+// static int  g_D;          // BSS 段（未初始化静态全局）
+// int         g_E;          // BSS 段（未初始化全局）
+// char        *p1;          // BSS 段（未初始化全局指针）
 
-/* 参数设置 ========================================*/
+// int main() {
+//     int  local_a = 0;     // 栈区（初始化避免警告）
+//     int  local_b = 0;     // 栈区
 
-// #define FMCW_RISE_STEP_FREQ_KHZ (103U) ///< FMCW上升频率步长,单位KHz
-#define FMCW_RISE_STEP_FREQ_KHZ (320U) ///< FMCW上升频率步长,单位KHz
-#define FMCW_RISE_STEP_NUM (2500U)     ///< FMCW上升频率步数, 步长FMCW_RISE_STEP
-// #define COHERENT_CHIRP_GAP (1120U)     ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
-#define COHERENT_CHIRP_GAP (770U) ///< 相干组中chirp间隔，步长FMCW_RISE_STEP
+//     static int  local_c = 1;  // 数据段（已初始化静态局部）
+//     static int  local_d;      // BSS 段（未初始化静态局部）
 
-#define RX_ANTENNA_SPACING (6.25e-3) ///< 接收天线间距
+//     const char *p3 = "123456";   // "123456" → 常量区；p3 → 栈区
 
-#define NUM_SAMPLE (256)          ///< 采样点
-#define NUM_COHERENT_CHIRP (8)    ///< 相干累加的chirp数
-#define NUM_CHIRP (64)            ///< 帧内chirp数量
-#define NUM_RANGEBIN (45)         ///< 一阶FFT输出Range Bin数量，一般根据最大测距范围设定
-#define COHE_ACC_SCALE_FACTOR 110 ///< 相干累加后数据的缩放倍数的分子，分母为16。即当该参数设置为8时，相干累加后数据的缩放倍数为8/16 = 0.5
+//     // 堆区分配
+//     p1 = (char *)malloc(10);
+//     char *p2 = (char *)malloc(20);
 
-#define MAX_SPEED_RANGE (2.325827952) ///< 最大测速，自动计算Chirp周期
+//     // 安全判断
+//     if (p1 == NULL || p2 == NULL) {
+//         printf("malloc failed\n");
+//         return -1;
+//     }
 
-#define TIME_FRAME_FULL (200e-3) ///< 帧时长
-// 6.5号测量马桶更改
-//  #define STATIC_CLUTTER_UPDATE_PERIOD (2.0)                                           ///< 静态杂波更新周期，单位：s
-//  #define STATIC_CLUTTER_UPDATE_WEIGHT ((uint32_t)(0.1 * (double)((uint64_t)1 << 31))) ///< 静态杂波更新权重，越大对慢速目标抑制越快
+//     strcpy(p1, "123456");
 
-#define STATIC_CLUTTER_UPDATE_PERIOD (0.3)                                           ///< 静态杂波更新周期，单位：s
-#define STATIC_CLUTTER_UPDATE_WEIGHT ((uint32_t)(0.7 * (double)((uint64_t)1 << 31))) ///< 静态杂波更新权重，越大对慢速目标抑制越快
-// 计算一些次生参数
-#define BANDWIDTH ((double)(NUM_SAMPLE * FMCW_RISE_STEP_FREQ_KHZ * 1000) / (ADC_SAMPLE_RATE * FMCW_RISE_STEP)) ///< 等效带宽
-#define TIME_CHIRP ((double)NUM_SAMPLE / ADC_SAMPLE_RATE)                                                      ///< 等效Chirp时长
+//     printf("hight address\n");
+//     printf("------------栈区------------\n");
+//     printf("栈 local_a      addr: %p\n", &local_a);
+//     printf("栈 local_b      addr: %p\n", &local_b);
 
-#define NUM_CHANNEL (NUM_TX_ANTENNA * NUM_RX_ANTENNA)
+//     printf("------------堆区------------\n");
+//     printf("堆 p1 指向地址  addr: %p\n", p1);   // ✔ 打印堆地址
+//     printf("堆 p2 指向地址  addr: %p\n", p2);
 
-#define TIME_CHRIP_TOTAL_EXPECTED ((double)WAVE_LENGTH / (4.0 * MAX_SPEED_RANGE))                                      ///< 期望的Chirp总时长
-#define TIME_COHERENT_CHIRPS ((double)(FMCW_RISE_STEP_NUM + COHERENT_CHIRP_GAP) * FMCW_RISE_STEP * NUM_COHERENT_CHIRP) ///< 相干Chirp总时长
-#define TIME_SUBFRAME_INTERVAL_US ((unsigned long)((TIME_CHRIP_TOTAL_EXPECTED - TIME_COHERENT_CHIRPS) * 1e6))          ///< SUBFRAME间隔
-#define TIME_CHRIP_TOTAL (TIME_COHERENT_CHIRPS + TIME_SUBFRAME_INTERVAL_US / 1e6)                                      ///< Chirp总时长
-#define TIME_CHRIPGAP (TIME_CHRIP_TOTAL - TIME_CHIRP)                                                                  ///< 等效帧间隔
+//     printf("------------BSS段------------\n");
+//     printf("BSS g_E         addr: %p\n", &g_E);
+//     printf("BSS g_D         addr: %p\n", &g_D);
+//     printf("BSS local_d     addr: %p\n", &local_d);
+//     printf("BSS p1(指针本身)addr: %p\n", &p1);
 
-int main()
-{
-    double range_bin_size = 149896229.0 / BANDWIDTH; // Range Bin大小
-    std::cout << "带宽" << BANDWIDTH << std::endl;
-    std::cout << "分辨率" << range_bin_size << std::endl;
-    std::cout << "距离范围" << range_bin_size * 32 << std::endl;
-    std::cout << TIME_SUBFRAME_INTERVAL_US << std::endl;
-    std::cout << TIME_CHIRP << std::endl;
-    std::cout << TIME_CHRIP_TOTAL_EXPECTED << std::endl;
-    std::cout << TIME_COHERENT_CHIRPS << std::endl;
-    std::cout << TIME_CHRIP_TOTAL << std::endl;
-    std::cout << TIME_CHRIPGAP << std::endl;
-    // std::cout << "***************************************************\n"
+//     printf("------------数据段------------\n");
+//     printf("数据段 g_B      addr: %p\n", &g_B);
+//     printf("数据段 g_C      addr: %p\n", &g_C);
+//     printf("数据段 local_c  addr: %p\n", &local_c);
 
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "           C   C                S      S       !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
-    //           << "            ccc                   ssss         !!  \n"
+//     printf("------------常量区------------\n");
+//     printf("常量区 g_A      addr: %p\n", &g_A);
+//     printf("常量区 字符串   addr: %p\n", p3);
 
-    //           << "***************************************************\n"
-    //           << std::endl;
-    // std::cout << "c:\\files\\" << std::endl;
-    // std::cout << R"(c:\files\)" << std::endl;
-    // // std::endl;   == \n
-    // double weight = 79.8;
-    // std::cout << weight << std::endl;
-    // std::cout.setf(std::ios::fixed);
-    // std::cout.setf(std::ios::showpoint);
-    // std::cout.precision(2);
-    // std::cout << weight << std::endl;
-    // std::cout.precision(3);
-    // std::cout << weight << std::endl;
-    // int a = 9, b = 2;
-    // double c = static_cast<double>(a) / b;
-    // double d = double(a) / b; // 古老的强制类型转换
-    // std::cout << c << std::endl;
-    // std::cout << c << std::endl;
-    // std::cout.unsetf(std::ios::fixed);
-    // std::cout << c << std::endl;
+//     printf("low address\n");
 
+//     // 释放堆内存
+//     free(p1);
+//     free(p2);
+
+//     return 0;
+// }
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+typedef long long ll;
+
+struct Point {
+    ll x, y;
+} p[2005];  // 全局数组，更快
+
+ll d[2005]; // 存储距离平方
+
+// 距离平方（避免浮点）
+inline ll dist2(const Point& a, const Point& b) {
+    ll dx = a.x - b.x;
+    ll dy = a.y - b.y;
+    return dx * dx + dy * dy;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    int T;
+    cin >> T;
+    while (T--) {
+        int n;
+        cin >> n;
+
+        for (int i = 0; i < n; ++i) {
+            cin >> p[i].x >> p[i].y;
+        }
+
+        for (int i = 0; i < n; ++i) {
+            // 预计算 i 到所有点的距离
+            for (int k = 0; k < n; ++k) {
+                d[k] = dist2(p[i], p[k]);
+            }
+
+            // 排序，用于二分快速统计
+            vector<ll> sorted_d(d, d + n);
+            sort(sorted_d.begin(), sorted_d.end());
+
+            for (int j = 0; j < n; ++j) {
+                if (i == j) {
+                    cout << "0 ";
+                    continue;
+                }
+
+                // 二分查找 <= d[j] 的数量
+                int cnt = upper_bound(sorted_d.begin(), sorted_d.end(), d[j]) - sorted_d.begin();
+                cnt -= 2; // 去掉 i 和 j 自身
+
+                cout << cnt << " ";
+            }
+            cout << "\n";
+        }
+    }
     return 0;
 }
-// 编程提示：使用 \n和endl终止每一个程序
-//  添加换行符的作用是，在某些编译器中不输出程序的最后一行，或者有些编译器在运行下一个程序时，会将自己的第一行输出与上一行输出混在一起
