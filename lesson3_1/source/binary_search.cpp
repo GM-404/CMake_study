@@ -128,3 +128,39 @@ std::vector<int> searchRange(std::vector<int>&nums,int target){
 
     return res;
 }
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        vector<int> res(2, -1);
+        int n = nums.size();
+        if (n == 0) return res;
+
+        // 找左边界
+        int l = 0, r = n - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] >= target) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
+        }
+        // 最终 l 就是左边界
+        if (l >= n || nums[l] != target) return res;
+        res[0] = l;
+
+        // 找右边界
+        l = 0, r = n - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] <= target) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
+            }
+        }
+        res[1] = r;
+
+        return res;
+    }
+};

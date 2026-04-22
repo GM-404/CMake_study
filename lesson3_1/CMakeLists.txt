@@ -35,4 +35,5 @@ add_executable(temporary_test temporary_test.cpp
     source/array.cpp #关于数组的题目
     source/map.cpp #关于map的题目
     source/binary_search.cpp #关于二分查找的题目
+    source/stack.cpp #关于栈的
 )
