@@ -9,7 +9,9 @@ public:
     bool isValid(string s);
     //394.字符串解码
     std::string decodeString(string s);
-
+    //739.每日温度
+    std::vector<int>dailyTemperatures(std::vector<int>& temperatures);
+    
 };
 
 //155.最小栈

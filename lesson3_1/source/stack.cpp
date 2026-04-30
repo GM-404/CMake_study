@@ -68,3 +68,21 @@ string stack:: decodeString(string s){
     }
     return res;
 }
+//739.每日温度
+std::vector<int>stack::dailyTemperatures(std::vector<int>& temperatures){
+    std::stack<int> day_id; //存放天气下标
+    std::vector<int> answer(temperatures.size(),0); 
+    int max_tem = 0; //记录最高气温
+    
+    for(int i = 0; i < temperatures.size();i++){
+        // 当前温度 > 栈顶温度，说明找到了下一个更高温度
+        while(!day_id.empty()&&temperatures[i]>temperatures[day_id.top()]){
+            int idx = day_id.top();
+            day_id.pop();
+            answer[idx] = i - idx;
+        }
+        //把当前下标压入栈
+        day_id.push(i);
+    }
+    return answer;
+}
