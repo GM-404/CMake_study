@@ -177,6 +177,39 @@ build lesson0_1/lesson0_2.exe: CXX_EXECUTABLE_LINKER__lesson0_2_Debug lesson0_1/
   TARGET_IMPLIB = lesson0_1\liblesson0_2.dll.a
   TARGET_PDB = lesson0_2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lesson0_3
+
+
+#############################################
+# Order-only phony target for lesson0_3
+
+build cmake_object_order_depends_target_lesson0_3: phony || .
+
+build lesson0_1/CMakeFiles/lesson0_3.dir/42201.cpp.obj: CXX_COMPILER__lesson0_3_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson0_1/42201.cpp || cmake_object_order_depends_target_lesson0_3
+  DEP_FILE = lesson0_1\CMakeFiles\lesson0_3.dir\42201.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = lesson0_1\CMakeFiles\lesson0_3.dir
+  OBJECT_FILE_DIR = lesson0_1\CMakeFiles\lesson0_3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lesson0_3
+
+
+#############################################
+# Link the executable lesson0_1\lesson0_3.exe
+
+build lesson0_1/lesson0_3.exe: CXX_EXECUTABLE_LINKER__lesson0_3_Debug lesson0_1/CMakeFiles/lesson0_3.dir/42201.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lesson0_1\CMakeFiles\lesson0_3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lesson0_1\lesson0_3.exe
+  TARGET_IMPLIB = lesson0_1\liblesson0_3.dll.a
+  TARGET_PDB = lesson0_3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2790,6 +2823,20 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/map.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
   OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
 
+build lesson3_1/CMakeFiles/temporary_test.dir/source/binary_search.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/binary_search.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\binary_search.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
+build lesson3_1/CMakeFiles/temporary_test.dir/source/stack.cpp.obj: CXX_COMPILER__temporary_test_unscanned_Debug C$:/Users/19513/Desktop/cmake/lesson3_1/source/stack.cpp || cmake_object_order_depends_target_temporary_test
+  DEP_FILE = lesson3_1\CMakeFiles\temporary_test.dir\source\stack.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/19513/Desktop/cmake/lesson3_1/include
+  OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
+  OBJECT_FILE_DIR = lesson3_1\CMakeFiles\temporary_test.dir\source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target temporary_test
@@ -2798,7 +2845,7 @@ build lesson3_1/CMakeFiles/temporary_test.dir/source/map.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable lesson3_1\temporary_test.exe
 
-build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/sliding_window.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/tree.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/subarray.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Matrix.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/array.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/map.cpp.obj
+build lesson3_1/temporary_test.exe: CXX_EXECUTABLE_LINKER__temporary_test_Debug lesson3_1/CMakeFiles/temporary_test.dir/temporary_test.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/three_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/four_sum.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/letter_combination.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/move_zero.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/max_water.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/collect_rainwater.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/sliding_window.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Linked_list.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/tree.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/subarray.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/Matrix.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/array.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/map.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/binary_search.cpp.obj lesson3_1/CMakeFiles/temporary_test.dir/source/stack.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lesson3_1\CMakeFiles\temporary_test.dir
@@ -3363,6 +3410,10 @@ build lesson0_2: phony lesson0_1/lesson0_2.exe
 
 build lesson0_2.exe: phony lesson0_1/lesson0_2.exe
 
+build lesson0_3: phony lesson0_1/lesson0_3.exe
+
+build lesson0_3.exe: phony lesson0_1/lesson0_3.exe
+
 build lesson1_1: phony lesson1_1/lesson1_1.exe
 
 build lesson1_1.exe: phony lesson1_1/lesson1_1.exe
@@ -3501,7 +3552,7 @@ build Test/C++/all: phony Test/C++/test_94.exe Test/C++/test_104.exe Test/C++/te
 #############################################
 # Folder: C:/Users/19513/Desktop/cmake/build/lesson0_1
 
-build lesson0_1/all: phony lesson0_1/lesson0_1.exe lesson0_1/lesson0_2.exe
+build lesson0_1/all: phony lesson0_1/lesson0_1.exe lesson0_1/lesson0_2.exe lesson0_1/lesson0_3.exe
 
 # =============================================================================
 

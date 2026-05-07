@@ -62,64 +62,68 @@
 
 //     return 0;
 // }
+
 #include <iostream>
+#include <string>
+#include <sstream>
 #include <vector>
-#include <algorithm>
+#include <cstring>
+#include <map>
+
 using namespace std;
 
-typedef long long ll;
+const int N =1010;
+vector<int> dmg;
+vector<int> rew;
 
-struct Point {
-    ll x, y;
-} p[2005];  // 全局数组，更快
+int main(){
 
-ll d[2005]; // 存储距离平方
+    string line;
+    //输入奥特曼能量
+    long long E;
+    cin>>E;
+    cin.ignore();
 
-// 距离平方（避免浮点）
-inline ll dist2(const Point& a, const Point& b) {
-    ll dx = a.x - b.x;
-    ll dy = a.y - b.y;
-    return dx * dx + dy * dy;
-}
+    getline(cin,line);
+    stringstream line1(line);
+    long long tmp;
+    while(line1>>tmp){
+        dmg.push_back(tmp);
+    }
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-
-    int T;
-    cin >> T;
-    while (T--) {
-        int n;
-        cin >> n;
-
-        for (int i = 0; i < n; ++i) {
-            cin >> p[i].x >> p[i].y;
-        }
-
-        for (int i = 0; i < n; ++i) {
-            // 预计算 i 到所有点的距离
-            for (int k = 0; k < n; ++k) {
-                d[k] = dist2(p[i], p[k]);
+    getline(cin,line);
+    stringstream line2(line);
+    while(line2>>tmp){
+        rew.push_back(tmp);
+    }
+    //定义DP数组
+    int n = dmg.size();
+    //dp[i][j] 表示考虑前 i 只怪兽，在击败j 只的情况下，拥有的最大剩余能量。
+    vector<vector<long long>> dp(n+1,vector<long long>(n+1,-1));
+    dp[0][0] = E;
+    
+    for (int i = 1;i<=n;i++){
+        for(int j= 0;j<=i;j++){
+            //情况A，不打第i只怪兽，
+            //那么打败第j个的状态，由前i-1个怪兽也打败了j个转移过来
+            if(dp[i-1][j]!= -1){
+                dp[i][j]= dp[i-1][j]; //在第i个的时候打了第j只
             }
-
-            // 排序，用于二分快速统计
-            vector<ll> sorted_d(d, d + n);
-            sort(sorted_d.begin(), sorted_d.end());
-
-            for (int j = 0; j < n; ++j) {
-                if (i == j) {
-                    cout << "0 ";
-                    continue;
-                }
-
-                // 二分查找 <= d[j] 的数量
-                int cnt = upper_bound(sorted_d.begin(), sorted_d.end(), d[j]) - sorted_d.begin();
-                cnt -= 2; // 去掉 i 和 j 自身
-
-                cout << cnt << " ";
+            if(j>0&&dp[i-1][j-1]>dmg[i-1]){
+                long long energy_after_fight = dp[i - 1][j - 1] - dmg[i - 1] + rew[i - 1];
+                dp[i][j] = max(dp[i][j], energy_after_fight);
             }
-            cout << "\n";
         }
     }
+    // 5. 遍历最后一行 dp[n][j]，找到最大的 j 使得能量不为 -1
+    int ans = 0;
+    for (int j = n; j >= 0; j--) {
+        if (dp[n][j] != -1) {
+            ans = j;
+            break;
+        }
+    }
+    //int ans = dfs(0,E);
+    cout <<ans<<endl;
     return 0;
 }

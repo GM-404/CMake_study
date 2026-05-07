@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -o lesson0_1\\CMakeFiles\\lesson0_3.dir\\42201.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\42201.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson0_1\\42201.cpp",
+  "output": "lesson0_1\\CMakeFiles\\lesson0_3.dir\\42201.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson1_1/include -g -std=gnu++17 -Wall -Wextra -g -O0 -o lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson1_1\\main.cpp",
   "output": "lesson1_1\\CMakeFiles\\lesson1_1.dir\\main.cpp.obj"
@@ -376,6 +382,18 @@
   "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\map.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\map.cpp",
   "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\map.cpp",
   "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\map.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\binary_search.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\binary_search.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\binary_search.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\binary_search.cpp.obj"
+},
+{
+  "directory": "C:/Users/19513/Desktop/cmake/build",
+  "command": "D:\\SDK\\w64devkit\\bin\\g++.exe -IC:/Users/19513/Desktop/cmake/lesson3_1/include -g -std=gnu++17 -o lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\stack.cpp.obj -c C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\stack.cpp",
+  "file": "C:\\Users\\19513\\Desktop\\cmake\\lesson3_1\\source\\stack.cpp",
+  "output": "lesson3_1\\CMakeFiles\\temporary_test.dir\\source\\stack.cpp.obj"
 },
 {
   "directory": "C:/Users/19513/Desktop/cmake/build",
