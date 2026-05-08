@@ -22,96 +22,78 @@ dp[i][j][1]：表示到达位置 $(i, j)$ 且最后一步是向右移动的最�
 初始化与边界：起点 $(0, 0)$ 的初始转弯数为 0，并设置障碍物（非 0 节点）不可通行。
 */
 
-
-// 定义一个很大的常数代表不可达（无穷大）
+int M,N;
 const int INF = 1e9;
 
-/**
- * 核心算法函数：计算从起点到终点的最少转弯次数
- * * @param rows   矩阵的行数
- * @param cols   矩阵的列数
- * @param grid   二维矩阵，0表示可通行，非0表示障碍物
- * @return int   返回最少转弯次数，如果不可达则返回 -1
- */
-int get_min_turn(int rows, int cols, const vector<vector<int> >& grid) {
-    // 拦截特殊情况：起点或终点本身不可通行
-    if (grid[0][0] != 0 || grid[rows - 1][cols - 1] != 0) {
+int get_min_turn(vector<vector<int>> map){
+
+    //判断起点终点是否可达
+    if(map[0][0]!=0||map[M-1][N-1]!=0)
+    {
         return -1;
     }
-
-    // dp[i][j][0] 表示到达 (i,j) 且最后动作是【向下移动】的最少转弯数
-    // dp[i][j][1] 表示到达 (i,j) 且最后动作是【向右移动】的最少转弯数
-    vector<vector<vector<int> > > dp(rows, vector<vector<int> >(cols, vector<int>(2, INF)));
-
-    // 初始化起点，在起点时还没有发生任何移动，转弯数为 0
+    //状态转移方程
+    //需要一个二维数组，这个二维数组需要存储到达当前节点的最小转弯次数，同时还需要一维来存储到达该节点的时候方向是向左的还是向下的，所以需要一个三维数组
+    vector<vector<vector<int>>> dp(M,vector<vector<int>>(N,vector<int>(2,INF)));
+    //初始化节点
     dp[0][0][0] = 0;
     dp[0][0][1] = 0;
-
-    // 动态规划过程
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            // 如果当前节点是障碍物，不可通行，直接跳过
-            if (grid[i][j] != 0) {
+    for(int i = 0;i<M;i++){
+        for(int j = 0;j<N;j++){
+            if(map[i][j]!= 0){
                 continue;
             }
-
-            // 情况 A：计算从上方格子向下走进入 (i, j) 的最少转弯数
-            if (i > 0 && grid[i - 1][j] == 0) {
-                int no_turn = dp[i - 1][j][0];         // 保持原方向（向下）
-                int need_turn = dp[i - 1][j][1] + 1;   // 改变方向（从右转为下）
-                dp[i][j][0] = min(no_turn, need_turn);
+            //情况A，走到当前节点，是从上下来的，并且方向向下，这个时候也要分两种情况，上面的格子是向右的还是向下的
+            //如果是向右的，走到当前节点需要一次转向，如果是向下的，不需要转向
+            //第一行没有上面，并且上面的要是可达的
+            if(i>0&&map[i-1][j] == 0){
+                //转向
+                int turn = dp[i-1][j][1] + 1;
+                //不转
+                int no_turn = dp[i-1][j][0];
+                //当前状态肯定取两者之间小的那一个
+                dp[i][j][0] =  min(turn,no_turn);
             }
-
-            // 情况 B：计算从左侧格子向右走进入 (i, j) 的最少转弯数
-            if (j > 0 && grid[i][j - 1] == 0) {
-                int no_turn = dp[i][j - 1][1];         // 保持原方向（向右）
-                int need_turn = dp[i][j - 1][0] + 1;   // 改变方向（从下转为右）
-                dp[i][j][1] = min(no_turn, need_turn);
+            //情况B，走到当前节点，是从左面平移来的，并且方向向右，这个时候也要分两种情况，左面的格子是向右的还是向下的
+            //如果是向下的，走到当前节点需要一次转向，如果是向右的，不需要转向
+            //第一列没有上面，并且左面的要是可达的
+            if(j>0&&map[i][j-1] == 0){
+                //转向
+                int turn = dp[i][j-1][0] + 1;
+                //不转
+                int no_turn = dp[i][j-1][1];
+                //当前状态肯定取两者之间小的那一个
+                dp[i][j][1] =  min(turn,no_turn);
             }
         }
     }
-
-    // 获取到达终点的最少转弯次数（向下到达和向右到达两者取较小值）
-    int res = min(dp[rows - 1][cols - 1][0], dp[rows - 1][cols - 1][1]);
-
-    // 如果最小值仍然是无穷大，说明没有任何通路可以到达终点
-    if (res >= INF) {
+    int min_turn = min(dp[M-1][N-1][0],dp[M-1][N-1][1]);
+    if(min_turn>=INF){
         return -1;
-    } 
-    
-    return res;
+    }
+    return min_turn;
 }
+int main(){
 
-int main() {
-    // 优化输入输出流的性能
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
-    int m, n;
-    // 读取行数和列数
-    if (!(cin >> m >> n)) {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    if(!(cin>>M>>N)){
         return 0;
     }
-
-    // 1. 检查边界值：如果超出 0 < m, n <= 100 的范围，直接输出 -1
-    if (m <= 0 || m > 100 || n <= 0 || n > 100) {
-        cout << -1 << "\n";
+    //判断是否合规
+    if(M<=0||M>100||N<=0||N>100){
+        cout<<-1<<endl;
         return 0;
     }
-
-    // 2. 初始化矩阵并读取 PCB 布局数据
-    vector<vector<int> > pcb(m, vector<int>(n));
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            cin >> pcb[i][j];
+    //存放pcb
+    vector<vector<int>> pcb(M,vector<int>(N));
+    for(int i = 0; i<M;i++){
+        for(int j = 0;j<N;j++){
+            cin>>pcb[M][N];
         }
     }
+    int res = get_min_turn(pcb);
 
-    // 3. 调用单独封装的核心函数计算结果
-    int ans = get_min_turn(m, n, pcb);
-
-    // 4. 输出最终结果
-    cout << ans << "\n";
-
+    cout<<res<<endl;
     return 0;
 }
